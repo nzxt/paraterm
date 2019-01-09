@@ -1,0 +1,21 @@
+{
+  "name": "paraterm",
+  "version": "1.0.0",
+  "description": "ParaTerm OpenCart 2.x Project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NZXTUA",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "node-bourbon": "^4.2.8",
+    "vinyl-ftp": "^0.6.1"
+  }
+}

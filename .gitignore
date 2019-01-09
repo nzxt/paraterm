@@ -1,6 +1,6 @@
-.htaccess
-/config.php
-admin/config.php
+# .htaccess
+# /config.php
+# admin/config.php
 
 !index.html
 
@@ -11,6 +11,9 @@ system/cache/
 system/logs/
 
 system/storage/
+
+# Node.js modules
+node_modules/
 
 # vQmod log files
 vqmod/logs/*
