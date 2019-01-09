@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 09 2019 г., 21:19
+-- Время создания: Янв 09 2019 г., 21:42
 -- Версия сервера: 5.7.23
 -- Версия PHP: 5.6.38
 
@@ -752,6 +752,13 @@ CREATE TABLE `oc_cart` (
   `quantity` int(5) NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `oc_cart`
+--
+
+INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
+(2, 0, 0, '1ecrcfn6ssq9lhgf1pu6g1j1j6', 43, 0, '[]', 1, '2019-01-09 20:40:07');
 
 -- --------------------------------------------------------
 
@@ -2438,7 +2445,7 @@ INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `noindex`, `s
 (5, 'HTC', 'catalog/demo/htc_logo.jpg', 1, 0),
 (6, 'Palm', 'catalog/demo/palm_logo.jpg', 1, 0),
 (7, 'Hewlett-Packard', 'catalog/demo/hp_logo.jpg', 1, 0),
-(8, 'Apple', 'catalog/demo/apple_logo.jpg', 1, 0),
+(8, 'ParaTerm', 'catalog/paraterm-logo-v.png', 1, 0),
 (9, 'Canon', 'catalog/demo/canon_logo.jpg', 1, 0),
 (10, 'Sony', 'catalog/demo/sony_logo.jpg', 1, 0);
 
@@ -2464,8 +2471,7 @@ CREATE TABLE `oc_manufacturer_description` (
 --
 
 INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `description_bottom`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
-(8, 2, '&lt;p&gt;описание en&lt;br&gt;&lt;/p&gt;', '', 'desc en', 'keyw en', 'title en', 'h1 en'),
-(8, 1, '&lt;p&gt;описание ru&lt;br&gt;&lt;/p&gt;', '', 'desc ru', 'keyw ru', 'длиннный тайтл длиннный тайтлдлиннный тайтлдлиннный тайтлдлиннный тайтл длиннный тайтл длиннный тайтлдлиннный тайтлдлиннный тайтлдлиннный тайтл', 'h1 ru'),
+(8, 1, '&lt;p&gt;Украинский производитель термопар и других комплектующихдля котлов и газовых плит.&lt;br&gt;&lt;/p&gt;', '', 'Производитель термопар для котлов и газовых плит.', 'термопара, termopara, паратерм, paraterm', 'paraterm', 'paraterm'),
 (9, 1, '', '', '', '', '', ''),
 (9, 2, '', '', '', '', '', ''),
 (7, 1, '', '', '', '', '', ''),
@@ -2488,6 +2494,13 @@ CREATE TABLE `oc_manufacturer_to_layout` (
   `store_id` int(11) NOT NULL,
   `layout_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `oc_manufacturer_to_layout`
+--
+
+INSERT INTO `oc_manufacturer_to_layout` (`manufacturer_id`, `store_id`, `layout_id`) VALUES
+(8, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3062,7 +3075,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/sony_vaio_1.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 21:08:29', '2011-09-30 01:06:39'),
 (47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2011-09-30 01:05:28'),
 (48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 995, 5, 'catalog/demo/ipod_classic_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-08', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-08 17:21:51', '2011-09-30 01:07:06'),
-(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 5, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23');
+(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 8, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23');
 
 -- --------------------------------------------------------
 
@@ -3850,53 +3863,53 @@ CREATE TABLE `oc_setting` (
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
-(1452, 0, 'config', 'config_error_filename', 'error.log', 0),
-(1451, 0, 'config', 'config_error_log', '1', 0),
-(1450, 0, 'config', 'config_error_display', '1', 0),
+(1569, 0, 'config', 'config_error_filename', 'error.log', 0),
+(1568, 0, 'config', 'config_error_log', '1', 0),
+(1567, 0, 'config', 'config_error_display', '1', 0),
 (1476, 0, 'theme_default', 'theme_default_image_location_height', '200', 0),
+(1560, 0, 'config', 'config_compression', '0', 0),
+(1561, 0, 'config', 'config_secure', '1', 0),
+(1562, 0, 'config', 'config_password', '1', 0),
 (1475, 0, 'theme_default', 'theme_default_image_location_width', '268', 0),
-(1449, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
+(1563, 0, 'config', 'config_shared', '0', 0),
+(1564, 0, 'config', 'config_encryption', 'RYUDJwW3AYz5wsSm8C4FmRd1OKIfOkfqu97DLrsnt8EDJttG77uqEOQrJFXSiexw9C3WxaMNaZITAxU7IM9YO1bqx083xhlwE8gPgFzsGaFjHVpdZ42kvvAtIKGq1ATpanzs460d4wd4UHp00oIx9LjbxFazSyqRA2V6JitR49QY2xdJWGrm0AkJew6gv4ompDdgZs50fa0DOaipoIjgAU4mFhWamm1Uh9wVp5BGZ1VgUvHfXhSxJSakP4q2uExfg7LPyAldA3oGJ1nnKuLZySgSIIJBVAukXqVxjI06jehyk87esK16ayRRKvAIWFle6gCyhWxUXM8VpC0KpGqVRyX4kvAavy96nfMJHj6lM9mZFMla3KE4qrw8SHGcmJxwmgGA2hZYuomweQIg8CYYmjRswBhgiBpqR7XwOalwzzwb8eFNJ2zfOn9qFK6NUgJLkpqPu1Zky1d9zDyRIL2eSpUMiUR8F1AcqoI8OaxryXY1KBSgeFdxiGCdzWp9TcqtdgeFlQLqSh9sFunPiPHNdEMtIIzTfAEfSU5HHgW8uysKMbVGqaIfWA5E1vuZyrUgfEOX5Bxf2a2rS8P4LtjD7DRi3NqvU1Fzy0G7FhE0913WmNiEJdw8BtbIFCPvLoE361qhtMKIUWHT0av7gQbaEmpVoVYNNSAUBrROFIAFTCCBJpcW7sND4tVjLUQHknA2opkgXXBXjH7HMwReH6wqcY8RoT99QNdFkfc7k01ClVhgwDJcSW25R7KZlnYfSTTQ07XWBDu9821HxDr0EWOsTbToGokbuqwoZ62jYfa2lqewj64Ph8Mh60MXxG024rA1pol29aad0dJVqw6tkNIxKkZIrodKIqkZYVhkRoOliiGNRBPkLTcTlu1EGV9Eyf2F2zLLpPEiSfT3bVaMJVnbK6OvmkUeBXyWEEaxyablC894FbjjEcWbKwZUcNporXuoUQphqyQr6mXqS0eL2jYUJzOyoWSo6bfSWSINnjtWXl6tOwkPQBEIBCIuzdSXBMr9', 0),
 (4, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (5, 0, 'voucher', 'voucher_status', '1', 0),
-(1443, 0, 'config', 'config_compression', '0', 0),
-(1444, 0, 'config', 'config_secure', '1', 0),
-(1445, 0, 'config', 'config_password', '1', 0),
-(1446, 0, 'config', 'config_shared', '0', 0),
-(1447, 0, 'config', 'config_encryption', 'RYUDJwW3AYz5wsSm8C4FmRd1OKIfOkfqu97DLrsnt8EDJttG77uqEOQrJFXSiexw9C3WxaMNaZITAxU7IM9YO1bqx083xhlwE8gPgFzsGaFjHVpdZ42kvvAtIKGq1ATpanzs460d4wd4UHp00oIx9LjbxFazSyqRA2V6JitR49QY2xdJWGrm0AkJew6gv4ompDdgZs50fa0DOaipoIjgAU4mFhWamm1Uh9wVp5BGZ1VgUvHfXhSxJSakP4q2uExfg7LPyAldA3oGJ1nnKuLZySgSIIJBVAukXqVxjI06jehyk87esK16ayRRKvAIWFle6gCyhWxUXM8VpC0KpGqVRyX4kvAavy96nfMJHj6lM9mZFMla3KE4qrw8SHGcmJxwmgGA2hZYuomweQIg8CYYmjRswBhgiBpqR7XwOalwzzwb8eFNJ2zfOn9qFK6NUgJLkpqPu1Zky1d9zDyRIL2eSpUMiUR8F1AcqoI8OaxryXY1KBSgeFdxiGCdzWp9TcqtdgeFlQLqSh9sFunPiPHNdEMtIIzTfAEfSU5HHgW8uysKMbVGqaIfWA5E1vuZyrUgfEOX5Bxf2a2rS8P4LtjD7DRi3NqvU1Fzy0G7FhE0913WmNiEJdw8BtbIFCPvLoE361qhtMKIUWHT0av7gQbaEmpVoVYNNSAUBrROFIAFTCCBJpcW7sND4tVjLUQHknA2opkgXXBXjH7HMwReH6wqcY8RoT99QNdFkfc7k01ClVhgwDJcSW25R7KZlnYfSTTQ07XWBDu9821HxDr0EWOsTbToGokbuqwoZ62jYfa2lqewj64Ph8Mh60MXxG024rA1pol29aad0dJVqw6tkNIxKkZIrodKIqkZYVhkRoOliiGNRBPkLTcTlu1EGV9Eyf2F2zLLpPEiSfT3bVaMJVnbK6OvmkUeBXyWEEaxyablC894FbjjEcWbKwZUcNporXuoUQphqyQr6mXqS0eL2jYUJzOyoWSo6bfSWSINnjtWXl6tOwkPQBEIBCIuzdSXBMr9', 0),
-(1448, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
-(1442, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(1441, 0, 'config', 'config_file_max_size', '300000', 0),
-(1440, 0, 'config', 'config_seo_url_postfix', '.html', 0),
-(1439, 0, 'config', 'config_seo_url_include_path', '1', 0),
-(1438, 0, 'config', 'config_seo_url', '1', 0),
-(1436, 0, 'config', 'config_alert_email', 'nzxtua@fex.net', 0),
-(1437, 0, 'config', 'config_maintenance', '0', 0),
-(1435, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
-(1434, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(1433, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(1432, 0, 'config', 'config_mail_smtp_password', '', 0),
-(1431, 0, 'config', 'config_mail_smtp_username', '', 0),
-(1430, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(1429, 0, 'config', 'config_mail_parameter', '', 0),
-(1428, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(1427, 0, 'config', 'config_ftp_status', '0', 0),
-(1426, 0, 'config', 'config_ftp_root', '', 0),
-(1425, 0, 'config', 'config_ftp_password', '', 0),
-(1424, 0, 'config', 'config_ftp_username', '', 0),
-(1423, 0, 'config', 'config_ftp_port', '21', 0),
-(1422, 0, 'config', 'config_ftp_hostname', 'termopara.net', 0),
-(1420, 0, 'config', 'config_logo', 'catalog/paraterm-logo.png', 0),
-(1421, 0, 'config', 'config_icon', 'catalog/paraterm-icon.png', 0),
-(1418, 0, 'config', 'config_captcha', '', 0),
-(1419, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
-(1417, 0, 'config', 'config_return_status_id', '2', 0),
-(1416, 0, 'config', 'config_return_id', '0', 0),
-(1415, 0, 'config', 'config_affiliate_id', '4', 0),
-(1414, 0, 'config', 'config_affiliate_commission', '5', 0),
-(1413, 0, 'config', 'config_affiliate_auto', '0', 0),
-(1412, 0, 'config', 'config_affiliate_approval', '0', 0),
-(1411, 0, 'config', 'config_stock_checkout', '0', 0),
-(1410, 0, 'config', 'config_stock_warning', '0', 0),
+(1565, 0, 'config', 'config_file_ext_allowed', 'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc', 0),
+(1566, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
+(1559, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(1558, 0, 'config', 'config_file_max_size', '300000', 0),
+(1557, 0, 'config', 'config_seo_url_postfix', '.html', 0),
+(1555, 0, 'config', 'config_seo_url', '1', 0),
+(1556, 0, 'config', 'config_seo_url_include_path', '1', 0),
+(1554, 0, 'config', 'config_maintenance', '0', 0),
+(1553, 0, 'config', 'config_alert_email', 'nzxtua@fex.net', 0),
+(1552, 0, 'config', 'config_mail_alert', '[\"order\"]', 1),
+(1551, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(1550, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(1549, 0, 'config', 'config_mail_smtp_password', '', 0),
+(1548, 0, 'config', 'config_mail_smtp_username', '', 0),
+(1547, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(1546, 0, 'config', 'config_mail_parameter', '', 0),
+(1545, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(1544, 0, 'config', 'config_ftp_status', '0', 0),
+(1543, 0, 'config', 'config_ftp_root', '', 0),
+(1541, 0, 'config', 'config_ftp_username', '', 0),
+(1542, 0, 'config', 'config_ftp_password', '', 0),
+(1538, 0, 'config', 'config_icon', 'catalog/paraterm-icon.png', 0),
+(1540, 0, 'config', 'config_ftp_port', '21', 0),
+(1539, 0, 'config', 'config_ftp_hostname', 'termopara.net', 0),
+(1536, 0, 'config', 'config_captcha_page', '[\"review\",\"return\",\"contact\"]', 1),
+(1537, 0, 'config', 'config_logo', 'catalog/paraterm-logo.png', 0),
+(1535, 0, 'config', 'config_captcha', '', 0),
+(1534, 0, 'config', 'config_return_status_id', '2', 0),
+(1533, 0, 'config', 'config_return_id', '0', 0),
+(1532, 0, 'config', 'config_affiliate_id', '4', 0),
+(1531, 0, 'config', 'config_affiliate_commission', '5', 0),
+(1530, 0, 'config', 'config_affiliate_auto', '0', 0),
+(1529, 0, 'config', 'config_affiliate_approval', '0', 0),
+(1528, 0, 'config', 'config_stock_checkout', '0', 0),
+(1527, 0, 'config', 'config_stock_warning', '0', 0),
 (95, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (96, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
 (97, 0, 'shipping', 'shipping_sort_order', '3', 0),
@@ -3995,58 +4008,58 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (194, 0, 'blog_category', 'blog_category_status', '1', 0),
 (195, 0, 'configcustommenu', 'configcustommenu_custommenu', '1', 0),
 (196, 0, 'manufacturer', 'manufacturer_status', '1', 0),
-(1409, 0, 'config', 'config_stock_display', '0', 0),
-(1408, 0, 'config', 'config_api_id', '1', 0),
-(1407, 0, 'config', 'config_fraud_status_id', '16', 0),
-(1406, 0, 'config', 'config_complete_status', '[\"3\",\"5\"]', 1),
-(1405, 0, 'config', 'config_processing_status', '[\"2\",\"3\",\"1\",\"12\",\"5\"]', 1),
-(1404, 0, 'config', 'config_order_status_id', '1', 0),
-(1403, 0, 'config', 'config_checkout_id', '5', 0),
-(1402, 0, 'config', 'config_checkout_guest', '1', 0),
-(1401, 0, 'config', 'config_cart_weight', '1', 0),
-(1400, 0, 'config', 'config_invoice_prefix', 'INV-0000', 0),
-(1399, 0, 'config', 'config_account_id', '3', 0),
-(1398, 0, 'config', 'config_login_attempts', '5', 0),
-(1397, 0, 'config', 'config_customer_price', '0', 0),
-(1396, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
-(1395, 0, 'config', 'config_customer_group_id', '1', 0),
-(1394, 0, 'config', 'config_customer_search', '0', 0),
-(1392, 0, 'config', 'config_customer_online', '0', 0),
-(1393, 0, 'config', 'config_customer_activity', '0', 0),
-(1391, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(1390, 0, 'config', 'config_tax_default', 'shipping', 0),
-(1389, 0, 'config', 'config_tax', '0', 0),
-(1388, 0, 'config', 'config_voucher_max', '1000', 0),
-(1387, 0, 'config', 'config_voucher_min', '1', 0),
-(1386, 0, 'config', 'config_review_guest', '1', 0),
-(1385, 0, 'config', 'config_review_status', '1', 0),
-(1384, 0, 'config', 'config_limit_admin', '20', 0),
-(1383, 0, 'config', 'config_product_count', '0', 0),
-(1382, 0, 'config', 'config_weight_class_id', '1', 0),
-(1381, 0, 'config', 'config_length_class_id', '1', 0),
-(1380, 0, 'config', 'config_currency_auto', '0', 0),
-(1379, 0, 'config', 'config_currency', 'UAH', 0),
-(1378, 0, 'config', 'config_admin_language', 'ru-ru', 0),
-(1377, 0, 'config', 'config_language', 'ru-ru', 0),
-(1375, 0, 'config', 'config_country_id', '220', 0),
-(1376, 0, 'config', 'config_zone_id', '3484', 0),
-(1373, 0, 'config', 'config_open', 'Пн. - Пт. 9:00 - 18:00&lt;br /&gt;Сб. - Вс. 10:00 - 15:00', 0),
-(1374, 0, 'config', 'config_comment', 'Мы приветствуем Вас в онлайн-магазине ParaTerm.com. На этом сайте Вы можете ознакомиться со всеми выпускаемыми нами изделиями. ', 0),
-(1372, 0, 'config', 'config_image', 'catalog/paraterm-logo-v.png', 0),
-(1371, 0, 'config', 'config_fax', '+38 (098) 54-53-900', 0),
-(1370, 0, 'config', 'config_telephone', '+38 (099) 54-53-900', 0),
+(1525, 0, 'config', 'config_api_id', '1', 0),
+(1526, 0, 'config', 'config_stock_display', '0', 0),
+(1523, 0, 'config', 'config_complete_status', '[\"3\",\"5\"]', 1),
+(1524, 0, 'config', 'config_fraud_status_id', '16', 0),
+(1522, 0, 'config', 'config_processing_status', '[\"2\",\"3\",\"1\",\"12\",\"5\"]', 1),
+(1521, 0, 'config', 'config_order_status_id', '1', 0),
+(1520, 0, 'config', 'config_checkout_id', '5', 0),
+(1519, 0, 'config', 'config_checkout_guest', '1', 0),
+(1518, 0, 'config', 'config_cart_weight', '1', 0),
+(1517, 0, 'config', 'config_invoice_prefix', 'INV-0000', 0),
+(1516, 0, 'config', 'config_account_id', '3', 0),
+(1515, 0, 'config', 'config_login_attempts', '5', 0),
+(1514, 0, 'config', 'config_customer_price', '0', 0),
+(1513, 0, 'config', 'config_customer_group_display', '[\"1\"]', 1),
+(1510, 0, 'config', 'config_customer_activity', '0', 0),
+(1511, 0, 'config', 'config_customer_search', '0', 0),
+(1512, 0, 'config', 'config_customer_group_id', '1', 0),
+(1509, 0, 'config', 'config_customer_online', '0', 0),
+(1508, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(1507, 0, 'config', 'config_tax_default', 'shipping', 0),
+(1506, 0, 'config', 'config_tax', '0', 0),
+(1505, 0, 'config', 'config_voucher_max', '1000', 0),
+(1504, 0, 'config', 'config_voucher_min', '1', 0),
+(1503, 0, 'config', 'config_review_guest', '1', 0),
+(1502, 0, 'config', 'config_review_status', '1', 0),
+(1501, 0, 'config', 'config_limit_admin', '20', 0),
+(1500, 0, 'config', 'config_product_count', '0', 0),
+(1499, 0, 'config', 'config_weight_class_id', '1', 0),
+(1498, 0, 'config', 'config_length_class_id', '1', 0),
+(1497, 0, 'config', 'config_currency_auto', '0', 0),
+(1496, 0, 'config', 'config_currency', 'UAH', 0),
+(1495, 0, 'config', 'config_admin_language', 'ru-ru', 0),
+(1493, 0, 'config', 'config_zone_id', '3484', 0),
+(1494, 0, 'config', 'config_language', 'ru-ru', 0),
+(1492, 0, 'config', 'config_country_id', '220', 0),
+(1490, 0, 'config', 'config_open', 'Пн. - Пт. 9:00 - 18:00&lt;br /&gt;Сб. - Вс. 10:00 - 15:00', 0),
+(1491, 0, 'config', 'config_comment', 'Мы приветствуем Вас в онлайн-магазине ParaTerm.com. На этом сайте Вы можете ознакомиться со всеми выпускаемыми нами изделиями. ', 0),
+(1489, 0, 'config', 'config_image', 'catalog/paraterm-logo-v.png', 0),
+(1488, 0, 'config', 'config_fax', '+38 (098) 54-53-900', 0),
+(1487, 0, 'config', 'config_telephone', '+38 (099) 54-53-900', 0),
+(1478, 0, 'config', 'config_meta_description', 'Интернет-магазин ParaTerm.com — широкий выбор термопар для бытовых котлов, колонок и газовых плит от производителя.', 0),
 (1454, 0, 'theme_default', 'theme_default_status', '1', 0),
 (1453, 0, 'theme_default', 'theme_default_directory', 'paraterm', 0),
-(1368, 0, 'config', 'config_geocode', '48.345149, 33.506930', 0),
-(1369, 0, 'config', 'config_email', 'shop@termopara.net', 0),
-(1367, 0, 'config', 'config_address', '52201, г. Жёлтые Воды, Днепропетровская обл., Украина', 0),
-(1366, 0, 'config', 'config_owner', 'Dmitry Gerega', 0),
-(1364, 0, 'config', 'config_layout_id', '4', 0),
-(1365, 0, 'config', 'config_name', 'paraterm', 0),
-(1363, 0, 'config', 'config_theme', 'theme_default', 0),
-(1362, 0, 'config', 'config_meta_keyword', 'термопара, termopara, паратерм, paraterm', 0),
-(1361, 0, 'config', 'config_meta_description', 'Интернет-магазин ParaTerm.com — широкий выбор термопар для бытовых котлов, колонок и газовых плит от производителя.', 0),
-(1360, 0, 'config', 'config_meta_title', 'paraterm', 0),
+(1484, 0, 'config', 'config_address', '52201, г. Жёлтые Воды, Днепропетровская обл., Украина', 0),
+(1485, 0, 'config', 'config_geocode', '48.345149, 33.506930', 0),
+(1486, 0, 'config', 'config_email', 'shop@termopara.net', 0),
+(1483, 0, 'config', 'config_owner', 'Dmitry Gerega', 0),
+(1482, 0, 'config', 'config_name', 'paraterm', 0),
+(1481, 0, 'config', 'config_layout_id', '4', 0),
+(1480, 0, 'config', 'config_theme', 'theme_default', 0),
+(1479, 0, 'config', 'config_meta_keyword', 'термопара, termopara, паратерм, paraterm', 0),
+(1477, 0, 'config', 'config_meta_title', 'paraterm', 0),
 (1340, 0, 'seomanager', 'seomanager_html_h1_special', '', 0),
 (1341, 0, 'seomanager', 'seomanager_meta_title_special', '', 0),
 (1342, 0, 'seomanager', 'seomanager_meta_description_special', '', 0),
@@ -4281,7 +4294,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`, `seomanager`) VA
 (836, 'category_id=20', 'desktops', 0),
 (834, 'category_id=26', 'pc', 0),
 (835, 'category_id=27', 'mac', 0),
-(856, 'manufacturer_id=8', 'apple', 0),
+(900, 'manufacturer_id=8', 'paraterm', 0),
 (861, 'information_id=4', 'about_us', 0),
 (768, 'product_id=42', 'test', 0),
 (789, 'category_id=34', 'mp3-players', 0),
@@ -9925,7 +9938,7 @@ ALTER TABLE `oc_blog_category`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
@@ -10315,7 +10328,7 @@ ALTER TABLE `oc_review_article`
 -- AUTO_INCREMENT для таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1477;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1570;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_sticker`
@@ -10375,7 +10388,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT для таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=900;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=901;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_user`
