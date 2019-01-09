@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 09 2019 г., 16:34
+-- Время создания: Янв 09 2019 г., 17:12
 -- Версия сервера: 5.7.23
 -- Версия PHP: 5.6.38
 
@@ -4356,7 +4356,7 @@ CREATE TABLE `oc_user` (
 --
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
-(1, 1, 'paraterm', 'acd1ba0faf31cb22ee9ec421ecc740eb5d86e5b6', '5gTPVVX3n', 'John', 'Doe', 'nzxtua@fex.net', '', '', '127.0.0.1', 1, '2019-01-09 00:10:37');
+(1, 1, 'paraterm', 'acd1ba0faf31cb22ee9ec421ecc740eb5d86e5b6', '5gTPVVX3n', 'Deniz', 'True', 'nzxtua@fex.net', 'catalog/nzxtua.jpg', '', '127.0.0.1', 1, '2019-01-09 00:10:37');
 
 -- --------------------------------------------------------
 
