@@ -2,10 +2,10 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Янв 09 2019 г., 21:42
--- Версия сервера: 5.7.23
--- Версия PHP: 5.6.38
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jan 10, 2019 at 10:40 PM
+-- Server version: 5.7.23
+-- PHP Version: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `paraterm`
+-- Database: `paraterm`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_address`
+-- Table structure for table `oc_address`
 --
 
 CREATE TABLE `oc_address` (
@@ -46,7 +46,7 @@ CREATE TABLE `oc_address` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_affiliate`
+-- Table structure for table `oc_affiliate`
 --
 
 CREATE TABLE `oc_affiliate` (
@@ -86,7 +86,7 @@ CREATE TABLE `oc_affiliate` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_affiliate_activity`
+-- Table structure for table `oc_affiliate_activity`
 --
 
 CREATE TABLE `oc_affiliate_activity` (
@@ -101,7 +101,7 @@ CREATE TABLE `oc_affiliate_activity` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_affiliate_login`
+-- Table structure for table `oc_affiliate_login`
 --
 
 CREATE TABLE `oc_affiliate_login` (
@@ -116,7 +116,7 @@ CREATE TABLE `oc_affiliate_login` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_affiliate_transaction`
+-- Table structure for table `oc_affiliate_transaction`
 --
 
 CREATE TABLE `oc_affiliate_transaction` (
@@ -131,7 +131,7 @@ CREATE TABLE `oc_affiliate_transaction` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_api`
+-- Table structure for table `oc_api`
 --
 
 CREATE TABLE `oc_api` (
@@ -144,7 +144,7 @@ CREATE TABLE `oc_api` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_api`
+-- Dumping data for table `oc_api`
 --
 
 INSERT INTO `oc_api` (`api_id`, `name`, `key`, `status`, `date_added`, `date_modified`) VALUES
@@ -153,7 +153,7 @@ INSERT INTO `oc_api` (`api_id`, `name`, `key`, `status`, `date_added`, `date_mod
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_api_ip`
+-- Table structure for table `oc_api_ip`
 --
 
 CREATE TABLE `oc_api_ip` (
@@ -165,7 +165,7 @@ CREATE TABLE `oc_api_ip` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_api_session`
+-- Table structure for table `oc_api_session`
 --
 
 CREATE TABLE `oc_api_session` (
@@ -182,7 +182,7 @@ CREATE TABLE `oc_api_session` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article`
+-- Table structure for table `oc_article`
 --
 
 CREATE TABLE `oc_article` (
@@ -200,7 +200,7 @@ CREATE TABLE `oc_article` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article`
+-- Dumping data for table `oc_article`
 --
 
 INSERT INTO `oc_article` (`article_id`, `image`, `date_available`, `sort_order`, `article_review`, `status`, `noindex`, `date_added`, `date_modified`, `viewed`, `gstatus`) VALUES
@@ -212,7 +212,7 @@ INSERT INTO `oc_article` (`article_id`, `image`, `date_available`, `sort_order`,
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_description`
+-- Table structure for table `oc_article_description`
 --
 
 CREATE TABLE `oc_article_description` (
@@ -228,7 +228,7 @@ CREATE TABLE `oc_article_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_description`
+-- Dumping data for table `oc_article_description`
 --
 
 INSERT INTO `oc_article_description` (`article_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`, `tag`) VALUES
@@ -240,7 +240,7 @@ INSERT INTO `oc_article_description` (`article_id`, `language_id`, `name`, `desc
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_image`
+-- Table structure for table `oc_article_image`
 --
 
 CREATE TABLE `oc_article_image` (
@@ -253,7 +253,7 @@ CREATE TABLE `oc_article_image` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_related`
+-- Table structure for table `oc_article_related`
 --
 
 CREATE TABLE `oc_article_related` (
@@ -262,7 +262,7 @@ CREATE TABLE `oc_article_related` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_related`
+-- Dumping data for table `oc_article_related`
 --
 
 INSERT INTO `oc_article_related` (`article_id`, `related_id`) VALUES
@@ -276,7 +276,7 @@ INSERT INTO `oc_article_related` (`article_id`, `related_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_related_mn`
+-- Table structure for table `oc_article_related_mn`
 --
 
 CREATE TABLE `oc_article_related_mn` (
@@ -287,7 +287,7 @@ CREATE TABLE `oc_article_related_mn` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_related_product`
+-- Table structure for table `oc_article_related_product`
 --
 
 CREATE TABLE `oc_article_related_product` (
@@ -296,7 +296,7 @@ CREATE TABLE `oc_article_related_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_related_product`
+-- Dumping data for table `oc_article_related_product`
 --
 
 INSERT INTO `oc_article_related_product` (`article_id`, `product_id`) VALUES
@@ -319,7 +319,7 @@ INSERT INTO `oc_article_related_product` (`article_id`, `product_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_related_wb`
+-- Table structure for table `oc_article_related_wb`
 --
 
 CREATE TABLE `oc_article_related_wb` (
@@ -330,7 +330,7 @@ CREATE TABLE `oc_article_related_wb` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_to_blog_category`
+-- Table structure for table `oc_article_to_blog_category`
 --
 
 CREATE TABLE `oc_article_to_blog_category` (
@@ -340,7 +340,7 @@ CREATE TABLE `oc_article_to_blog_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_to_blog_category`
+-- Dumping data for table `oc_article_to_blog_category`
 --
 
 INSERT INTO `oc_article_to_blog_category` (`article_id`, `blog_category_id`, `main_blog_category`) VALUES
@@ -355,7 +355,7 @@ INSERT INTO `oc_article_to_blog_category` (`article_id`, `blog_category_id`, `ma
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_to_download`
+-- Table structure for table `oc_article_to_download`
 --
 
 CREATE TABLE `oc_article_to_download` (
@@ -366,7 +366,7 @@ CREATE TABLE `oc_article_to_download` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_to_layout`
+-- Table structure for table `oc_article_to_layout`
 --
 
 CREATE TABLE `oc_article_to_layout` (
@@ -376,7 +376,7 @@ CREATE TABLE `oc_article_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_to_layout`
+-- Dumping data for table `oc_article_to_layout`
 --
 
 INSERT INTO `oc_article_to_layout` (`article_id`, `store_id`, `layout_id`) VALUES
@@ -388,7 +388,7 @@ INSERT INTO `oc_article_to_layout` (`article_id`, `store_id`, `layout_id`) VALUE
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_article_to_store`
+-- Table structure for table `oc_article_to_store`
 --
 
 CREATE TABLE `oc_article_to_store` (
@@ -397,7 +397,7 @@ CREATE TABLE `oc_article_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_article_to_store`
+-- Dumping data for table `oc_article_to_store`
 --
 
 INSERT INTO `oc_article_to_store` (`article_id`, `store_id`) VALUES
@@ -409,7 +409,7 @@ INSERT INTO `oc_article_to_store` (`article_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_attribute`
+-- Table structure for table `oc_attribute`
 --
 
 CREATE TABLE `oc_attribute` (
@@ -419,26 +419,16 @@ CREATE TABLE `oc_attribute` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_attribute`
+-- Dumping data for table `oc_attribute`
 --
 
 INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) VALUES
-(1, 6, 1),
-(2, 6, 5),
-(3, 6, 3),
-(4, 3, 1),
-(5, 3, 2),
-(6, 3, 3),
-(7, 3, 4),
-(8, 3, 5),
-(9, 3, 6),
-(10, 3, 7),
-(11, 3, 8);
+(12, 7, 1);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_attribute_description`
+-- Table structure for table `oc_attribute_description`
 --
 
 CREATE TABLE `oc_attribute_description` (
@@ -448,26 +438,16 @@ CREATE TABLE `oc_attribute_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_attribute_description`
+-- Dumping data for table `oc_attribute_description`
 --
 
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
-(1, 1, 'Description'),
-(2, 1, 'No. of Cores'),
-(4, 1, 'test 1'),
-(5, 1, 'test 2'),
-(6, 1, 'test 3'),
-(7, 1, 'test 4'),
-(8, 1, 'test 5'),
-(9, 1, 'test 6'),
-(10, 1, 'test 7'),
-(11, 1, 'test 8'),
-(3, 1, 'Clockspeed');
+(12, 1, 'Примечание');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_attribute_group`
+-- Table structure for table `oc_attribute_group`
 --
 
 CREATE TABLE `oc_attribute_group` (
@@ -476,19 +456,16 @@ CREATE TABLE `oc_attribute_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_attribute_group`
+-- Dumping data for table `oc_attribute_group`
 --
 
 INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
-(3, 2),
-(4, 1),
-(5, 3),
-(6, 4);
+(7, 1);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_attribute_group_description`
+-- Table structure for table `oc_attribute_group_description`
 --
 
 CREATE TABLE `oc_attribute_group_description` (
@@ -498,19 +475,16 @@ CREATE TABLE `oc_attribute_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_attribute_group_description`
+-- Dumping data for table `oc_attribute_group_description`
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
-(3, 1, 'Memory'),
-(4, 1, 'Technical'),
-(5, 1, 'Motherboard'),
-(6, 1, 'Processor');
+(7, 1, 'Основные');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_banner`
+-- Table structure for table `oc_banner`
 --
 
 CREATE TABLE `oc_banner` (
@@ -520,7 +494,7 @@ CREATE TABLE `oc_banner` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_banner`
+-- Dumping data for table `oc_banner`
 --
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
@@ -531,7 +505,7 @@ INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_banner_image`
+-- Table structure for table `oc_banner_image`
 --
 
 CREATE TABLE `oc_banner_image` (
@@ -545,7 +519,7 @@ CREATE TABLE `oc_banner_image` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_banner_image`
+-- Dumping data for table `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
@@ -567,7 +541,7 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_benefit`
+-- Table structure for table `oc_benefit`
 --
 
 CREATE TABLE `oc_benefit` (
@@ -580,7 +554,7 @@ CREATE TABLE `oc_benefit` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_benefit`
+-- Dumping data for table `oc_benefit`
 --
 
 INSERT INTO `oc_benefit` (`benefit_id`, `link`, `status`, `type`, `image`, `name`) VALUES
@@ -593,7 +567,7 @@ INSERT INTO `oc_benefit` (`benefit_id`, `link`, `status`, `type`, `image`, `name
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_benefit_description`
+-- Table structure for table `oc_benefit_description`
 --
 
 CREATE TABLE `oc_benefit_description` (
@@ -603,7 +577,7 @@ CREATE TABLE `oc_benefit_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_benefit_description`
+-- Dumping data for table `oc_benefit_description`
 --
 
 INSERT INTO `oc_benefit_description` (`benefit_id`, `language_id`, `description`) VALUES
@@ -621,7 +595,7 @@ INSERT INTO `oc_benefit_description` (`benefit_id`, `language_id`, `description`
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_blog_category`
+-- Table structure for table `oc_blog_category`
 --
 
 CREATE TABLE `oc_blog_category` (
@@ -638,7 +612,7 @@ CREATE TABLE `oc_blog_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_blog_category`
+-- Dumping data for table `oc_blog_category`
 --
 
 INSERT INTO `oc_blog_category` (`blog_category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `noindex`, `date_added`, `date_modified`) VALUES
@@ -649,7 +623,7 @@ INSERT INTO `oc_blog_category` (`blog_category_id`, `image`, `parent_id`, `top`,
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_blog_category_description`
+-- Table structure for table `oc_blog_category_description`
 --
 
 CREATE TABLE `oc_blog_category_description` (
@@ -664,7 +638,7 @@ CREATE TABLE `oc_blog_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_blog_category_description`
+-- Dumping data for table `oc_blog_category_description`
 --
 
 INSERT INTO `oc_blog_category_description` (`blog_category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
@@ -675,7 +649,7 @@ INSERT INTO `oc_blog_category_description` (`blog_category_id`, `language_id`, `
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_blog_category_path`
+-- Table structure for table `oc_blog_category_path`
 --
 
 CREATE TABLE `oc_blog_category_path` (
@@ -685,7 +659,7 @@ CREATE TABLE `oc_blog_category_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_blog_category_path`
+-- Dumping data for table `oc_blog_category_path`
 --
 
 INSERT INTO `oc_blog_category_path` (`blog_category_id`, `path_id`, `level`) VALUES
@@ -697,7 +671,7 @@ INSERT INTO `oc_blog_category_path` (`blog_category_id`, `path_id`, `level`) VAL
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_blog_category_to_layout`
+-- Table structure for table `oc_blog_category_to_layout`
 --
 
 CREATE TABLE `oc_blog_category_to_layout` (
@@ -707,7 +681,7 @@ CREATE TABLE `oc_blog_category_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_blog_category_to_layout`
+-- Dumping data for table `oc_blog_category_to_layout`
 --
 
 INSERT INTO `oc_blog_category_to_layout` (`blog_category_id`, `store_id`, `layout_id`) VALUES
@@ -718,7 +692,7 @@ INSERT INTO `oc_blog_category_to_layout` (`blog_category_id`, `store_id`, `layou
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_blog_category_to_store`
+-- Table structure for table `oc_blog_category_to_store`
 --
 
 CREATE TABLE `oc_blog_category_to_store` (
@@ -727,7 +701,7 @@ CREATE TABLE `oc_blog_category_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_blog_category_to_store`
+-- Dumping data for table `oc_blog_category_to_store`
 --
 
 INSERT INTO `oc_blog_category_to_store` (`blog_category_id`, `store_id`) VALUES
@@ -738,7 +712,7 @@ INSERT INTO `oc_blog_category_to_store` (`blog_category_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_cart`
+-- Table structure for table `oc_cart`
 --
 
 CREATE TABLE `oc_cart` (
@@ -753,17 +727,10 @@ CREATE TABLE `oc_cart` (
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_cart`
---
-
-INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
-(2, 0, 0, '1ecrcfn6ssq9lhgf1pu6g1j1j6', 43, 0, '[]', 1, '2019-01-09 20:40:07');
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category`
+-- Table structure for table `oc_category`
 --
 
 CREATE TABLE `oc_category` (
@@ -780,53 +747,24 @@ CREATE TABLE `oc_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_category`
+-- Dumping data for table `oc_category`
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `noindex`, `date_added`, `date_modified`) VALUES
-(25, '', 0, 1, 1, 3, 1, 1, '2009-01-31 01:04:25', '2011-05-30 12:14:55'),
-(27, '', 20, 0, 0, 2, 1, 1, '2009-01-31 01:55:34', '2010-08-22 06:32:15'),
-(20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, 1, '2009-01-05 21:49:43', '2011-07-16 02:14:42'),
-(24, '', 0, 1, 1, 5, 1, 1, '2009-01-20 02:36:26', '2011-05-30 12:15:18'),
-(18, 'catalog/demo/hp_2.jpg', 0, 1, 0, 2, 1, 1, '2009-01-05 21:49:15', '2011-05-30 12:13:55'),
-(17, '', 0, 1, 1, 4, 1, 1, '2009-01-03 21:08:57', '2011-05-30 12:15:11'),
-(28, '', 25, 0, 0, 1, 1, 1, '2009-02-02 13:11:12', '2010-08-22 06:32:46'),
-(26, '', 20, 0, 0, 1, 1, 1, '2009-01-31 01:55:14', '2010-08-22 06:31:45'),
-(29, '', 25, 0, 0, 1, 1, 1, '2009-02-02 13:11:37', '2010-08-22 06:32:39'),
-(30, '', 25, 0, 0, 1, 1, 1, '2009-02-02 13:11:59', '2010-08-22 06:33:00'),
-(31, '', 25, 0, 0, 1, 1, 1, '2009-02-03 14:17:24', '2010-08-22 06:33:06'),
-(32, '', 25, 0, 0, 1, 1, 1, '2009-02-03 14:17:34', '2010-08-22 06:33:12'),
-(33, '', 0, 1, 1, 6, 1, 1, '2009-02-03 14:17:55', '2011-05-30 12:15:25'),
-(34, 'catalog/demo/ipod_touch_4.jpg', 0, 1, 4, 7, 1, 1, '2009-02-03 14:18:11', '2011-05-30 12:15:31'),
-(35, '', 28, 0, 0, 0, 1, 1, '2010-09-17 10:06:48', '2010-09-18 14:02:42'),
-(36, '', 28, 0, 0, 0, 1, 1, '2010-09-17 10:07:13', '2010-09-18 14:02:55'),
-(37, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:03:39', '2011-04-22 01:55:08'),
-(38, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:03:51', '2010-09-18 14:03:51'),
-(39, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:04:17', '2011-04-22 01:55:20'),
-(40, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:05:36', '2010-09-18 14:05:36'),
-(41, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:05:49', '2011-04-22 01:55:30'),
-(42, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:06:34', '2010-11-07 20:31:04'),
-(43, '', 34, 0, 0, 0, 1, 1, '2010-09-18 14:06:49', '2011-04-22 01:55:40'),
-(44, '', 34, 0, 0, 0, 1, 1, '2010-09-21 15:39:21', '2010-11-07 20:30:55'),
-(45, '', 18, 0, 0, 0, 1, 1, '2010-09-24 18:29:16', '2011-04-26 08:52:11'),
-(46, '', 18, 0, 0, 0, 1, 1, '2010-09-24 18:29:31', '2011-04-26 08:52:23'),
-(47, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:13:16', '2010-11-07 11:13:16'),
-(48, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:13:33', '2010-11-07 11:13:33'),
-(49, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:14:04', '2010-11-07 11:14:04'),
-(50, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:14:23', '2011-04-22 01:16:01'),
-(51, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:14:38', '2011-04-22 01:16:13'),
-(52, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:16:09', '2011-04-22 01:54:57'),
-(53, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:28:53', '2011-04-22 01:14:36'),
-(54, '', 34, 0, 0, 0, 1, 1, '2010-11-07 11:29:16', '2011-04-22 01:16:50'),
-(55, '', 34, 0, 0, 0, 1, 1, '2010-11-08 10:31:32', '2010-11-08 10:31:32'),
-(56, '', 34, 0, 0, 0, 1, 1, '2010-11-08 10:31:50', '2011-04-22 01:16:37'),
-(57, '', 0, 1, 1, 3, 1, 1, '2011-04-26 08:53:16', '2011-05-30 12:15:05'),
-(58, '', 52, 0, 0, 0, 1, 1, '2011-05-08 13:44:16', '2011-05-08 13:44:16');
+(1, 'data/product/categories/termopara.net-01.jpg', 0, 0, 1, 10, 1, 1, '2013-09-17 11:57:01', '2015-09-16 12:33:42'),
+(2, 'data/product/categories/termopara.net-02.jpg', 0, 0, 1, 20, 1, 1, '2013-09-17 10:51:42', '2015-09-16 13:27:25'),
+(3, 'data/product/categories/termopara.net-03.jpg', 0, 0, 1, 30, 1, 1, '2013-09-19 14:42:38', '2015-09-17 09:39:45'),
+(4, 'data/product/categories/termopara.net-04.jpg', 0, 0, 1, 40, 1, 1, '2009-01-05 21:49:15', '2015-09-16 12:34:05'),
+(5, 'data/product/categories/termopara.net-06.jpg', 0, 0, 1, 60, 1, 1, '2009-01-05 21:49:43', '2015-09-16 12:34:30'),
+(6, 'data/product/categories/termopara.net-05.jpg', 0, 0, 1, 50, 1, 1, '2015-06-23 00:58:27', '2015-09-16 12:34:19'),
+(7, '', 0, 0, 1, 100, 0, 1, '2015-09-16 13:32:33', '2015-09-16 13:36:19'),
+(8, '', 0, 0, 1, 100, 0, 1, '2015-09-16 13:43:36', '2015-09-16 13:43:36'),
+(9, '', 0, 0, 1, 100, 0, 1, '2015-09-16 13:44:06', '2015-09-16 13:44:06');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category_description`
+-- Table structure for table `oc_category_description`
 --
 
 CREATE TABLE `oc_category_description` (
@@ -842,53 +780,24 @@ CREATE TABLE `oc_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_category_description`
+-- Dumping data for table `oc_category_description`
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `description_bottom`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
-(28, 1, 'Monitors', '', '', 'Monitors', '', '', ''),
-(33, 1, 'Cameras', '', '', 'Cameras', '', '', ''),
-(32, 1, 'Web Cameras', '', '', 'Web Cameras', '', '', ''),
-(31, 1, 'Scanners', '', '', 'Scanners', '', '', ''),
-(30, 1, 'Printers', '', '', 'Printers', '', '', ''),
-(29, 1, 'Mice and Trackballs', '', '', 'Mice and Trackballs', '', '', ''),
-(27, 1, 'Mac', '', '', 'Mac', '', '', ''),
-(26, 1, 'PC', '', '', 'PC', '', '', ''),
-(17, 1, 'Software', '', '', 'Software', '', '', ''),
-(25, 1, 'Components', '', '', 'Components', '', '', ''),
-(24, 1, 'Phones &amp; PDAs', '', '', 'Phones &amp; PDAs', '', '', ''),
-(20, 1, 'Desktops', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', '', 'Desktops', 'Example of category description', '', ''),
-(35, 1, 'test 1', '', '', 'test 1', '', '', ''),
-(36, 1, 'test 2', '', '', 'test 2', '', '', ''),
-(37, 1, 'test 5', '', '', 'test 5', '', '', ''),
-(38, 1, 'test 4', '', '', 'test 4', '', '', ''),
-(39, 1, 'test 6', '', '', 'test 6', '', '', ''),
-(40, 1, 'test 7', '', '', 'test 7', '', '', ''),
-(41, 1, 'test 8', '', '', 'test 8', '', '', ''),
-(42, 1, 'test 9', '', '', 'test 9', '', '', ''),
-(43, 1, 'test 11', '', '', 'test 11', '', '', ''),
-(34, 1, 'MP3 Players', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', 'MP3 Players', '', '', ''),
-(18, 1, 'Laptops &amp; Notebooks', '&lt;p&gt;\r\n	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.&lt;/p&gt;\r\n', '', 'Laptops &amp; Notebooks', '', '', ''),
-(44, 1, 'test 12', '', '', 'test 12', '', '', ''),
-(45, 1, 'Windows', '', '', 'Windows', '', '', ''),
-(46, 1, 'Macs', '', '', 'Macs', '', '', ''),
-(47, 1, 'test 15', '', '', 'test 15', '', '', ''),
-(48, 1, 'test 16', '', '', 'test 16', '', '', ''),
-(49, 1, 'test 17', '', '', 'test 17', '', '', ''),
-(50, 1, 'test 18', '', '', 'test 18', '', '', ''),
-(51, 1, 'test 19', '', '', 'test 19', '', '', ''),
-(52, 1, 'test 20', '', '', 'test 20', '', '', ''),
-(53, 1, 'test 21', '', '', 'test 21', '', '', ''),
-(54, 1, 'test 22', '', '', 'test 22', '', '', ''),
-(55, 1, 'test 23', '', '', 'test 23', '', '', ''),
-(56, 1, 'test 24', '', '', 'test 24', '', '', ''),
-(57, 1, 'Tablets', '', '', 'Tablets', '', '', ''),
-(58, 1, 'test 25', '', '', 'test 25', '', '', '');
+(1, 1, 'Термопары для котлов', '&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; При ремонте газового котла часто возникает необходимость в замене термопары. Термопара представляет собой устройство контроля пламени, которое управляет электромагнитным клапаном подачи газа на горелку. Без нее нормальная работа газового котла невозможна.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; В нашем интернет-магазине представлен большой ассортимент термопар для любых видов автоматик, применяемых в различных моделях газовых котлов, например таких как АТОН, Вулкан, Колви, Маяк, РОСС, Житомир, Гелиос, Термо-бар, Проскуров, Атем, Данко, Термо, Дани, Termoteka Hotherm, Велгас, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Цены у нас всегда доступны. Купить термопару для газового котла очень просто &amp;ndash; оформляйте заказ на сайте или звоните нам по телефону. Вашу покупку доставим в любой город Украины.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n', '', 'Термопары для котлов', 'Купить термопары для газовых котлов и конвекторов по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'термопара, газовый котел, газовый конвектор, газовая автоматика, газовый клапан, пилотная горелка', ''),
+(2, 1, 'Термопары для колонок', '&lt;span style=&quot;font-size:14px&quot;&gt;Сейчас имеются в наличии термопары для газовых колонок таких торговых марок как:&lt;br /&gt;\n&lt;strong&gt;Beretta&lt;/strong&gt; (Беретта), &lt;strong&gt;Demrad&lt;/strong&gt; (Демрад), &lt;strong&gt;Junkers&lt;/strong&gt; (Юнкерс), &lt;strong&gt;Bosh&lt;/strong&gt; (Бош), &lt;strong&gt;Termet&lt;/strong&gt; (Термет), &lt;strong&gt;Vaillant&lt;/strong&gt; (Вайлант)&lt;br /&gt;\n&lt;br /&gt;\nНе нашли термопару для вашей модели? Позвоните нам, и мы поможем подобрать или изготовим в короткий срок.&lt;/span&gt;&lt;br /&gt;\n&amp;nbsp;', '', 'Термопары для колонок', 'Купить термопары для газовых колонок по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'термопара, газовая колонка, бойлер, водогрейка', ''),
+(3, 1, 'Термопары для газовых плит', '&lt;span style=&quot;font-size:14px&quot;&gt;В нашем магазине вы можете подобрать термопару для газовых плит и духовок таких производителей как:&lt;br /&gt;\n&lt;strong&gt;Ariston &lt;/strong&gt;(Аристон), &lt;strong&gt;Indesit &lt;/strong&gt;(Индезит), &lt;strong&gt;Bosh &lt;/strong&gt;(Бош), &lt;strong&gt;Eleсtrolux &lt;/strong&gt;(Электролюкс), &lt;strong&gt;Gorenje &lt;/strong&gt;(Горенье), &lt;strong&gt;Ardo &lt;/strong&gt;(Ардо), &lt;strong&gt;Zanussi &lt;/strong&gt;(Занусси), &lt;strong&gt;Gefest &lt;/strong&gt;(Гефест), &lt;strong&gt;Beko &lt;/strong&gt;(Беко), &lt;strong&gt;Orion &lt;/strong&gt;(Орион)&lt;br /&gt;\n&lt;br /&gt;\nНе нашли термопару для вашей духовки? Позвоните нам - мы поможем подобрать или изготовим в короткий срок.&lt;/span&gt;', '', 'Термопары для газовых плит', 'Купить термопары для газовых плит, духовок, варочных поверхностей по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'термопара, газовая плита, духовка, варочная поверхность, варочная панель, конфорка, газконтроль', ''),
+(4, 1, 'Газоподводные трубки', '&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; При ремонте газового котла часто возникает необходимость в замене термопары. Термопара представляет собой устройство контроля пламени, которое управляет электромагнитным клапаном подачи газа на горелку. Без нее нормальная работа газового котла невозможна.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; В нашем интернет-магазине представлен большой ассортимент термопар для любых видов автоматик, применяемых в различных моделях газовых котлов, например таких как Атон, Колви, Маяк, Росс, Термобар, Проскурив, Атем, Данко и др.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Цены у нас всегда доступны. Купить термопару для газового котла очень просто &amp;ndash; оформляйте заказ на сайте или звоните нам по телефону. Вашу покупку доставим в любой город Украины.&lt;/p&gt;\n', '', 'Газопроводные трубки', 'Купить трубки для подачи газа по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'медная трубка, трубка запальника, импульсная трубка, трубка подачи газа, запальная горелка, пилотная горелка', ''),
+(5, 1, 'Другие запчасти', '&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Качественные запчасти для газового отопления обеспечивают длительную бесперебойную работу котлов, конвекторов, колонок и газовых плит в вашем доме, квартире или на производстве.&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; В нашем Интернет-магазине вы сможете подобрать необходимые вам запчасти по самой выгодной стоимости.&lt;/p&gt;\n\n&lt;p&gt;Цены у нас всегда доступны. Купить нужную запчасть очень просто &amp;ndash; оформляйте заказ на сайте или звоните нам по телефону. Вашу покупку доставим в любой город Украины.&lt;/p&gt;\n', '', 'Другие запчасти', 'Купить запчасти для газовых котлов, конвекторов, колонок и плит по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'клапан, мембрана, стакан, терморегулятор, биметаллическая пластина, датчик', ''),
+(6, 1, 'Крепежные комплектующие', '', '', 'Крепёжные запчасти', 'Купить крепежные комплектующие для газового оборудования по цене производителя. Доставка по Украине. Гарантия качества. Специальное предложение оптовикам.', 'гайки, втулки, ниппели, инжекторы, форсунки, сопла, двоякое крепление, заглушки', ''),
+(7, 1, 'Для котлов', '', '', 'Запчасти для котлов', '', '', ''),
+(8, 1, 'Для колонок', '', '', 'Запчасти для колонок', '', '', ''),
+(9, 1, 'Для газплит', '', '', 'Запчасти для газовых плит', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category_filter`
+-- Table structure for table `oc_category_filter`
 --
 
 CREATE TABLE `oc_category_filter` (
@@ -899,7 +808,7 @@ CREATE TABLE `oc_category_filter` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category_path`
+-- Table structure for table `oc_category_path`
 --
 
 CREATE TABLE `oc_category_path` (
@@ -909,86 +818,24 @@ CREATE TABLE `oc_category_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_category_path`
+-- Dumping data for table `oc_category_path`
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
-(25, 25, 0),
-(28, 25, 0),
-(28, 28, 1),
-(35, 25, 0),
-(35, 28, 1),
-(35, 35, 2),
-(36, 25, 0),
-(36, 28, 1),
-(36, 36, 2),
-(29, 25, 0),
-(29, 29, 1),
-(30, 25, 0),
-(30, 30, 1),
-(31, 25, 0),
-(31, 31, 1),
-(32, 25, 0),
-(32, 32, 1),
-(20, 20, 0),
-(27, 20, 0),
-(27, 27, 1),
-(26, 20, 0),
-(26, 26, 1),
-(24, 24, 0),
-(18, 18, 0),
-(45, 18, 0),
-(45, 45, 1),
-(46, 18, 0),
-(46, 46, 1),
-(17, 17, 0),
-(33, 33, 0),
-(34, 34, 0),
-(37, 34, 0),
-(37, 37, 1),
-(38, 34, 0),
-(38, 38, 1),
-(39, 34, 0),
-(39, 39, 1),
-(40, 34, 0),
-(40, 40, 1),
-(41, 34, 0),
-(41, 41, 1),
-(42, 34, 0),
-(42, 42, 1),
-(43, 34, 0),
-(43, 43, 1),
-(44, 34, 0),
-(44, 44, 1),
-(47, 34, 0),
-(47, 47, 1),
-(48, 34, 0),
-(48, 48, 1),
-(49, 34, 0),
-(49, 49, 1),
-(50, 34, 0),
-(50, 50, 1),
-(51, 34, 0),
-(51, 51, 1),
-(52, 34, 0),
-(52, 52, 1),
-(58, 34, 0),
-(58, 52, 1),
-(58, 58, 2),
-(53, 34, 0),
-(53, 53, 1),
-(54, 34, 0),
-(54, 54, 1),
-(55, 34, 0),
-(55, 55, 1),
-(56, 34, 0),
-(56, 56, 1),
-(57, 57, 0);
+(1, 1, 0),
+(2, 2, 0),
+(3, 3, 0),
+(4, 4, 0),
+(5, 5, 0),
+(6, 6, 0),
+(7, 7, 0),
+(8, 8, 0),
+(9, 9, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category_to_layout`
+-- Table structure for table `oc_category_to_layout`
 --
 
 CREATE TABLE `oc_category_to_layout` (
@@ -1000,7 +847,7 @@ CREATE TABLE `oc_category_to_layout` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_category_to_store`
+-- Table structure for table `oc_category_to_store`
 --
 
 CREATE TABLE `oc_category_to_store` (
@@ -1009,53 +856,24 @@ CREATE TABLE `oc_category_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_category_to_store`
+-- Dumping data for table `oc_category_to_store`
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(17, 0),
-(18, 0),
-(20, 0),
-(24, 0),
-(25, 0),
-(26, 0),
-(27, 0),
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(37, 0),
-(38, 0),
-(39, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0),
-(50, 0),
-(51, 0),
-(52, 0),
-(53, 0),
-(54, 0),
-(55, 0),
-(56, 0),
-(57, 0),
-(58, 0);
+(1, 0),
+(2, 0),
+(3, 0),
+(4, 0),
+(5, 0),
+(6, 0),
+(7, 0),
+(8, 0),
+(9, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_country`
+-- Table structure for table `oc_country`
 --
 
 CREATE TABLE `oc_country` (
@@ -1069,7 +887,7 @@ CREATE TABLE `oc_country` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_country`
+-- Dumping data for table `oc_country`
 --
 
 INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `address_format`, `postcode_required`, `status`) VALUES
@@ -1330,7 +1148,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_coupon`
+-- Table structure for table `oc_coupon`
 --
 
 CREATE TABLE `oc_coupon` (
@@ -1351,7 +1169,7 @@ CREATE TABLE `oc_coupon` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_coupon`
+-- Dumping data for table `oc_coupon`
 --
 
 INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logged`, `shipping`, `total`, `date_start`, `date_end`, `uses_total`, `uses_customer`, `status`, `date_added`) VALUES
@@ -1362,7 +1180,7 @@ INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logge
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_coupon_category`
+-- Table structure for table `oc_coupon_category`
 --
 
 CREATE TABLE `oc_coupon_category` (
@@ -1373,7 +1191,7 @@ CREATE TABLE `oc_coupon_category` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_coupon_history`
+-- Table structure for table `oc_coupon_history`
 --
 
 CREATE TABLE `oc_coupon_history` (
@@ -1388,7 +1206,7 @@ CREATE TABLE `oc_coupon_history` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_coupon_product`
+-- Table structure for table `oc_coupon_product`
 --
 
 CREATE TABLE `oc_coupon_product` (
@@ -1400,7 +1218,7 @@ CREATE TABLE `oc_coupon_product` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_currency`
+-- Table structure for table `oc_currency`
 --
 
 CREATE TABLE `oc_currency` (
@@ -1416,7 +1234,7 @@ CREATE TABLE `oc_currency` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_currency`
+-- Dumping data for table `oc_currency`
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
@@ -1425,7 +1243,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer`
+-- Table structure for table `oc_customer`
 --
 
 CREATE TABLE `oc_customer` (
@@ -1457,7 +1275,7 @@ CREATE TABLE `oc_customer` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_activity`
+-- Table structure for table `oc_customer_activity`
 --
 
 CREATE TABLE `oc_customer_activity` (
@@ -1472,7 +1290,7 @@ CREATE TABLE `oc_customer_activity` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_group`
+-- Table structure for table `oc_customer_group`
 --
 
 CREATE TABLE `oc_customer_group` (
@@ -1482,7 +1300,7 @@ CREATE TABLE `oc_customer_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_customer_group`
+-- Dumping data for table `oc_customer_group`
 --
 
 INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) VALUES
@@ -1491,7 +1309,7 @@ INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_group_description`
+-- Table structure for table `oc_customer_group_description`
 --
 
 CREATE TABLE `oc_customer_group_description` (
@@ -1502,7 +1320,7 @@ CREATE TABLE `oc_customer_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_customer_group_description`
+-- Dumping data for table `oc_customer_group_description`
 --
 
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
@@ -1511,7 +1329,7 @@ INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`,
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_history`
+-- Table structure for table `oc_customer_history`
 --
 
 CREATE TABLE `oc_customer_history` (
@@ -1524,7 +1342,7 @@ CREATE TABLE `oc_customer_history` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_ip`
+-- Table structure for table `oc_customer_ip`
 --
 
 CREATE TABLE `oc_customer_ip` (
@@ -1537,7 +1355,7 @@ CREATE TABLE `oc_customer_ip` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_login`
+-- Table structure for table `oc_customer_login`
 --
 
 CREATE TABLE `oc_customer_login` (
@@ -1552,7 +1370,7 @@ CREATE TABLE `oc_customer_login` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_online`
+-- Table structure for table `oc_customer_online`
 --
 
 CREATE TABLE `oc_customer_online` (
@@ -1566,7 +1384,7 @@ CREATE TABLE `oc_customer_online` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_reward`
+-- Table structure for table `oc_customer_reward`
 --
 
 CREATE TABLE `oc_customer_reward` (
@@ -1581,7 +1399,7 @@ CREATE TABLE `oc_customer_reward` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_search`
+-- Table structure for table `oc_customer_search`
 --
 
 CREATE TABLE `oc_customer_search` (
@@ -1601,7 +1419,7 @@ CREATE TABLE `oc_customer_search` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_transaction`
+-- Table structure for table `oc_customer_transaction`
 --
 
 CREATE TABLE `oc_customer_transaction` (
@@ -1616,7 +1434,7 @@ CREATE TABLE `oc_customer_transaction` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_customer_wishlist`
+-- Table structure for table `oc_customer_wishlist`
 --
 
 CREATE TABLE `oc_customer_wishlist` (
@@ -1628,7 +1446,7 @@ CREATE TABLE `oc_customer_wishlist` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu`
+-- Table structure for table `oc_custommenu`
 --
 
 CREATE TABLE `oc_custommenu` (
@@ -1640,7 +1458,7 @@ CREATE TABLE `oc_custommenu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu`
+-- Dumping data for table `oc_custommenu`
 --
 
 INSERT INTO `oc_custommenu` (`custommenu_id`, `sort_order`, `columns`, `custommenu_type`, `status`) VALUES
@@ -1671,7 +1489,7 @@ INSERT INTO `oc_custommenu` (`custommenu_id`, `sort_order`, `columns`, `customme
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu_child`
+-- Table structure for table `oc_custommenu_child`
 --
 
 CREATE TABLE `oc_custommenu_child` (
@@ -1683,7 +1501,7 @@ CREATE TABLE `oc_custommenu_child` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu_child`
+-- Dumping data for table `oc_custommenu_child`
 --
 
 INSERT INTO `oc_custommenu_child` (`custommenu_child_id`, `custommenu_id`, `sort_order`, `custommenu_type`, `status`) VALUES
@@ -1727,7 +1545,7 @@ INSERT INTO `oc_custommenu_child` (`custommenu_child_id`, `custommenu_id`, `sort
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu_child_description`
+-- Table structure for table `oc_custommenu_child_description`
 --
 
 CREATE TABLE `oc_custommenu_child_description` (
@@ -1739,7 +1557,7 @@ CREATE TABLE `oc_custommenu_child_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu_child_description`
+-- Dumping data for table `oc_custommenu_child_description`
 --
 
 INSERT INTO `oc_custommenu_child_description` (`custommenu_child_id`, `custommenu_id`, `name`, `link`, `language_id`) VALUES
@@ -1783,7 +1601,7 @@ INSERT INTO `oc_custommenu_child_description` (`custommenu_child_id`, `custommen
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu_child_to_store`
+-- Table structure for table `oc_custommenu_child_to_store`
 --
 
 CREATE TABLE `oc_custommenu_child_to_store` (
@@ -1792,7 +1610,7 @@ CREATE TABLE `oc_custommenu_child_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu_child_to_store`
+-- Dumping data for table `oc_custommenu_child_to_store`
 --
 
 INSERT INTO `oc_custommenu_child_to_store` (`custommenu_child_id`, `store_id`) VALUES
@@ -1837,7 +1655,7 @@ INSERT INTO `oc_custommenu_child_to_store` (`custommenu_child_id`, `store_id`) V
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu_description`
+-- Table structure for table `oc_custommenu_description`
 --
 
 CREATE TABLE `oc_custommenu_description` (
@@ -1848,7 +1666,7 @@ CREATE TABLE `oc_custommenu_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu_description`
+-- Dumping data for table `oc_custommenu_description`
 --
 
 INSERT INTO `oc_custommenu_description` (`custommenu_id`, `name`, `link`, `language_id`) VALUES
@@ -1871,7 +1689,7 @@ INSERT INTO `oc_custommenu_description` (`custommenu_id`, `name`, `link`, `langu
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custommenu_to_store`
+-- Table structure for table `oc_custommenu_to_store`
 --
 
 CREATE TABLE `oc_custommenu_to_store` (
@@ -1880,7 +1698,7 @@ CREATE TABLE `oc_custommenu_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_custommenu_to_store`
+-- Dumping data for table `oc_custommenu_to_store`
 --
 
 INSERT INTO `oc_custommenu_to_store` (`custommenu_id`, `store_id`) VALUES
@@ -1910,7 +1728,7 @@ INSERT INTO `oc_custommenu_to_store` (`custommenu_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custom_field`
+-- Table structure for table `oc_custom_field`
 --
 
 CREATE TABLE `oc_custom_field` (
@@ -1926,7 +1744,7 @@ CREATE TABLE `oc_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custom_field_customer_group`
+-- Table structure for table `oc_custom_field_customer_group`
 --
 
 CREATE TABLE `oc_custom_field_customer_group` (
@@ -1938,7 +1756,7 @@ CREATE TABLE `oc_custom_field_customer_group` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custom_field_description`
+-- Table structure for table `oc_custom_field_description`
 --
 
 CREATE TABLE `oc_custom_field_description` (
@@ -1950,7 +1768,7 @@ CREATE TABLE `oc_custom_field_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custom_field_value`
+-- Table structure for table `oc_custom_field_value`
 --
 
 CREATE TABLE `oc_custom_field_value` (
@@ -1962,7 +1780,7 @@ CREATE TABLE `oc_custom_field_value` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_custom_field_value_description`
+-- Table structure for table `oc_custom_field_value_description`
 --
 
 CREATE TABLE `oc_custom_field_value_description` (
@@ -1975,7 +1793,7 @@ CREATE TABLE `oc_custom_field_value_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_download`
+-- Table structure for table `oc_download`
 --
 
 CREATE TABLE `oc_download` (
@@ -1988,7 +1806,7 @@ CREATE TABLE `oc_download` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_download_description`
+-- Table structure for table `oc_download_description`
 --
 
 CREATE TABLE `oc_download_description` (
@@ -2000,7 +1818,7 @@ CREATE TABLE `oc_download_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_event`
+-- Table structure for table `oc_event`
 --
 
 CREATE TABLE `oc_event` (
@@ -2013,7 +1831,7 @@ CREATE TABLE `oc_event` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_event`
+-- Dumping data for table `oc_event`
 --
 
 INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `date_added`) VALUES
@@ -2022,7 +1840,7 @@ INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `date
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_extension`
+-- Table structure for table `oc_extension`
 --
 
 CREATE TABLE `oc_extension` (
@@ -2032,7 +1850,7 @@ CREATE TABLE `oc_extension` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_extension`
+-- Dumping data for table `oc_extension`
 --
 
 INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
@@ -2077,7 +1895,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_filter`
+-- Table structure for table `oc_filter`
 --
 
 CREATE TABLE `oc_filter` (
@@ -2089,7 +1907,7 @@ CREATE TABLE `oc_filter` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_filter_description`
+-- Table structure for table `oc_filter_description`
 --
 
 CREATE TABLE `oc_filter_description` (
@@ -2102,7 +1920,7 @@ CREATE TABLE `oc_filter_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_filter_group`
+-- Table structure for table `oc_filter_group`
 --
 
 CREATE TABLE `oc_filter_group` (
@@ -2113,7 +1931,7 @@ CREATE TABLE `oc_filter_group` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_filter_group_description`
+-- Table structure for table `oc_filter_group_description`
 --
 
 CREATE TABLE `oc_filter_group_description` (
@@ -2125,7 +1943,7 @@ CREATE TABLE `oc_filter_group_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_geo_zone`
+-- Table structure for table `oc_geo_zone`
 --
 
 CREATE TABLE `oc_geo_zone` (
@@ -2137,7 +1955,7 @@ CREATE TABLE `oc_geo_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_geo_zone`
+-- Dumping data for table `oc_geo_zone`
 --
 
 INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`, `date_added`) VALUES
@@ -2147,7 +1965,7 @@ INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_information`
+-- Table structure for table `oc_information`
 --
 
 CREATE TABLE `oc_information` (
@@ -2159,7 +1977,7 @@ CREATE TABLE `oc_information` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_information`
+-- Dumping data for table `oc_information`
 --
 
 INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`, `noindex`) VALUES
@@ -2171,7 +1989,7 @@ INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_information_description`
+-- Table structure for table `oc_information_description`
 --
 
 CREATE TABLE `oc_information_description` (
@@ -2186,7 +2004,7 @@ CREATE TABLE `oc_information_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_information_description`
+-- Dumping data for table `oc_information_description`
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
@@ -2198,7 +2016,7 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_information_to_layout`
+-- Table structure for table `oc_information_to_layout`
 --
 
 CREATE TABLE `oc_information_to_layout` (
@@ -2210,7 +2028,7 @@ CREATE TABLE `oc_information_to_layout` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_information_to_store`
+-- Table structure for table `oc_information_to_store`
 --
 
 CREATE TABLE `oc_information_to_store` (
@@ -2219,7 +2037,7 @@ CREATE TABLE `oc_information_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_information_to_store`
+-- Dumping data for table `oc_information_to_store`
 --
 
 INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
@@ -2231,7 +2049,7 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_language`
+-- Table structure for table `oc_language`
 --
 
 CREATE TABLE `oc_language` (
@@ -2246,7 +2064,7 @@ CREATE TABLE `oc_language` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_language`
+-- Dumping data for table `oc_language`
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
@@ -2255,7 +2073,7 @@ INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `di
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_layout`
+-- Table structure for table `oc_layout`
 --
 
 CREATE TABLE `oc_layout` (
@@ -2264,7 +2082,7 @@ CREATE TABLE `oc_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_layout`
+-- Dumping data for table `oc_layout`
 --
 
 INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
@@ -2289,7 +2107,7 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_layout_module`
+-- Table structure for table `oc_layout_module`
 --
 
 CREATE TABLE `oc_layout_module` (
@@ -2301,7 +2119,7 @@ CREATE TABLE `oc_layout_module` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_layout_module`
+-- Dumping data for table `oc_layout_module`
 --
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
@@ -2330,7 +2148,7 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_layout_route`
+-- Table structure for table `oc_layout_route`
 --
 
 CREATE TABLE `oc_layout_route` (
@@ -2341,7 +2159,7 @@ CREATE TABLE `oc_layout_route` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_layout_route`
+-- Dumping data for table `oc_layout_route`
 --
 
 INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `route`) VALUES
@@ -2366,7 +2184,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_length_class`
+-- Table structure for table `oc_length_class`
 --
 
 CREATE TABLE `oc_length_class` (
@@ -2375,7 +2193,7 @@ CREATE TABLE `oc_length_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_length_class`
+-- Dumping data for table `oc_length_class`
 --
 
 INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
@@ -2386,7 +2204,7 @@ INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_length_class_description`
+-- Table structure for table `oc_length_class_description`
 --
 
 CREATE TABLE `oc_length_class_description` (
@@ -2397,7 +2215,7 @@ CREATE TABLE `oc_length_class_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_length_class_description`
+-- Dumping data for table `oc_length_class_description`
 --
 
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -2408,7 +2226,7 @@ INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_location`
+-- Table structure for table `oc_location`
 --
 
 CREATE TABLE `oc_location` (
@@ -2426,7 +2244,7 @@ CREATE TABLE `oc_location` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_manufacturer`
+-- Table structure for table `oc_manufacturer`
 --
 
 CREATE TABLE `oc_manufacturer` (
@@ -2438,7 +2256,7 @@ CREATE TABLE `oc_manufacturer` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_manufacturer`
+-- Dumping data for table `oc_manufacturer`
 --
 
 INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `noindex`, `sort_order`) VALUES
@@ -2452,7 +2270,7 @@ INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `noindex`, `s
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_manufacturer_description`
+-- Table structure for table `oc_manufacturer_description`
 --
 
 CREATE TABLE `oc_manufacturer_description` (
@@ -2467,7 +2285,7 @@ CREATE TABLE `oc_manufacturer_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_manufacturer_description`
+-- Dumping data for table `oc_manufacturer_description`
 --
 
 INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `description_bottom`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
@@ -2486,7 +2304,7 @@ INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `de
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_manufacturer_to_layout`
+-- Table structure for table `oc_manufacturer_to_layout`
 --
 
 CREATE TABLE `oc_manufacturer_to_layout` (
@@ -2496,7 +2314,7 @@ CREATE TABLE `oc_manufacturer_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_manufacturer_to_layout`
+-- Dumping data for table `oc_manufacturer_to_layout`
 --
 
 INSERT INTO `oc_manufacturer_to_layout` (`manufacturer_id`, `store_id`, `layout_id`) VALUES
@@ -2505,7 +2323,7 @@ INSERT INTO `oc_manufacturer_to_layout` (`manufacturer_id`, `store_id`, `layout_
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_manufacturer_to_store`
+-- Table structure for table `oc_manufacturer_to_store`
 --
 
 CREATE TABLE `oc_manufacturer_to_store` (
@@ -2514,7 +2332,7 @@ CREATE TABLE `oc_manufacturer_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_manufacturer_to_store`
+-- Dumping data for table `oc_manufacturer_to_store`
 --
 
 INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
@@ -2528,7 +2346,7 @@ INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_marketing`
+-- Table structure for table `oc_marketing`
 --
 
 CREATE TABLE `oc_marketing` (
@@ -2543,7 +2361,7 @@ CREATE TABLE `oc_marketing` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_menu`
+-- Table structure for table `oc_menu`
 --
 
 CREATE TABLE `oc_menu` (
@@ -2558,7 +2376,7 @@ CREATE TABLE `oc_menu` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_menu_description`
+-- Table structure for table `oc_menu_description`
 --
 
 CREATE TABLE `oc_menu_description` (
@@ -2570,7 +2388,7 @@ CREATE TABLE `oc_menu_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_menu_module`
+-- Table structure for table `oc_menu_module`
 --
 
 CREATE TABLE `oc_menu_module` (
@@ -2583,7 +2401,7 @@ CREATE TABLE `oc_menu_module` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_modification`
+-- Table structure for table `oc_modification`
 --
 
 CREATE TABLE `oc_modification` (
@@ -2600,17 +2418,18 @@ CREATE TABLE `oc_modification` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_modification`
+-- Dumping data for table `oc_modification`
 --
 
 INSERT INTO `oc_modification` (`modification_id`, `name`, `code`, `author`, `version`, `link`, `xml`, `status`, `date_added`, `date_modified`) VALUES
 (1, '|Quickfix by iSenseLabs', 'isenselabs_quickfix', 'iSenseLabs', '1.4', 'http://isenselabs.com', '<modification>\r\n    <name>|Quickfix by iSenseLabs</name>\r\n	<version>1.4</version>\r\n	<link>http://isenselabs.com</link>\r\n	<author>iSenseLabs</author>\r\n	<code>isenselabs_quickfix</code>\r\n\r\n	<file path=\"admin/controller/extension/installer.php\">\r\n		<operation error=\"skip\">\r\n			<search ><![CDATA[\'extension/installer/ftp\']]></search>\r\n			<add position=\"replace\"><![CDATA[\'extension/installer/localcopy\']]></add>\r\n		</operation>\r\n\r\n		<operation error=\"skip\">\r\n			<search ><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/\'. $this->rewrite_step(\'ftp\', \'localremove\'), \'token=\' . $this->session->data[\'token\'],]]></search>\r\n			<add position=\"replace\"><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/localcopy\', \'token=\' . $this->session->data[\'token\'],]]></add>\r\n		</operation>\r\n\r\n		<operation error=\"skip\">\r\n			<search ><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/\'. $this->rewrite_step(\'localcopy\', \'localremove\'), \'token=\' . $this->session->data[\'token\'],]]></search>\r\n			<add position=\"replace\"><![CDATA[\'url\'  => str_replace(\'&amp;\', \'&\', $this->url->link(\'extension/installer/localcopy\', \'token=\' . $this->session->data[\'token\'],]]></add>\r\n		</operation>\r\n\r\n		<operation>\r\n			<search><![CDATA[public function unzip() {]]></search>\r\n			<add position=\"before\"><![CDATA[			\r\n	public function localcopy() {\r\n		$this->load->language(\'extension/installer\');\r\n\r\n		$json = array();\r\n\r\n		if (!$this->user->hasPermission(\'modify\', \'extension/installer\')) {\r\n			$json[\'error\'] = $this->language->get(\'error_permission\');\r\n		}\r\n\r\n		if (VERSION == \'2.0.0.0\') {\r\n		    $directory = DIR_DOWNLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		} else {\r\n		    $directory = DIR_UPLOAD  . str_replace(array(\'../\', \'..\\\\\', \'..\'), \'\', $this->request->post[\'path\']) . \'/upload/\';\r\n		}\r\n\r\n		if (!is_dir($directory)) {\r\n			$json[\'error\'] = $this->language->get(\'error_directory\');\r\n		}\r\n\r\n		if (!$json) {\r\n			// Get a list of files ready to upload\r\n			$files = array();\r\n\r\n			$path = array($directory . \'*\');\r\n\r\n			while (count($path) != 0) {\r\n				$next = array_shift($path);\r\n\r\n				foreach (glob($next) as $file) {\r\n					if (is_dir($file)) {\r\n						$path[] = $file . \'/*\';\r\n					}\r\n\r\n					$files[] = $file;\r\n				}\r\n			}\r\n\r\n			$root = dirname(DIR_APPLICATION).\'/\';\r\n\r\n			foreach ($files as $file) {\r\n				// Upload everything in the upload directory\r\n				$destination = substr($file, strlen($directory));\r\n\r\n				// Update from newer OpenCart versions:\r\n				if (substr($destination, 0, 5) == \'admin\') {\r\n					$destination = DIR_APPLICATION . substr($destination, 5);\r\n				} else if (substr($destination, 0, 7) == \'catalog\') {\r\n					$destination = DIR_CATALOG . substr($destination, 7);\r\n				} else if (substr($destination, 0, 5) == \'image\') {\r\n					$destination = DIR_IMAGE . substr($destination, 5);\r\n				} else if (substr($destination, 0, 6) == \'system\') {\r\n					$destination = DIR_SYSTEM . substr($destination, 6);\r\n				} else {\r\n					$destination = $root.$destination;\r\n				}\r\n\r\n				if (is_dir($file)) {\r\n					if (!file_exists($destination)) {\r\n						if (!mkdir($destination)) {\r\n							$json[\'error\'] = sprintf($this->language->get(\'error_ftp_directory\'), $destination);\r\n						}\r\n					}\r\n				}\r\n\r\n				if (is_file($file)) {\r\n					if (!copy($file, $destination)) {\r\n						$json[\'error\'] = sprintf($this->language->get(\'error_ftp_file\'), $file);\r\n					}\r\n				}\r\n			}\r\n		}\r\n\r\n		$this->response->addHeader(\'Content-Type: application/json\');\r\n		$this->response->setOutput(json_encode($json));\r\n	}]]></add>\r\n		</operation>\r\n	</file>	\r\n</modification>\r\n', 1, '2019-01-09 18:48:18', '2019-01-09 18:48:18'),
-(3, 'Modification Manager', 'modification_manager', 'OpenCart-Templates', '2.8.1', 'http://www.opencart-templates.co.uk/modification-manager', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<modification>\n  <name>Modification Manager</name>\n  <code>modification_manager</code>\n  <version>2.8.1</version>\n  <author>OpenCart-Templates</author>\n  <link>http://www.opencart-templates.co.uk/modification-manager</link>\n\n  <file path=\"admin/language/en-gb/extension/modification.php\">\n	<operation>\n      <search><![CDATA[<?php]]></search> \n      <add position=\"after\"><![CDATA[\n$_[\'tab_error\'] = \'Error\';\n$_[\'tab_files\'] = \'Files\';\n\n$_[\'text_add\'] = \'Add Modification\';\n$_[\'text_edit\'] = \'Edit Modification: %s\';\n\n$_[\'text_enabled\'] = \'Enabled\';\n$_[\'text_disabled\'] = \'Disabled\';\n\n$_[\'entry_author\'] = \'Author\';\n$_[\'entry_name\'] = \'Name\';\n$_[\'entry_xml\'] = \'XML\';\n\n$_[\'button_filter\'] = \'Filter\';\n$_[\'button_reset\'] = \'Reset\';\n\n$_[\'column_date_modified\'] = \'Last Modified\';\n\n$_[\'error_warning\'] = \'There has been an error. Please check your data and try again\';\n$_[\'error_required\'] = \'This field is required\';\n$_[\'error_name\'] = \'Missing name tag\';\n$_[\'error_code\'] = \'Missing code tag\';\n$_[\'error_exists\'] = \'Modification \\\'%s\\\' is already using the same code: %s!\';]]></add>\n    </operation>\n  </file>\n\n  <file path=\"admin/controller/extension/installer.php\">\n	<operation>\n      <search index=\"0\"><![CDATA[$json[\'error\'] = sprintf($this->language->get(\'error_exists\'), $modification_info[\'name\']);]]></search>\n      <add position=\"replace\"><![CDATA[$this->model_extension_modification->deleteModification($modification_info[\'modification_id\']);]]></add>\n    </operation>\n  </file>\n</modification>', 1, '2019-01-09 19:19:11', '2019-01-09 19:19:11');
+(3, 'Modification Manager', 'modification_manager', 'OpenCart-Templates', '2.8.1', 'http://www.opencart-templates.co.uk/modification-manager', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<modification>\n  <name>Modification Manager</name>\n  <code>modification_manager</code>\n  <version>2.8.1</version>\n  <author>OpenCart-Templates</author>\n  <link>http://www.opencart-templates.co.uk/modification-manager</link>\n\n  <file path=\"admin/language/en-gb/extension/modification.php\">\n	<operation>\n      <search><![CDATA[<?php]]></search> \n      <add position=\"after\"><![CDATA[\n$_[\'tab_error\'] = \'Error\';\n$_[\'tab_files\'] = \'Files\';\n\n$_[\'text_add\'] = \'Add Modification\';\n$_[\'text_edit\'] = \'Edit Modification: %s\';\n\n$_[\'text_enabled\'] = \'Enabled\';\n$_[\'text_disabled\'] = \'Disabled\';\n\n$_[\'entry_author\'] = \'Author\';\n$_[\'entry_name\'] = \'Name\';\n$_[\'entry_xml\'] = \'XML\';\n\n$_[\'button_filter\'] = \'Filter\';\n$_[\'button_reset\'] = \'Reset\';\n\n$_[\'column_date_modified\'] = \'Last Modified\';\n\n$_[\'error_warning\'] = \'There has been an error. Please check your data and try again\';\n$_[\'error_required\'] = \'This field is required\';\n$_[\'error_name\'] = \'Missing name tag\';\n$_[\'error_code\'] = \'Missing code tag\';\n$_[\'error_exists\'] = \'Modification \\\'%s\\\' is already using the same code: %s!\';]]></add>\n    </operation>\n  </file>\n\n  <file path=\"admin/controller/extension/installer.php\">\n	<operation>\n      <search index=\"0\"><![CDATA[$json[\'error\'] = sprintf($this->language->get(\'error_exists\'), $modification_info[\'name\']);]]></search>\n      <add position=\"replace\"><![CDATA[$this->model_extension_modification->deleteModification($modification_info[\'modification_id\']);]]></add>\n    </operation>\n  </file>\n</modification>', 1, '2019-01-09 19:19:11', '2019-01-09 19:19:11'),
+(4, 'Export/Import Tool (V3.20) for OpenCart 2.x', 'Export/Import Tool (V3.20) for OpenCart 2.x', 'mhccorp.com', '2.x-3.20', 'https://www.mhccorp.com', '<modification>\n	<name>Export/Import Tool (V3.20) for OpenCart 2.x</name>\n	<code>Export/Import Tool (V3.20) for OpenCart 2.x</code>\n	<version>2.x-3.20</version>\n	<author>mhccorp.com</author>\n	<link>https://www.mhccorp.com</link>\n	<file path=\"admin/controller/common/menu.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$data[\'text_backup\'] = $this->language->get(\'text_backup\');]]></search>\n			<add position=\"after\"><![CDATA[\n		$data[\'text_export_import\'] = $this->language->get(\'text_export_import\');\n			]]></add>\n		</operation>\n		<operation error=\"skip\">\n			<search><![CDATA[$data[\'backup\'] = $this->url->link(\'tool/backup\', \'token=\' . $this->session->data[\'token\'],]]></search>\n			<add position=\"after\"><![CDATA[\n		$data[\'export_import\'] = $this->url->link(\'tool/export_import\', \'token=\' . $this->session->data[\'token\'], (version_compare(PHP_VERSION, \'2.2.0.0\') >= 0) ? true : \'SSL\');\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/language/*/common/menu.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$_[\'text_backup\']]]></search>\n			<add position=\"after\"><![CDATA[\n$_[\'text_export_import\']               = \'Export / Import\';\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/view/template/common/menu.tpl\">\n		<operation error=\"skip\">\n			<search><![CDATA[<li><a href=\"<?php echo $backup; ?>\"><?php echo $text_backup; ?></a></li>]]></search>\n			<add position=\"replace\"><![CDATA[<li><a href=\"<?php echo $backup; ?>\"><?php echo $text_backup; ?></a></li><li><a href=\"<?php echo $export_import; ?>\"><?php echo $text_export_import; ?></a></li>]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/controller/common/column_left.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[if ($this->user->hasPermission(\'access\', \'tool/log\')) {]]></search>\n			<add position=\"before\"><![CDATA[\n			if ($this->user->hasPermission(\'access\', \'tool/export_import\')) {\n				$tool[] = array(\n					\'name\'	   => $this->language->get(\'text_export_import\'),\n					\'href\'     => $this->url->link(\'tool/export_import\', \'token=\' . $this->session->data[\'token\'], true),\n					\'children\' => array()		\n				);\n			}\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/language/*/common/column_left.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$_[\'text_backup\']]]></search>\n			<add position=\"after\"><![CDATA[\n$_[\'text_export_import\']             = \'Export / Import\';\n			]]></add>\n		</operation>\n	</file>\n</modification>\n', 1, '2019-01-10 20:04:14', '2019-01-10 20:04:14');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_module`
+-- Table structure for table `oc_module`
 --
 
 CREATE TABLE `oc_module` (
@@ -2621,7 +2440,7 @@ CREATE TABLE `oc_module` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_module`
+-- Dumping data for table `oc_module`
 --
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
@@ -2640,7 +2459,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_option`
+-- Table structure for table `oc_option`
 --
 
 CREATE TABLE `oc_option` (
@@ -2649,27 +2468,10 @@ CREATE TABLE `oc_option` (
   `sort_order` int(3) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_option`
---
-
-INSERT INTO `oc_option` (`option_id`, `type`, `sort_order`) VALUES
-(1, 'radio', 1),
-(2, 'checkbox', 2),
-(4, 'text', 3),
-(5, 'select', 4),
-(6, 'textarea', 5),
-(7, 'file', 6),
-(8, 'date', 7),
-(9, 'time', 8),
-(10, 'datetime', 9),
-(11, 'select', 10),
-(12, 'date', 11);
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_option_description`
+-- Table structure for table `oc_option_description`
 --
 
 CREATE TABLE `oc_option_description` (
@@ -2678,27 +2480,10 @@ CREATE TABLE `oc_option_description` (
   `name` varchar(128) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_option_description`
---
-
-INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
-(1, 1, 'Radio'),
-(2, 1, 'Checkbox'),
-(4, 1, 'Text'),
-(6, 1, 'Textarea'),
-(8, 1, 'Date'),
-(7, 1, 'File'),
-(5, 1, 'Select'),
-(9, 1, 'Time'),
-(10, 1, 'Date &amp; Time'),
-(12, 1, 'Delivery Date'),
-(11, 1, 'Size');
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_option_value`
+-- Table structure for table `oc_option_value`
 --
 
 CREATE TABLE `oc_option_value` (
@@ -2708,30 +2493,10 @@ CREATE TABLE `oc_option_value` (
   `sort_order` int(3) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_option_value`
---
-
-INSERT INTO `oc_option_value` (`option_value_id`, `option_id`, `image`, `sort_order`) VALUES
-(43, 1, '', 3),
-(32, 1, '', 1),
-(45, 2, '', 4),
-(44, 2, '', 3),
-(42, 5, '', 4),
-(41, 5, '', 3),
-(39, 5, '', 1),
-(40, 5, '', 2),
-(31, 1, '', 2),
-(23, 2, '', 1),
-(24, 2, '', 2),
-(46, 11, '', 1),
-(47, 11, '', 2),
-(48, 11, '', 3);
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_option_value_description`
+-- Table structure for table `oc_option_value_description`
 --
 
 CREATE TABLE `oc_option_value_description` (
@@ -2741,30 +2506,10 @@ CREATE TABLE `oc_option_value_description` (
   `name` varchar(128) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_option_value_description`
---
-
-INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
-(43, 1, 1, 'Large'),
-(32, 1, 1, 'Small'),
-(45, 1, 2, 'Checkbox 4'),
-(44, 1, 2, 'Checkbox 3'),
-(31, 1, 1, 'Medium'),
-(42, 1, 5, 'Yellow'),
-(41, 1, 5, 'Green'),
-(39, 1, 5, 'Red'),
-(40, 1, 5, 'Blue'),
-(23, 1, 2, 'Checkbox 1'),
-(24, 1, 2, 'Checkbox 2'),
-(48, 1, 11, 'Large'),
-(47, 1, 11, 'Medium'),
-(46, 1, 11, 'Small');
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order`
+-- Table structure for table `oc_order`
 --
 
 CREATE TABLE `oc_order` (
@@ -2834,7 +2579,7 @@ CREATE TABLE `oc_order` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_custom_field`
+-- Table structure for table `oc_order_custom_field`
 --
 
 CREATE TABLE `oc_order_custom_field` (
@@ -2851,7 +2596,7 @@ CREATE TABLE `oc_order_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_history`
+-- Table structure for table `oc_order_history`
 --
 
 CREATE TABLE `oc_order_history` (
@@ -2866,7 +2611,7 @@ CREATE TABLE `oc_order_history` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_option`
+-- Table structure for table `oc_order_option`
 --
 
 CREATE TABLE `oc_order_option` (
@@ -2883,7 +2628,7 @@ CREATE TABLE `oc_order_option` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_product`
+-- Table structure for table `oc_order_product`
 --
 
 CREATE TABLE `oc_order_product` (
@@ -2902,7 +2647,7 @@ CREATE TABLE `oc_order_product` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_recurring`
+-- Table structure for table `oc_order_recurring`
 --
 
 CREATE TABLE `oc_order_recurring` (
@@ -2931,7 +2676,7 @@ CREATE TABLE `oc_order_recurring` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_recurring_transaction`
+-- Table structure for table `oc_order_recurring_transaction`
 --
 
 CREATE TABLE `oc_order_recurring_transaction` (
@@ -2946,7 +2691,7 @@ CREATE TABLE `oc_order_recurring_transaction` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_status`
+-- Table structure for table `oc_order_status`
 --
 
 CREATE TABLE `oc_order_status` (
@@ -2956,7 +2701,7 @@ CREATE TABLE `oc_order_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_order_status`
+-- Dumping data for table `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
@@ -2978,7 +2723,7 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_total`
+-- Table structure for table `oc_order_total`
 --
 
 CREATE TABLE `oc_order_total` (
@@ -2993,7 +2738,7 @@ CREATE TABLE `oc_order_total` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_order_voucher`
+-- Table structure for table `oc_order_voucher`
 --
 
 CREATE TABLE `oc_order_voucher` (
@@ -3014,7 +2759,7 @@ CREATE TABLE `oc_order_voucher` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product`
+-- Table structure for table `oc_product`
 --
 
 CREATE TABLE `oc_product` (
@@ -3053,34 +2798,141 @@ CREATE TABLE `oc_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product`
+-- Dumping data for table `oc_product`
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `noindex`, `date_added`, `date_modified`) VALUES
-(28, 'Product 1', '', '', '', '', '', '', '', 939, 7, 'catalog/demo/htc_touch_hd_1.jpg', 5, 1, '100.0000', 200, 9, '2009-02-03', '146.40000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 1, 1, '2009-02-03 16:06:50', '2011-09-30 01:05:39'),
-(29, 'Product 2', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/palm_treo_pro_1.jpg', 6, 1, '279.9900', 0, 9, '2009-02-03', '133.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 0, 1, '2009-02-03 16:42:17', '2011-09-30 01:06:08'),
-(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/canon_eos_5d_1.jpg', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, 1, '2009-02-03 16:59:00', '2011-09-30 01:05:23'),
-(31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/nikon_d300_1.jpg', 0, 1, '80.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 0, 1, '2009-02-03 17:00:10', '2011-09-30 01:06:00'),
-(32, 'Product 5', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/ipod_touch_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, 1, '2009-02-03 17:07:26', '2011-09-30 01:07:22'),
-(33, 'Product 6', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/samsung_syncmaster_941bw.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 17:08:31', '2011-09-30 01:06:29'),
-(34, 'Product 7', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/ipod_shuffle_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 18:07:54', '2011-09-30 01:07:17'),
-(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, '', 0, 0, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, 1, '2009-02-03 18:08:31', '2011-09-30 01:06:17'),
-(36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/demo/ipod_nano_1.jpg', 8, 0, '100.0000', 100, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 18:09:19', '2011-09-30 01:07:12'),
-(40, 'product 11', '', '', '', '', '', '', '', 970, 5, 'catalog/demo/iphone_1.jpg', 8, 1, '101.0000', 0, 9, '2009-02-03', '10.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, 1, '2009-02-03 21:07:12', '2011-09-30 01:06:53'),
-(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/imac_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, 1, '2009-02-03 21:07:26', '2011-09-30 01:06:44'),
-(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, 1, 1, '2009-02-03 21:07:37', '2011-09-30 00:46:19'),
-(43, 'Product 16', '', '', '', '', '', '', '', 929, 5, 'catalog/demo/macbook_1.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 21:07:49', '2011-09-30 01:05:46'),
-(44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/macbook_air_1.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 2, 1, '2009-02-03 21:08:00', '2011-09-30 01:05:53'),
-(45, 'Product 18', '', '', '', '', '', '', '', 998, 5, 'catalog/demo/macbook_pro_1.jpg', 8, 1, '2000.0000', 0, 100, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 21:08:17', '2011-09-15 22:22:01'),
-(46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/sony_vaio_1.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-03 21:08:29', '2011-09-30 01:06:39'),
-(47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2011-09-30 01:05:28'),
-(48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 995, 5, 'catalog/demo/ipod_classic_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-08', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, 1, '2009-02-08 17:21:51', '2011-09-30 01:07:06'),
-(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 8, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23');
+(51, '1152', '', '', '', '120', '', '', '', 99999, 6, 'data/product/termopara.net-01152-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 10, 1, 2, 1, '2013-09-28 08:33:01', '2016-02-12 10:57:00'),
+(52, '1162', '', '', '', '120', '', '', '', 99999, 6, 'data/product/termopara.net-01162-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 20, 1, 0, 1, '2013-09-28 08:41:31', '2016-02-12 10:59:27'),
+(53, '1222', '', '', '', '120', '', '', '', 99999, 6, 'data/product/termopara.net-01222-01.jpg', 8, 1, '56.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 60, 1, 0, 1, '2013-09-28 08:52:27', '2016-02-12 11:06:01'),
+(54, '1242', '', '', '', '150', '', '', '', 99999, 6, 'data/product/termopara.net-01242-01.jpg', 8, 1, '61.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 70, 1, 0, 1, '2013-09-28 08:53:07', '2016-02-12 11:07:17'),
+(56, '1252', '', '', '', '156', '', '', '', 99999, 6, 'data/product/termopara.net-01252-01.jpg', 8, 1, '65.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 80, 1, 0, 1, '2013-09-28 09:49:55', '2016-02-12 11:08:23'),
+(57, '1262', '', '', '', '159', '', '', '', 99999, 6, 'data/product/termopara.net-01262-01.jpg', 8, 1, '71.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 90, 1, 0, 1, '2013-09-28 09:58:55', '2016-02-12 11:11:38'),
+(58, '1292', '', '', '', '169', '', '', '', 99999, 6, 'data/product/termopara.net-01292-01.jpg', 8, 1, '76.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 100, 1, 0, 1, '2013-09-28 10:17:28', '2016-02-12 11:12:43'),
+(59, '1438', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-01438-01.jpg', 8, 1, '47.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 180, 1, 0, 1, '2013-09-28 10:25:08', '2016-02-12 12:05:49'),
+(60, '1468', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01468-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 200, 1, 0, 1, '2013-09-28 10:31:49', '2016-02-12 12:08:14'),
+(61, '1498', '', '', '', '75', '', '', '', 99999, 6, 'data/product/termopara.net-01498-01.jpg', 8, 1, '72.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 220, 1, 0, 1, '2013-09-28 10:43:28', '2016-02-12 12:11:22'),
+(62, '1749', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-01749-01.jpg', 8, 1, '51.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 380, 1, 0, 1, '2013-09-28 10:52:18', '2016-02-12 12:53:02'),
+(63, '1740', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-01740-01.jpg', 8, 1, '51.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 390, 1, 0, 1, '2013-09-28 11:04:47', '2016-02-12 12:54:08'),
+(64, '1760', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01760-01.jpg', 8, 1, '59.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 410, 1, 0, 1, '2013-09-28 11:38:42', '2016-02-12 12:56:13'),
+(65, '1539', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-01539-01.jpg', 8, 1, '47.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 240, 1, 0, 1, '2013-09-28 11:43:53', '2016-02-12 12:28:51'),
+(66, '1549', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-01549-01.jpg', 8, 1, '50.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 250, 1, 0, 1, '2013-09-28 11:53:24', '2016-02-12 12:30:09'),
+(67, '1569', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01569-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 280, 1, 0, 1, '2013-09-28 11:55:53', '2016-02-12 12:35:40'),
+(68, '1560', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01560-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 290, 1, 0, 1, '2013-09-28 11:59:40', '2016-02-12 12:36:47'),
+(69, '1390', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01390-01.jpg', 8, 1, '88.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 160, 1, 0, 1, '2013-09-28 12:09:15', '2016-02-12 11:34:43'),
+(70, '2119', '', '', '', '180', '', '', '', 0, 6, 'data/product/termopara.net-02119-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 490, 1, 0, 1, '2013-09-28 12:45:57', '2016-02-12 13:24:04'),
+(71, '2210', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02210-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 520, 1, 0, 1, '2013-09-28 13:05:48', '2016-02-12 13:27:29'),
+(72, '2310', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02310-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 530, 1, 0, 1, '2013-09-28 13:14:36', '2016-02-12 13:28:32'),
+(73, '2418', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02418-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 550, 1, 0, 1, '2013-09-28 13:53:52', '2016-02-12 13:31:01'),
+(74, '2428', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02428-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 540, 1, 0, 1, '2013-09-28 14:21:30', '2016-02-12 13:29:54'),
+(75, '2538', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02538-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 560, 1, 0, 1, '2013-09-28 14:45:42', '2016-02-12 13:32:04'),
+(76, '2558', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02558-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 570, 1, 0, 1, '2013-09-28 14:49:41', '2016-02-12 13:33:08'),
+(77, '2568', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02568-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 580, 1, 0, 1, '2013-09-28 14:52:54', '2016-02-12 13:34:19'),
+(78, '2578', '', '', '', '180', '', '', '', 99999, 6, 'data/product/termopara.net-02578-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 590, 1, 0, 1, '2013-09-28 15:00:04', '2016-02-12 13:35:23'),
+(79, '3128', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-03128-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 600, 1, 0, 1, '2013-09-28 17:14:46', '2016-02-12 13:36:43'),
+(80, '3228', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-03228-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 620, 1, 0, 1, '2013-09-28 17:24:10', '2016-02-12 13:39:28'),
+(81, '3354', '', '', '', '69', '', '', '', 99999, 6, 'data/product/termopara.net-03354-01.jpg', 8, 1, '77.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 690, 1, 0, 1, '2013-09-28 17:29:12', '2016-02-12 14:10:29'),
+(82, '3454', '', '', '', '69', '', '', '', 99999, 6, 'data/product/termopara.net-03454-01.jpg', 8, 1, '77.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 700, 1, 0, 1, '2013-09-28 17:42:55', '2016-02-12 14:13:13'),
+(83, '3555', '', '', '', '120', '', '', '', 0, 6, 'data/product/termopara.net-03555-01.jpg', 8, 1, '80.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 710, 1, 0, 1, '2013-09-28 17:45:27', '2016-02-12 14:15:27'),
+(84, '4130', '', '', '', '31', '', '', '', 99999, 6, 'data/product/termopara.net-04130-01.jpg', 8, 1, '29.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 720, 1, 0, 1, '2013-09-28 18:31:51', '2015-11-13 17:03:58'),
+(85, '4230', '', '', '', '33', '', '', '', 99999, 6, 'data/product/termopara.net-04230-01.jpg', 8, 1, '32.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 730, 1, 0, 1, '2013-09-28 18:56:48', '2015-11-13 17:05:46'),
+(86, '4240', '', '', '', '37', '', '', '', 99999, 6, 'data/product/termopara.net-04240-01.jpg', 8, 1, '36.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 750, 1, 0, 1, '2013-09-28 19:57:01', '2015-11-13 17:08:46'),
+(87, '4140', '', '', '', '36', '', '', '', 99999, 6, 'data/product/termopara.net-04140-01.jpg', 8, 1, '32.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 740, 1, 0, 1, '2013-09-28 19:57:34', '2015-11-13 17:07:28'),
+(88, '4160', '', '', '', '39', '', '', '', 99999, 6, 'data/product/termopara.net-04160-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 760, 1, 0, 1, '2013-09-28 20:02:36', '2015-11-13 17:10:28'),
+(89, '4260', '', '', '', '42', '', '', '', 99999, 6, 'data/product/termopara.net-04260-01.jpg', 8, 1, '42.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 770, 1, 0, 1, '2013-09-28 20:03:31', '2015-11-13 17:11:40'),
+(90, '4350', '', '', '', '49', '', '', '', 99999, 6, 'data/product/termopara.net-04350-01.jpg', 8, 1, '40.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 790, 1, 0, 1, '2013-09-28 20:29:19', '2015-11-13 17:14:29'),
+(91, '4300', '', '', '', '54', '', '', '', 99999, 6, 'data/product/termopara.net-04300-01.jpg', 8, 1, '55.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 800, 1, 0, 1, '2013-09-28 20:54:02', '2015-11-13 17:15:52'),
+(92, '4440', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-04440-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 840, 1, 0, 1, '2013-09-28 21:26:28', '2015-11-13 18:10:37'),
+(93, '4540', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-04540-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 850, 1, 0, 1, '2013-09-28 22:02:18', '2015-11-13 17:34:51'),
+(94, '4620', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-04620-01.jpg', 8, 1, '52.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 860, 1, 0, 1, '2013-09-28 22:26:09', '2015-11-13 17:36:31'),
+(95, '4920', '', '', '', '55', '', '', '', 99999, 6, 'data/product/termopara.net-04920-01.jpg', 8, 1, '52.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 830, 1, 0, 1, '2013-09-29 11:01:12', '2015-11-13 17:31:18'),
+(96, '1838', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01838-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 450, 1, 0, 1, '2013-09-29 12:47:55', '2016-02-12 13:00:58'),
+(97, '1839', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01839-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 460, 1, 0, 1, '2013-09-29 13:17:05', '2016-02-12 13:02:08'),
+(98, '1368', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01368-01.jpg', 8, 1, '86.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 110, 1, 0, 1, '2013-09-29 13:40:57', '2016-02-12 11:27:02'),
+(99, '5110', '', '', '', '24', '', '', '', 99999, 6, 'catalog/product/termopara.net-05110-01.jpg', 8, 1, '32.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 890, 1, 2, 1, '2013-09-29 14:40:27', '2019-01-10 21:12:51'),
+(100, '5512', '', '', '', '160', '', '', '', 99999, 6, 'data/product/termopara.net-05512-01.jpg', 8, 1, '200.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1020, 1, 0, 1, '2013-09-29 16:12:02', '2015-09-17 13:52:19'),
+(101, '5212', '', '', '', '10', '', '', '', 99999, 6, 'data/product/termopara.net-05212-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 930, 1, 0, 1, '2013-09-29 16:55:36', '2015-11-13 17:49:30'),
+(102, '5221', '', '', '', '5', '', '', '', 99999, 6, 'data/product/termopara.net-05221-01.jpg', 8, 1, '10.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 940, 0, 0, 1, '2013-09-29 17:07:06', '2015-08-01 00:00:00'),
+(103, '5930', '', '', '', '20', '', '', '', 99999, 6, 'data/product/termopara.net-05430-01.jpg', 8, 1, '30.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1210, 0, 0, 1, '2013-09-29 17:15:30', '2015-08-01 00:00:00'),
+(104, '5612', '', '', '', '165', '', '', '', 99999, 6, 'data/product/termopara.net-05612-01.jpg', 8, 1, '200.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 990, 1, 0, 1, '2013-10-01 12:06:06', '2015-09-17 13:52:44'),
+(105, '5622', '', '', '', '100', '', '', '', 99999, 6, 'data/product/termopara.net-05622-01.jpg', 8, 1, '200.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1000, 0, 0, 1, '2013-10-01 12:29:16', '2015-08-01 00:00:00'),
+(106, '5613', '', '', '', '100', '', '', '', 99999, 6, 'data/product/termopara.net-05613-01.jpg', 8, 1, '200.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1010, 0, 0, 1, '2013-10-01 12:40:45', '2015-08-01 00:00:00'),
+(107, '5940', '', '', '', '22', '', '', '', 99999, 6, 'data/product/termopara.net-05440-01.jpg', 8, 1, '33.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1220, 0, 0, 1, '2013-10-04 21:18:28', '2015-08-01 00:00:00'),
+(108, '1529', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01529-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 330, 1, 0, 1, '2013-10-21 08:33:57', '2016-02-12 12:46:00'),
+(109, '4910', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-04910-01.jpg', 8, 1, '42.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 810, 1, 0, 1, '2013-10-21 09:06:47', '2015-11-13 17:17:26'),
+(110, '5950', '', '', '', '24', '', '', '', 99999, 6, 'data/product/termopara.net-05450-01.jpg', 8, 1, '36.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1230, 0, 0, 1, '2014-01-16 16:46:32', '2015-08-01 00:00:00'),
+(111, '5960', '', '', '', '26', '', '', '', 99999, 6, 'data/product/termopara.net-05460-01.jpg', 8, 1, '39.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1240, 0, 0, 1, '2014-01-16 16:49:10', '2015-08-01 00:00:00'),
+(112, '5980', '', '', '', '30', '', '', '', 99999, 6, 'data/product/termopara.net-05480-01.jpg', 8, 1, '45.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1250, 0, 0, 1, '2014-01-16 16:52:58', '2015-08-01 00:00:00'),
+(113, '5999', '', '', '', '33', '', '', '', 99999, 6, 'data/product/termopara.net-05499-01.jpg', 8, 1, '50.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1260, 0, 0, 1, '2014-01-16 16:55:25', '2015-08-01 00:00:00'),
+(114, '1439', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-01439-01.jpg', 8, 1, '47.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 190, 1, 0, 1, '2014-01-17 12:44:16', '2016-02-12 12:06:57'),
+(115, '1469', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01469-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 210, 1, 0, 1, '2014-01-17 13:32:52', '2016-02-12 12:09:20'),
+(116, '1499', '', '', '', '75', '', '', '', 99999, 6, 'data/product/termopara.net-01499-01.jpg', 8, 1, '72.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 230, 1, 0, 1, '2014-01-17 13:37:07', '2016-02-12 12:12:38'),
+(117, '1589', '', '', '', '72', '', '', '', 99999, 6, 'data/product/termopara.net-01589-01.jpg', 8, 1, '72.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 300, 1, 0, 1, '2014-01-17 14:56:50', '2016-02-12 12:43:35'),
+(118, '1649', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-01649-01.jpg', 8, 1, '50.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 360, 1, 0, 1, '2014-01-17 15:46:55', '2016-02-12 12:50:21'),
+(119, '1669', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01669-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 370, 1, 0, 1, '2014-01-17 16:27:50', '2016-02-12 12:51:30'),
+(120, '1990', '', '', '', '109', '', '', '', 99999, 6, 'data/product/termopara.net-01990-01.jpg', 8, 1, '99.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 480, 1, 0, 1, '2014-01-17 19:02:01', '2016-02-12 13:08:41'),
+(121, '1769', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01769-01.jpg', 8, 1, '59.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 400, 1, 0, 1, '2014-01-17 20:45:33', '2016-02-12 12:55:13'),
+(122, '1799', '', '', '', '75', '', '', '', 99999, 6, 'data/product/termopara.net-01799-01.jpg', 8, 1, '73.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 420, 1, 0, 1, '2014-01-17 20:50:32', '2016-02-12 12:57:18'),
+(123, '1639', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-01639-01.jpg', 8, 1, '47.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 350, 1, 0, 1, '2014-01-17 22:00:43', '2016-02-12 12:49:05'),
+(124, '1568', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-01568-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 270, 1, 0, 1, '2014-01-17 22:39:33', '2016-02-12 12:34:31'),
+(125, '1848', '', '', '', '69', '', '', '', 99999, 6, 'data/product/termopara.net-01848-01.jpg', 8, 1, '52.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 430, 1, 0, 1, '2014-03-13 12:27:05', '2016-02-12 12:58:55'),
+(127, '1849', '', '', '', '69', '', '', '', 99999, 6, 'data/product/termopara.net-01849-01.jpg', 8, 1, '52.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 440, 1, 0, 1, '2014-03-13 12:31:31', '2016-02-12 12:59:56'),
+(128, '3604', '', '', '', '99', '', '', '', 99999, 6, 'data/product/termopara.net-03604-01.jpg', 8, 1, '88.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 680, 1, 0, 1, '2014-03-13 12:48:55', '2016-02-12 13:45:14'),
+(129, '2139', '', '', '', '99', '', '', '', 99999, 6, 'data/product/termopara.net-02139-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 510, 1, 0, 1, '2014-03-13 13:04:42', '2016-02-12 13:26:12'),
+(130, '1182', '', '', '', '120', '', '', '', 0, 8, 'data/product/termopara.net-01182-01.jpg', 8, 1, '96.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 30, 1, 0, 1, '2014-04-07 06:45:40', '2016-02-12 11:01:31'),
+(131, '1192', '', '', '', '120', '', '', '', 0, 8, 'data/product/termopara.net-01192-01.jpg', 8, 1, '97.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 40, 1, 0, 1, '2014-04-07 07:03:17', '2016-02-12 11:04:49'),
+(132, '3724', '', '', '', '99', '', '', '', 99999, 6, 'data/product/termopara.net-03724-01.jpg', 8, 1, '91.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 670, 1, 0, 1, '2014-06-27 12:58:22', '2016-02-12 13:44:08'),
+(133, '1428', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01428-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 235, 1, 0, 1, '2014-07-07 06:43:26', '2016-02-12 12:14:33'),
+(134, '2129', '', '', '', '180', '', '', '', 0, 6, 'data/product/termopara.net-02129-01.jpg', 8, 1, '179.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 500, 1, 0, 1, '2014-07-07 13:15:00', '2016-02-12 13:25:08'),
+(135, '3828', '', '', '', '120', '', '', '', 99999, 6, 'data/product/termopara.net-03828-01.jpg', 8, 1, '98.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 640, 1, 0, 1, '2014-07-07 19:52:15', '2016-02-12 13:41:45'),
+(136, '3938', '', '', '', '120', '', '', '', 99999, 6, 'data/product/termopara.net-03938-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 650, 1, 0, 1, '2014-07-07 19:57:43', '2016-02-12 13:42:45'),
+(137, '5310', '', '', '', '43', '', '', '', 99999, 6, 'data/product/termopara.net-05310-01.jpg', 8, 1, '40.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 910, 1, 0, 1, '2014-07-10 08:42:32', '2015-09-17 13:38:20'),
+(138, '5320', '', '', '', '48', '', '', '', 99999, 6, 'data/product/termopara.net-05320-01.jpg', 8, 1, '45.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 920, 1, 0, 1, '2014-07-10 16:52:22', '2015-11-13 17:47:44'),
+(139, '5402', '', '', '', '39', '', '', '', 99999, 6, 'data/product/termopara.net-05402-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 960, 1, 0, 1, '2014-07-14 09:15:36', '2015-11-13 17:52:51'),
+(140, '5412', '', '', '', '39', '', '', '', 99999, 6, 'data/product/termopara.net-05412-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 970, 1, 0, 1, '2014-07-14 09:29:37', '2015-11-13 17:54:11'),
+(141, '6148', '', '', '', '10', '', '', '', 99999, 6, 'data/product/termopara.net-05748-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1180, 1, 0, 1, '2014-07-14 10:34:27', '2015-11-13 17:40:29'),
+(142, '6149', '', '', '', '10', '', '', '', 99999, 6, 'data/product/termopara.net-05749-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1190, 1, 0, 1, '2014-07-14 10:41:00', '2015-11-13 17:41:56'),
+(143, '6140', '', '', '', '10', '', '', '', 99999, 6, 'data/product/termopara.net-05740-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1200, 1, 0, 1, '2014-07-14 10:41:07', '2015-11-13 17:44:23'),
+(144, '5422', '', '', '', '43', '', '', '', 99999, 6, 'data/product/termopara.net-05422-01.jpg', 8, 1, '58.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 980, 1, 0, 1, '2014-10-29 18:03:44', '2015-11-13 17:55:47'),
+(145, '1540', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-01549-01.jpg', 8, 1, '50.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 260, 1, 0, 1, '2014-10-29 18:36:41', '2016-02-12 12:33:16'),
+(146, '4912', '', '', '', '51', '', '', '', 99999, 6, 'data/product/termopara.net-04912-01.jpg', 8, 1, '46.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 820, 1, 0, 1, '2014-10-29 22:57:58', '2015-11-13 17:29:38'),
+(147, '1391', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01391-01.jpg', 8, 1, '88.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 150, 1, 0, 1, '2015-01-20 13:22:17', '2016-02-12 11:33:32'),
+(148, '1528', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01529-01.jpg', 8, 1, '128.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 320, 0, 0, 1, '2015-02-27 18:50:11', '2015-08-01 00:00:00'),
+(149, '1580', '', '', '', '72', '', '', '', 99999, 6, 'data/product/termopara.net-01589-01.jpg', 8, 1, '72.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 310, 1, 0, 1, '2015-02-27 18:58:38', '2016-02-12 12:44:42'),
+(150, '4330', '', '', '', '49', '', '', '', 99999, 6, 'data/product/termopara.net-04330-01.jpg', 8, 1, '38.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 780, 1, 0, 1, '2015-02-27 19:32:04', '2015-11-13 17:13:07'),
+(151, '5240', '', '', '', '50', '', '', '', 99999, 6, 'data/product/termopara.net-05240-01.jpg', 8, 1, '70.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 950, 1, 0, 1, '2015-02-27 20:09:13', '2015-11-13 17:51:25'),
+(152, '5800', '', '', '', '24', '', '', '', 99999, 6, 'data/product/termopara.net-05800-01.jpg', 8, 1, '30.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 900, 1, 0, 1, '2015-02-27 20:16:41', '2015-11-13 17:46:43'),
+(153, '4730', '', '', '', '31', '', '', '', 99999, 6, 'data/product/termopara.net-04730-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 870, 1, 0, 1, '2015-02-27 21:07:36', '2015-11-13 17:37:46'),
+(154, '4740', '', '', '', '31', '', '', '', 99999, 6, 'data/product/termopara.net-04740-01.jpg', 8, 1, '54.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 880, 1, 0, 1, '2015-02-27 21:16:27', '2015-11-13 17:39:07'),
+(155, '5701', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1030, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:09:50'),
+(156, '5702', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1040, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:13:36'),
+(157, '5703', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1050, 0, 0, 1, '2015-02-27 21:16:27', '2015-08-01 00:00:00'),
+(158, '5704', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1060, 1, 0, 1, '2015-02-27 21:16:27', '2015-09-17 13:53:47'),
+(159, '5705', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1070, 0, 0, 1, '2015-02-27 21:16:27', '2015-08-01 00:00:00'),
+(160, '5706', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1080, 0, 0, 1, '2015-02-27 21:16:27', '2015-08-01 00:00:00'),
+(161, '5707', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1090, 0, 0, 1, '2015-02-27 21:16:27', '2015-08-01 00:00:00'),
+(162, '5708', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1100, 1, 0, 1, '2015-02-27 21:16:27', '2015-09-17 13:54:24'),
+(163, '5709', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1110, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:07:17'),
+(164, '5710', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1120, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:07:42'),
+(165, '5711', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1130, 1, 0, 1, '2015-02-27 21:16:27', '2015-09-17 13:54:57'),
+(166, '5712', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1140, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:08:17'),
+(167, '5713', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1150, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:08:35'),
+(168, '5714', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1160, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:09:05'),
+(169, '5715', '', '', '', '35', '', '', '', 99999, 6, 'data/product/termopara.net-05701-01.jpg', 8, 1, '35.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1170, 0, 0, 1, '2015-02-27 21:16:27', '2015-09-16 14:09:26'),
+(170, '1360', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01360-01.jpg', 8, 1, '86.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 120, 1, 0, 1, '2013-09-29 13:40:57', '2016-02-12 11:28:49'),
+(171, '1370', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01370-01.jpg', 8, 1, '87.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 140, 1, 0, 1, '2013-09-29 13:40:57', '2016-02-12 11:31:32'),
+(172, '1378', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-01378-01.jpg', 8, 1, '87.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 130, 1, 0, 1, '2013-09-29 13:40:57', '2016-02-12 11:29:58'),
+(173, '1599', '', '', '', '72', '', '', '', 0, 8, 'data/product/termopara.net-01599-01.jpg', 8, 1, '100.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 660, 1, 0, 1, '2014-01-17 14:56:50', '2015-09-17 12:33:34'),
+(174, '7569', '', '', '', '60', '', '', '', 99999, 6, 'data/product/termopara.net-07569-01.jpg', 8, 1, '57.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 340, 1, 0, 1, '2013-09-28 11:55:53', '2016-02-12 12:47:25'),
+(175, '1869', '', '', '', '69', '', '', '', 99999, 6, 'data/product/termopara.net-01869-01.jpg', 8, 1, '60.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 470, 1, 0, 1, '2014-03-13 12:31:31', '2016-02-12 13:07:15'),
+(176, '7390', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-07390-01.jpg', 8, 1, '88.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 170, 1, 0, 1, '2013-09-29 13:40:57', '2016-02-12 11:39:48'),
+(177, '7128', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-07128-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 610, 1, 0, 1, '2013-09-28 17:14:46', '2016-02-12 13:38:11'),
+(178, '7228', '', '', '', '90', '', '', '', 99999, 6, 'data/product/termopara.net-07228-01.jpg', 8, 1, '94.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 630, 1, 0, 1, '2013-09-28 17:24:10', '2016-02-12 13:40:25');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_attribute`
+-- Table structure for table `oc_product_attribute`
 --
 
 CREATE TABLE `oc_product_attribute` (
@@ -3091,20 +2943,117 @@ CREATE TABLE `oc_product_attribute` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_attribute`
+-- Dumping data for table `oc_product_attribute`
 --
 
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
-(43, 2, 1, '1'),
-(47, 4, 1, '16GB'),
-(43, 4, 1, '8gb'),
-(42, 3, 1, '100mhz'),
-(47, 2, 1, '4');
+(51, 12, 1, 'L=540мм, М12х1.25'),
+(52, 12, 1, 'L=570мм, М12х1.25'),
+(53, 12, 1, 'L=280мм, М12х1.25'),
+(54, 12, 1, 'L=410мм, М12х1.25'),
+(56, 12, 1, 'L=560мм, М12х1.25'),
+(57, 12, 1, 'L=620мм, М12х1.25'),
+(58, 12, 1, 'L=950мм, М12х1.25'),
+(59, 12, 1, 'L=345мм, М8х1'),
+(60, 12, 1, 'L=600мм, М8х1'),
+(61, 12, 1, 'L=900мм, М8х1'),
+(62, 12, 1, 'L=400мм, М9х1, А3'),
+(63, 12, 1, 'L=400мм, М10х1, А3'),
+(64, 12, 1, 'L=600мм, М10х1, А3'),
+(65, 12, 1, 'L=320мм, М9х1,  А1'),
+(66, 12, 1, 'L=400мм, М9х1,  А1'),
+(67, 12, 1, 'L=600мм, М9х1, А1'),
+(68, 12, 1, 'L=600мм, М10х1, А1'),
+(69, 12, 1, 'L=900мм, М10х1'),
+(70, 12, 1, 'L=580/140/400мм, М9х1, клеммы'),
+(71, 12, 1, ' L=380/700/750мм, М10х1, клеммы'),
+(72, 12, 1, 'L=220/700/800мм, М10х1, клеммы'),
+(73, 12, 1, 'L=145/170/640/750мм, М8х1, клеммы'),
+(74, 12, 1, 'L=420 мм, М8х1'),
+(75, 12, 1, ' L=200/665/750мм, М8х1, клеммы'),
+(76, 12, 1, 'L=220/480/840мм, М8х1, клеммы'),
+(77, 12, 1, 'L=260/460/840мм, М8х1, клеммы'),
+(78, 12, 1, 'L=260/480/840мм, М9х1, клеммы'),
+(79, 12, 1, 'L=1200 мм, М8*1'),
+(80, 12, 1, 'L=1200 мм, М8*1'),
+(81, 12, 1, 'L=500мм, 2 клеммы'),
+(82, 12, 1, 'L=500мм, 2 клеммы'),
+(83, 12, 1, 'L=500мм, разъем'),
+(84, 12, 1, 'L=300мм, Ø4мм, М10*1'),
+(85, 12, 1, 'L=300мм, Ø6мм, М10*1'),
+(86, 12, 1, 'L=400мм, Ø6мм, М10*1'),
+(87, 12, 1, 'L=400мм, Ø4мм, М10*1'),
+(88, 12, 1, 'L=600мм, Ø4мм, М10*1'),
+(89, 12, 1, 'L=600мм, Ø6мм, М10*1'),
+(90, 12, 1, 'L=500мм, Ø4мм, М10*1.25'),
+(91, 12, 1, 'L=1000мм, Ø4мм, М10*1.25'),
+(92, 12, 1, 'L=400мм, Ø4мм, М10*1'),
+(93, 12, 1, 'L=400мм, Ø4мм, М10*1'),
+(94, 12, 1, 'L=220мм, Ø4мм, М10*1'),
+(95, 12, 1, 'L=800/400мм, Ø4мм, М10*1.25'),
+(96, 12, 1, 'L=350мм, М8х1'),
+(97, 12, 1, 'L=350мм, М9х1'),
+(98, 12, 1, 'L=900мм, М8х1'),
+(99, 12, 1, 'в датчик пламени'),
+(100, 12, 1, 'силумин, 1/2&quot;'),
+(101, 12, 1, 'белая вакуумная резина, 2мм'),
+(102, 12, 1, 'черная резина ТМКЩ, 1.5мм'),
+(103, 12, 1, 'L=30см, М10 - 1/2&quot;'),
+(104, 12, 1, '2 крышки, силумин, 1/2&quot;'),
+(105, 12, 1, '2 крышки, ЦАМ, 1/2&quot;'),
+(106, 12, 1, '2 крышки, ЦАМ, 3/4&quot;'),
+(107, 12, 1, 'L=40см, М10 - 1/2&quot;'),
+(108, 12, 1, 'L=1200мм, М9х1, А1'),
+(109, 12, 1, 'L=950мм, Ø4мм, М10*1.25'),
+(110, 12, 1, 'L=50см, М10 - 1/2&quot;'),
+(111, 12, 1, 'L=60см, М10 - 1/2&quot;'),
+(112, 12, 1, 'L=80см, М10 - 1/2&quot;'),
+(113, 12, 1, 'L=100см, М10 - 1/2&quot;'),
+(114, 12, 1, 'L=345мм, М9х1'),
+(115, 12, 1, 'L=600мм, М9х1'),
+(116, 12, 1, 'L=900мм, М9х1'),
+(117, 12, 1, 'L=850мм, М9х1,  А1'),
+(118, 12, 1, 'L=400мм, М9х1, А2'),
+(119, 12, 1, 'L=600мм, М9х1, А2'),
+(120, 12, 1, 'L=900мм, М8х1, комплект для крепления'),
+(121, 12, 1, 'L=600мм, М9х1, А3'),
+(122, 12, 1, 'L=900мм, М9х1, А3'),
+(123, 12, 1, 'L=320мм, М9х1, А2'),
+(124, 12, 1, 'L=600мм, М8х1, А1'),
+(125, 12, 1, 'L=350мм, М8х1'),
+(127, 12, 1, 'L=350мм, М9х1'),
+(128, 12, 1, 'L=1000мм, клемма'),
+(129, 12, 1, 'L=350мм, М9х1'),
+(130, 12, 1, 'L=860мм, М12х1.25'),
+(131, 12, 1, 'L=920мм, М12х1.25'),
+(132, 12, 1, 'L=1200мм, клеммы'),
+(133, 12, 1, 'L=1200мм, М8х1'),
+(134, 12, 1, 'L=580/140/400мм, М9х1, клеммы'),
+(135, 12, 1, 'L=1100мм, М8х1'),
+(136, 12, 1, 'L=350мм, М8х1'),
+(137, 12, 1, ''),
+(138, 12, 1, ''),
+(139, 12, 1, 'L=105мм, Ø10мм, внутренняя резьба 1/2&quot;'),
+(140, 12, 1, 'L=105мм, Ø10мм, внешняя резьба 1/2&quot;'),
+(141, 12, 1, 'М8х1, латунь'),
+(142, 12, 1, 'М9х1, латунь'),
+(143, 12, 1, 'М10х1, латунь'),
+(144, 12, 1, 'L=105мм, Ø16мм, наружная резьба 1/2&quot;'),
+(145, 12, 1, 'L=400мм, М10х1,  А1'),
+(146, 12, 1, 'L=1200мм, Ø4мм, М10*1.25'),
+(147, 12, 1, 'L=900мм, 11/32&quot;'),
+(148, 12, 1, 'L=1200мм, М9х1, А1'),
+(149, 12, 1, 'L=850мм, М10х1,  А1'),
+(150, 12, 1, 'L=350мм, Ø4мм, М10*1.25'),
+(151, 12, 1, 'диаметр 40мм, толщина 0.12мм'),
+(152, 12, 1, 'в датчик пламени'),
+(153, 12, 1, 'L=300мм, Ø4мм, М10*1'),
+(154, 12, 1, 'L=300мм, Ø4мм, М10*1');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_description`
+-- Table structure for table `oc_product_description`
 --
 
 CREATE TABLE `oc_product_description` (
@@ -3121,34 +3070,145 @@ CREATE TABLE `oc_product_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_description`
+-- Dumping data for table `oc_product_description`
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
-(35, 1, 'Product 8', '&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n', '', '', 'Product 8', '', '', ''),
-(40, 1, 'iPhone', '&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n', '', '', 'iPhone', '', '', ''),
-(28, 1, 'HTC Touch HD', '&lt;p&gt;\r\n	HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more - all delivered on a breathtakingly crisp 3.8&amp;quot; WVGA touchscreen - you can take control of your mobile world with the HTC Touch HD.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Processor Qualcomm&amp;reg; MSM 7201A&amp;trade; 528 MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile&amp;reg; 6.1 Professional Operating System&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Memory: 512 MB ROM, 288 MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.8-inch TFT-LCD flat touch-sensitive screen with 480 x 800 WVGA resolution&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/WCDMA: Europe/Asia: 900/2100 MHz; Up to 2 Mbps up-link and 7.2 Mbps down-link speeds&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM/GPRS/EDGE: Europe/Asia: 850/900/1800/1900 MHz (Band frequency, HSUPA availability, and data speed are operator dependent.)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Device Control via HTC TouchFLO&amp;trade; 3D &amp;amp; Touch-sensitive front panel buttons&lt;/li&gt;\r\n	&lt;li&gt;\r\n		GPS and A-GPS ready&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth&amp;reg; 2.0 with Enhanced Data Rate and A2DP for wireless stereo headsets&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wi-Fi&amp;reg;: IEEE 802.11 b/g&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HTC ExtUSB&amp;trade; (11-pin mini-USB 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		5 megapixel color camera with auto focus&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VGA CMOS color camera&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in 3.5 mm audio jack, microphone, speaker, and FM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Ring tone formats: AAC, AAC+, eAAC+, AMR-NB, AMR-WB, QCP, MP3, WMA, WAV&lt;/li&gt;\r\n	&lt;li&gt;\r\n		40 polyphonic and standard MIDI format 0 and 1 (SMF)/SP MIDI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Rechargeable Lithium-ion or Lithium-ion polymer 1350 mAh battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Expansion Slot: microSD&amp;trade; memory card (SD 2.0 compatible)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AC Adapter Voltage range/frequency: 100 ~ 240V AC, 50/60 Hz DC output: 5V and 1A&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Special Features: FM Radio, G-Sensor&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '', '	 HTC Touch HD', '', '', ''),
-(44, 1, 'MacBook Air', '&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don&amp;rsquo;t lose inches and pounds overnight. It&amp;rsquo;s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n', '', '', 'MacBook Air', '', '', ''),
-(45, 1, 'MacBook Pro', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Latest Intel mobile architecture&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Leading-edge graphics&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Designed for life on the road&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Connect. Create. Communicate.&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Next-generation wireless&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', 'MacBook Pro', '', '', ''),
-(29, 1, 'Palm Treo Pro', '&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you&amp;rsquo;re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile&amp;reg; 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm&amp;reg; MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS &amp;mdash; 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM &amp;mdash; 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '', 'Palm Treo Pro', '', '', ''),
-(36, 1, 'iPod Nano', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Video in your pocket.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% brighter than before.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Sleek and colorful.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With an anodized aluminum and polished stainless steel enclosure and a choice of five colors, iPod nano is dressed to impress.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;iTunes.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Available as a free download, iTunes makes it easy to browse and buy millions of songs, movies, TV shows, audiobooks, and games and download free podcasts all at the iTunes Store. And you can import your own music, manage your whole media library, and sync your iPod or iPhone with ease.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', 'iPod Nano', '', '', ''),
-(46, 1, 'Sony VAIO', '&lt;div&gt;\r\n	Unprecedented power. The next generation of processing technology has arrived. Built into the newest VAIO notebooks lies Intel&amp;#39;s latest, most powerful innovation yet: Intel&amp;reg; Centrino&amp;reg; 2 processor technology. Boasting incredible speed, expanded wireless connectivity, enhanced multimedia support and greater energy efficiency, all the high-performance essentials are seamlessly combined into a single chip.&lt;/div&gt;\r\n', '', '', 'Sony VAIO', '', '', ''),
-(32, 1, 'iPod Touch', '&lt;p&gt;\r\n	&lt;strong&gt;Revolutionary multi-touch interface.&lt;/strong&gt;&lt;br /&gt;\r\n	iPod touch features the same multi-touch screen technology as iPhone. Pinch to zoom in on a photo. Scroll through your songs and videos with a flick. Flip through your library by album artwork with Cover Flow.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Gorgeous 3.5-inch widescreen display.&lt;/strong&gt;&lt;br /&gt;\r\n	Watch your movies, TV shows, and photos come alive with bright, vivid color on the 320-by-480-pixel display.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Music downloads straight from iTunes.&lt;/strong&gt;&lt;br /&gt;\r\n	Shop the iTunes Wi-Fi Music Store from anywhere with Wi-Fi.1 Browse or search to find the music youre looking for, preview it, and buy it with just a tap.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Surf the web with Wi-Fi.&lt;/strong&gt;&lt;br /&gt;\r\n	Browse the web using Safari and watch YouTube videos on the first iPod with Wi-Fi built in&lt;br /&gt;\r\n	&amp;nbsp;&lt;/p&gt;\r\n', '', '', '	 iPod Touch', '', '', ''),
-(41, 1, 'iMac', '&lt;div&gt;\r\n	Just when you thought iMac had everything, now there&acute;s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife &acute;08, and it&acute;s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.&lt;/div&gt;\r\n', '', '', 'iMac', '', '', ''),
-(33, 1, 'Samsung SyncMaster 941BW', '&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&amp;quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it&amp;#39;s not hard to imagine.&lt;/div&gt;\r\n', '', '', 'Samsung SyncMaster 941BW', '', '', ''),
-(34, 1, 'iPod Shuffle', '&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', 'iPod Shuffle', '', '', ''),
-(43, 1, 'MacBook', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', 'MacBook', '', '', ''),
-(31, 1, 'Nikon D300', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', 'Nikon D300', '', '', ''),
-(49, 1, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', '', 'Samsung Galaxy Tab 10.1', '', '', ''),
-(30, 1, 'Canon EOS 5D', '&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', '', 'sdf', '', '', ''),
-(48, 1, 'iPod Classic', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', 'iPod Classic', '', '', ''),
-(47, 1, 'HP LP3065', '&lt;p&gt;\r\n	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you&amp;#39;re at the office&lt;/p&gt;\r\n', '', '', 'HP LP3065', '', '', ''),
-(42, 1, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there\'s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it\'s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple\'s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO \'03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '&lt;p&gt;Коротко о главном!&lt;br&gt;&lt;/p&gt;', '', 'Apple Cinema 30', '', '', '');
+(51, 1, 'Термопара АОГВ-80', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-80&lt;/strong&gt; применяется для газовых котлов АОГВ-80 старого образца производства ЗАО &amp;laquo;Ростовгазоаппарат&amp;raquo;.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;540 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;открытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;6 + (0.012 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная труба&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;120 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-80 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, котел', 'Термопара газового котла АОГВ-80', 'Термопара газового котла АОГВ-80 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900\n', 'АОГВ, термопара, котел', ''),
+(52, 1, 'Термопара АОГВ-110', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-110&lt;/strong&gt; применяется для газовых котлов АОГВ-110 -120, АКГВ-11 серии &amp;laquo;Эконом&amp;raquo; старого образца производства ЗАО &amp;laquo;Ростовгазоаппарат&amp;raquo; с 2004 г.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;570 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;открытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;6 + (0.012 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная труба&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;130 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-110 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, котел', 'Термопара газового котла АОГВ-110', 'Термопара газового котла АОГВ-110 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900\n', 'АОГВ-110, АОГВ-120, АКГВ-11, термопара, котел', ''),
+(53, 1, 'Термопара АОГВ-7,5 DANI', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-7.5 DANI&lt;/strong&gt; применяется для парапетных газовых котлов АОГВ (АКГВ) 7.5 DANI.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;280 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;закрытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;8 + (0.014 х L) &amp;plusmn; 3 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная трубка&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ 7.5 DANI упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, DANI, котел', 'Термопара АОГВ-7,5 DANI', 'Термопара АОГВ-7,5 DANI по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900\n', 'АОГВ, DANI, термопара, котел', ''),
+(54, 1, 'Термопара АОГВ-11 DANI', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-11 DANI&lt;/strong&gt; применяется для газовых котлов АОГВ (АКГВ) 11.5 DANI.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;410 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;закрытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;8 + (0.014 х L) &amp;plusmn; 3 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная трубка&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;75 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-11 DANI упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, DANI, котел', 'Термопара АОГВ-11 DANI', 'Термопара АОГВ-11 DANI по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900\n', 'АОГВ, DANI, термопара, котел', ''),
+(56, 1, 'Термопара АОГВ-17 DANI', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-17 DANI&lt;/strong&gt; применяется для газовых котлов АОГВ-17, АОГВ-19, АОГВ-23.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;560 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;закрытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;8 + (0.014 х L) &amp;plusmn; 3 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная трубка&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;80 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-17 DANI упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, DANI, котел', 'Термопара АОГВ-17 DANI', 'Термопара АОГВ-17 DANI по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АОГВ, DANI, термопара, котел', ''),
+(57, 1, 'Термопара АОГВ-23 DANI', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-23 DANI&lt;/strong&gt; применяется для парапетных газовых котлов АОГВ-23, АОГВ-29.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;620 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;закрытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;8 + (0.014 х L) &amp;plusmn; 3 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная трубка&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;90 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-23 DANI упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, DANI, котел', 'Термопара АОГВ-23 DANI', 'Термопара АОГВ-23 DANI по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АОГВ, DANI, термопара, котел', ''),
+(58, 1, 'Термопара АОГВ-32', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-32&lt;/strong&gt; применяется для газовых котлов АОГВ (АКГВ) мощностью до 32 кВт, газовой автоматики АГУК.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;950 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;закрытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;8 + (0.014 х L) &amp;plusmn; 3 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная трубка&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;100 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-32 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, котел', 'Термопара АОГВ-32', 'Термопара АОГВ-32 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АОГВ, термопара, котел', ''),
+(59, 1, 'Термопара Арбат 345мм М8', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 345мм М8&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви, а также колонок ВПГ и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;345 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 345мм М8 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви, ВПГ', 'Термопара Арбат 345мм М8', 'Термопара Арбат 345мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(60, 1, 'Термопара Арбат 600мм М8', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 600мм М8&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 600мм М8 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', 'Термопара Арбат 600мм М8', 'Термопара Арбат 600мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(61, 1, 'Термопара Арбат 900мм М8', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 900мм М8&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 900мм М8 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', 'Термопара Арбат 900мм М8', 'Термопара Арбат 900мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(62, 1, 'Термопара SIT А3 400мм М9 (02.200.053)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A3 400мм М9 (0.200.053)&lt;/strong&gt; применяется в газовых котлах, оснащенных блоком автоматики EuroSIT, Арбат (с 2008г), ОРИОН, HONEYWELL, Евроказ, Факел-2М, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;400 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А3&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A3 400мм М9 (0.200.053) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А3 400мм М9 (02.200.053) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(63, 1, 'Термопара SIT A3 400мм М10 Каре', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A3 400мм М10 Каре&lt;/strong&gt; применяется в газовых котлах Данко, Ривнетерм и других котлах мощностью до 25кВт, с автоматикой регулирования и безопасности КАРЕ&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;400 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А3&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A3 400мм М10 Каре упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А3 400мм М10 для автоматики Каре по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'котел, конвектор, термопара, КАРЕ', ''),
+(64, 1, 'Термопара SIT A3 600мм М10 Каре', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A3 600мм М10 Каре&lt;/strong&gt; применяется в газовых котлах Данко, Ривнетерм и других котлах мощностью до 25кВт, с автоматикой регулирования и безопасности КАРЕ&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А3&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A3 600мм М10 Каре упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А3 600мм М10 для автоматики Каре по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'котел, конвектор, термопара, КАРЕ', ''),
+(65, 1, 'Термопара SIT A1 320мм М9 (0.200.003)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 320мм М9 (0.200.003)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;320 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 320мм М9 (0.200.003) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT A1 320мм М9 (0.200.003) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(66, 1, 'Термопара SIT А1 400мм М9 (0.200.005)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 400мм М9 (0.200.005)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;400 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 400мм М9 (0.200.005) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 400мм М9 (0.200.005) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(67, 1, 'Термопара SIT А1 600мм М9 (0.200.009)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 600мм М9 (0.200.009)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 600мм М9 (0.200.009) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 600мм М9 (0.200.009) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', '');
+INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
+(68, 1, 'Термопара SIT А1 600мм М10 (0.200.025)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 600мм М10 (0.200.025)&lt;/strong&gt; применяется для газовых конвекторах, например таких как Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 600мм М10 (0.200.025) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 600мм М10 (0.200.025) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(69, 1, 'Термопара Honeywell 900мм М10', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 900мм М10&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 900мм М10 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 900мм М10 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара', ''),
+(70, 1, 'Термопара колонки Beretta Idrabagno', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара&amp;nbsp; для&amp;nbsp; газовых&amp;nbsp; проточных&amp;nbsp; нагревателей&amp;nbsp; Beretta&amp;nbsp; Idrabagno-11&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=580/140/400мм;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М9х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может быть установлена в моделях &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;-11i,&amp;nbsp; -14,&amp;nbsp; -14i,&amp;nbsp; -17,&amp;nbsp; -17i&lt;/span&gt;&lt;/span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Beretta, Беретта, колонка, термопара', '', 'Термопара газовой колонки Beretta Idrabagno по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Beretta, Беретта, колонка, термопара', ''),
+(71, 1, 'Термопара колонки Demrad', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для бытовых газовых проточных водонагревателей Demrad&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=380/700/750мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М10х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может устанавливаться в моделях &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;серии Compact C-125, C-150S, С-275S/SE/SEI, С-275В, С-350S/SE, &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Compact Turbo &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;и др;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Demrad, Демрад, колонка, термопара', '', 'Термопара газовой колонки Demrad по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Demrad, Демрад, колонка, термопара', ''),
+(72, 1, 'Термопара колонки Junkers-Bosch', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых проточных водонагревателей Junkers-Bosch &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=220/700/800мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М10х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может устанавливаться в моделях:&amp;nbsp; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;-WR, -WRD, -WT, -WTD&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Junkers-Bosch, Юнкерс-Бош, колонка, термопара', '', 'Термопара газовой колонки Junkers-Bosch по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Junkers-Bosch, Юнкерс-Бош, колонка, термопара', ''),
+(73, 1, 'Термопара колонки Vaillant atmoMAG', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых проточных водонагревателей Vaillant atmoMAG&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=145/170/640/750мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Применяется в моделях: MAG OE 11-0/0 XZ C+ H, MAG 14-0 GRX, MAG 14-0 RXZ, turboMAG 11-2 H, turboMAG 14-2 H, MAG mini 11-0 RXI, turboMAG 11-2 H, turboMAG 14-2 H и других.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Vaillant, Вайлант, колонка, термопара', '', 'Термопара газовой колонки Vaillant atmoMAG по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Vaillant, Вайлант, колонка, термопара', ''),
+(74, 1, 'Термопара колонки Vaillant atmoMAG Pro', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара&amp;nbsp; для&amp;nbsp; газовых&amp;nbsp; проточных&amp;nbsp; нагревателей&amp;nbsp; Vaillant&amp;nbsp; atmoMAG Pro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=420 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может устанавливаться в моделях: MAG Pro OE 10 0/0 XZ, MAG Pro OE 10 0/0 XZ, Mag Pro 11-0 XZ C+,MAG PRO OE 11-0 XZC+, MAG pro OE 11-0/0 XZ C+ H и других.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Vaillant, Вайлант, колонка, термопара', '', 'Термопара газовой колонки Vaillant atmoMAG Pro по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Vaillant, Вайлант, колонка, термопара', ''),
+(75, 1, 'Термопара колонки Termet G-17-30', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара&amp;nbsp; для&amp;nbsp; газовых проточных водонагревателей Termet G-17-30&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=200/665/750мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Termet, Термет, колонка, термопара', '', 'Термопара газовой колонки Termet G-17-30 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Termet, Термет, колонка, термопара', ''),
+(76, 1, 'Термопара колонки Termet G-19-01', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых проточных водонагревателей Termet G-19-01&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=220/480/840мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Termet, Термет, колонка, термопара', '', 'Термопара газовой колонки Termet G-19-01 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Termet, Термет, колонка, термопара', ''),
+(77, 1, 'Термопара колонки Termet TermaQ G-19-01', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых проточных нагревателей Termet TermaQ G-19-01&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=260/460/840мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Termet, Термет, колонка, термопара', '', 'Термопара газовой колонки Termet TermaQ G-19-01 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Termet, Термет, колонка, термопара', ''),
+(78, 1, 'Термопара колонки Termet Aqua', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара&amp;nbsp; для&amp;nbsp; газовых&amp;nbsp; проточных&amp;nbsp; водонагревателей&amp;nbsp; Termet&amp;nbsp; Aqua&lt;/span&gt;&amp;nbsp; &lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;nbsp; Длина L=260/480/840мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;штуцером &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может устанавливаться в моделях:&amp;nbsp; Aqua Heat&amp;nbsp; G-19-00,&amp;nbsp; Aqua Comfort G-19-03.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Termet, Термет, колонка, термопара', '', 'Термопара газовой колонки Termet Aqua по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Termet, Термет, колонка, термопара', ''),
+(79, 1, 'Термопара духовки INDESIT 1200мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) духовки/гриля газовых плит ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1200 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Рабочий оголовок без резьбы, с проточкой под защелку&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;\n', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка, гриль', '', 'Термопара газовой духовки INDESIT 1200мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка, гриль', ''),
+(80, 1, 'Термопара духовки ARISTON INDESIT 1200мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) духовки для газовых плит ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1200 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба рабочего оголовка 8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка', '', 'Термопара газовой духовки ARISTON INDESIT 1200мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка', ''),
+(81, 1, 'Термопара конфорки ARISTON INDESIT 500мм М6', '&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) конфорки варочных панелей ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;br /&gt;\n&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=500 мм;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;br /&gt;\n&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение - ножевая клемма (мама) + О-клемма&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;\n&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба рабочего оголовка 6х0,75.&lt;/span&gt;&lt;/span&gt;', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, варочная панель', '', 'Термопара газовой конфорки ARISTON INDESIT 500мм М6 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, варочная панель', ''),
+(82, 1, 'Термопара конфорки ARISTON INDESIT 500мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) конфорки варочных панелей ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=500 мм;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - 2 ножевые клеммы (мама)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба рабочего оголовка 8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, варочная панель', '', 'Термопара газовой конфорки ARISTON INDESIT 500мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, варочная панель', ''),
+(83, 1, 'Термопара конфорки Electrolux 500мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) конфорки для варочных панелей Electrolux&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 500 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - коаксиальный разъем&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба рабочего оголовка 6х0,75.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Применяется для газовых плит ELECTROLUX, GORENJE, HANSA, ZANUSSI, AEG разных моделей с аналогичными установочными размерами&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Electrolux, Электролюкс, Аристон, Индезит, термопара, газплита, газконтроль, варочная панель', '', 'Термопара газовой конфорки Electrolux 500мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Electrolux, Электролюкс, термопара, газплита, газконтроль, варочная панель', ''),
+(84, 1, 'Трубка запальника автоматики EuroSIT 300мм, ø4мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=300 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;4&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 300мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(85, 1, 'Трубка запальника автоматики EuroSIT 300мм, ø6мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=300 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;6&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 300мм, ø6мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(86, 1, 'Трубка запальника автоматики EuroSIT 400мм, ø6мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=400 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;6&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 400мм, ø6мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(87, 1, 'Трубка запальника автоматики EuroSIT 400мм, ø4мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=400 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;4&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 400мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(88, 1, 'Трубка запальника автоматики EuroSIT 600мм, ø4мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=600 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;4&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 600мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(89, 1, 'Трубка запальника автоматики EuroSIT 600мм, ø6мм ', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовых котлов с автоматикой EuroSIT-630&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=600 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;6&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;и ниппелем;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки серий SIT 140, SIT 150;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'EuroSIT, СИТ, трубка запальника', '', 'Трубка запальника автоматики EuroSIT 600мм, ø6мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, трубка запальника', ''),
+(90, 1, 'Импульсная трубка автоматики КАРЕ 500мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Импульсная трубка запальника для газовой автоматики КАРЕ&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для соединения терморегулятор - мембранный клапан;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=500 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;4мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;В зависимости от габаритных размеров котла может применяться как соединение:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;терморегулятор - клапан мембранный&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик тяги - датчик от закипания&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;терморегулятор - эвакуационная горелка&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик от закипания - электромагнитный клапан&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n', '', 'Каре, импульсная трубка, котел', '', 'Импульсная трубка автоматики КАРЕ 500мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Каре, импульсная трубка, котел', ''),
+(91, 1, 'Импульсная трубка автоматики КАРЕ 1000мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Импульсная трубка запальника для газовой автоматики КАРЕ&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для соединения терморегулятор - &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;эвакуационная горелка&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=1000 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;4мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;В зависимости от габаритных размеров котла может применяться как соединение:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;терморегулятор - эвакуационная горелка&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик тяги - пилотная горелка&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик от закипания - электромагнитный клапан&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n', '', 'Каре, импульсная трубка, котел', '', 'Импульсная трубка автоматики КАРЕ 1000мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Каре, импульсная трубка, котел', ''),
+(92, 1, 'Трубка запальника Арбат, Комфорт, Пламя 400мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для котлов с автоматикой Арбат-11, Комфорт, Пламя&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения запальника с блоком клапанов автоматики&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=400 мм; Диаметр &amp;Oslash;4мм&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайкой и ниппелем&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Арбат, Комфорт, Пламя, трубка запальника', '', 'Трубка запальника Арбат, Комфорт, Пламя 400мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, Комфорт, Пламя, трубка запальника', '');
+INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
+(93, 1, 'Трубка запальника Евроказ, Факел 400мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для котлов с автоматикой Евроказ, Факел-2М&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения запальника с блоком клапанов автоматики;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайкой и ниппелем;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=400 мм; Диаметр &amp;Oslash;4мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Евроказ, Факел, трубка запальника', '', 'Трубка запальника Евроказ, Факел 400мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Евроказ, Факел, трубка запальника', ''),
+(94, 1, 'Трубка запальника Beretta Idrabagno 220мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для водяного нагревателя&amp;nbsp;Beretta Idrabagno&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения запальника с газовым клапаном колонки;&amp;nbsp; Укомплектована необходимыми для монтажа крепежными элементами;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=220 мм; Диаметр &amp;Oslash;4мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может применяться в моделях:&amp;nbsp; Idrabagno Aqua -11, -11i, -14, -14i, -17, -17i&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Beretta, Беретта, колонка, трубка запальника', '', 'Трубка запальника Beretta Idrabagno 220мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Beretta, Беретта, колонка, трубка запальника', ''),
+(95, 1, 'Импульсная трубка автоматики АПОК-1 800мм/400мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Т-образная и&lt;/span&gt;мпульсная трубка для газовой автоматики АПОК-1&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения клапана-отсекателя с датчиком пламени и датчиком тяги;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа тремя гайками М10&lt;/span&gt;&lt;/span&gt;;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=800/400 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &amp;Oslash;4мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'АПОК-1, импульсная трубка', '', 'Импульсная трубка автоматики АПОК-1 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, импульсная трубка', ''),
+(96, 1, 'Термопара Термо 350мм М8 универсальная', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Термо 350мм М8 универсальная&lt;/strong&gt; применяется в парапетных газовых котлах Термо&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;350 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;универсальный с длинной резьбой&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Термо 350мм М8 универсальная упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'Термо, котел, термопара', '', 'Термопара Термо 350мм М8 универсальная по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Термо, котел, термопара', ''),
+(97, 1, 'Термопара Термо 350мм М9 универсальная', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Термо 350мм М9 универсальная&lt;/strong&gt; применяется в парапетных газовых котлах Термо&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;350 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;универсальный с длинной резьбой&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС&amp;nbsp;при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Термо 350мм М9 универсальная упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'Термо, котел, термопара', '', 'Термопара Термо 350мм М9 универсальная по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Термо, котел, термопара', ''),
+(98, 1, 'Термопара Honeywell 600мм 11/32&quot;', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 600мм 11/32&amp;quot;&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер 11/32&amp;quot; под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 600мм 11/32 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 600мм 11/32&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара', ''),
+(99, 1, 'Биметаллическая пластина автоматики АПОК-1', '&lt;p&gt;Биметаллическая пластина для газовой автоматики АПОК-1.&lt;/p&gt;\r\n\r\n&lt;p&gt;Служит составной частью датчика пламени, контролирующего пламя в котле.&lt;/p&gt;\r\n', '', 'АПОК-1, биметаллическая пластина, датчик пламени', '', 'Биметаллическая пластина автоматики АПОК-1 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, биметаллическая пластина, датчик пламени', ''),
+(100, 1, 'Клапан-отсекатель автоматики АПОК-1', '&lt;p&gt;Клапан-отсекатель для газовой автоматики АПОК-1;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;Входной и выходной патрубки 1/2&amp;quot;.&lt;/p&gt;\n\n&lt;p&gt;Материал: силумин (кремний-алюминий);&lt;/p&gt;\n\n&lt;p&gt;Является основным узлом автоматики безопасности.&lt;/p&gt;\n\n&lt;p&gt;Имеет три выхода:&lt;/p&gt;\n\n&lt;ul&gt;\n	&lt;li&gt;основной - на запорно-регулирующий кран;&lt;/li&gt;\n	&lt;li&gt;к штуцеру верхней крышки для подачи газа на запальную горелку;&lt;/li&gt;\n	&lt;li&gt;к штуцеру нижней крышки для подачи газа к датчику тяги и датчику погасания пламени;&lt;/li&gt;\n&lt;/ul&gt;\n', '', 'АПОК-1, клапан-отсекатель', '', 'Клапан-отсекатель автоматики АПОК-1 купить в магазине Termopara.Net. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, клапан-отсекатель', ''),
+(101, 1, 'Мембрана водяного регулятора ВПГ белая', '&lt;p&gt;Мембрана для водяного регулятора газовых колонок ВПГ 18/20/23/23М, НЕВА3208&lt;/p&gt;\n\n&lt;p&gt;Материал: белая вакуумная резина&lt;/p&gt;\n\n&lt;p&gt;Толщина 2мм.&lt;/p&gt;\n', '', 'ВПГ, мембрана, колонка', '', 'Мембрана водяного регулятора ВПГ белая по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'ВПГ, мембрана, колонка', ''),
+(102, 1, 'Мембрана водяного регулятора ВПГ черная 1,5мм', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Мембрана для водяного регулятора газовых колонок ВПГ 18/20/23/23М, НЕВА3208;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Материал: резина ТМКЩ (черная);&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Толщина 1,5мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'ВПГ, мембрана, колонка', '', 'Мембрана водяного регулятора ВПГ черная 1,5мм купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'ВПГ, мембрана, колонка', ''),
+(103, 1, 'Медная трубка для смесителя 300мм, М10-½&quot; ', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=300мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 300мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(104, 1, 'Терморегулятор автоматики АПОК-1', '&lt;p&gt;Терморегулятор автоматики АПОК-1 для газовых котлов&lt;/p&gt;\n\n&lt;p&gt;Двухкрышечная конструкция корпуса&lt;/p&gt;\n\n&lt;p&gt;Материал: силумин (кремний-алюминий)&lt;/p&gt;\n\n&lt;p&gt;Резьбовое подсоединение к котлу 1/2&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;Подходит ко всем котлам, где установлена данная автоматика (КЧМ, КСТ и другие)&lt;/p&gt;\n', '', 'АПОК-1, терморегулятор', '', 'Терморегулятор автоматики АПОК-1 купить в магазине Termopara.Net. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, терморегулятор', ''),
+(105, 1, 'Терморегулятор автоматики АПОК-1 ', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Терморегулятор автоматики АПОК-1 для газовых котлов;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Двухкрышечная конструкция корпуса;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Материал: ЦАМ (цинк-алюминий-медь);&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Резьбовое подсоединение к котлу 1/2&quot;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n', '', 'АПОК-1, терморегулятор', '', 'Терморегулятор автоматики АПОК-1 купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'АПОК-1, терморегулятор', ''),
+(106, 1, 'Терморегулятор автоматики АПОК-1 ', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Терморегулятор автоматики АПОК-1 для газовых котлов;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Двухкрышечная конструкция корпуса;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Материал: ЦАМ &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;(цинк-алюминий-медь)&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Резьбовое подсоединение к котлу 3/4&quot;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n', '', 'АПОК-1, терморегулятор', '', 'Терморегулятор автоматики АПОК-1 купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'АПОК-1, терморегулятор', ''),
+(107, 1, 'Медная трубка для смесителя 400мм, М10-½&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=400мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 400мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(108, 1, 'Термопара SIT А1 1200мм М9 (0.200.019)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 1200мм М9 (0.200.019)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;1200 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;90 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 1200мм М9 (0.200.019) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 1200мм М9 (0.200.019) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(109, 1, 'Трубка запальника автоматики АПОК 950мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовой пневматической автоматики АПОК&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения клапана-отсекателя с запальником;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайкой М10 и ниппелем&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=950 мм;&amp;nbsp; Диаметр &amp;Oslash;4мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'АПОК-1, трубка запальника', '', 'Трубка запальника автоматики АПОК 950мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, трубка запальника', ''),
+(110, 1, 'Медная трубка для смесителя 500мм, М10-½&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=500мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 500мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(111, 1, 'Медная трубка для смесителя 600мм, М10-½&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=600мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 600мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(112, 1, 'Медная трубка для смесителя 800мм, М10-½&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=800мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 800мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(113, 1, 'Медная трубка для смесителя 1000мм, М10-½&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Медная подводная трубка для подключения смесителя&amp;nbsp; М10 x ½&quot;;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина L=1000мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Гайка 1/2&quot;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Игла М10*1;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Укомплектована резиновой прокладкой.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Данный вид трубок отличается своим качеством и возможностью г&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;нуть к требуемой траектории.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Можно использoвать в системах с рабочим давлением до 10 атмосфер.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'трубка подводная, трубка смесителя', '', 'Медная трубка для смесителя 1000мм, М10-½&quot; купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', '', ''),
+(114, 1, 'Термопара Арбат 345мм М9', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 345мм М9&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;345 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 345мм М9 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', '', 'Термопара Арбат 345мм М9 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(115, 1, 'Термопара Арбат 600мм М9', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 600мм М9&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 600мм М9 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', '', 'Термопара Арбат 600мм М9 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(116, 1, 'Термопара Арбат 900мм М9', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 900мм М9&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 900мм М9 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', '', 'Термопара Арбат 900мм М9 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(117, 1, 'Термопара SIT А1 850мм М9 (0.200.013)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 850мм М9 (0.200.013)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;850 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;65 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 850мм М9 (0.200.013) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 850мм М9 (0.200.013) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', '');
+INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
+(118, 1, 'Термопара SIT А2 400мм М9 (0.200.231)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A2 400мм М9 (0.200.231)&lt;/strong&gt; применяется в газовых конвекторах Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;400 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А2&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A2 400мм М9 (0.200.231) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А2 400мм М9 (0.200.231) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, конвектор, термопара', ''),
+(119, 1, 'Термопара SIT А2 600мм М9 (0.200.233)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A2 600мм М9 (0.200.233)&lt;/strong&gt; применяется в газовых конвекторах Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А2&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A2 600мм М9 (0.200.233) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А2 600мм М9 (0.200.233) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, конвектор, термопара', ''),
+(120, 1, 'Термопара универсальная 900мм с комплектом крепления', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара универсальная 900мм с комплектом крепления&lt;/strong&gt; может применяться в газовых духовках, котлах, конвекторах и водонагревателях разного типа. В комплект входит набор крепежных элементов для подсоединения термопары к любым сочетаниям горелки и клапана.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Крепление оголовка&lt;/td&gt;\n			&lt;td&gt;цанговая гайка, 2 конусные гайки&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М8х1, М9х1, М9х0.75, М10х1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;90 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары упакованы в ПЭ пакеты с этикеткой и вкладышем. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара универсальная 900мм с комплектом крепления по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'котел, конвектор, термопара', ''),
+(121, 1, 'Термопара SIT А3 600мм М9 (0.200.055)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A3 600мм М9 (0.200.055)&lt;/strong&gt; применяется в газовых котлах, оснащенных блоком автоматики EuroSIT, Арбат (с 2008г), ОРИОН, HONEYWELL, Евроказ, Факел-2М, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А3&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A3 600мм М9 (0.200.055) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А3 600мм М9 (0.200.055) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(122, 1, 'Термопара SIT А3 900мм М9 (0.200.058)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A3 900мм М9 (0.200.058)&lt;/strong&gt; применяется в газовых котлах, оснащенных блоком автоматики EuroSIT, Арбат (с 2008г), ОРИОН, HONEYWELL, Евроказ, Факел-2М, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А3&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A3 900мм М9 (0.200.058) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А3 900мм М9 (0.200.058) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(123, 1, 'Термопара SIT А2 320мм М9 (0.200.230)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A2 320мм М9 (0.200.230)&lt;/strong&gt; применяется в газовых конвекторах Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;320 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А2&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A2 320мм М9 (0.200.230) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А2 320мм М9 (0.200.230) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, конвектор, термопара', ''),
+(124, 1, 'Термопара SIT А1 600мм М8 (0.200.124)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 600мм М8 (0.200.124)&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 600мм М8 (0.200.124) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 600мм М8 (0.200.124) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(125, 1, 'Термопара Термо 350мм М8', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Термо 350мм М8&lt;/strong&gt; применяется в парапетных газовых котлах Термо&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;350 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;оригинальный с резьбой М8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Термо 350мм М8 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'Термо, котел, термопара', '', 'Термопара Термо 350мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Термо, котел, термопара', ''),
+(127, 1, 'Термопара Термо 350мм М9', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Термо 350мм М9&lt;/strong&gt; применяется в парапетных газовых котлах Термо&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;350 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;оригинальный с резьбой М8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;30 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Термо 350мм М9 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'Термо, котел, термопара', '', 'Термопара Термо 350мм М9 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Термо, котел, термопара', ''),
+(128, 1, 'Термопара духовки Orion ORSK', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) газовой плиты Orion ORSK&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1000 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - ножевая клемма&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Гайка крепления оголовка М8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Orion, Орион, термопара, духовка, газплита, газконтроль', '', 'Термопара духовки газовой плиты Orion ORSK по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Orion, Орион, термопара, духовка, газплита, газконтроль', ''),
+(129, 1, 'Термопара колонки Beretta Idrabagno (до 2006г)', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых проточных нагревателей Beretta модель Idrabagno&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;\n&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=350мм;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;br /&gt;\n&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М9х1&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может быть установлена в моделях&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;:&lt;/p&gt;\n\n&lt;ul&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-10&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-11&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-11i&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-13&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-14&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-17&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n	&lt;li&gt;\n	&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Beretta Idrabagno-17i&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n	&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;до 2006 года выпуска&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Beretta, Беретта, колонка, термопара', '', 'Термопара газовой колонки Beretta Idrabagno (до 2006г) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Beretta, Беретта, колонка, термопара', ''),
+(130, 1, 'Термопара АОГВ-29', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-29&lt;/strong&gt; применяется для газовых котлов &lt;span style=&quot;font-size:16px&quot;&gt;АОГВ-23, АОГВ-29&lt;/span&gt; старого образца производства ЗАО &amp;laquo;Ростовгазоаппарат&amp;raquo;.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;860 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;открытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;6 + (0.012 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная труба&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;110 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-29 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, котел', '', 'Термопара газового котла АОГВ-29 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АОГВ-29, термопара, котел', ''),
+(131, 1, 'Термопара АОГВ-35', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара АОГВ-35&lt;/strong&gt; применяется для газовых котлов АОГВ-35 старого образца производства ЗАО &amp;laquo;Ростовгазоаппарат&amp;raquo;.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;920 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;открытый&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;М12х1,25&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 15 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;6 + (0.012 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медная труба&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;120 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары АОГВ-35 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, АОГВ, котел', '', 'Термопара АОГВ-35 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900\n', 'АОГВ, термопара, котел', ''),
+(132, 1, 'Термопара духовки Hansa 1200мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара духовки газовой плиты Hansa&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1200 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - клеммы&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Гайка крепления оголовка М8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Hansa, Ханса, термопара, духовка, газплита, газконтроль', '', 'Термопара газовой духовки Hansa 1200мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Hansa, Ханса, термопара, духовка, газплита, газконтроль', ''),
+(133, 1, 'Термопара Арбат 1200мм М8', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Арбат 1200мм М8&lt;/strong&gt; применяется для газовых котлов с автоматикой Арбат, например таких как РОСС, Житомир, Вулкан, Данко, Атон, Термо, Дани, Маяк, Колви и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;1200 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А17 резьба М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М8 под ключ 8&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;90 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Арбат 1200мм М8 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, Арбат, котел, РОСС, Житомир, Вулкан, Данко, Атон, Термо-бар, Дани, Маяк, Колви', '', 'Термопара Арбат 1200мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Арбат, термопара, котел', ''),
+(134, 1, 'Термопара колонки Beretta Aqua', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара&amp;nbsp; для&amp;nbsp; газовых&amp;nbsp; проточных&amp;nbsp; нагревателей&amp;nbsp; Beretta&amp;nbsp; Aqua&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=360/380/680мм;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к датчику - ножевые клеммы(мама).&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Может быть установлена в моделях &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Beretta, Беретта, колонка, термопара', '', 'Термопара газовой колонки Beretta Aqua по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Beretta, Беретта, колонка, термопара', ''),
+(135, 1, 'Термопара духовки BEKO 1100мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара духовки газовой плиты BEKO&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1100 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - штуцер М8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'ВЕКО, термопара, духовка, газплита', '', 'Термопара духовки газплиты BEKO 1100мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'ВЕКО, термопара, духовка, газплита', ''),
+(136, 1, 'Термопара гриля BEKO 350мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара гриля газовой плиты BEKO&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 350 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану - штуцером М8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'ВЕКО, термопара, гриль, газплита', '', 'Термопара гриля газплиты BEKO 350мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'ВЕКО, термопара, гриль, газплита', ''),
+(137, 1, 'Запальник автоматики АПОК-1', '&lt;p&gt;Запальная горелка для газовой автоматики АПОК-1&lt;/p&gt;\n', '', 'АПОК-1, запальник', '', 'Запальник автоматики АПОК-1 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, запальник', ''),
+(138, 1, 'Запальник автоматики Пламя', '&lt;p&gt;Запальная горелка для газовой автоматики Пламя, Арбат, Вулкан&lt;/p&gt;\n', '', 'Пламя, запальник', '', 'Запальник автоматики Пламя по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Пламя, запальник', ''),
+(139, 1, 'Стакан термобаллона 100мм, ø10мм, внутренняя резьба ½&quot;', '&lt;p&gt;Стакан медный под термобаллон&lt;br /&gt;\nL=100мм&lt;br /&gt;\nНаружный диаметр трубки 10мм&lt;br /&gt;\nвнутренний диаметр 9мм&lt;br /&gt;\nвнутреннее резьбовое соединение 1/2&amp;quot;&lt;/p&gt;\n', '', 'стакан термобаллона', '', 'Стакан термобаллона 100мм, ø10мм, внутренняя резьба ½&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'стакан термобаллона', ''),
+(140, 1, 'Стакан термобаллона 100мм, ø10мм, наружная резьба ½&quot;', '&lt;p&gt;Стакан медный под термобаллон&lt;br /&gt;\nL=100мм&lt;br /&gt;\nНаружный диаметр трубки 10мм&lt;br /&gt;\nвнутренний диаметр 9мм&lt;br /&gt;\nнаружное резьбовое соединение 1/2&amp;quot;&lt;/p&gt;\n', '', 'стакан термобаллона', '', 'Стакан термобаллона 100мм, ø10мм, наружная резьба ½&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'стакан термобаллона', ''),
+(141, 1, 'Гайка разрезная М8х1 (G6.032.011)', '&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Латунная разрезная гайка М8х1. Используется для крепления термопары в электромагнитном клапане&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'гайка, гайка разрезная, гайка термопары', '', 'Гайка разрезная М8х1 (G6.032.011) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'гайка, гайка разрезная, гайка термопары', ''),
+(142, 1, 'Гайка разрезная М9х1 (G6.032.010)', '&lt;p&gt;Латунная разрезная гайка М9х1. Используется для крепления термопары в электромагнитном клапане&lt;/p&gt;\n', '', 'гайка, гайка разрезная, гайка термопары', '', 'Гайка разрезная М9х1 (G6.032.010) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'гайка, гайка разрезная, гайка термопары', ''),
+(143, 1, 'Гайка разрезная М10х1 (G6.032.009)', '&lt;p&gt;Латунная разрезная гайка М10х1. Используется для крепления термопары в электромагнитном клапане&lt;/p&gt;\n', '', 'гайка, гайка разрезная, гайка термопары', '', 'Гайка разрезная М10х1 (G6.032.009) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'гайка, гайка разрезная, гайка термопары', '');
+INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
+(144, 1, 'Стакан термобаллона 105мм, ø16мм, наружная резьба ½&quot;', '&lt;p&gt;Стакан медный под термобаллон&lt;br /&gt;\nL=105мм&lt;br /&gt;\nНаружный диаметр трубки 16мм&lt;br /&gt;\nвнутренний диаметр 15мм&lt;br /&gt;\nнаружное резьбовое соединение 1/2&amp;quot;&lt;/p&gt;\n', '', 'стакан термобаллона', '', 'Стакан термобаллона 105мм, ø16мм, наружная резьба ½&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'стакан термобаллона', ''),
+(145, 1, 'Термопара SIT А1 400мм М10 (0.200.025)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 400мм М10 (0.200.025)&lt;/strong&gt; применяется для газовых конвекторах, например таких как Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;400 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;35 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 400мм М10 (0.200.025) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 400мм М10 (0.200.025) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(146, 1, 'Трубка запальника автоматики АПОК 1200мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для газовой пневматической автоматики АПОК&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Служит для соединения клапана-отсекателя с запальником;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайкой М10 и ниппелем&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=1200 мм;&amp;nbsp; Диаметр &amp;Oslash;4мм.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'АПОК-1, трубка запальника', '', 'Трубка запальника автоматики АПОК 1200мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, трубка запальника', ''),
+(147, 1, 'Термопара Honeywell 900мм 11/32&quot;', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 900мм 11/32&amp;quot;&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер 11/32&amp;quot; под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;70 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 900мм 11/32 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 900мм 11/32&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара, котел', ''),
+(148, 1, 'Термопара SIT A1 1200мм М8 (0.200.000)', '&lt;h1&gt;&lt;span style=&quot;color:#024b8a;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Термопара для газовых котлов и конвекторов с автоматикой EuroSIT&amp;nbsp; &lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Длина&amp;nbsp; L=&lt;strong&gt;1200мм&amp;nbsp; &lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Подсоединение к клапану штуцером&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;М8х1&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Код SIT 0.200.000&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;(Тип оголовка А1&lt;/span&gt;&lt;/span&gt;)&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Применяется в газовых котлах и конвекторах: Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT A1 1200мм М8 (0.200.000) купить по цене производителя. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(149, 1, 'Термопара SIT А1 850мм М10 (0.200.029)', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 850мм М10 (0.200.029)&lt;/strong&gt; применяется для газовых конвекторах, например таких как Атон, Данко, Сутиски, Модуль, АКОГ, Росс, Ваxi, Gorenje, Feg, Demrad, Lampart и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;850 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;65 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 850мм М10 (0.200.029) упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 850мм М10 (0.200.029) по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара', ''),
+(150, 1, 'Импульсная трубка автоматики КАРЕ 350мм, ø4мм', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Импульсная трубка запальника для газовой автоматики КАРЕ&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для соединения терморегулятор - мембранный клапан;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=350 мм;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;4мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Укомплектована необходимыми для монтажа гайками.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;В зависимости от габаритных размеров котла может применяться как соединение:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;терморегулятор - клапан мембранный&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик тяги - датчик от закипания&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;терморегулятор - эвакуационная горелка&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n	&lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;датчик от закипания - электромагнитный клапан&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n', '', 'Каре, импульсная трубка, котел', '', 'Импульсная трубка автоматики КАРЕ 350мм, ø4мм по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Каре, импульсная трубка, котел', ''),
+(151, 1, 'Мембрана терморегулятора КАРЕ', '&lt;p&gt;Медная мембрана для терморегулятора газовой автоматики КАРЕ&lt;/p&gt;\n\n&lt;p&gt;Диаметр 40мм, толщина 0,12мм.&lt;/p&gt;\n', '', 'Каре, мембрана, терморегулятор, котел', '', 'Мембрана терморегулятора КАРЕ по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Каре, мембрана, терморегулятор, котел', ''),
+(152, 1, 'Шариковый клапан автоматики АПОК-1', '&lt;p&gt;Шариковый клапан для газовой автоматики АПОК-1.&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;Служит составной частью датчика пламени, контролирующего пламя в котле.&lt;/p&gt;\n', '', 'АПОК-1, клапан, датчик пламени', '', 'Шариковый клапан автоматики АПОК-1 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'АПОК-1, клапан, датчик пламени', ''),
+(153, 1, 'Трубка запальника Honeywell 300мм, ø4мм М10-М10', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для автоматики Honeywell&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=300 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;4&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется для пилотной горелки Polidoro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Honeywell, трубка запальника', '', 'Трубка запальника Honeywell 300мм, ø4мм М10-М10 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, трубка запальника', ''),
+(154, 1, 'Трубка запальника Honeywell 400мм ø4мм М10-7/16&quot;', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Трубка запальника для автоматики Honeywell&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется&lt;/span&gt;&lt;/span&gt; для подключения пилотной горелки к газовому клапану;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L=400 мм; Диаметр &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;&amp;Oslash;4&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;мм&lt;/span&gt;&lt;/span&gt;;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Используется с пилотной горелкой Polidoro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба крепежных штуцеров М10х1 и 7/16&amp;quot;. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Honeywell, трубка запальника', '', 'Трубка запальника Honeywell 400мм ø4мм М10-7/16&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, трубка запальника', ''),
+(155, 1, 'Датчик тяги 60°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 60 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(156, 1, 'Датчик тяги 65°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 65 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(157, 1, 'Датчик тяги 70°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 70 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(158, 1, 'Датчик тяги 75°С (G6070001)', 'Датчик тяги 75 градусов ( G6070001)', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 75 градусов ( G6070001) купить в магазине Termopara.Net. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'датчик тяги, котел, колонка', ''),
+(159, 1, 'Датчик тяги 80°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 80 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(160, 1, 'Датчик тяги 85°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 85 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(161, 1, 'Датчик тяги 90°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 90 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(162, 1, 'Датчик тяги 95°С (G6070002)', 'Датчик тяги 95&amp;deg;С (G6070002)', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 95 градусов (G6070002) купить в магазине Termopara.Net. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'датчик тяги, котел, колонка', ''),
+(163, 1, 'Датчик тяги 100°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 100 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(164, 1, 'Датчик тяги 105°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 105 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(165, 1, 'Датчик тяги 110°С (G6070004)', 'Датчик тяги 110&amp;deg;С (G6070004)', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 110 градусов (G6070004) купить в магазине Termopara.Net. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'датчик тяги, котел, колонка', ''),
+(166, 1, 'Датчик тяги 115°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 115 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(167, 1, 'Датчик тяги 120°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 120 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(168, 1, 'Датчик тяги 125°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 125 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(169, 1, 'Датчик тяги 130°С', '', '', 'датчик тяги, котел, колонка', '', 'Датчик тяги 130 градусов купить в интернет-магазине Termopara.net. Доставка по всей Украине, гарантия, оптовые скидки. тел. (098) 545-49-00, (099) 545-39-00', 'датчик тяги, котел, колонка', ''),
+(170, 1, 'Термопара Honeywell 600мм М10', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 600мм М10&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;50 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 600мм М10 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 600мм М10 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара', ''),
+(171, 1, 'Термопара Honeywell 750мм М10', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 750мм М10&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;750 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;60 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 750мм М10 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 750мм М10 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара', ''),
+(172, 1, 'Термопара Honeywell 750мм 11/32&quot;', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 750мм 11/32&amp;quot;&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;750 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер 11/32&amp;quot; под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;60 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 750мм 11/32 упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 750мм 11/32&quot; по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900 - Магазин Termopara.Net', 'Honeywell, термопара', ''),
+(173, 1, 'Термопара для газового гриля SIT А1 900мм М9', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара для газовых котлов и конвекторов с автоматикой EuroSIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина&amp;nbsp; L=850мм&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt; &lt;/span&gt;&lt;/span&gt;М9х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Код SIT 0.200.013&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;(Тип оголовка А1&lt;/span&gt;&lt;/span&gt;)&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Применяется в газовых котлах и конвекторах: Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, гриль, газовая пушка', '', 'Термопара для газового гриля SIT А1 900мм М9 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, газовый гриль, газовая пушка, термопара', ''),
+(174, 1, 'Термопара SIT А1 600мм М9 с гибким проводником', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара SIT A1 600мм М9 с гибким проводником&lt;/strong&gt; применяется для газовых котлов с автоматикой EuroSIT, например таких как Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А1&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;40 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары SIT A1 600мм М9 с гибким проводником упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара, EuroSIT, СИТ, котел, конвектор, Атон, Гелиос, Бар, Данко, Термо, Маяк, Росс, Житомир, Колви, Старобельск, Ростов', '', 'Термопара SIT А1 600мм М9 с гибким проводником по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'EuroSIT, СИТ, котел, конвектор, термопара, гибкий проводник', ''),
+(175, 1, 'Термопара Термо 600мм М9 универсальная', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Термо 600мм М9 универсальная&lt;/strong&gt; применяется в парапетных газовых котлах Термо&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;600 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;универсальный с длинной резьбой&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М9 под ключ 9&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;ТермоЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;медный капилляр&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;55 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Термо 600мм М9 универсальная упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'Термо, котел, термопара', '', 'Термопара Термо 600мм М9 универсальная по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Термо, котел, термопара', ''),
+(176, 1, 'Термопара Honeywell 900мм М10 с гибким проводником', '&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ПРИМЕНЕНИЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;&lt;strong&gt;Термопара Honeywell 900мм М10 (гибкая)&lt;/strong&gt; применяется для газовых котлов и конвекторов с автоматикой HONEYWELL V5475G (Q335C 1031B/1023B), например таких как Данко, Проскуров, Маяк, Житомир, FEG и др.&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;ТЕХНИЧЕСКИЕ ДАННЫЕ:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;margin-left:40px; width:92%&quot;&gt;\n	&lt;tbody&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Длина (L)&lt;/td&gt;\n			&lt;td&gt;900 мм&lt;/td&gt;\n			&lt;td rowspan=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.termopara.net/image/data/drawings/termopara.net-01162-06.jpg&quot; style=&quot;float:left; height:200px; width:250px&quot; /&gt;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Тип оголовка&lt;/td&gt;\n			&lt;td&gt;А4 + штуцер 7/16&amp;quot; под ключ 12&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Подсоединение к клапану&lt;/td&gt;\n			&lt;td&gt;штуцер М10 под ключ 10&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время срабатывания при розжиге&lt;/td&gt;\n			&lt;td&gt;&amp;le; 6 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Время отключения при погасании пламени&lt;/td&gt;\n			&lt;td&gt;30-60 с&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Термо ЭДС при 100&amp;ordm;С&lt;/td&gt;\n			&lt;td&gt;&amp;ge; 30 мВ&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Сопротивление&lt;/td&gt;\n			&lt;td&gt;9 + (0.015 х L) &amp;plusmn; 4 m&amp;Omega;&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Максимальная рабочая температура&lt;/td&gt;\n			&lt;td&gt;600 &amp;deg;С&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Кондуктор&lt;/td&gt;\n			&lt;td&gt;2 медных провода&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n		&lt;tr&gt;\n			&lt;td&gt;Вес&lt;/td&gt;\n			&lt;td&gt;60 г&lt;/td&gt;\n			&lt;td&gt;&amp;nbsp;&lt;/td&gt;\n		&lt;/tr&gt;\n	&lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;h2&gt;&lt;span style=&quot;font-size:18px&quot;&gt;УПАКОВКА И ДОСТАВКА:&lt;/span&gt;&lt;/h2&gt;\n\n&lt;p style=&quot;margin-left:40px&quot;&gt;Термопары Honeywell 900мм М10 с гибким проводником упакованы в ПЭ пакеты с этикеткой. Для отправки используется картонная тара. Сроки доставки 1-3 дня с момента заказа. Перевозка осуществляется такими компаниями как Новая Почта, Интайм, Деливери или по согласованию с заказчиком.&lt;/p&gt;\n', '', 'термопара Honeywell, котел, Маяк, Проскуров', '', 'Термопара Honeywell 900мм М10 с гибким проводником по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Honeywell, термопара, проводник', ''),
+(177, 1, 'Термопара гибкая духовки INDESIT 1200мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) духовки/гриля газовых плит ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1200 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Рабочий оголовок без резьбы, с проточкой под защелку&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;\n', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка, гриль', '', 'Термопара гибкая для духовки INDESIT 1200мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка, гриль', ''),
+(178, 1, 'Термопара гибкая духовки ARISTON 1200мм М8', '&lt;p&gt;&lt;span style=&quot;font-size:16px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Термопара (газ-контроль) духовки для газовых плит ARISTON INDESIT&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Длина L = 1200 мм;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Подсоединение к клапану штуцером М8х1&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Резьба рабочего оголовка 8х1.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n', '', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка', '', 'Термопара гибкая для духовки ARISTON 1200мм М8 по цене производителя. Доставка по Украине, гарантия качества. Специальное предложение оптовикам. +38(099)5453900', 'Ariston, Indesit, Аристон, Индезит, термопара, газконтроль, газплита, духовка', '');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_discount`
+-- Table structure for table `oc_product_discount`
 --
 
 CREATE TABLE `oc_product_discount` (
@@ -3163,18 +3223,1030 @@ CREATE TABLE `oc_product_discount` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_discount`
+-- Dumping data for table `oc_product_discount`
 --
 
 INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(440, 42, 1, 30, 1, '66.0000', '0000-00-00', '0000-00-00'),
-(439, 42, 1, 20, 1, '77.0000', '0000-00-00', '0000-00-00'),
-(438, 42, 1, 10, 1, '88.0000', '0000-00-00', '0000-00-00');
+(1, 51, 1, 2, 1, '82.0000', '0000-00-00', '0000-00-00'),
+(2, 51, 1, 3, 2, '81.0000', '0000-00-00', '0000-00-00'),
+(3, 51, 1, 5, 3, '80.0000', '0000-00-00', '0000-00-00'),
+(4, 51, 1, 10, 4, '78.1000', '0000-00-00', '0000-00-00'),
+(5, 51, 1, 15, 5, '77.0000', '0000-00-00', '0000-00-00'),
+(6, 51, 1, 20, 6, '76.3000', '0000-00-00', '0000-00-00'),
+(7, 51, 1, 30, 7, '75.2000', '0000-00-00', '0000-00-00'),
+(8, 51, 1, 40, 8, '74.4000', '0000-00-00', '0000-00-00'),
+(9, 51, 1, 50, 9, '73.8000', '0000-00-00', '0000-00-00'),
+(10, 51, 1, 75, 10, '72.7000', '0000-00-00', '0000-00-00'),
+(11, 51, 1, 100, 11, '72.0000', '0000-00-00', '0000-00-00'),
+(12, 52, 1, 2, 1, '82.0000', '0000-00-00', '0000-00-00'),
+(13, 52, 1, 3, 2, '81.0000', '0000-00-00', '0000-00-00'),
+(14, 52, 1, 5, 3, '80.0000', '0000-00-00', '0000-00-00'),
+(15, 52, 1, 10, 4, '78.1000', '0000-00-00', '0000-00-00'),
+(16, 52, 1, 15, 5, '77.0000', '0000-00-00', '0000-00-00'),
+(17, 52, 1, 20, 6, '76.3000', '0000-00-00', '0000-00-00'),
+(18, 52, 1, 30, 7, '75.2000', '0000-00-00', '0000-00-00'),
+(19, 52, 1, 40, 8, '74.4000', '0000-00-00', '0000-00-00'),
+(20, 52, 1, 50, 9, '73.8000', '0000-00-00', '0000-00-00'),
+(21, 52, 1, 75, 10, '72.7000', '0000-00-00', '0000-00-00'),
+(22, 52, 1, 100, 11, '72.0000', '0000-00-00', '0000-00-00'),
+(23, 53, 1, 2, 1, '53.0000', '0000-00-00', '0000-00-00'),
+(24, 53, 1, 3, 2, '52.0000', '0000-00-00', '0000-00-00'),
+(25, 53, 1, 5, 3, '50.0000', '0000-00-00', '0000-00-00'),
+(26, 53, 1, 10, 4, '47.3000', '0000-00-00', '0000-00-00'),
+(27, 53, 1, 15, 5, '45.7000', '0000-00-00', '0000-00-00'),
+(28, 53, 1, 20, 6, '44.7000', '0000-00-00', '0000-00-00'),
+(29, 53, 1, 30, 7, '43.1000', '0000-00-00', '0000-00-00'),
+(30, 53, 1, 40, 8, '42.0000', '0000-00-00', '0000-00-00'),
+(31, 53, 1, 50, 9, '41.1000', '0000-00-00', '0000-00-00'),
+(32, 53, 1, 75, 10, '39.6000', '0000-00-00', '0000-00-00'),
+(33, 53, 1, 100, 11, '38.5000', '0000-00-00', '0000-00-00'),
+(34, 54, 1, 2, 1, '58.0000', '0000-00-00', '0000-00-00'),
+(35, 54, 1, 3, 2, '57.0000', '0000-00-00', '0000-00-00'),
+(36, 54, 1, 5, 3, '55.0000', '0000-00-00', '0000-00-00'),
+(37, 54, 1, 10, 4, '52.6000', '0000-00-00', '0000-00-00'),
+(38, 54, 1, 15, 5, '51.1000', '0000-00-00', '0000-00-00'),
+(39, 54, 1, 20, 6, '50.1000', '0000-00-00', '0000-00-00'),
+(40, 54, 1, 30, 7, '48.7000', '0000-00-00', '0000-00-00'),
+(41, 54, 1, 40, 8, '47.7000', '0000-00-00', '0000-00-00'),
+(42, 54, 1, 50, 9, '46.9000', '0000-00-00', '0000-00-00'),
+(43, 54, 1, 75, 10, '45.5000', '0000-00-00', '0000-00-00'),
+(44, 54, 1, 100, 11, '44.5000', '0000-00-00', '0000-00-00'),
+(45, 56, 1, 2, 1, '63.0000', '0000-00-00', '0000-00-00'),
+(46, 56, 1, 3, 2, '62.0000', '0000-00-00', '0000-00-00'),
+(47, 56, 1, 5, 3, '60.0000', '0000-00-00', '0000-00-00'),
+(48, 56, 1, 10, 4, '57.6000', '0000-00-00', '0000-00-00'),
+(49, 56, 1, 15, 5, '56.3000', '0000-00-00', '0000-00-00'),
+(50, 56, 1, 20, 6, '55.3000', '0000-00-00', '0000-00-00'),
+(51, 56, 1, 30, 7, '53.9000', '0000-00-00', '0000-00-00'),
+(52, 56, 1, 40, 8, '52.9000', '0000-00-00', '0000-00-00'),
+(53, 56, 1, 50, 9, '52.2000', '0000-00-00', '0000-00-00'),
+(54, 56, 1, 75, 10, '50.8000', '0000-00-00', '0000-00-00'),
+(55, 56, 1, 100, 11, '49.9000', '0000-00-00', '0000-00-00'),
+(56, 57, 1, 2, 1, '68.0000', '0000-00-00', '0000-00-00'),
+(57, 57, 1, 3, 2, '67.0000', '0000-00-00', '0000-00-00'),
+(58, 57, 1, 5, 3, '65.0000', '0000-00-00', '0000-00-00'),
+(59, 57, 1, 10, 4, '62.5000', '0000-00-00', '0000-00-00'),
+(60, 57, 1, 15, 5, '61.0000', '0000-00-00', '0000-00-00'),
+(61, 57, 1, 20, 6, '59.9000', '0000-00-00', '0000-00-00'),
+(62, 57, 1, 30, 7, '58.4000', '0000-00-00', '0000-00-00'),
+(63, 57, 1, 40, 8, '57.4000', '0000-00-00', '0000-00-00'),
+(64, 57, 1, 50, 9, '56.6000', '0000-00-00', '0000-00-00'),
+(65, 57, 1, 75, 10, '55.1000', '0000-00-00', '0000-00-00'),
+(66, 57, 1, 100, 11, '54.0000', '0000-00-00', '0000-00-00'),
+(67, 58, 1, 2, 1, '73.0000', '0000-00-00', '0000-00-00'),
+(68, 58, 1, 3, 2, '72.0000', '0000-00-00', '0000-00-00'),
+(69, 58, 1, 5, 3, '70.0000', '0000-00-00', '0000-00-00'),
+(70, 58, 1, 10, 4, '67.6000', '0000-00-00', '0000-00-00'),
+(71, 58, 1, 15, 5, '66.2000', '0000-00-00', '0000-00-00'),
+(72, 58, 1, 20, 6, '65.2000', '0000-00-00', '0000-00-00'),
+(73, 58, 1, 30, 7, '63.8000', '0000-00-00', '0000-00-00'),
+(74, 58, 1, 40, 8, '62.8000', '0000-00-00', '0000-00-00'),
+(75, 58, 1, 50, 9, '62.1000', '0000-00-00', '0000-00-00'),
+(76, 58, 1, 75, 10, '60.7000', '0000-00-00', '0000-00-00'),
+(77, 58, 1, 100, 11, '59.7000', '0000-00-00', '0000-00-00'),
+(78, 59, 1, 2, 1, '46.0000', '0000-00-00', '0000-00-00'),
+(79, 59, 1, 3, 2, '45.0000', '0000-00-00', '0000-00-00'),
+(80, 59, 1, 5, 3, '43.0000', '0000-00-00', '0000-00-00'),
+(81, 59, 1, 10, 4, '41.5000', '0000-00-00', '0000-00-00'),
+(82, 59, 1, 15, 5, '40.4000', '0000-00-00', '0000-00-00'),
+(83, 59, 1, 20, 6, '39.9000', '0000-00-00', '0000-00-00'),
+(84, 59, 1, 30, 7, '39.1000', '0000-00-00', '0000-00-00'),
+(85, 59, 1, 40, 8, '38.4000', '0000-00-00', '0000-00-00'),
+(86, 59, 1, 50, 9, '37.9000', '0000-00-00', '0000-00-00'),
+(87, 59, 1, 75, 10, '37.1000', '0000-00-00', '0000-00-00'),
+(88, 59, 1, 100, 11, '36.6000', '0000-00-00', '0000-00-00'),
+(89, 60, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(90, 60, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(91, 60, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(92, 60, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(93, 60, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(94, 60, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(95, 60, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(96, 60, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(97, 60, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(98, 60, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(99, 60, 1, 100, 11, '43.5000', '0000-00-00', '0000-00-00'),
+(100, 61, 1, 2, 1, '70.0000', '0000-00-00', '0000-00-00'),
+(101, 61, 1, 3, 2, '68.0000', '0000-00-00', '0000-00-00'),
+(102, 61, 1, 5, 3, '64.9000', '0000-00-00', '0000-00-00'),
+(103, 61, 1, 10, 4, '61.8000', '0000-00-00', '0000-00-00'),
+(104, 61, 1, 15, 5, '60.3000', '0000-00-00', '0000-00-00'),
+(105, 61, 1, 20, 6, '59.0000', '0000-00-00', '0000-00-00'),
+(106, 61, 1, 30, 7, '57.2000', '0000-00-00', '0000-00-00'),
+(107, 61, 1, 40, 8, '55.9000', '0000-00-00', '0000-00-00'),
+(108, 61, 1, 50, 9, '55.1000', '0000-00-00', '0000-00-00'),
+(109, 61, 1, 75, 10, '53.3000', '0000-00-00', '0000-00-00'),
+(110, 61, 1, 100, 11, '52.0000', '0000-00-00', '0000-00-00'),
+(111, 62, 1, 2, 1, '49.0000', '0000-00-00', '0000-00-00'),
+(112, 62, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(113, 62, 1, 5, 3, '46.6000', '0000-00-00', '0000-00-00'),
+(114, 62, 1, 10, 4, '44.8000', '0000-00-00', '0000-00-00'),
+(115, 62, 1, 15, 5, '43.8000', '0000-00-00', '0000-00-00'),
+(116, 62, 1, 20, 6, '43.0000', '0000-00-00', '0000-00-00'),
+(117, 62, 1, 30, 7, '42.0000', '0000-00-00', '0000-00-00'),
+(118, 62, 1, 40, 8, '41.2000', '0000-00-00', '0000-00-00'),
+(119, 62, 1, 50, 9, '40.7000', '0000-00-00', '0000-00-00'),
+(120, 62, 1, 75, 10, '39.7000', '0000-00-00', '0000-00-00'),
+(121, 62, 1, 100, 11, '38.9000', '0000-00-00', '0000-00-00'),
+(122, 63, 1, 2, 1, '49.0000', '0000-00-00', '0000-00-00'),
+(123, 63, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(124, 63, 1, 5, 3, '46.6000', '0000-00-00', '0000-00-00'),
+(125, 63, 1, 10, 4, '44.8000', '0000-00-00', '0000-00-00'),
+(126, 63, 1, 15, 5, '43.8000', '0000-00-00', '0000-00-00'),
+(127, 63, 1, 20, 6, '43.0000', '0000-00-00', '0000-00-00'),
+(128, 63, 1, 30, 7, '42.0000', '0000-00-00', '0000-00-00'),
+(129, 63, 1, 40, 8, '41.2000', '0000-00-00', '0000-00-00'),
+(130, 63, 1, 50, 9, '40.7000', '0000-00-00', '0000-00-00'),
+(131, 63, 1, 75, 10, '39.7000', '0000-00-00', '0000-00-00'),
+(132, 63, 1, 100, 11, '38.9000', '0000-00-00', '0000-00-00'),
+(133, 64, 1, 2, 1, '57.0000', '0000-00-00', '0000-00-00'),
+(134, 64, 1, 3, 2, '56.0000', '0000-00-00', '0000-00-00'),
+(135, 64, 1, 5, 3, '53.6000', '0000-00-00', '0000-00-00'),
+(136, 64, 1, 10, 4, '51.5000', '0000-00-00', '0000-00-00'),
+(137, 64, 1, 15, 5, '50.2000', '0000-00-00', '0000-00-00'),
+(138, 64, 1, 20, 6, '49.4000', '0000-00-00', '0000-00-00'),
+(139, 64, 1, 30, 7, '48.2000', '0000-00-00', '0000-00-00'),
+(140, 64, 1, 40, 8, '47.1000', '0000-00-00', '0000-00-00'),
+(141, 64, 1, 50, 9, '46.6000', '0000-00-00', '0000-00-00'),
+(142, 64, 1, 75, 10, '45.3000', '0000-00-00', '0000-00-00'),
+(143, 64, 1, 100, 11, '44.3000', '0000-00-00', '0000-00-00'),
+(144, 65, 1, 2, 1, '46.0000', '0000-00-00', '0000-00-00'),
+(145, 65, 1, 3, 2, '45.0000', '0000-00-00', '0000-00-00'),
+(146, 65, 1, 5, 3, '42.7000', '0000-00-00', '0000-00-00'),
+(147, 65, 1, 10, 4, '41.2000', '0000-00-00', '0000-00-00'),
+(148, 65, 1, 15, 5, '40.2000', '0000-00-00', '0000-00-00'),
+(149, 65, 1, 20, 6, '39.7000', '0000-00-00', '0000-00-00'),
+(150, 65, 1, 30, 7, '38.6000', '0000-00-00', '0000-00-00'),
+(151, 65, 1, 40, 8, '38.1000', '0000-00-00', '0000-00-00'),
+(152, 65, 1, 50, 9, '37.6000', '0000-00-00', '0000-00-00'),
+(153, 65, 1, 75, 10, '36.6000', '0000-00-00', '0000-00-00'),
+(154, 65, 1, 100, 11, '36.1000', '0000-00-00', '0000-00-00'),
+(155, 66, 1, 2, 1, '48.0000', '0000-00-00', '0000-00-00'),
+(156, 66, 1, 3, 2, '47.0000', '0000-00-00', '0000-00-00'),
+(157, 66, 1, 5, 3, '45.6000', '0000-00-00', '0000-00-00'),
+(158, 66, 1, 10, 4, '43.8000', '0000-00-00', '0000-00-00'),
+(159, 66, 1, 15, 5, '42.7000', '0000-00-00', '0000-00-00'),
+(160, 66, 1, 20, 6, '42.0000', '0000-00-00', '0000-00-00'),
+(161, 66, 1, 30, 7, '40.9000', '0000-00-00', '0000-00-00'),
+(162, 66, 1, 40, 8, '40.2000', '0000-00-00', '0000-00-00'),
+(163, 66, 1, 50, 9, '39.7000', '0000-00-00', '0000-00-00'),
+(164, 66, 1, 75, 10, '38.6000', '0000-00-00', '0000-00-00'),
+(165, 66, 1, 100, 11, '37.9000', '0000-00-00', '0000-00-00'),
+(166, 67, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(167, 67, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(168, 67, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(169, 67, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(170, 67, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(171, 67, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(172, 67, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(173, 67, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(174, 67, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(175, 67, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(176, 67, 1, 100, 11, '43.3000', '0000-00-00', '0000-00-00'),
+(177, 68, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(178, 68, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(179, 68, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(180, 68, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(181, 68, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(182, 68, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(183, 68, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(184, 68, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(185, 68, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(186, 68, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(187, 68, 1, 100, 11, '43.3000', '0000-00-00', '0000-00-00'),
+(188, 69, 1, 2, 1, '85.0000', '0000-00-00', '0000-00-00'),
+(189, 69, 1, 3, 2, '82.0000', '0000-00-00', '0000-00-00'),
+(190, 69, 1, 5, 3, '80.6000', '0000-00-00', '0000-00-00'),
+(191, 69, 1, 10, 4, '77.3000', '0000-00-00', '0000-00-00'),
+(192, 69, 1, 15, 5, '75.2000', '0000-00-00', '0000-00-00'),
+(193, 69, 1, 20, 6, '73.6000', '0000-00-00', '0000-00-00'),
+(194, 69, 1, 30, 7, '71.8000', '0000-00-00', '0000-00-00'),
+(195, 69, 1, 40, 8, '70.3000', '0000-00-00', '0000-00-00'),
+(196, 69, 1, 50, 9, '69.3000', '0000-00-00', '0000-00-00'),
+(197, 69, 1, 75, 10, '67.2000', '0000-00-00', '0000-00-00'),
+(198, 69, 1, 100, 11, '65.9000', '0000-00-00', '0000-00-00'),
+(199, 70, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(200, 70, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(201, 70, 1, 5, 3, '160.7000', '0000-00-00', '0000-00-00'),
+(202, 70, 1, 10, 4, '148.8000', '0000-00-00', '0000-00-00'),
+(203, 70, 1, 15, 5, '142.1000', '0000-00-00', '0000-00-00'),
+(204, 70, 1, 20, 6, '137.2000', '0000-00-00', '0000-00-00'),
+(205, 70, 1, 30, 7, '130.3000', '0000-00-00', '0000-00-00'),
+(206, 70, 1, 40, 8, '125.4000', '0000-00-00', '0000-00-00'),
+(207, 70, 1, 50, 9, '121.5000', '0000-00-00', '0000-00-00'),
+(208, 70, 1, 75, 10, '114.8000', '0000-00-00', '0000-00-00'),
+(209, 70, 1, 100, 11, '110.0000', '0000-00-00', '0000-00-00'),
+(210, 71, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(211, 71, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(212, 71, 1, 5, 3, '160.9000', '0000-00-00', '0000-00-00'),
+(213, 71, 1, 10, 4, '149.1000', '0000-00-00', '0000-00-00'),
+(214, 71, 1, 15, 5, '142.4000', '0000-00-00', '0000-00-00'),
+(215, 71, 1, 20, 6, '137.5000', '0000-00-00', '0000-00-00'),
+(216, 71, 1, 30, 7, '130.8000', '0000-00-00', '0000-00-00'),
+(217, 71, 1, 40, 8, '125.9000', '0000-00-00', '0000-00-00'),
+(218, 71, 1, 50, 9, '122.1000', '0000-00-00', '0000-00-00'),
+(219, 71, 1, 75, 10, '115.4000', '0000-00-00', '0000-00-00'),
+(220, 71, 1, 100, 11, '110.5000', '0000-00-00', '0000-00-00'),
+(221, 72, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(222, 72, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(223, 72, 1, 5, 3, '160.7000', '0000-00-00', '0000-00-00'),
+(224, 72, 1, 10, 4, '148.8000', '0000-00-00', '0000-00-00'),
+(225, 72, 1, 15, 5, '142.1000', '0000-00-00', '0000-00-00'),
+(226, 72, 1, 20, 6, '137.2000', '0000-00-00', '0000-00-00'),
+(227, 72, 1, 30, 7, '130.3000', '0000-00-00', '0000-00-00'),
+(228, 72, 1, 40, 8, '125.4000', '0000-00-00', '0000-00-00'),
+(229, 72, 1, 50, 9, '121.5000', '0000-00-00', '0000-00-00'),
+(230, 72, 1, 75, 10, '114.8000', '0000-00-00', '0000-00-00'),
+(231, 72, 1, 100, 11, '110.0000', '0000-00-00', '0000-00-00'),
+(232, 73, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(233, 73, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(234, 73, 1, 5, 3, '161.7000', '0000-00-00', '0000-00-00'),
+(235, 73, 1, 10, 4, '150.4000', '0000-00-00', '0000-00-00'),
+(236, 73, 1, 15, 5, '143.9000', '0000-00-00', '0000-00-00'),
+(237, 73, 1, 20, 6, '139.3000', '0000-00-00', '0000-00-00'),
+(238, 73, 1, 30, 7, '132.6000', '0000-00-00', '0000-00-00'),
+(239, 73, 1, 40, 8, '128.0000', '0000-00-00', '0000-00-00'),
+(240, 73, 1, 50, 9, '124.4000', '0000-00-00', '0000-00-00'),
+(241, 73, 1, 75, 10, '117.7000', '0000-00-00', '0000-00-00'),
+(242, 73, 1, 100, 11, '113.0000', '0000-00-00', '0000-00-00'),
+(243, 74, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(244, 74, 1, 3, 2, '171.0000', '0000-00-00', '0000-00-00'),
+(245, 74, 1, 5, 3, '162.0000', '0000-00-00', '0000-00-00'),
+(246, 74, 1, 10, 4, '150.9000', '0000-00-00', '0000-00-00'),
+(247, 74, 1, 15, 5, '144.2000', '0000-00-00', '0000-00-00'),
+(248, 74, 1, 20, 6, '139.6000', '0000-00-00', '0000-00-00'),
+(249, 74, 1, 30, 7, '133.1000', '0000-00-00', '0000-00-00'),
+(250, 74, 1, 40, 8, '128.5000', '0000-00-00', '0000-00-00'),
+(251, 74, 1, 50, 9, '124.9000', '0000-00-00', '0000-00-00'),
+(252, 74, 1, 75, 10, '118.2000', '0000-00-00', '0000-00-00'),
+(253, 74, 1, 100, 11, '113.8000', '0000-00-00', '0000-00-00'),
+(254, 75, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(255, 75, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(256, 75, 1, 5, 3, '160.9000', '0000-00-00', '0000-00-00'),
+(257, 75, 1, 10, 4, '149.1000', '0000-00-00', '0000-00-00'),
+(258, 75, 1, 15, 5, '142.1000', '0000-00-00', '0000-00-00'),
+(259, 75, 1, 20, 6, '137.5000', '0000-00-00', '0000-00-00'),
+(260, 75, 1, 30, 7, '130.6000', '0000-00-00', '0000-00-00'),
+(261, 75, 1, 40, 8, '125.7000', '0000-00-00', '0000-00-00'),
+(262, 75, 1, 50, 9, '121.8000', '0000-00-00', '0000-00-00'),
+(263, 75, 1, 75, 10, '115.1000', '0000-00-00', '0000-00-00'),
+(264, 75, 1, 100, 11, '110.2000', '0000-00-00', '0000-00-00'),
+(265, 76, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(266, 76, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(267, 76, 1, 5, 3, '160.4000', '0000-00-00', '0000-00-00'),
+(268, 76, 1, 10, 4, '148.3000', '0000-00-00', '0000-00-00'),
+(269, 76, 1, 15, 5, '141.4000', '0000-00-00', '0000-00-00'),
+(270, 76, 1, 20, 6, '136.5000', '0000-00-00', '0000-00-00'),
+(271, 76, 1, 30, 7, '129.5000', '0000-00-00', '0000-00-00'),
+(272, 76, 1, 40, 8, '124.6000', '0000-00-00', '0000-00-00'),
+(273, 76, 1, 50, 9, '120.8000', '0000-00-00', '0000-00-00'),
+(274, 76, 1, 75, 10, '113.8000', '0000-00-00', '0000-00-00'),
+(275, 76, 1, 100, 11, '108.9000', '0000-00-00', '0000-00-00'),
+(276, 77, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(277, 77, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(278, 77, 1, 5, 3, '160.9000', '0000-00-00', '0000-00-00'),
+(279, 77, 1, 10, 4, '149.4000', '0000-00-00', '0000-00-00'),
+(280, 77, 1, 15, 5, '142.4000', '0000-00-00', '0000-00-00'),
+(281, 77, 1, 20, 6, '137.8000', '0000-00-00', '0000-00-00'),
+(282, 77, 1, 30, 7, '130.8000', '0000-00-00', '0000-00-00'),
+(283, 77, 1, 40, 8, '125.9000', '0000-00-00', '0000-00-00'),
+(284, 77, 1, 50, 9, '122.3000', '0000-00-00', '0000-00-00'),
+(285, 77, 1, 75, 10, '115.4000', '0000-00-00', '0000-00-00'),
+(286, 77, 1, 100, 11, '110.7000', '0000-00-00', '0000-00-00'),
+(287, 78, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(288, 78, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(289, 78, 1, 5, 3, '160.9000', '0000-00-00', '0000-00-00'),
+(290, 78, 1, 10, 4, '149.1000', '0000-00-00', '0000-00-00'),
+(291, 78, 1, 15, 5, '142.1000', '0000-00-00', '0000-00-00'),
+(292, 78, 1, 20, 6, '137.5000', '0000-00-00', '0000-00-00'),
+(293, 78, 1, 30, 7, '130.6000', '0000-00-00', '0000-00-00'),
+(294, 78, 1, 40, 8, '125.7000', '0000-00-00', '0000-00-00'),
+(295, 78, 1, 50, 9, '122.1000', '0000-00-00', '0000-00-00'),
+(296, 78, 1, 75, 10, '115.1000', '0000-00-00', '0000-00-00'),
+(297, 78, 1, 100, 11, '110.2000', '0000-00-00', '0000-00-00'),
+(298, 79, 1, 2, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(299, 79, 1, 3, 2, '87.0000', '0000-00-00', '0000-00-00'),
+(300, 79, 1, 5, 3, '82.9000', '0000-00-00', '0000-00-00'),
+(301, 79, 1, 10, 4, '78.0000', '0000-00-00', '0000-00-00'),
+(302, 79, 1, 15, 5, '75.1000', '0000-00-00', '0000-00-00'),
+(303, 79, 1, 20, 6, '73.3000', '0000-00-00', '0000-00-00'),
+(304, 79, 1, 30, 7, '70.5000', '0000-00-00', '0000-00-00'),
+(305, 79, 1, 40, 8, '68.5000', '0000-00-00', '0000-00-00'),
+(306, 79, 1, 50, 9, '67.2000', '0000-00-00', '0000-00-00'),
+(307, 79, 1, 75, 10, '64.3000', '0000-00-00', '0000-00-00'),
+(308, 79, 1, 100, 11, '62.3000', '0000-00-00', '0000-00-00'),
+(309, 80, 1, 2, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(310, 80, 1, 3, 2, '87.0000', '0000-00-00', '0000-00-00'),
+(311, 80, 1, 5, 3, '83.2000', '0000-00-00', '0000-00-00'),
+(312, 80, 1, 10, 4, '78.3000', '0000-00-00', '0000-00-00'),
+(313, 80, 1, 15, 5, '75.4000', '0000-00-00', '0000-00-00'),
+(314, 80, 1, 20, 6, '73.6000', '0000-00-00', '0000-00-00'),
+(315, 80, 1, 30, 7, '70.8000', '0000-00-00', '0000-00-00'),
+(316, 80, 1, 40, 8, '68.8000', '0000-00-00', '0000-00-00'),
+(317, 80, 1, 50, 9, '67.5000', '0000-00-00', '0000-00-00'),
+(318, 80, 1, 75, 10, '64.6000', '0000-00-00', '0000-00-00'),
+(319, 80, 1, 100, 11, '62.6000', '0000-00-00', '0000-00-00'),
+(320, 81, 1, 2, 1, '72.0000', '0000-00-00', '0000-00-00'),
+(321, 81, 1, 3, 2, '69.0000', '0000-00-00', '0000-00-00'),
+(322, 81, 1, 5, 3, '64.4000', '0000-00-00', '0000-00-00'),
+(323, 81, 1, 10, 4, '58.5000', '0000-00-00', '0000-00-00'),
+(324, 81, 1, 15, 5, '55.1000', '0000-00-00', '0000-00-00'),
+(325, 81, 1, 20, 6, '52.8000', '0000-00-00', '0000-00-00'),
+(326, 81, 1, 30, 7, '49.4000', '0000-00-00', '0000-00-00'),
+(327, 81, 1, 40, 8, '47.1000', '0000-00-00', '0000-00-00'),
+(328, 81, 1, 50, 9, '45.3000', '0000-00-00', '0000-00-00'),
+(329, 81, 1, 75, 10, '42.0000', '0000-00-00', '0000-00-00'),
+(330, 81, 1, 100, 11, '39.7000', '0000-00-00', '0000-00-00'),
+(331, 82, 1, 2, 1, '72.0000', '0000-00-00', '0000-00-00'),
+(332, 82, 1, 3, 2, '69.0000', '0000-00-00', '0000-00-00'),
+(333, 82, 1, 5, 3, '64.4000', '0000-00-00', '0000-00-00'),
+(334, 82, 1, 10, 4, '58.5000', '0000-00-00', '0000-00-00'),
+(335, 82, 1, 15, 5, '55.1000', '0000-00-00', '0000-00-00'),
+(336, 82, 1, 20, 6, '52.8000', '0000-00-00', '0000-00-00'),
+(337, 82, 1, 30, 7, '49.4000', '0000-00-00', '0000-00-00'),
+(338, 82, 1, 40, 8, '47.1000', '0000-00-00', '0000-00-00'),
+(339, 82, 1, 50, 9, '45.3000', '0000-00-00', '0000-00-00'),
+(340, 82, 1, 75, 10, '42.0000', '0000-00-00', '0000-00-00'),
+(341, 82, 1, 100, 11, '39.7000', '0000-00-00', '0000-00-00'),
+(342, 83, 1, 2, 0, '75.0000', '0000-00-00', '0000-00-00'),
+(343, 83, 1, 3, 0, '72.0000', '0000-00-00', '0000-00-00'),
+(344, 83, 1, 5, 0, '68.0000', '0000-00-00', '0000-00-00'),
+(345, 83, 1, 10, 0, '63.0000', '0000-00-00', '0000-00-00'),
+(346, 84, 1, 2, 1, '28.0000', '0000-00-00', '0000-00-00'),
+(347, 84, 1, 3, 2, '27.0000', '0000-00-00', '0000-00-00'),
+(348, 84, 1, 5, 3, '26.5000', '0000-00-00', '0000-00-00'),
+(349, 84, 1, 10, 4, '25.0000', '0000-00-00', '0000-00-00'),
+(350, 84, 1, 15, 5, '24.3000', '0000-00-00', '0000-00-00'),
+(351, 84, 1, 20, 6, '23.8000', '0000-00-00', '0000-00-00'),
+(352, 84, 1, 30, 7, '23.0000', '0000-00-00', '0000-00-00'),
+(353, 84, 1, 40, 8, '22.3000', '0000-00-00', '0000-00-00'),
+(354, 84, 1, 50, 9, '22.1000', '0000-00-00', '0000-00-00'),
+(355, 84, 1, 75, 10, '21.0000', '0000-00-00', '0000-00-00'),
+(356, 84, 1, 100, 11, '20.6000', '0000-00-00', '0000-00-00'),
+(357, 85, 1, 2, 1, '30.0000', '0000-00-00', '0000-00-00'),
+(358, 85, 1, 3, 2, '29.0000', '0000-00-00', '0000-00-00'),
+(359, 85, 1, 5, 3, '28.9000', '0000-00-00', '0000-00-00'),
+(360, 85, 1, 10, 4, '27.7000', '0000-00-00', '0000-00-00'),
+(361, 85, 1, 15, 5, '26.9000', '0000-00-00', '0000-00-00'),
+(362, 85, 1, 20, 6, '26.5000', '0000-00-00', '0000-00-00'),
+(363, 85, 1, 30, 7, '25.8000', '0000-00-00', '0000-00-00'),
+(364, 85, 1, 40, 8, '25.2000', '0000-00-00', '0000-00-00'),
+(365, 85, 1, 50, 9, '25.0000', '0000-00-00', '0000-00-00'),
+(366, 85, 1, 75, 10, '24.3000', '0000-00-00', '0000-00-00'),
+(367, 85, 1, 100, 11, '23.8000', '0000-00-00', '0000-00-00'),
+(368, 86, 1, 2, 1, '35.0000', '0000-00-00', '0000-00-00'),
+(369, 86, 1, 3, 2, '34.0000', '0000-00-00', '0000-00-00'),
+(370, 86, 1, 5, 3, '33.1000', '0000-00-00', '0000-00-00'),
+(371, 86, 1, 10, 4, '31.9000', '0000-00-00', '0000-00-00'),
+(372, 86, 1, 15, 5, '31.3000', '0000-00-00', '0000-00-00'),
+(373, 86, 1, 20, 6, '30.9000', '0000-00-00', '0000-00-00'),
+(374, 86, 1, 30, 7, '30.2000', '0000-00-00', '0000-00-00'),
+(375, 86, 1, 40, 8, '29.7000', '0000-00-00', '0000-00-00'),
+(376, 86, 1, 50, 9, '29.4000', '0000-00-00', '0000-00-00'),
+(377, 86, 1, 75, 10, '28.7000', '0000-00-00', '0000-00-00'),
+(378, 86, 1, 100, 11, '28.2000', '0000-00-00', '0000-00-00'),
+(379, 87, 1, 2, 1, '30.0000', '0000-00-00', '0000-00-00'),
+(380, 87, 1, 3, 2, '29.0000', '0000-00-00', '0000-00-00'),
+(381, 87, 1, 5, 3, '28.9000', '0000-00-00', '0000-00-00'),
+(382, 87, 1, 10, 4, '27.7000', '0000-00-00', '0000-00-00'),
+(383, 87, 1, 15, 5, '26.9000', '0000-00-00', '0000-00-00'),
+(384, 87, 1, 20, 6, '26.5000', '0000-00-00', '0000-00-00'),
+(385, 87, 1, 30, 7, '25.8000', '0000-00-00', '0000-00-00'),
+(386, 87, 1, 40, 8, '25.2000', '0000-00-00', '0000-00-00'),
+(387, 87, 1, 50, 9, '25.0000', '0000-00-00', '0000-00-00'),
+(388, 87, 1, 75, 10, '24.3000', '0000-00-00', '0000-00-00'),
+(389, 87, 1, 100, 11, '23.8000', '0000-00-00', '0000-00-00'),
+(390, 88, 1, 2, 1, '34.0000', '0000-00-00', '0000-00-00'),
+(391, 88, 1, 3, 2, '33.0000', '0000-00-00', '0000-00-00'),
+(392, 88, 1, 5, 3, '32.1000', '0000-00-00', '0000-00-00'),
+(393, 88, 1, 10, 4, '31.1000', '0000-00-00', '0000-00-00'),
+(394, 88, 1, 15, 5, '30.6000', '0000-00-00', '0000-00-00'),
+(395, 88, 1, 20, 6, '30.2000', '0000-00-00', '0000-00-00'),
+(396, 88, 1, 30, 7, '29.4000', '0000-00-00', '0000-00-00'),
+(397, 88, 1, 40, 8, '28.9000', '0000-00-00', '0000-00-00'),
+(398, 88, 1, 50, 9, '28.7000', '0000-00-00', '0000-00-00'),
+(399, 88, 1, 75, 10, '28.0000', '0000-00-00', '0000-00-00'),
+(400, 88, 1, 100, 11, '27.7000', '0000-00-00', '0000-00-00'),
+(401, 89, 1, 2, 1, '41.0000', '0000-00-00', '0000-00-00'),
+(402, 89, 1, 3, 2, '40.0000', '0000-00-00', '0000-00-00'),
+(403, 89, 1, 5, 3, '39.4000', '0000-00-00', '0000-00-00'),
+(404, 89, 1, 10, 4, '38.5000', '0000-00-00', '0000-00-00'),
+(405, 89, 1, 15, 5, '37.7000', '0000-00-00', '0000-00-00'),
+(406, 89, 1, 20, 6, '37.4000', '0000-00-00', '0000-00-00'),
+(407, 89, 1, 30, 7, '36.8000', '0000-00-00', '0000-00-00'),
+(408, 89, 1, 40, 8, '36.3000', '0000-00-00', '0000-00-00'),
+(409, 89, 1, 50, 9, '36.1000', '0000-00-00', '0000-00-00'),
+(410, 89, 1, 75, 10, '35.3000', '0000-00-00', '0000-00-00'),
+(411, 89, 1, 100, 11, '34.8000', '0000-00-00', '0000-00-00'),
+(412, 90, 1, 2, 1, '38.0000', '0000-00-00', '0000-00-00'),
+(413, 90, 1, 3, 2, '37.0000', '0000-00-00', '0000-00-00'),
+(414, 90, 1, 5, 3, '36.3000', '0000-00-00', '0000-00-00'),
+(415, 90, 1, 10, 4, '34.8000', '0000-00-00', '0000-00-00'),
+(416, 90, 1, 15, 5, '33.9000', '0000-00-00', '0000-00-00'),
+(417, 90, 1, 20, 6, '33.1000', '0000-00-00', '0000-00-00'),
+(418, 90, 1, 30, 7, '32.1000', '0000-00-00', '0000-00-00'),
+(419, 90, 1, 40, 8, '31.7000', '0000-00-00', '0000-00-00'),
+(420, 90, 1, 50, 9, '31.1000', '0000-00-00', '0000-00-00'),
+(421, 90, 1, 75, 10, '30.2000', '0000-00-00', '0000-00-00'),
+(422, 90, 1, 100, 11, '29.4000', '0000-00-00', '0000-00-00'),
+(423, 91, 1, 2, 1, '53.0000', '0000-00-00', '0000-00-00'),
+(424, 91, 1, 3, 2, '51.0000', '0000-00-00', '0000-00-00'),
+(425, 91, 1, 5, 3, '49.5000', '0000-00-00', '0000-00-00'),
+(426, 91, 1, 10, 4, '47.0000', '0000-00-00', '0000-00-00'),
+(427, 91, 1, 15, 5, '45.8000', '0000-00-00', '0000-00-00'),
+(428, 91, 1, 20, 6, '44.8000', '0000-00-00', '0000-00-00'),
+(429, 91, 1, 30, 7, '43.3000', '0000-00-00', '0000-00-00'),
+(430, 91, 1, 40, 8, '42.4000', '0000-00-00', '0000-00-00'),
+(431, 91, 1, 50, 9, '41.6000', '0000-00-00', '0000-00-00'),
+(432, 91, 1, 75, 10, '40.4000', '0000-00-00', '0000-00-00'),
+(433, 91, 1, 100, 11, '39.4000', '0000-00-00', '0000-00-00'),
+(434, 92, 1, 2, 1, '50.0000', '0000-00-00', '0000-00-00'),
+(435, 92, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(436, 92, 1, 5, 3, '46.8000', '0000-00-00', '0000-00-00'),
+(437, 92, 1, 10, 4, '44.4000', '0000-00-00', '0000-00-00'),
+(438, 92, 1, 15, 5, '42.9000', '0000-00-00', '0000-00-00'),
+(439, 92, 1, 20, 6, '41.6000', '0000-00-00', '0000-00-00'),
+(440, 92, 1, 30, 7, '40.2000', '0000-00-00', '0000-00-00'),
+(441, 92, 1, 40, 8, '39.2000', '0000-00-00', '0000-00-00'),
+(442, 92, 1, 50, 9, '38.5000', '0000-00-00', '0000-00-00'),
+(443, 92, 1, 75, 10, '37.0000', '0000-00-00', '0000-00-00'),
+(444, 92, 1, 100, 11, '35.8000', '0000-00-00', '0000-00-00'),
+(445, 93, 1, 2, 1, '50.0000', '0000-00-00', '0000-00-00'),
+(446, 93, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(447, 93, 1, 5, 3, '46.8000', '0000-00-00', '0000-00-00'),
+(448, 93, 1, 10, 4, '44.4000', '0000-00-00', '0000-00-00'),
+(449, 93, 1, 15, 5, '42.6000', '0000-00-00', '0000-00-00'),
+(450, 93, 1, 20, 6, '41.6000', '0000-00-00', '0000-00-00'),
+(451, 93, 1, 30, 7, '40.2000', '0000-00-00', '0000-00-00'),
+(452, 93, 1, 40, 8, '39.2000', '0000-00-00', '0000-00-00'),
+(453, 93, 1, 50, 9, '38.5000', '0000-00-00', '0000-00-00'),
+(454, 93, 1, 75, 10, '37.0000', '0000-00-00', '0000-00-00'),
+(455, 93, 1, 100, 11, '35.8000', '0000-00-00', '0000-00-00'),
+(456, 94, 1, 2, 1, '49.0000', '0000-00-00', '0000-00-00'),
+(457, 94, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(458, 94, 1, 5, 3, '45.8000', '0000-00-00', '0000-00-00'),
+(459, 94, 1, 10, 4, '43.1000', '0000-00-00', '0000-00-00'),
+(460, 94, 1, 15, 5, '41.6000', '0000-00-00', '0000-00-00'),
+(461, 94, 1, 20, 6, '40.7000', '0000-00-00', '0000-00-00'),
+(462, 94, 1, 30, 7, '39.2000', '0000-00-00', '0000-00-00'),
+(463, 94, 1, 40, 8, '38.2000', '0000-00-00', '0000-00-00'),
+(464, 94, 1, 50, 9, '37.2000', '0000-00-00', '0000-00-00'),
+(465, 94, 1, 75, 10, '35.8000', '0000-00-00', '0000-00-00'),
+(466, 94, 1, 100, 11, '34.8000', '0000-00-00', '0000-00-00'),
+(467, 95, 1, 2, 1, '51.0000', '0000-00-00', '0000-00-00'),
+(468, 95, 1, 3, 2, '50.0000', '0000-00-00', '0000-00-00'),
+(469, 95, 1, 5, 3, '48.5000', '0000-00-00', '0000-00-00'),
+(470, 95, 1, 10, 4, '47.3000', '0000-00-00', '0000-00-00'),
+(471, 95, 1, 15, 5, '46.6000', '0000-00-00', '0000-00-00'),
+(472, 95, 1, 20, 6, '46.1000', '0000-00-00', '0000-00-00'),
+(473, 95, 1, 30, 7, '45.3000', '0000-00-00', '0000-00-00'),
+(474, 95, 1, 40, 8, '44.8000', '0000-00-00', '0000-00-00'),
+(475, 95, 1, 50, 9, '44.4000', '0000-00-00', '0000-00-00'),
+(476, 95, 1, 75, 10, '43.6000', '0000-00-00', '0000-00-00'),
+(477, 95, 1, 100, 11, '43.1000', '0000-00-00', '0000-00-00'),
+(478, 96, 1, 2, 1, '51.0000', '0000-00-00', '0000-00-00'),
+(479, 96, 1, 3, 2, '50.0000', '0000-00-00', '0000-00-00'),
+(480, 96, 1, 5, 3, '47.4000', '0000-00-00', '0000-00-00'),
+(481, 96, 1, 10, 4, '45.1000', '0000-00-00', '0000-00-00'),
+(482, 96, 1, 15, 5, '43.5000', '0000-00-00', '0000-00-00'),
+(483, 96, 1, 20, 6, '42.7000', '0000-00-00', '0000-00-00'),
+(484, 96, 1, 30, 7, '41.2000', '0000-00-00', '0000-00-00'),
+(485, 96, 1, 40, 8, '40.2000', '0000-00-00', '0000-00-00'),
+(486, 96, 1, 50, 9, '39.4000', '0000-00-00', '0000-00-00'),
+(487, 96, 1, 75, 10, '38.1000', '0000-00-00', '0000-00-00'),
+(488, 96, 1, 100, 11, '37.1000', '0000-00-00', '0000-00-00'),
+(489, 97, 1, 2, 1, '51.0000', '0000-00-00', '0000-00-00'),
+(490, 97, 1, 3, 2, '50.0000', '0000-00-00', '0000-00-00'),
+(491, 97, 1, 5, 3, '47.4000', '0000-00-00', '0000-00-00'),
+(492, 97, 1, 10, 4, '45.1000', '0000-00-00', '0000-00-00'),
+(493, 97, 1, 15, 5, '43.5000', '0000-00-00', '0000-00-00'),
+(494, 97, 1, 20, 6, '42.7000', '0000-00-00', '0000-00-00'),
+(495, 97, 1, 30, 7, '41.2000', '0000-00-00', '0000-00-00'),
+(496, 97, 1, 40, 8, '40.2000', '0000-00-00', '0000-00-00'),
+(497, 97, 1, 50, 9, '39.4000', '0000-00-00', '0000-00-00'),
+(498, 97, 1, 75, 10, '38.1000', '0000-00-00', '0000-00-00'),
+(499, 97, 1, 100, 11, '37.1000', '0000-00-00', '0000-00-00'),
+(500, 98, 1, 2, 1, '83.0000', '0000-00-00', '0000-00-00'),
+(501, 98, 1, 3, 2, '80.0000', '0000-00-00', '0000-00-00'),
+(502, 98, 1, 5, 3, '76.7000', '0000-00-00', '0000-00-00'),
+(503, 98, 1, 10, 4, '72.6000', '0000-00-00', '0000-00-00'),
+(504, 98, 1, 15, 5, '70.3000', '0000-00-00', '0000-00-00'),
+(505, 98, 1, 20, 6, '68.5000', '0000-00-00', '0000-00-00'),
+(506, 98, 1, 30, 7, '66.2000', '0000-00-00', '0000-00-00'),
+(507, 98, 1, 40, 8, '64.4000', '0000-00-00', '0000-00-00'),
+(508, 98, 1, 50, 9, '63.1000', '0000-00-00', '0000-00-00'),
+(509, 98, 1, 75, 10, '60.8000', '0000-00-00', '0000-00-00'),
+(510, 98, 1, 100, 11, '59.0000', '0000-00-00', '0000-00-00'),
+(1036, 99, 1, 100, 11, '12.7000', '0000-00-00', '0000-00-00'),
+(1035, 99, 1, 75, 10, '13.2000', '0000-00-00', '0000-00-00'),
+(1034, 99, 1, 50, 9, '14.0000', '0000-00-00', '0000-00-00'),
+(1033, 99, 1, 40, 8, '14.2000', '0000-00-00', '0000-00-00'),
+(1032, 99, 1, 30, 7, '14.9000', '0000-00-00', '0000-00-00'),
+(1031, 99, 1, 20, 6, '15.7000', '0000-00-00', '0000-00-00'),
+(1030, 99, 1, 15, 5, '16.2000', '0000-00-00', '0000-00-00'),
+(1029, 99, 1, 10, 4, '16.9000', '0000-00-00', '0000-00-00'),
+(1028, 99, 1, 5, 3, '18.1000', '0000-00-00', '0000-00-00'),
+(1027, 99, 1, 3, 2, '19.0000', '0000-00-00', '0000-00-00'),
+(1026, 99, 1, 2, 1, '26.0000', '0000-00-00', '0000-00-00'),
+(522, 101, 1, 2, 1, '8.0000', '0000-00-00', '0000-00-00'),
+(523, 101, 1, 3, 2, '7.0000', '0000-00-00', '0000-00-00'),
+(524, 101, 1, 5, 3, '6.6000', '0000-00-00', '0000-00-00'),
+(525, 101, 1, 10, 4, '6.3000', '0000-00-00', '0000-00-00'),
+(526, 101, 1, 15, 5, '6.1000', '0000-00-00', '0000-00-00'),
+(527, 101, 1, 20, 6, '6.0000', '0000-00-00', '0000-00-00'),
+(528, 101, 1, 30, 7, '5.8000', '0000-00-00', '0000-00-00'),
+(529, 101, 1, 40, 8, '5.7000', '0000-00-00', '0000-00-00'),
+(530, 101, 1, 50, 9, '5.6000', '0000-00-00', '0000-00-00'),
+(531, 101, 1, 75, 10, '5.4000', '0000-00-00', '0000-00-00'),
+(532, 101, 1, 100, 11, '5.3000', '0000-00-00', '0000-00-00'),
+(533, 108, 1, 2, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(534, 108, 1, 3, 2, '87.0000', '0000-00-00', '0000-00-00'),
+(535, 108, 1, 5, 3, '82.9000', '0000-00-00', '0000-00-00'),
+(536, 108, 1, 10, 4, '78.3000', '0000-00-00', '0000-00-00'),
+(537, 108, 1, 15, 5, '75.4000', '0000-00-00', '0000-00-00'),
+(538, 108, 1, 20, 6, '73.6000', '0000-00-00', '0000-00-00'),
+(539, 108, 1, 30, 7, '70.8000', '0000-00-00', '0000-00-00'),
+(540, 108, 1, 40, 8, '68.8000', '0000-00-00', '0000-00-00'),
+(541, 108, 1, 50, 9, '67.2000', '0000-00-00', '0000-00-00'),
+(542, 108, 1, 75, 10, '64.6000', '0000-00-00', '0000-00-00'),
+(543, 108, 1, 100, 11, '62.6000', '0000-00-00', '0000-00-00'),
+(544, 109, 1, 2, 1, '41.0000', '0000-00-00', '0000-00-00'),
+(545, 109, 1, 3, 2, '40.0000', '0000-00-00', '0000-00-00'),
+(546, 109, 1, 5, 3, '39.4000', '0000-00-00', '0000-00-00'),
+(547, 109, 1, 10, 4, '38.2000', '0000-00-00', '0000-00-00'),
+(548, 109, 1, 15, 5, '37.4000', '0000-00-00', '0000-00-00'),
+(549, 109, 1, 20, 6, '37.0000', '0000-00-00', '0000-00-00'),
+(550, 109, 1, 30, 7, '36.5000', '0000-00-00', '0000-00-00'),
+(551, 109, 1, 40, 8, '36.1000', '0000-00-00', '0000-00-00'),
+(552, 109, 1, 50, 9, '35.5000', '0000-00-00', '0000-00-00'),
+(553, 109, 1, 75, 10, '34.8000', '0000-00-00', '0000-00-00'),
+(554, 109, 1, 100, 11, '34.6000', '0000-00-00', '0000-00-00'),
+(555, 114, 1, 2, 1, '46.0000', '0000-00-00', '0000-00-00'),
+(556, 114, 1, 3, 2, '45.0000', '0000-00-00', '0000-00-00'),
+(557, 114, 1, 5, 3, '43.0000', '0000-00-00', '0000-00-00'),
+(558, 114, 1, 10, 4, '41.5000', '0000-00-00', '0000-00-00'),
+(559, 114, 1, 15, 5, '40.4000', '0000-00-00', '0000-00-00'),
+(560, 114, 1, 20, 6, '39.9000', '0000-00-00', '0000-00-00'),
+(561, 114, 1, 30, 7, '39.1000', '0000-00-00', '0000-00-00'),
+(562, 114, 1, 40, 8, '38.4000', '0000-00-00', '0000-00-00'),
+(563, 114, 1, 50, 9, '37.9000', '0000-00-00', '0000-00-00'),
+(564, 114, 1, 75, 10, '37.1000', '0000-00-00', '0000-00-00'),
+(565, 114, 1, 100, 11, '36.6000', '0000-00-00', '0000-00-00'),
+(566, 115, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(567, 115, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(568, 115, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(569, 115, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(570, 115, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(571, 115, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(572, 115, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(573, 115, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(574, 115, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(575, 115, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(576, 115, 1, 100, 11, '43.5000', '0000-00-00', '0000-00-00'),
+(577, 116, 1, 2, 1, '70.0000', '0000-00-00', '0000-00-00'),
+(578, 116, 1, 3, 2, '68.0000', '0000-00-00', '0000-00-00'),
+(579, 116, 1, 5, 3, '64.9000', '0000-00-00', '0000-00-00'),
+(580, 116, 1, 10, 4, '61.8000', '0000-00-00', '0000-00-00'),
+(581, 116, 1, 15, 5, '60.3000', '0000-00-00', '0000-00-00'),
+(582, 116, 1, 20, 6, '59.0000', '0000-00-00', '0000-00-00'),
+(583, 116, 1, 30, 7, '57.2000', '0000-00-00', '0000-00-00'),
+(584, 116, 1, 40, 8, '55.9000', '0000-00-00', '0000-00-00'),
+(585, 116, 1, 50, 9, '54.8000', '0000-00-00', '0000-00-00'),
+(586, 116, 1, 75, 10, '53.3000', '0000-00-00', '0000-00-00'),
+(587, 116, 1, 100, 11, '52.0000', '0000-00-00', '0000-00-00'),
+(588, 117, 1, 2, 1, '69.0000', '0000-00-00', '0000-00-00'),
+(589, 117, 1, 3, 2, '67.0000', '0000-00-00', '0000-00-00'),
+(590, 117, 1, 5, 3, '64.1000', '0000-00-00', '0000-00-00'),
+(591, 117, 1, 10, 4, '60.8000', '0000-00-00', '0000-00-00'),
+(592, 117, 1, 15, 5, '58.7000', '0000-00-00', '0000-00-00'),
+(593, 117, 1, 20, 6, '57.4000', '0000-00-00', '0000-00-00'),
+(594, 117, 1, 30, 7, '55.4000', '0000-00-00', '0000-00-00'),
+(595, 117, 1, 40, 8, '54.1000', '0000-00-00', '0000-00-00'),
+(596, 117, 1, 50, 9, '53.0000', '0000-00-00', '0000-00-00'),
+(597, 117, 1, 75, 10, '51.0000', '0000-00-00', '0000-00-00'),
+(598, 117, 1, 100, 11, '49.7000', '0000-00-00', '0000-00-00'),
+(599, 118, 1, 2, 1, '48.0000', '0000-00-00', '0000-00-00'),
+(600, 118, 1, 3, 2, '47.0000', '0000-00-00', '0000-00-00'),
+(601, 118, 1, 5, 3, '45.6000', '0000-00-00', '0000-00-00'),
+(602, 118, 1, 10, 4, '43.8000', '0000-00-00', '0000-00-00'),
+(603, 118, 1, 15, 5, '42.7000', '0000-00-00', '0000-00-00'),
+(604, 118, 1, 20, 6, '42.0000', '0000-00-00', '0000-00-00'),
+(605, 118, 1, 30, 7, '40.9000', '0000-00-00', '0000-00-00'),
+(606, 118, 1, 40, 8, '40.2000', '0000-00-00', '0000-00-00'),
+(607, 118, 1, 50, 9, '39.7000', '0000-00-00', '0000-00-00'),
+(608, 118, 1, 75, 10, '38.6000', '0000-00-00', '0000-00-00'),
+(609, 118, 1, 100, 11, '37.9000', '0000-00-00', '0000-00-00'),
+(610, 119, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(611, 119, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(612, 119, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(613, 119, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(614, 119, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(615, 119, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(616, 119, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(617, 119, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(618, 119, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(619, 119, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(620, 119, 1, 100, 11, '43.3000', '0000-00-00', '0000-00-00'),
+(621, 120, 1, 2, 1, '97.0000', '0000-00-00', '0000-00-00'),
+(622, 120, 1, 3, 2, '95.0000', '0000-00-00', '0000-00-00'),
+(623, 120, 1, 5, 3, '92.7000', '0000-00-00', '0000-00-00'),
+(624, 120, 1, 10, 4, '89.6000', '0000-00-00', '0000-00-00'),
+(625, 120, 1, 15, 5, '88.1000', '0000-00-00', '0000-00-00'),
+(626, 120, 1, 20, 6, '86.8000', '0000-00-00', '0000-00-00'),
+(627, 120, 1, 30, 7, '85.0000', '0000-00-00', '0000-00-00'),
+(628, 120, 1, 40, 8, '83.7000', '0000-00-00', '0000-00-00'),
+(629, 120, 1, 50, 9, '82.9000', '0000-00-00', '0000-00-00'),
+(630, 120, 1, 75, 10, '81.1000', '0000-00-00', '0000-00-00'),
+(631, 120, 1, 100, 11, '79.8000', '0000-00-00', '0000-00-00'),
+(632, 121, 1, 2, 1, '57.0000', '0000-00-00', '0000-00-00'),
+(633, 121, 1, 3, 2, '56.0000', '0000-00-00', '0000-00-00'),
+(634, 121, 1, 5, 3, '53.6000', '0000-00-00', '0000-00-00'),
+(635, 121, 1, 10, 4, '51.5000', '0000-00-00', '0000-00-00'),
+(636, 121, 1, 15, 5, '50.2000', '0000-00-00', '0000-00-00'),
+(637, 121, 1, 20, 6, '49.4000', '0000-00-00', '0000-00-00'),
+(638, 121, 1, 30, 7, '48.2000', '0000-00-00', '0000-00-00'),
+(639, 121, 1, 40, 8, '47.1000', '0000-00-00', '0000-00-00'),
+(640, 121, 1, 50, 9, '46.6000', '0000-00-00', '0000-00-00'),
+(641, 121, 1, 75, 10, '45.3000', '0000-00-00', '0000-00-00'),
+(642, 121, 1, 100, 11, '44.3000', '0000-00-00', '0000-00-00'),
+(643, 122, 1, 2, 1, '71.0000', '0000-00-00', '0000-00-00'),
+(644, 122, 1, 3, 2, '69.0000', '0000-00-00', '0000-00-00'),
+(645, 122, 1, 5, 3, '65.9000', '0000-00-00', '0000-00-00'),
+(646, 122, 1, 10, 4, '63.1000', '0000-00-00', '0000-00-00'),
+(647, 122, 1, 15, 5, '61.3000', '0000-00-00', '0000-00-00'),
+(648, 122, 1, 20, 6, '60.0000', '0000-00-00', '0000-00-00'),
+(649, 122, 1, 30, 7, '58.2000', '0000-00-00', '0000-00-00'),
+(650, 122, 1, 40, 8, '57.2000', '0000-00-00', '0000-00-00'),
+(651, 122, 1, 50, 9, '56.1000', '0000-00-00', '0000-00-00'),
+(652, 122, 1, 75, 10, '54.3000', '0000-00-00', '0000-00-00'),
+(653, 122, 1, 100, 11, '53.0000', '0000-00-00', '0000-00-00'),
+(654, 123, 1, 2, 1, '46.0000', '0000-00-00', '0000-00-00'),
+(655, 123, 1, 3, 2, '45.0000', '0000-00-00', '0000-00-00'),
+(656, 123, 1, 5, 3, '42.7000', '0000-00-00', '0000-00-00'),
+(657, 123, 1, 10, 4, '41.2000', '0000-00-00', '0000-00-00'),
+(658, 123, 1, 15, 5, '40.2000', '0000-00-00', '0000-00-00'),
+(659, 123, 1, 20, 6, '39.7000', '0000-00-00', '0000-00-00'),
+(660, 123, 1, 30, 7, '38.6000', '0000-00-00', '0000-00-00'),
+(661, 123, 1, 40, 8, '38.1000', '0000-00-00', '0000-00-00'),
+(662, 123, 1, 50, 9, '37.6000', '0000-00-00', '0000-00-00'),
+(663, 123, 1, 75, 10, '36.6000', '0000-00-00', '0000-00-00'),
+(664, 123, 1, 100, 11, '36.1000', '0000-00-00', '0000-00-00'),
+(665, 124, 1, 2, 1, '56.0000', '0000-00-00', '0000-00-00'),
+(666, 124, 1, 3, 2, '55.0000', '0000-00-00', '0000-00-00'),
+(667, 124, 1, 5, 3, '52.5000', '0000-00-00', '0000-00-00'),
+(668, 124, 1, 10, 4, '50.5000', '0000-00-00', '0000-00-00'),
+(669, 124, 1, 15, 5, '49.2000', '0000-00-00', '0000-00-00'),
+(670, 124, 1, 20, 6, '48.4000', '0000-00-00', '0000-00-00'),
+(671, 124, 1, 30, 7, '47.1000', '0000-00-00', '0000-00-00'),
+(672, 124, 1, 40, 8, '46.1000', '0000-00-00', '0000-00-00'),
+(673, 124, 1, 50, 9, '45.6000', '0000-00-00', '0000-00-00'),
+(674, 124, 1, 75, 10, '44.3000', '0000-00-00', '0000-00-00'),
+(675, 124, 1, 100, 11, '43.3000', '0000-00-00', '0000-00-00'),
+(676, 125, 1, 2, 1, '50.0000', '0000-00-00', '0000-00-00'),
+(677, 125, 1, 3, 2, '49.0000', '0000-00-00', '0000-00-00'),
+(678, 125, 1, 5, 3, '46.4000', '0000-00-00', '0000-00-00'),
+(679, 125, 1, 10, 4, '43.8000', '0000-00-00', '0000-00-00'),
+(680, 125, 1, 15, 5, '42.5000', '0000-00-00', '0000-00-00'),
+(681, 125, 1, 20, 6, '41.5000', '0000-00-00', '0000-00-00'),
+(682, 125, 1, 30, 7, '40.2000', '0000-00-00', '0000-00-00'),
+(683, 125, 1, 40, 8, '39.1000', '0000-00-00', '0000-00-00'),
+(684, 125, 1, 50, 9, '38.4000', '0000-00-00', '0000-00-00'),
+(685, 125, 1, 75, 10, '36.8000', '0000-00-00', '0000-00-00'),
+(686, 125, 1, 100, 11, '35.8000', '0000-00-00', '0000-00-00'),
+(687, 127, 1, 2, 1, '50.0000', '0000-00-00', '0000-00-00'),
+(688, 127, 1, 3, 2, '49.0000', '0000-00-00', '0000-00-00'),
+(689, 127, 1, 5, 3, '46.4000', '0000-00-00', '0000-00-00'),
+(690, 127, 1, 10, 4, '43.8000', '0000-00-00', '0000-00-00'),
+(691, 127, 1, 15, 5, '42.5000', '0000-00-00', '0000-00-00'),
+(692, 127, 1, 20, 6, '41.5000', '0000-00-00', '0000-00-00'),
+(693, 127, 1, 30, 7, '40.2000', '0000-00-00', '0000-00-00'),
+(694, 127, 1, 40, 8, '39.1000', '0000-00-00', '0000-00-00'),
+(695, 127, 1, 50, 9, '38.4000', '0000-00-00', '0000-00-00'),
+(696, 127, 1, 75, 10, '36.8000', '0000-00-00', '0000-00-00'),
+(697, 127, 1, 100, 11, '35.8000', '0000-00-00', '0000-00-00'),
+(698, 128, 1, 2, 1, '83.0000', '0000-00-00', '0000-00-00'),
+(699, 128, 1, 3, 2, '80.0000', '0000-00-00', '0000-00-00'),
+(700, 128, 1, 5, 3, '75.2000', '0000-00-00', '0000-00-00'),
+(701, 128, 1, 10, 4, '69.3000', '0000-00-00', '0000-00-00'),
+(702, 128, 1, 15, 5, '65.9000', '0000-00-00', '0000-00-00'),
+(703, 128, 1, 20, 6, '63.6000', '0000-00-00', '0000-00-00'),
+(704, 128, 1, 30, 7, '60.3000', '0000-00-00', '0000-00-00'),
+(705, 128, 1, 40, 8, '57.7000', '0000-00-00', '0000-00-00'),
+(706, 128, 1, 50, 9, '55.9000', '0000-00-00', '0000-00-00'),
+(707, 128, 1, 75, 10, '52.5000', '0000-00-00', '0000-00-00'),
+(708, 128, 1, 100, 11, '50.2000', '0000-00-00', '0000-00-00'),
+(709, 129, 1, 2, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(710, 129, 1, 3, 2, '86.0000', '0000-00-00', '0000-00-00'),
+(711, 129, 1, 5, 3, '81.9000', '0000-00-00', '0000-00-00'),
+(712, 129, 1, 10, 4, '76.7000', '0000-00-00', '0000-00-00'),
+(713, 129, 1, 15, 5, '73.6000', '0000-00-00', '0000-00-00'),
+(714, 129, 1, 20, 6, '71.6000', '0000-00-00', '0000-00-00'),
+(715, 129, 1, 30, 7, '68.5000', '0000-00-00', '0000-00-00'),
+(716, 129, 1, 40, 8, '66.4000', '0000-00-00', '0000-00-00'),
+(717, 129, 1, 50, 9, '64.6000', '0000-00-00', '0000-00-00'),
+(718, 129, 1, 75, 10, '61.5000', '0000-00-00', '0000-00-00'),
+(719, 129, 1, 100, 11, '59.5000', '0000-00-00', '0000-00-00'),
+(720, 130, 1, 2, 1, '93.0000', '0000-00-00', '0000-00-00'),
+(721, 130, 1, 3, 2, '92.0000', '0000-00-00', '0000-00-00'),
+(722, 130, 1, 5, 3, '90.0000', '0000-00-00', '0000-00-00'),
+(723, 130, 1, 10, 4, '87.5000', '0000-00-00', '0000-00-00'),
+(724, 130, 1, 15, 5, '86.1000', '0000-00-00', '0000-00-00'),
+(725, 130, 1, 20, 6, '85.1000', '0000-00-00', '0000-00-00'),
+(726, 130, 1, 30, 7, '83.6000', '0000-00-00', '0000-00-00'),
+(727, 130, 1, 40, 8, '82.5000', '0000-00-00', '0000-00-00'),
+(728, 130, 1, 50, 9, '81.8000', '0000-00-00', '0000-00-00'),
+(729, 130, 1, 75, 10, '80.3000', '0000-00-00', '0000-00-00'),
+(730, 130, 1, 100, 11, '79.3000', '0000-00-00', '0000-00-00'),
+(731, 131, 1, 2, 1, '94.0000', '0000-00-00', '0000-00-00'),
+(732, 131, 1, 3, 2, '93.0000', '0000-00-00', '0000-00-00'),
+(733, 131, 1, 5, 3, '91.0000', '0000-00-00', '0000-00-00'),
+(734, 131, 1, 10, 4, '88.0000', '0000-00-00', '0000-00-00'),
+(735, 131, 1, 15, 5, '86.8000', '0000-00-00', '0000-00-00'),
+(736, 131, 1, 20, 6, '86.0000', '0000-00-00', '0000-00-00'),
+(737, 131, 1, 30, 7, '84.8000', '0000-00-00', '0000-00-00'),
+(738, 131, 1, 40, 8, '84.0000', '0000-00-00', '0000-00-00'),
+(739, 131, 1, 50, 9, '83.4000', '0000-00-00', '0000-00-00'),
+(740, 131, 1, 75, 10, '82.2000', '0000-00-00', '0000-00-00'),
+(741, 131, 1, 100, 11, '81.4000', '0000-00-00', '0000-00-00'),
+(742, 132, 1, 2, 1, '86.0000', '0000-00-00', '0000-00-00'),
+(743, 132, 1, 3, 2, '83.0000', '0000-00-00', '0000-00-00'),
+(744, 132, 1, 5, 3, '78.3000', '0000-00-00', '0000-00-00'),
+(745, 132, 1, 10, 4, '73.1000', '0000-00-00', '0000-00-00'),
+(746, 132, 1, 15, 5, '70.0000', '0000-00-00', '0000-00-00'),
+(747, 132, 1, 20, 6, '67.7000', '0000-00-00', '0000-00-00'),
+(748, 132, 1, 30, 7, '64.6000', '0000-00-00', '0000-00-00'),
+(749, 132, 1, 40, 8, '62.3000', '0000-00-00', '0000-00-00'),
+(750, 132, 1, 50, 9, '60.8000', '0000-00-00', '0000-00-00'),
+(751, 132, 1, 75, 10, '57.7000', '0000-00-00', '0000-00-00'),
+(752, 132, 1, 100, 11, '55.4000', '0000-00-00', '0000-00-00'),
+(753, 133, 1, 2, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(754, 133, 1, 3, 2, '87.0000', '0000-00-00', '0000-00-00'),
+(755, 133, 1, 5, 3, '82.9000', '0000-00-00', '0000-00-00'),
+(756, 133, 1, 10, 4, '78.3000', '0000-00-00', '0000-00-00'),
+(757, 133, 1, 15, 5, '75.4000', '0000-00-00', '0000-00-00'),
+(758, 133, 1, 20, 6, '73.4000', '0000-00-00', '0000-00-00'),
+(759, 133, 1, 30, 7, '70.6000', '0000-00-00', '0000-00-00'),
+(760, 133, 1, 40, 8, '68.8000', '0000-00-00', '0000-00-00'),
+(761, 133, 1, 50, 9, '67.2000', '0000-00-00', '0000-00-00'),
+(762, 133, 1, 75, 10, '64.4000', '0000-00-00', '0000-00-00'),
+(763, 133, 1, 100, 11, '62.6000', '0000-00-00', '0000-00-00'),
+(764, 134, 1, 2, 1, '174.0000', '0000-00-00', '0000-00-00'),
+(765, 134, 1, 3, 2, '170.0000', '0000-00-00', '0000-00-00'),
+(766, 134, 1, 5, 3, '162.0000', '0000-00-00', '0000-00-00'),
+(767, 134, 1, 10, 4, '150.6000', '0000-00-00', '0000-00-00'),
+(768, 134, 1, 15, 5, '143.9000', '0000-00-00', '0000-00-00'),
+(769, 134, 1, 20, 6, '139.3000', '0000-00-00', '0000-00-00'),
+(770, 134, 1, 30, 7, '132.9000', '0000-00-00', '0000-00-00'),
+(771, 134, 1, 40, 8, '128.0000', '0000-00-00', '0000-00-00'),
+(772, 134, 1, 50, 9, '124.4000', '0000-00-00', '0000-00-00'),
+(773, 134, 1, 75, 10, '117.9000', '0000-00-00', '0000-00-00'),
+(774, 134, 1, 100, 11, '113.3000', '0000-00-00', '0000-00-00'),
+(775, 135, 1, 2, 1, '92.0000', '0000-00-00', '0000-00-00'),
+(776, 135, 1, 3, 2, '88.0000', '0000-00-00', '0000-00-00'),
+(777, 135, 1, 5, 3, '83.8000', '0000-00-00', '0000-00-00'),
+(778, 135, 1, 10, 4, '77.6000', '0000-00-00', '0000-00-00'),
+(779, 135, 1, 15, 5, '74.0000', '0000-00-00', '0000-00-00'),
+(780, 135, 1, 20, 6, '71.4000', '0000-00-00', '0000-00-00'),
+(781, 135, 1, 30, 7, '67.8000', '0000-00-00', '0000-00-00'),
+(782, 135, 1, 40, 8, '65.2000', '0000-00-00', '0000-00-00'),
+(783, 135, 1, 50, 9, '63.4000', '0000-00-00', '0000-00-00'),
+(784, 135, 1, 75, 10, '59.8000', '0000-00-00', '0000-00-00'),
+(785, 135, 1, 100, 11, '57.2000', '0000-00-00', '0000-00-00'),
+(786, 136, 1, 2, 1, '88.0000', '0000-00-00', '0000-00-00'),
+(787, 136, 1, 3, 2, '84.0000', '0000-00-00', '0000-00-00'),
+(788, 136, 1, 5, 3, '79.8000', '0000-00-00', '0000-00-00'),
+(789, 136, 1, 10, 4, '73.6000', '0000-00-00', '0000-00-00'),
+(790, 136, 1, 15, 5, '70.0000', '0000-00-00', '0000-00-00'),
+(791, 136, 1, 20, 6, '67.4000', '0000-00-00', '0000-00-00'),
+(792, 136, 1, 30, 7, '63.8000', '0000-00-00', '0000-00-00'),
+(793, 136, 1, 40, 8, '61.2000', '0000-00-00', '0000-00-00'),
+(794, 136, 1, 50, 9, '59.4000', '0000-00-00', '0000-00-00'),
+(795, 136, 1, 75, 10, '55.8000', '0000-00-00', '0000-00-00'),
+(796, 136, 1, 100, 11, '53.2000', '0000-00-00', '0000-00-00'),
+(797, 139, 1, 2, 1, '47.0000', '0000-00-00', '0000-00-00'),
+(798, 139, 1, 3, 2, '43.0000', '0000-00-00', '0000-00-00'),
+(799, 139, 1, 5, 3, '40.9000', '0000-00-00', '0000-00-00'),
+(800, 139, 1, 10, 4, '38.2000', '0000-00-00', '0000-00-00'),
+(801, 139, 1, 15, 5, '36.8000', '0000-00-00', '0000-00-00'),
+(802, 139, 1, 20, 6, '35.5000', '0000-00-00', '0000-00-00'),
+(803, 139, 1, 30, 7, '34.1000', '0000-00-00', '0000-00-00'),
+(804, 139, 1, 40, 8, '32.8000', '0000-00-00', '0000-00-00'),
+(805, 139, 1, 50, 9, '32.1000', '0000-00-00', '0000-00-00'),
+(806, 139, 1, 75, 10, '30.4000', '0000-00-00', '0000-00-00'),
+(807, 139, 1, 100, 11, '29.1000', '0000-00-00', '0000-00-00'),
+(808, 140, 1, 2, 1, '47.0000', '0000-00-00', '0000-00-00'),
+(809, 140, 1, 3, 2, '43.0000', '0000-00-00', '0000-00-00'),
+(810, 140, 1, 5, 3, '40.9000', '0000-00-00', '0000-00-00'),
+(811, 140, 1, 10, 4, '38.2000', '0000-00-00', '0000-00-00'),
+(812, 140, 1, 15, 5, '36.8000', '0000-00-00', '0000-00-00'),
+(813, 140, 1, 20, 6, '35.5000', '0000-00-00', '0000-00-00'),
+(814, 140, 1, 30, 7, '34.1000', '0000-00-00', '0000-00-00'),
+(815, 140, 1, 40, 8, '32.8000', '0000-00-00', '0000-00-00'),
+(816, 140, 1, 50, 9, '32.1000', '0000-00-00', '0000-00-00'),
+(817, 140, 1, 75, 10, '30.4000', '0000-00-00', '0000-00-00'),
+(818, 140, 1, 100, 11, '29.1000', '0000-00-00', '0000-00-00'),
+(819, 141, 1, 2, 1, '7.0000', '0000-00-00', '0000-00-00'),
+(820, 141, 1, 3, 2, '6.0000', '0000-00-00', '0000-00-00'),
+(821, 141, 1, 5, 3, '5.8000', '0000-00-00', '0000-00-00'),
+(822, 141, 1, 10, 4, '5.4000', '0000-00-00', '0000-00-00'),
+(823, 141, 1, 15, 5, '5.2000', '0000-00-00', '0000-00-00'),
+(824, 141, 1, 20, 6, '4.9000', '0000-00-00', '0000-00-00'),
+(825, 141, 1, 30, 7, '4.7000', '0000-00-00', '0000-00-00'),
+(826, 141, 1, 40, 8, '4.6000', '0000-00-00', '0000-00-00'),
+(827, 141, 1, 50, 9, '4.5000', '0000-00-00', '0000-00-00'),
+(828, 141, 1, 75, 10, '4.4000', '0000-00-00', '0000-00-00'),
+(829, 141, 1, 100, 11, '4.3000', '0000-00-00', '0000-00-00'),
+(830, 142, 1, 2, 1, '7.0000', '0000-00-00', '0000-00-00'),
+(831, 142, 1, 3, 2, '6.0000', '0000-00-00', '0000-00-00'),
+(832, 142, 1, 5, 3, '5.8000', '0000-00-00', '0000-00-00'),
+(833, 142, 1, 10, 4, '5.6000', '0000-00-00', '0000-00-00'),
+(834, 142, 1, 15, 5, '5.4000', '0000-00-00', '0000-00-00'),
+(835, 142, 1, 20, 6, '5.2000', '0000-00-00', '0000-00-00'),
+(836, 142, 1, 30, 7, '4.9000', '0000-00-00', '0000-00-00'),
+(837, 142, 1, 40, 8, '4.8000', '0000-00-00', '0000-00-00'),
+(838, 142, 1, 50, 9, '4.7000', '0000-00-00', '0000-00-00'),
+(839, 142, 1, 75, 10, '4.6000', '0000-00-00', '0000-00-00'),
+(840, 142, 1, 100, 11, '4.5000', '0000-00-00', '0000-00-00'),
+(841, 143, 1, 2, 1, '7.0000', '0000-00-00', '0000-00-00'),
+(842, 143, 1, 3, 2, '6.0000', '0000-00-00', '0000-00-00'),
+(843, 143, 1, 5, 3, '5.8000', '0000-00-00', '0000-00-00'),
+(844, 143, 1, 10, 4, '5.7000', '0000-00-00', '0000-00-00'),
+(845, 143, 1, 15, 5, '5.6000', '0000-00-00', '0000-00-00'),
+(846, 143, 1, 20, 6, '5.4000', '0000-00-00', '0000-00-00'),
+(847, 143, 1, 30, 7, '5.1000', '0000-00-00', '0000-00-00'),
+(848, 143, 1, 40, 8, '5.0000', '0000-00-00', '0000-00-00'),
+(849, 143, 1, 50, 9, '4.9000', '0000-00-00', '0000-00-00'),
+(850, 143, 1, 75, 10, '4.8000', '0000-00-00', '0000-00-00'),
+(851, 143, 1, 100, 11, '4.7000', '0000-00-00', '0000-00-00'),
+(852, 144, 1, 2, 1, '49.0000', '0000-00-00', '0000-00-00'),
+(853, 144, 1, 3, 2, '44.0000', '0000-00-00', '0000-00-00'),
+(854, 144, 1, 5, 3, '42.2000', '0000-00-00', '0000-00-00');
+INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
+(855, 144, 1, 10, 4, '39.2000', '0000-00-00', '0000-00-00'),
+(856, 144, 1, 15, 5, '37.7000', '0000-00-00', '0000-00-00'),
+(857, 144, 1, 20, 6, '36.5000', '0000-00-00', '0000-00-00'),
+(858, 144, 1, 30, 7, '35.0000', '0000-00-00', '0000-00-00'),
+(859, 144, 1, 40, 8, '33.9000', '0000-00-00', '0000-00-00'),
+(860, 144, 1, 50, 9, '32.8000', '0000-00-00', '0000-00-00'),
+(861, 144, 1, 75, 10, '31.3000', '0000-00-00', '0000-00-00'),
+(862, 144, 1, 100, 11, '30.2000', '0000-00-00', '0000-00-00'),
+(863, 145, 1, 2, 1, '48.0000', '0000-00-00', '0000-00-00'),
+(864, 145, 1, 3, 2, '47.0000', '0000-00-00', '0000-00-00'),
+(865, 145, 1, 5, 3, '45.6000', '0000-00-00', '0000-00-00'),
+(866, 145, 1, 10, 4, '43.8000', '0000-00-00', '0000-00-00'),
+(867, 145, 1, 15, 5, '42.7000', '0000-00-00', '0000-00-00'),
+(868, 145, 1, 20, 6, '42.0000', '0000-00-00', '0000-00-00'),
+(869, 145, 1, 30, 7, '40.9000', '0000-00-00', '0000-00-00'),
+(870, 145, 1, 40, 8, '40.2000', '0000-00-00', '0000-00-00'),
+(871, 145, 1, 50, 9, '39.7000', '0000-00-00', '0000-00-00'),
+(872, 145, 1, 75, 10, '38.6000', '0000-00-00', '0000-00-00'),
+(873, 145, 1, 100, 11, '37.9000', '0000-00-00', '0000-00-00'),
+(874, 146, 1, 2, 1, '45.0000', '0000-00-00', '0000-00-00'),
+(875, 146, 1, 3, 2, '44.0000', '0000-00-00', '0000-00-00'),
+(876, 146, 1, 5, 3, '43.3000', '0000-00-00', '0000-00-00'),
+(877, 146, 1, 10, 4, '41.8000', '0000-00-00', '0000-00-00'),
+(878, 146, 1, 15, 5, '41.1000', '0000-00-00', '0000-00-00'),
+(879, 146, 1, 20, 6, '40.7000', '0000-00-00', '0000-00-00'),
+(880, 146, 1, 30, 7, '40.0000', '0000-00-00', '0000-00-00'),
+(881, 146, 1, 40, 8, '39.4000', '0000-00-00', '0000-00-00'),
+(882, 146, 1, 50, 9, '38.9000', '0000-00-00', '0000-00-00'),
+(883, 146, 1, 75, 10, '38.2000', '0000-00-00', '0000-00-00'),
+(884, 146, 1, 100, 11, '37.7000', '0000-00-00', '0000-00-00'),
+(885, 147, 1, 2, 1, '85.0000', '0000-00-00', '0000-00-00'),
+(886, 147, 1, 3, 2, '82.0000', '0000-00-00', '0000-00-00'),
+(887, 147, 1, 5, 3, '80.6000', '0000-00-00', '0000-00-00'),
+(888, 147, 1, 10, 4, '77.3000', '0000-00-00', '0000-00-00'),
+(889, 147, 1, 15, 5, '75.2000', '0000-00-00', '0000-00-00'),
+(890, 147, 1, 20, 6, '73.6000', '0000-00-00', '0000-00-00'),
+(891, 147, 1, 30, 7, '71.8000', '0000-00-00', '0000-00-00'),
+(892, 147, 1, 40, 8, '70.3000', '0000-00-00', '0000-00-00'),
+(893, 147, 1, 50, 9, '69.3000', '0000-00-00', '0000-00-00'),
+(894, 147, 1, 75, 10, '67.2000', '0000-00-00', '0000-00-00'),
+(895, 147, 1, 100, 11, '65.9000', '0000-00-00', '0000-00-00'),
+(896, 148, 1, 2, 1, '100.9000', '0000-00-00', '0000-00-00'),
+(897, 148, 1, 3, 2, '78.3000', '0000-00-00', '0000-00-00'),
+(898, 148, 1, 5, 3, '75.0000', '0000-00-00', '0000-00-00'),
+(899, 148, 1, 10, 4, '70.8000', '0000-00-00', '0000-00-00'),
+(900, 148, 1, 15, 5, '68.3000', '0000-00-00', '0000-00-00'),
+(901, 148, 1, 20, 6, '66.6000', '0000-00-00', '0000-00-00'),
+(902, 148, 1, 30, 7, '64.1000', '0000-00-00', '0000-00-00'),
+(903, 148, 1, 40, 8, '62.2000', '0000-00-00', '0000-00-00'),
+(904, 148, 1, 50, 9, '60.8000', '0000-00-00', '0000-00-00'),
+(905, 148, 1, 75, 10, '58.5000', '0000-00-00', '0000-00-00'),
+(906, 148, 1, 100, 11, '56.6000', '0000-00-00', '0000-00-00'),
+(907, 149, 1, 2, 1, '69.0000', '0000-00-00', '0000-00-00'),
+(908, 149, 1, 3, 2, '67.0000', '0000-00-00', '0000-00-00'),
+(909, 149, 1, 5, 3, '64.1000', '0000-00-00', '0000-00-00'),
+(910, 149, 1, 10, 4, '60.8000', '0000-00-00', '0000-00-00'),
+(911, 149, 1, 15, 5, '58.7000', '0000-00-00', '0000-00-00'),
+(912, 149, 1, 20, 6, '57.4000', '0000-00-00', '0000-00-00'),
+(913, 149, 1, 30, 7, '55.4000', '0000-00-00', '0000-00-00'),
+(914, 149, 1, 40, 8, '54.1000', '0000-00-00', '0000-00-00'),
+(915, 149, 1, 50, 9, '53.0000', '0000-00-00', '0000-00-00'),
+(916, 149, 1, 75, 10, '51.0000', '0000-00-00', '0000-00-00'),
+(917, 149, 1, 100, 11, '49.7000', '0000-00-00', '0000-00-00'),
+(918, 150, 1, 2, 1, '36.0000', '0000-00-00', '0000-00-00'),
+(919, 150, 1, 3, 2, '35.0000', '0000-00-00', '0000-00-00'),
+(920, 150, 1, 5, 3, '33.5000', '0000-00-00', '0000-00-00'),
+(921, 150, 1, 10, 4, '31.9000', '0000-00-00', '0000-00-00'),
+(922, 150, 1, 15, 5, '30.9000', '0000-00-00', '0000-00-00'),
+(923, 150, 1, 20, 6, '30.2000', '0000-00-00', '0000-00-00'),
+(924, 150, 1, 30, 7, '28.9000', '0000-00-00', '0000-00-00'),
+(925, 150, 1, 40, 8, '28.2000', '0000-00-00', '0000-00-00'),
+(926, 150, 1, 50, 9, '27.7000', '0000-00-00', '0000-00-00'),
+(927, 150, 1, 75, 10, '26.5000', '0000-00-00', '0000-00-00'),
+(928, 150, 1, 100, 11, '25.8000', '0000-00-00', '0000-00-00'),
+(929, 151, 1, 2, 1, '65.0000', '0000-00-00', '0000-00-00'),
+(930, 151, 1, 3, 2, '60.0000', '0000-00-00', '0000-00-00'),
+(931, 151, 1, 5, 3, '57.1000', '0000-00-00', '0000-00-00'),
+(932, 151, 1, 10, 4, '52.9000', '0000-00-00', '0000-00-00'),
+(933, 151, 1, 15, 5, '50.5000', '0000-00-00', '0000-00-00'),
+(934, 151, 1, 20, 6, '49.0000', '0000-00-00', '0000-00-00'),
+(935, 151, 1, 30, 7, '46.6000', '0000-00-00', '0000-00-00'),
+(936, 151, 1, 40, 8, '44.8000', '0000-00-00', '0000-00-00'),
+(937, 151, 1, 50, 9, '43.6000', '0000-00-00', '0000-00-00'),
+(938, 151, 1, 75, 10, '41.1000', '0000-00-00', '0000-00-00'),
+(939, 151, 1, 100, 11, '39.6000', '0000-00-00', '0000-00-00'),
+(940, 153, 1, 2, 1, '50.0000', '0000-00-00', '0000-00-00'),
+(941, 153, 1, 3, 2, '48.0000', '0000-00-00', '0000-00-00'),
+(942, 153, 1, 5, 3, '46.8000', '0000-00-00', '0000-00-00'),
+(943, 153, 1, 10, 4, '44.4000', '0000-00-00', '0000-00-00'),
+(944, 153, 1, 15, 5, '42.9000', '0000-00-00', '0000-00-00'),
+(945, 153, 1, 20, 6, '41.6000', '0000-00-00', '0000-00-00'),
+(946, 153, 1, 30, 7, '40.2000', '0000-00-00', '0000-00-00'),
+(947, 153, 1, 40, 8, '39.2000', '0000-00-00', '0000-00-00'),
+(948, 153, 1, 50, 9, '38.5000', '0000-00-00', '0000-00-00'),
+(949, 153, 1, 75, 10, '37.0000', '0000-00-00', '0000-00-00'),
+(950, 153, 1, 100, 11, '36.1000', '0000-00-00', '0000-00-00'),
+(951, 154, 1, 2, 1, '52.0000', '0000-00-00', '0000-00-00'),
+(952, 154, 1, 3, 2, '50.0000', '0000-00-00', '0000-00-00'),
+(953, 154, 1, 5, 3, '47.7000', '0000-00-00', '0000-00-00'),
+(954, 154, 1, 10, 4, '45.3000', '0000-00-00', '0000-00-00'),
+(955, 154, 1, 15, 5, '43.8000', '0000-00-00', '0000-00-00'),
+(956, 154, 1, 20, 6, '42.9000', '0000-00-00', '0000-00-00'),
+(957, 154, 1, 30, 7, '41.4000', '0000-00-00', '0000-00-00'),
+(958, 154, 1, 40, 8, '40.4000', '0000-00-00', '0000-00-00'),
+(959, 154, 1, 50, 9, '39.4000', '0000-00-00', '0000-00-00'),
+(960, 154, 1, 75, 10, '38.0000', '0000-00-00', '0000-00-00'),
+(961, 154, 1, 100, 11, '37.0000', '0000-00-00', '0000-00-00'),
+(962, 170, 1, 2, 1, '83.0000', '0000-00-00', '0000-00-00'),
+(963, 170, 1, 3, 2, '80.0000', '0000-00-00', '0000-00-00'),
+(964, 170, 1, 5, 3, '76.7000', '0000-00-00', '0000-00-00'),
+(965, 170, 1, 10, 4, '72.6000', '0000-00-00', '0000-00-00'),
+(966, 170, 1, 15, 5, '70.3000', '0000-00-00', '0000-00-00'),
+(967, 170, 1, 20, 6, '68.5000', '0000-00-00', '0000-00-00'),
+(968, 170, 1, 30, 7, '66.2000', '0000-00-00', '0000-00-00'),
+(969, 170, 1, 40, 8, '64.4000', '0000-00-00', '0000-00-00'),
+(970, 170, 1, 50, 9, '63.1000', '0000-00-00', '0000-00-00'),
+(971, 170, 1, 75, 10, '60.8000', '0000-00-00', '0000-00-00'),
+(972, 170, 1, 100, 11, '59.0000', '0000-00-00', '0000-00-00'),
+(973, 171, 1, 2, 1, '84.0000', '0000-00-00', '0000-00-00'),
+(974, 171, 1, 3, 2, '81.0000', '0000-00-00', '0000-00-00'),
+(975, 171, 1, 5, 3, '78.3000', '0000-00-00', '0000-00-00'),
+(976, 171, 1, 10, 4, '74.4000', '0000-00-00', '0000-00-00'),
+(977, 171, 1, 15, 5, '72.1000', '0000-00-00', '0000-00-00'),
+(978, 171, 1, 20, 6, '70.6000', '0000-00-00', '0000-00-00'),
+(979, 171, 1, 30, 7, '68.2000', '0000-00-00', '0000-00-00'),
+(980, 171, 1, 40, 8, '66.4000', '0000-00-00', '0000-00-00'),
+(981, 171, 1, 50, 9, '65.1000', '0000-00-00', '0000-00-00'),
+(982, 171, 1, 75, 10, '63.1000', '0000-00-00', '0000-00-00'),
+(983, 171, 1, 100, 11, '61.3000', '0000-00-00', '0000-00-00'),
+(984, 172, 1, 2, 1, '84.0000', '0000-00-00', '0000-00-00'),
+(985, 172, 1, 3, 2, '81.0000', '0000-00-00', '0000-00-00'),
+(986, 172, 1, 5, 3, '78.3000', '0000-00-00', '0000-00-00'),
+(987, 172, 1, 10, 4, '74.4000', '0000-00-00', '0000-00-00'),
+(988, 172, 1, 15, 5, '72.1000', '0000-00-00', '0000-00-00'),
+(989, 172, 1, 20, 6, '70.6000', '0000-00-00', '0000-00-00'),
+(990, 172, 1, 30, 7, '68.2000', '0000-00-00', '0000-00-00'),
+(991, 172, 1, 40, 8, '66.4000', '0000-00-00', '0000-00-00'),
+(992, 172, 1, 50, 9, '65.1000', '0000-00-00', '0000-00-00'),
+(993, 172, 1, 75, 10, '63.1000', '0000-00-00', '0000-00-00'),
+(994, 172, 1, 100, 11, '61.3000', '0000-00-00', '0000-00-00'),
+(995, 174, 1, 2, 0, '56.0000', '0000-00-00', '0000-00-00'),
+(996, 174, 1, 3, 0, '55.0000', '0000-00-00', '0000-00-00'),
+(997, 174, 1, 5, 0, '52.5000', '0000-00-00', '0000-00-00'),
+(998, 174, 1, 10, 0, '49.2000', '0000-00-00', '0000-00-00'),
+(999, 175, 1, 2, 0, '59.0000', '0000-00-00', '0000-00-00'),
+(1000, 175, 1, 3, 0, '58.0000', '0000-00-00', '0000-00-00'),
+(1001, 175, 1, 5, 0, '55.5000', '0000-00-00', '0000-00-00'),
+(1002, 175, 1, 10, 0, '53.5000', '0000-00-00', '0000-00-00'),
+(1003, 176, 1, 2, 0, '85.0000', '0000-00-00', '0000-00-00'),
+(1004, 176, 1, 3, 0, '82.0000', '0000-00-00', '0000-00-00'),
+(1005, 176, 1, 5, 0, '80.6000', '0000-00-00', '0000-00-00'),
+(1006, 176, 1, 10, 0, '77.3000', '0000-00-00', '0000-00-00'),
+(1007, 177, 1, 2, 0, '90.0000', '0000-00-00', '0000-00-00'),
+(1008, 177, 1, 3, 0, '87.0000', '0000-00-00', '0000-00-00'),
+(1009, 177, 1, 5, 0, '82.9000', '0000-00-00', '0000-00-00'),
+(1010, 177, 1, 10, 0, '78.0000', '0000-00-00', '0000-00-00'),
+(1011, 178, 1, 2, 0, '90.0000', '0000-00-00', '0000-00-00'),
+(1012, 178, 1, 3, 0, '87.0000', '0000-00-00', '0000-00-00'),
+(1013, 178, 1, 5, 0, '83.2000', '0000-00-00', '0000-00-00'),
+(1014, 178, 1, 10, 0, '78.3000', '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_filter`
+-- Table structure for table `oc_product_filter`
 --
 
 CREATE TABLE `oc_product_filter` (
@@ -3185,7 +4257,7 @@ CREATE TABLE `oc_product_filter` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_image`
+-- Table structure for table `oc_product_image`
 --
 
 CREATE TABLE `oc_product_image` (
@@ -3196,76 +4268,393 @@ CREATE TABLE `oc_product_image` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_image`
+-- Dumping data for table `oc_product_image`
 --
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2345, 30, 'catalog/demo/canon_eos_5d_2.jpg', 0),
-(2321, 47, 'catalog/demo/hp_3.jpg', 0),
-(2035, 28, 'catalog/demo/htc_touch_hd_2.jpg', 0),
-(2351, 41, 'catalog/demo/imac_3.jpg', 0),
-(1982, 40, 'catalog/demo/iphone_6.jpg', 0),
-(2001, 36, 'catalog/demo/ipod_nano_5.jpg', 0),
-(2000, 36, 'catalog/demo/ipod_nano_4.jpg', 0),
-(2005, 34, 'catalog/demo/ipod_shuffle_5.jpg', 0),
-(2004, 34, 'catalog/demo/ipod_shuffle_4.jpg', 0),
-(2011, 32, 'catalog/demo/ipod_touch_7.jpg', 0),
-(2010, 32, 'catalog/demo/ipod_touch_6.jpg', 0),
-(2009, 32, 'catalog/demo/ipod_touch_5.jpg', 0),
-(1971, 43, 'catalog/demo/macbook_5.jpg', 0),
-(1970, 43, 'catalog/demo/macbook_4.jpg', 0),
-(1974, 44, 'catalog/demo/macbook_air_4.jpg', 0),
-(1973, 44, 'catalog/demo/macbook_air_2.jpg', 0),
-(1977, 45, 'catalog/demo/macbook_pro_2.jpg', 0),
-(1976, 45, 'catalog/demo/macbook_pro_3.jpg', 0),
-(1986, 31, 'catalog/demo/nikon_d300_3.jpg', 0),
-(1985, 31, 'catalog/demo/nikon_d300_2.jpg', 0),
-(1988, 29, 'catalog/demo/palm_treo_pro_3.jpg', 0),
-(1995, 46, 'catalog/demo/sony_vaio_5.jpg', 0),
-(1994, 46, 'catalog/demo/sony_vaio_4.jpg', 0),
-(1991, 48, 'catalog/demo/ipod_classic_4.jpg', 0),
-(1990, 48, 'catalog/demo/ipod_classic_3.jpg', 0),
-(1981, 40, 'catalog/demo/iphone_2.jpg', 0),
-(1980, 40, 'catalog/demo/iphone_5.jpg', 0),
-(2344, 30, 'catalog/demo/canon_eos_5d_3.jpg', 0),
-(2320, 47, 'catalog/demo/hp_2.jpg', 0),
-(2034, 28, 'catalog/demo/htc_touch_hd_3.jpg', 0),
-(2350, 41, 'catalog/demo/imac_2.jpg', 0),
-(1979, 40, 'catalog/demo/iphone_3.jpg', 0),
-(1978, 40, 'catalog/demo/iphone_4.jpg', 0),
-(1989, 48, 'catalog/demo/ipod_classic_2.jpg', 0),
-(1999, 36, 'catalog/demo/ipod_nano_2.jpg', 0),
-(1998, 36, 'catalog/demo/ipod_nano_3.jpg', 0),
-(2003, 34, 'catalog/demo/ipod_shuffle_2.jpg', 0),
-(2002, 34, 'catalog/demo/ipod_shuffle_3.jpg', 0),
-(2008, 32, 'catalog/demo/ipod_touch_2.jpg', 0),
-(2007, 32, 'catalog/demo/ipod_touch_3.jpg', 0),
-(2006, 32, 'catalog/demo/ipod_touch_4.jpg', 0),
-(1969, 43, 'catalog/demo/macbook_2.jpg', 0),
-(1968, 43, 'catalog/demo/macbook_3.jpg', 0),
-(1972, 44, 'catalog/demo/macbook_air_3.jpg', 0),
-(1975, 45, 'catalog/demo/macbook_pro_4.jpg', 0),
-(1984, 31, 'catalog/demo/nikon_d300_4.jpg', 0),
-(1983, 31, 'catalog/demo/nikon_d300_5.jpg', 0),
-(1987, 29, 'catalog/demo/palm_treo_pro_2.jpg', 0),
-(1993, 46, 'catalog/demo/sony_vaio_2.jpg', 0),
-(1992, 46, 'catalog/demo/sony_vaio_3.jpg', 0),
-(2327, 49, 'catalog/demo/samsung_tab_7.jpg', 0),
-(2326, 49, 'catalog/demo/samsung_tab_6.jpg', 0),
-(2325, 49, 'catalog/demo/samsung_tab_5.jpg', 0),
-(2324, 49, 'catalog/demo/samsung_tab_4.jpg', 0),
-(2323, 49, 'catalog/demo/samsung_tab_3.jpg', 0),
-(2322, 49, 'catalog/demo/samsung_tab_2.jpg', 0),
-(2317, 42, 'catalog/demo/canon_logo.jpg', 0),
-(2316, 42, 'catalog/demo/hp_1.jpg', 0),
-(2315, 42, 'catalog/demo/compaq_presario.jpg', 0),
-(2314, 42, 'catalog/demo/canon_eos_5d_1.jpg', 0),
-(2313, 42, 'catalog/demo/canon_eos_5d_2.jpg', 0);
+(1, 51, 'data/product/termopara.net-aogv-head.jpg', 2),
+(2, 51, 'data/product/termopara.net-aogv-screw.jpg', 3),
+(3, 51, 'data/product/termopara.net-01152-05.jpg', 4),
+(4, 52, 'data/product/termopara.net-aogv-head.jpg', 2),
+(5, 52, 'data/product/termopara.net-aogv-screw.jpg', 3),
+(6, 52, 'data/product/termopara.net-01162-05.jpg', 4),
+(7, 53, 'data/product/termopara.net-dani-head.jpg', 2),
+(8, 53, 'data/product/termopara.net-dani-screw.jpg', 3),
+(9, 53, 'data/product/termopara.net-01222-05.jpg', 4),
+(10, 54, 'data/product/termopara.net-dani-head.jpg', 2),
+(11, 54, 'data/product/termopara.net-dani-screw.jpg', 3),
+(12, 54, 'data/product/termopara.net-01242-05.jpg', 4),
+(13, 56, 'data/product/termopara.net-dani-head.jpg', 2),
+(14, 56, 'data/product/termopara.net-dani-screw.jpg', 3),
+(15, 56, 'data/product/termopara.net-01252-05.jpg', 4),
+(16, 57, 'data/product/termopara.net-dani-head.jpg', 2),
+(17, 57, 'data/product/termopara.net-dani-screw.jpg', 3),
+(18, 57, 'data/product/termopara.net-01262-05.jpg', 4),
+(19, 58, 'data/product/termopara.net-dani-head.jpg', 2),
+(20, 58, 'data/product/termopara.net-dani-screw.jpg', 3),
+(21, 58, 'data/product/termopara.net-01292-05.jpg', 4),
+(22, 59, 'data/product/termopara.net-arbat-head.jpg', 2),
+(23, 59, 'data/product/termopara.net-screw-m8.jpg', 3),
+(24, 59, 'data/product/termopara.net-01438-05.jpg', 4),
+(25, 60, 'data/product/termopara.net-arbat-head.jpg', 2),
+(26, 60, 'data/product/termopara.net-screw-m8.jpg', 3),
+(27, 60, 'data/product/termopara.net-01468-05.jpg', 4),
+(28, 61, 'data/product/termopara.net-arbat-head.jpg', 2),
+(29, 61, 'data/product/termopara.net-screw-m8.jpg', 3),
+(30, 61, 'data/product/termopara.net-01498-05.jpg', 4),
+(31, 62, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(32, 62, 'data/product/termopara.net-screw-m9.jpg', 3),
+(33, 62, 'data/product/termopara.net-01749-05.jpg', 4),
+(34, 63, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(35, 63, 'data/product/termopara.net-screw-m10.jpg', 3),
+(36, 63, 'data/product/termopara.net-01740-05.jpg', 4),
+(37, 64, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(38, 64, 'data/product/termopara.net-screw-m10.jpg', 3),
+(39, 64, 'data/product/termopara.net-01760-05.jpg', 4),
+(40, 65, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(41, 65, 'data/product/termopara.net-screw-m9.jpg', 3),
+(42, 65, 'data/product/termopara.net-01539-05.jpg', 4),
+(43, 66, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(44, 66, 'data/product/termopara.net-screw-m9.jpg', 3),
+(45, 66, 'data/product/termopara.net-01549-05.jpg', 4),
+(46, 67, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(47, 67, 'data/product/termopara.net-screw-m9.jpg', 3),
+(48, 67, 'data/product/termopara.net-01569-05.jpg', 4),
+(49, 68, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(50, 68, 'data/product/termopara.net-screw-m10.jpg', 3),
+(51, 68, 'data/product/termopara.net-01560-05.jpg', 4),
+(52, 69, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(53, 69, 'data/product/termopara.net-screw-m10.jpg', 3),
+(54, 69, 'data/product/termopara.net-01390-05.jpg', 4),
+(55, 70, 'data/product/termopara.net-02119-03.jpg', 2),
+(56, 70, 'data/product/termopara.net-screw-m9.jpg', 3),
+(57, 70, 'data/product/termopara.net-02119-05.jpg', 4),
+(58, 71, 'data/product/termopara.net-02210-03.jpg', 2),
+(59, 71, 'data/product/termopara.net-screw-m10.jpg', 3),
+(60, 71, 'data/product/termopara.net-02210-05.jpg', 4),
+(61, 72, 'data/product/termopara.net-02310-03.jpg', 2),
+(62, 72, 'data/product/termopara.net-screw-m10.jpg', 3),
+(63, 72, 'data/product/termopara.net-02310-05.jpg', 4),
+(64, 73, 'data/product/termopara.net-02418-03.jpg', 2),
+(65, 73, 'data/product/termopara.net-screw-m8.jpg', 3),
+(66, 73, 'data/product/termopara.net-02418-05.jpg', 4),
+(67, 74, 'data/product/termopara.net-02428-03.jpg', 2),
+(68, 74, 'data/product/termopara.net-screw-m8.jpg', 3),
+(69, 74, 'data/product/termopara.net-02428-05.jpg', 4),
+(70, 75, 'data/product/termopara.net-02538-03.jpg', 2),
+(71, 75, 'data/product/termopara.net-screw-m8.jpg', 3),
+(72, 75, 'data/product/termopara.net-02538-05.jpg', 4),
+(73, 76, 'data/product/termopara.net-02310-03.jpg', 2),
+(74, 76, 'data/product/termopara.net-screw-m8.jpg', 3),
+(75, 76, 'data/product/termopara.net-02558-05.jpg', 4),
+(76, 77, 'data/product/termopara.net-02568-03.jpg', 2),
+(77, 77, 'data/product/termopara.net-screw-m8.jpg', 3),
+(78, 77, 'data/product/termopara.net-02568-05.jpg', 4),
+(79, 78, 'data/product/termopara.net-02578-03.jpg', 2),
+(80, 78, 'data/product/termopara.net-screw-m8.jpg', 3),
+(81, 78, 'data/product/termopara.net-02578-05.jpg', 4),
+(82, 79, 'data/product/termopara.net-03128-03.jpg', 2),
+(83, 79, 'data/product/termopara.net-screw-m8.jpg', 3),
+(84, 79, 'data/product/termopara.net-03128-05.jpg', 4),
+(85, 80, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(86, 80, 'data/product/termopara.net-screw-m8.jpg', 3),
+(87, 80, 'data/product/termopara.net-03228-05.jpg', 4),
+(88, 81, 'data/product/termopara.net-03354-03.jpg', 2),
+(89, 81, 'data/product/termopara.net-03354-04.jpg', 3),
+(90, 81, 'data/product/termopara.net-03354-05.jpg', 4),
+(91, 82, 'data/product/termopara.net-03454-03.jpg', 2),
+(92, 82, 'data/product/termopara.net-03454-04.jpg', 3),
+(93, 82, 'data/product/termopara.net-03454-05.JPG', 4),
+(94, 83, 'data/product/termopara.net-03555-03.jpg', 2),
+(95, 83, 'data/product/termopara.net-03555-04.jpg', 3),
+(96, 83, 'data/product/termopara.net-03555-05.jpg', 4),
+(97, 84, 'data/product/termopara.net-04130-03.jpg', 2),
+(98, 84, 'data/product/termopara.net-04130-04.jpg', 3),
+(99, 84, 'data/product/termopara.net-04130-05.jpg', 4),
+(100, 85, 'data/product/termopara.net-04230-03.jpg', 2),
+(101, 85, 'data/product/termopara.net-04230-04.jpg', 3),
+(102, 85, 'data/product/termopara.net-04230-05.jpg', 4),
+(103, 86, 'data/product/termopara.net-04230-03.jpg', 2),
+(104, 86, 'data/product/termopara.net-04230-04.jpg', 3),
+(105, 86, 'data/product/termopara.net-04240-05.jpg', 4),
+(106, 87, 'data/product/termopara.net-04130-03.jpg', 2),
+(107, 87, 'data/product/termopara.net-04130-04.jpg', 3),
+(108, 87, 'data/product/termopara.net-04140-05.jpg', 4),
+(109, 88, 'data/product/termopara.net-04130-03.jpg', 2),
+(110, 88, 'data/product/termopara.net-04130-04.jpg', 3),
+(111, 88, 'data/product/termopara.net-04160-05.jpg', 4),
+(112, 89, 'data/product/termopara.net-04230-03.jpg', 2),
+(113, 89, 'data/product/termopara.net-04230-04.jpg', 3),
+(114, 89, 'data/product/termopara.net-04260-05.jpg', 4),
+(115, 90, 'data/product/termopara.net-04300-03.jpg', 2),
+(116, 90, 'data/product/termopara.net-04300-04.jpg', 3),
+(117, 90, 'data/product/termopara.net-04350-05.jpg', 4),
+(118, 91, 'data/product/termopara.net-04300-03.jpg', 2),
+(119, 91, 'data/product/termopara.net-04300-04.jpg', 3),
+(120, 91, 'data/product/termopara.net-04300-05.jpg', 4),
+(121, 92, 'data/product/termopara.net-04440-03.jpg', 2),
+(122, 92, 'data/product/termopara.net-04440-04.jpg', 3),
+(123, 92, 'data/product/termopara.net-04440-05.jpg', 4),
+(124, 93, 'data/product/termopara.net-04540-03.jpg', 2),
+(125, 93, 'data/product/termopara.net-04540-04.jpg', 3),
+(126, 93, 'data/product/termopara.net-04540-05.jpg', 4),
+(127, 94, 'data/product/termopara.net-04620-03.jpg', 2),
+(128, 94, 'data/product/termopara.net-04620-04.jpg', 3),
+(129, 94, 'data/product/termopara.net-04620-05.jpg', 4),
+(130, 95, 'data/product/termopara.net-04920-03.jpg', 2),
+(131, 95, 'data/product/termopara.net-04920-04.jpg', 3),
+(132, 95, 'data/product/termopara.net-04920-05.jpg', 4),
+(133, 96, 'data/product/termopara.net-01838-03.jpg', 2),
+(134, 96, 'data/product/termopara.net-screw-m8.jpg', 3),
+(135, 96, 'data/product/termopara.net-01838-05.jpg', 4),
+(136, 97, 'data/product/termopara.net-01839-03.jpg', 2),
+(137, 97, 'data/product/termopara.net-screw-m9.jpg', 3),
+(138, 97, 'data/product/termopara.net-01839-05.jpg', 4),
+(139, 98, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(140, 98, 'data/product/termopara.net-screw-m10.jpg', 3),
+(141, 98, 'data/product/termopara.net-01368-05.jpg', 4),
+(384, 99, '', 4),
+(383, 99, '', 3),
+(382, 99, 'catalog/product/termopara.net-05110-03.jpg', 2),
+(145, 100, 'data/product/termopara.net-05512-03.jpg', 2),
+(146, 100, 'data/product/termopara.net-05512-04.jpg', 3),
+(147, 100, 'data/product/termopara.net-05512-05.jpg', 4),
+(148, 101, 'data/product/termopara.net-05212-03.jpg', 2),
+(149, 101, 'data/product/termopara.net-05212-04.jpg', 3),
+(150, 101, 'data/product/termopara.net-05212-05.jpg', 4),
+(151, 102, 'data/product/termopara.net-05221-03.jpg', 2),
+(152, 102, 'data/product/termopara.net-05221-04.jpg', 3),
+(153, 102, 'data/product/termopara.net-05221-05.jpg', 4),
+(154, 103, 'data/product/termopara.net-05930-03.jpg', 2),
+(155, 103, 'data/product/termopara.net-05930-04.jpg', 3),
+(156, 103, 'data/product/termopara.net-05930-05.jpg', 4),
+(157, 104, 'data/product/termopara.net-05612-03.jpg', 2),
+(158, 104, 'data/product/termopara.net-05612-04.jpg', 3),
+(159, 104, 'data/product/termopara.net-05612-05.jpg', 4),
+(160, 105, 'data/product/termopara.net-05622-03.jpg', 2),
+(161, 105, 'data/product/termopara.net-05622-04.jpg', 3),
+(162, 105, 'data/product/termopara.net-05622-05.jpg', 4),
+(163, 106, 'data/product/termopara.net-05613-03.jpg', 2),
+(164, 106, 'data/product/termopara.net-05613-04.jpg', 3),
+(165, 106, 'data/product/termopara.net-05613-05.jpg', 4),
+(166, 107, 'data/product/termopara.net-05940-03.jpg', 2),
+(167, 107, 'data/product/termopara.net-05940-04.jpg', 3),
+(168, 107, 'data/product/termopara.net-05940-05.jpg', 4),
+(169, 108, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(170, 108, 'data/product/termopara.net-screw-m9.jpg', 3),
+(171, 108, 'data/product/termopara.net-01529-05.jpg', 4),
+(172, 109, 'data/product/termopara.net-04910-03.jpg', 2),
+(173, 109, 'data/product/termopara.net-04910-04.jpg', 3),
+(174, 109, 'data/product/termopara.net-04910-05.jpg', 4),
+(175, 110, 'data/product/termopara.net-05950-03.jpg', 2),
+(176, 110, 'data/product/termopara.net-05950-04.jpg', 3),
+(177, 110, 'data/product/termopara.net-05950-05.jpg', 4),
+(178, 111, 'data/product/termopara.net-05960-03.jpg', 2),
+(179, 111, 'data/product/termopara.net-05960-04.jpg', 3),
+(180, 111, 'data/product/termopara.net-05960-05.jpg', 4),
+(181, 112, 'data/product/termopara.net-05980-03.jpg', 2),
+(182, 112, 'data/product/termopara.net-05980-04.jpg', 3),
+(183, 112, 'data/product/termopara.net-05980-05.jpg', 4),
+(184, 113, 'data/product/termopara.net-05999-03.jpg', 2),
+(185, 113, 'data/product/termopara.net-05999-04.jpg', 3),
+(186, 113, 'data/product/termopara.net-05999-05.jpg', 4),
+(187, 114, 'data/product/termopara.net-arbat-head.jpg', 2),
+(188, 114, 'data/product/termopara.net-screw-m9.jpg', 3),
+(189, 114, 'data/product/termopara.net-01439-05.jpg', 4),
+(190, 115, 'data/product/termopara.net-arbat-head.jpg', 2),
+(191, 115, 'data/product/termopara.net-screw-m9.jpg', 3),
+(192, 115, 'data/product/termopara.net-01469-05.jpg', 4),
+(193, 116, 'data/product/termopara.net-arbat-head.jpg', 2),
+(194, 116, 'data/product/termopara.net-screw-m9.jpg', 3),
+(195, 116, 'data/product/termopara.net-01499-05.jpg', 4),
+(196, 117, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(197, 117, 'data/product/termopara.net-screw-m9.jpg', 3),
+(198, 117, 'data/product/termopara.net-01589-05.jpg', 4),
+(199, 118, 'data/product/termopara.net-sitA2-head.jpg', 2),
+(200, 118, 'data/product/termopara.net-screw-m9.jpg', 3),
+(201, 118, 'data/product/termopara.net-01649-05.jpg', 4),
+(202, 119, 'data/product/termopara.net-sitA2-head.jpg', 2),
+(203, 119, 'data/product/termopara.net-screw-m9.jpg', 3),
+(204, 119, 'data/product/termopara.net-01669-05.jpg', 4),
+(205, 120, 'data/product/termopara.net-01990-03.jpg', 2),
+(206, 120, 'data/product/termopara.net-screw-m8.jpg', 3),
+(207, 120, 'data/product/termopara.net-01990-05.jpg', 4),
+(208, 121, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(209, 121, 'data/product/termopara.net-screw-m9.jpg', 3),
+(210, 121, 'data/product/termopara.net-01769-05.jpg', 4),
+(211, 122, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(212, 122, 'data/product/termopara.net-screw-m9.jpg', 3),
+(213, 122, 'data/product/termopara.net-01799-05.jpg', 4),
+(214, 123, 'data/product/termopara.net-sitA2-head.jpg', 2),
+(215, 123, 'data/product/termopara.net-screw-m9.jpg', 3),
+(216, 123, 'data/product/termopara.net-01639-05.jpg', 4),
+(217, 124, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(218, 124, 'data/product/termopara.net-screw-m8.jpg', 3),
+(219, 124, 'data/product/termopara.net-01568-05.jpg', 4),
+(220, 125, 'data/product/termopara.net-01848-03.jpg', 2),
+(221, 125, 'data/product/termopara.net-screw-m8.jpg', 3),
+(222, 125, 'data/product/termopara.net-01848-05.jpg', 4),
+(223, 127, 'data/product/termopara.net-01849-03.jpg', 2),
+(224, 127, 'data/product/termopara.net-screw-m9.jpg', 3),
+(225, 127, 'data/product/termopara.net-01849-05.jpg', 4),
+(226, 128, 'data/product/termopara.net-03604-03.jpg', 2),
+(227, 128, 'data/product/termopara.net-03604-04.jpg', 3),
+(228, 128, 'data/product/termopara.net-03604-05.jpg', 4),
+(229, 129, 'data/product/termopara.net-02139-03.jpg', 2),
+(230, 129, 'data/product/termopara.net-screw-m9.jpg', 3),
+(231, 129, 'data/product/termopara.net-02139-05.jpg', 4),
+(232, 130, 'data/product/termopara.net-aogv-head.jpg', 2),
+(233, 130, 'data/product/termopara.net-aogv-screw.jpg', 3),
+(234, 130, 'data/product/termopara.net-01182-05.jpg', 4),
+(235, 131, 'data/product/termopara.net-aogv-head.jpg', 2),
+(236, 131, 'data/product/termopara.net-aogv-screw.jpg', 3),
+(237, 131, 'data/product/termopara.net-01192-05.jpg', 4),
+(238, 132, 'data/product/termopara.net-03724-03.jpg', 2),
+(239, 132, 'data/product/termopara.net-03724-04.jpg', 3),
+(240, 132, 'data/product/termopara.net-03724-05.jpg', 4),
+(241, 133, 'data/product/termopara.net-arbat-head.jpg', 2),
+(242, 133, 'data/product/termopara.net-screw-m8.jpg', 3),
+(243, 133, 'data/product/termopara.net-01428-05.jpg', 4),
+(244, 134, 'data/product/termopara.net-02129-03.jpg', 2),
+(245, 134, 'data/product/termopara.net-screw-m9.jpg', 3),
+(246, 134, 'data/product/termopara.net-02129-05.jpg', 4),
+(247, 135, 'data/product/termopara.net-03828-03.jpg', 2),
+(248, 135, 'data/product/termopara.net-screw-m8.jpg', 3),
+(249, 135, 'data/product/termopara.net-03828-05.jpg', 4),
+(250, 136, 'data/product/termopara.net-03938-03.jpg', 2),
+(251, 136, 'data/product/termopara.net-screw-m8.jpg', 3),
+(252, 136, 'data/product/termopara.net-03938-05.jpg', 4),
+(253, 137, 'data/product/termopara.net-05310-03.jpg', 2),
+(254, 137, 'data/product/termopara.net-05310-04.jpg', 3),
+(255, 137, 'data/product/termopara.net-05310-05.jpg', 4),
+(256, 138, 'data/product/termopara.net-05320-03.jpg', 2),
+(257, 138, 'data/product/termopara.net-05320-04.jpg', 3),
+(258, 138, 'data/product/termopara.net-05320-05.jpg', 4),
+(259, 139, 'data/product/termopara.net-05402-03.jpg', 2),
+(260, 139, 'data/product/termopara.net-05402-04.jpg', 3),
+(261, 139, 'data/product/termopara.net-05402-05.jpg', 4),
+(262, 140, 'data/product/termopara.net-05412-03.jpg', 2),
+(263, 140, 'data/product/termopara.net-05412-04.jpg', 3),
+(264, 140, 'data/product/termopara.net-05412-05.jpg', 4),
+(265, 141, 'data/product/termopara.net-05748-03.jpg', 2),
+(266, 141, 'data/product/termopara.net-05748-04.jpg', 3),
+(267, 141, 'data/product/termopara.net-05748-05.jpg', 4),
+(268, 142, 'data/product/termopara.net-05749-03.jpg', 2),
+(269, 142, 'data/product/termopara.net-05749-04.jpg', 3),
+(270, 142, 'data/product/termopara.net-05749-05.jpg', 4),
+(271, 143, 'data/product/termopara.net-05740-03.jpg', 2),
+(272, 143, 'data/product/termopara.net-05740-04.jpg', 3),
+(273, 143, 'data/product/termopara.net-05740-05.jpg', 4),
+(274, 144, 'data/product/termopara.net-05422-03.jpg', 2),
+(275, 144, 'data/product/termopara.net-05422-04.jpg', 3),
+(276, 144, 'data/product/termopara.net-05422-05.jpg', 4),
+(277, 145, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(278, 145, 'data/product/termopara.net-screw-m10.jpg', 3),
+(279, 145, 'data/product/termopara.net-01540-05.jpg', 4),
+(280, 146, 'data/product/termopara.net-04910-03.jpg', 2),
+(281, 146, 'data/product/termopara.net-04910-04.jpg', 3),
+(282, 146, 'data/product/termopara.net-04912-05.jpg', 4),
+(283, 147, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(284, 147, 'data/product/termopara.net-screw-i1132.jpg', 3),
+(285, 147, 'data/product/termopara.net-01391-05.jpg', 4),
+(286, 148, 'data/product/termopara.net-01528-03.jpg', 2),
+(287, 148, 'data/product/termopara.net-01528-04.jpg', 3),
+(288, 148, 'data/product/termopara.net-01528-05.jpg', 4),
+(289, 149, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(290, 149, 'data/product/termopara.net-screw-m10.jpg', 3),
+(291, 149, 'data/product/termopara.net-01580-05.jpg', 4),
+(292, 150, 'data/product/termopara.net-04300-03.jpg', 2),
+(293, 150, 'data/product/termopara.net-04300-04.jpg', 3),
+(294, 150, 'data/product/termopara.net-04330-05.jpg', 4),
+(295, 151, 'data/product/termopara.net-05240-03.jpg', 2),
+(296, 151, 'data/product/termopara.net-05240-04.jpg', 3),
+(297, 151, 'data/product/termopara.net-05240-05.jpg', 4),
+(298, 152, 'data/product/termopara.net-05800-03.jpg', 2),
+(299, 152, 'data/product/termopara.net-05800-04.jpg', 3),
+(300, 152, 'data/product/termopara.net-05800-05.jpg', 4),
+(301, 153, 'data/product/termopara.net-04730-03.jpg', 2),
+(302, 153, 'data/product/termopara.net-04730-04.jpg', 3),
+(303, 153, 'data/product/termopara.net-04730-05.jpg', 4),
+(304, 154, 'data/product/termopara.net-04740-03.jpg', 2),
+(305, 154, 'data/product/termopara.net-04740-04.jpg', 3),
+(306, 154, 'data/product/termopara.net-04740-05.jpg', 4),
+(307, 155, 'data/product/termopara.net-05701-03.jpg', 2),
+(308, 155, 'data/product/termopara.net-05701-04.jpg', 3),
+(309, 155, 'data/product/termopara.net-05701-05.jpg', 4),
+(310, 156, 'data/product/termopara.net-05701-03.jpg', 2),
+(311, 156, 'data/product/termopara.net-05701-04.jpg', 3),
+(312, 156, 'data/product/termopara.net-05701-05.jpg', 4),
+(313, 157, 'data/product/termopara.net-05701-03.jpg', 2),
+(314, 157, 'data/product/termopara.net-05701-04.jpg', 3),
+(315, 157, 'data/product/termopara.net-05701-05.jpg', 4),
+(316, 158, 'data/product/termopara.net-05701-03.jpg', 2),
+(317, 158, 'data/product/termopara.net-05701-04.jpg', 3),
+(318, 158, 'data/product/termopara.net-05701-05.jpg', 4),
+(319, 159, 'data/product/termopara.net-05701-03.jpg', 2),
+(320, 159, 'data/product/termopara.net-05701-04.jpg', 3),
+(321, 159, 'data/product/termopara.net-05701-05.jpg', 4),
+(322, 160, 'data/product/termopara.net-05701-03.jpg', 2),
+(323, 160, 'data/product/termopara.net-05701-04.jpg', 3),
+(324, 160, 'data/product/termopara.net-05701-05.jpg', 4),
+(325, 161, 'data/product/termopara.net-05701-03.jpg', 2),
+(326, 161, 'data/product/termopara.net-05701-04.jpg', 3),
+(327, 161, 'data/product/termopara.net-05701-05.jpg', 4),
+(328, 162, 'data/product/termopara.net-05701-03.jpg', 2),
+(329, 162, 'data/product/termopara.net-05701-04.jpg', 3),
+(330, 162, 'data/product/termopara.net-05701-05.jpg', 4),
+(331, 163, 'data/product/termopara.net-05701-03.jpg', 2),
+(332, 163, 'data/product/termopara.net-05701-04.jpg', 3),
+(333, 163, 'data/product/termopara.net-05701-05.jpg', 4),
+(334, 164, 'data/product/termopara.net-05701-03.jpg', 2),
+(335, 164, 'data/product/termopara.net-05701-04.jpg', 3),
+(336, 164, 'data/product/termopara.net-05701-05.jpg', 4),
+(337, 165, 'data/product/termopara.net-05701-03.jpg', 2),
+(338, 165, 'data/product/termopara.net-05701-04.jpg', 3),
+(339, 165, 'data/product/termopara.net-05701-05.jpg', 4),
+(340, 166, 'data/product/termopara.net-05701-03.jpg', 2),
+(341, 166, 'data/product/termopara.net-05701-04.jpg', 3),
+(342, 166, 'data/product/termopara.net-05701-05.jpg', 4),
+(343, 167, 'data/product/termopara.net-05701-03.jpg', 2),
+(344, 167, 'data/product/termopara.net-05701-04.jpg', 3),
+(345, 167, 'data/product/termopara.net-05701-05.jpg', 4),
+(346, 168, 'data/product/termopara.net-05701-03.jpg', 2),
+(347, 168, 'data/product/termopara.net-05701-04.jpg', 3),
+(348, 168, 'data/product/termopara.net-05701-05.jpg', 4),
+(349, 169, 'data/product/termopara.net-05701-03.jpg', 2),
+(350, 169, 'data/product/termopara.net-05701-04.jpg', 3),
+(351, 169, 'data/product/termopara.net-05701-05.jpg', 4),
+(352, 170, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(353, 170, 'data/product/termopara.net-screw-m10.jpg', 3),
+(354, 170, 'data/product/termopara.net-01360-05.jpg', 4),
+(355, 171, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(356, 171, 'data/product/termopara.net-screw-m10.jpg', 3),
+(357, 171, 'data/product/termopara.net-01370-05.jpg', 4),
+(358, 172, 'data/product/termopara.net-honeywell-head.jpg', 2),
+(359, 172, 'data/product/termopara.net-screw-i1132.jpg', 3),
+(360, 172, 'data/product/termopara.net-01378-05.jpg', 4),
+(361, 173, 'data/product/termopara.net-sitA1-head.jpg', 2),
+(362, 173, 'data/product/termopara.net-screw-m9.jpg', 3),
+(363, 173, 'data/product/termopara.net-01599-05.jpg', 4),
+(364, 174, 'data/product/termopara.net-07569-03.jpg', 2),
+(365, 174, 'data/product/termopara.net-screw-m9.jpg', 3),
+(366, 174, 'data/product/termopara.net-07569-05.jpg', 4),
+(367, 175, 'data/product/termopara.net-01869-03.jpg', 2),
+(368, 175, 'data/product/termopara.net-screw-m9.jpg', 3),
+(369, 175, 'data/product/termopara.net-01869-05.jpg', 4),
+(370, 176, 'data/product/termopara.net-07390-03.jpg', 2),
+(371, 176, 'data/product/termopara.net-screw-m10.jpg', 3),
+(372, 176, 'data/product/termopara.net-07390-05.jpg', 4),
+(373, 177, 'data/product/termopara.net-07128-03.jpg', 2),
+(374, 177, 'data/product/termopara.net-screw-m8.jpg', 3),
+(375, 177, 'data/product/termopara.net-07128-05.jpg', 4),
+(376, 178, 'data/product/termopara.net-sitA3-head.jpg', 2),
+(377, 178, 'data/product/termopara.net-screw-m8.jpg', 3),
+(378, 178, 'data/product/termopara.net-07228-05.jpg', 4);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_option`
+-- Table structure for table `oc_product_option`
 --
 
 CREATE TABLE `oc_product_option` (
@@ -3276,28 +4665,10 @@ CREATE TABLE `oc_product_option` (
   `required` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_product_option`
---
-
-INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `value`, `required`) VALUES
-(224, 35, 11, '', 1),
-(225, 47, 12, '2011-04-22', 1),
-(223, 42, 2, '', 1),
-(217, 42, 5, '', 1),
-(209, 42, 6, '', 1),
-(218, 42, 1, '', 1),
-(208, 42, 4, 'test', 1),
-(219, 42, 8, '2011-02-20', 1),
-(222, 42, 7, '', 1),
-(221, 42, 9, '22:25', 1),
-(220, 42, 10, '2011-02-20 22:25', 1),
-(226, 30, 5, '', 1);
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_option_value`
+-- Table structure for table `oc_product_option_value`
 --
 
 CREATE TABLE `oc_product_option_value` (
@@ -3316,32 +4687,10 @@ CREATE TABLE `oc_product_option_value` (
   `weight_prefix` varchar(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_product_option_value`
---
-
-INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(1, 217, 42, 5, 41, 100, 0, '1.0000', '+', 0, '+', '1.00000000', '+'),
-(6, 218, 42, 1, 31, 146, 1, '20.0000', '+', 2, '-', '20.00000000', '+'),
-(7, 218, 42, 1, 43, 300, 1, '30.0000', '+', 3, '+', '30.00000000', '+'),
-(5, 218, 42, 1, 32, 96, 1, '10.0000', '+', 1, '+', '10.00000000', '+'),
-(4, 217, 42, 5, 39, 92, 1, '4.0000', '+', 0, '+', '4.00000000', '+'),
-(2, 217, 42, 5, 42, 200, 1, '2.0000', '+', 0, '+', '2.00000000', '+'),
-(3, 217, 42, 5, 40, 300, 0, '3.0000', '+', 0, '+', '3.00000000', '+'),
-(8, 223, 42, 2, 23, 48, 1, '10.0000', '+', 0, '+', '10.00000000', '+'),
-(10, 223, 42, 2, 44, 2696, 1, '30.0000', '+', 0, '+', '30.00000000', '+'),
-(9, 223, 42, 2, 24, 194, 1, '20.0000', '+', 0, '+', '20.00000000', '+'),
-(11, 223, 42, 2, 45, 3998, 1, '40.0000', '+', 0, '+', '40.00000000', '+'),
-(12, 224, 35, 11, 46, 0, 1, '5.0000', '+', 0, '+', '0.00000000', '+'),
-(13, 224, 35, 11, 47, 10, 1, '10.0000', '+', 0, '+', '0.00000000', '+'),
-(14, 224, 35, 11, 48, 15, 1, '15.0000', '+', 0, '+', '0.00000000', '+'),
-(16, 226, 30, 5, 40, 5, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+');
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_recurring`
+-- Table structure for table `oc_product_recurring`
 --
 
 CREATE TABLE `oc_product_recurring` (
@@ -3353,7 +4702,7 @@ CREATE TABLE `oc_product_recurring` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_related`
+-- Table structure for table `oc_product_related`
 --
 
 CREATE TABLE `oc_product_related` (
@@ -3362,19 +4711,3170 @@ CREATE TABLE `oc_product_related` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_related`
+-- Dumping data for table `oc_product_related`
 --
 
 INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(40, 42),
-(41, 42),
-(42, 40),
-(42, 41);
+(51, 51),
+(51, 52),
+(51, 54),
+(51, 58),
+(51, 59),
+(51, 60),
+(51, 62),
+(51, 63),
+(51, 65),
+(51, 68),
+(51, 69),
+(51, 70),
+(51, 72),
+(51, 76),
+(51, 78),
+(51, 80),
+(51, 81),
+(51, 84),
+(51, 87),
+(51, 90),
+(51, 91),
+(51, 94),
+(51, 99),
+(51, 100),
+(51, 101),
+(51, 104),
+(51, 118),
+(51, 119),
+(51, 120),
+(51, 121),
+(51, 122),
+(51, 123),
+(51, 125),
+(51, 127),
+(51, 129),
+(51, 130),
+(51, 131),
+(51, 133),
+(51, 135),
+(51, 137),
+(51, 138),
+(51, 139),
+(51, 140),
+(51, 141),
+(51, 142),
+(51, 143),
+(51, 144),
+(51, 145),
+(51, 146),
+(51, 150),
+(51, 151),
+(51, 152),
+(51, 155),
+(51, 156),
+(51, 158),
+(51, 162),
+(51, 163),
+(51, 164),
+(51, 165),
+(51, 166),
+(51, 167),
+(51, 168),
+(51, 169),
+(51, 173),
+(51, 174),
+(51, 175),
+(51, 176),
+(51, 177),
+(51, 178),
+(52, 51),
+(52, 52),
+(52, 54),
+(52, 58),
+(52, 59),
+(52, 60),
+(52, 62),
+(52, 63),
+(52, 65),
+(52, 68),
+(52, 69),
+(52, 70),
+(52, 72),
+(52, 76),
+(52, 78),
+(52, 80),
+(52, 81),
+(52, 84),
+(52, 87),
+(52, 90),
+(52, 91),
+(52, 94),
+(52, 99),
+(52, 100),
+(52, 101),
+(52, 104),
+(52, 118),
+(52, 119),
+(52, 120),
+(52, 121),
+(52, 122),
+(52, 123),
+(52, 125),
+(52, 127),
+(52, 129),
+(52, 130),
+(52, 131),
+(52, 133),
+(52, 135),
+(52, 137),
+(52, 138),
+(52, 139),
+(52, 140),
+(52, 141),
+(52, 142),
+(52, 143),
+(52, 144),
+(52, 145),
+(52, 146),
+(52, 150),
+(52, 151),
+(52, 152),
+(52, 155),
+(52, 156),
+(52, 158),
+(52, 162),
+(52, 163),
+(52, 164),
+(52, 165),
+(52, 166),
+(52, 167),
+(52, 168),
+(52, 169),
+(52, 173),
+(52, 174),
+(52, 175),
+(52, 176),
+(52, 177),
+(52, 178),
+(53, 54),
+(53, 59),
+(53, 63),
+(53, 65),
+(53, 69),
+(53, 76),
+(53, 78),
+(53, 80),
+(53, 81),
+(53, 84),
+(53, 87),
+(53, 100),
+(53, 135),
+(53, 146),
+(54, 51),
+(54, 52),
+(54, 53),
+(54, 54),
+(54, 58),
+(54, 59),
+(54, 60),
+(54, 62),
+(54, 63),
+(54, 65),
+(54, 68),
+(54, 69),
+(54, 70),
+(54, 72),
+(54, 76),
+(54, 78),
+(54, 80),
+(54, 81),
+(54, 84),
+(54, 87),
+(54, 90),
+(54, 91),
+(54, 94),
+(54, 99),
+(54, 100),
+(54, 101),
+(54, 104),
+(54, 118),
+(54, 119),
+(54, 120),
+(54, 121),
+(54, 122),
+(54, 123),
+(54, 125),
+(54, 127),
+(54, 129),
+(54, 130),
+(54, 131),
+(54, 133),
+(54, 135),
+(54, 137),
+(54, 138),
+(54, 139),
+(54, 140),
+(54, 141),
+(54, 142),
+(54, 143),
+(54, 144),
+(54, 145),
+(54, 146),
+(54, 150),
+(54, 151),
+(54, 152),
+(54, 155),
+(54, 156),
+(54, 158),
+(54, 162),
+(54, 163),
+(54, 164),
+(54, 165),
+(54, 166),
+(54, 167),
+(54, 168),
+(54, 169),
+(54, 173),
+(54, 174),
+(54, 175),
+(54, 176),
+(54, 177),
+(54, 178),
+(56, 59),
+(56, 63),
+(56, 65),
+(56, 69),
+(56, 76),
+(56, 78),
+(56, 80),
+(56, 81),
+(56, 84),
+(56, 87),
+(56, 100),
+(56, 135),
+(56, 146),
+(57, 59),
+(57, 63),
+(57, 65),
+(57, 69),
+(57, 76),
+(57, 78),
+(57, 80),
+(57, 81),
+(57, 84),
+(57, 87),
+(57, 100),
+(57, 135),
+(57, 146),
+(58, 51),
+(58, 52),
+(58, 54),
+(58, 58),
+(58, 59),
+(58, 63),
+(58, 65),
+(58, 69),
+(58, 70),
+(58, 72),
+(58, 76),
+(58, 78),
+(58, 80),
+(58, 81),
+(58, 84),
+(58, 87),
+(58, 99),
+(58, 100),
+(58, 101),
+(58, 120),
+(58, 135),
+(58, 137),
+(58, 138),
+(58, 139),
+(58, 141),
+(58, 142),
+(58, 143),
+(58, 144),
+(58, 146),
+(58, 151),
+(58, 152),
+(58, 158),
+(58, 162),
+(58, 165),
+(59, 51),
+(59, 52),
+(59, 53),
+(59, 54),
+(59, 56),
+(59, 57),
+(59, 58),
+(59, 59),
+(59, 60),
+(59, 62),
+(59, 63),
+(59, 65),
+(59, 68),
+(59, 69),
+(59, 70),
+(59, 72),
+(59, 76),
+(59, 78),
+(59, 80),
+(59, 81),
+(59, 84),
+(59, 87),
+(59, 90),
+(59, 91),
+(59, 94),
+(59, 98),
+(59, 99),
+(59, 100),
+(59, 101),
+(59, 104),
+(59, 118),
+(59, 119),
+(59, 120),
+(59, 121),
+(59, 122),
+(59, 123),
+(59, 125),
+(59, 127),
+(59, 129),
+(59, 130),
+(59, 131),
+(59, 133),
+(59, 135),
+(59, 137),
+(59, 138),
+(59, 139),
+(59, 140),
+(59, 141),
+(59, 142),
+(59, 143),
+(59, 144),
+(59, 145),
+(59, 146),
+(59, 147),
+(59, 150),
+(59, 151),
+(59, 152),
+(59, 155),
+(59, 156),
+(59, 158),
+(59, 162),
+(59, 163),
+(59, 164),
+(59, 165),
+(59, 166),
+(59, 167),
+(59, 168),
+(59, 169),
+(59, 170),
+(59, 171),
+(59, 172),
+(59, 173),
+(59, 174),
+(59, 175),
+(59, 176),
+(59, 177),
+(59, 178),
+(60, 51),
+(60, 52),
+(60, 54),
+(60, 59),
+(60, 63),
+(60, 65),
+(60, 69),
+(60, 76),
+(60, 78),
+(60, 80),
+(60, 81),
+(60, 84),
+(60, 87),
+(60, 100),
+(60, 135),
+(60, 146),
+(61, 63),
+(61, 65),
+(61, 76),
+(61, 78),
+(61, 80),
+(61, 81),
+(61, 84),
+(61, 87),
+(61, 100),
+(61, 135),
+(61, 146),
+(62, 51),
+(62, 52),
+(62, 54),
+(62, 59),
+(62, 63),
+(62, 65),
+(62, 69),
+(62, 76),
+(62, 78),
+(62, 80),
+(62, 81),
+(62, 84),
+(62, 87),
+(62, 100),
+(62, 135),
+(62, 146),
+(63, 51),
+(63, 52),
+(63, 53),
+(63, 54),
+(63, 56),
+(63, 57),
+(63, 58),
+(63, 59),
+(63, 60),
+(63, 61),
+(63, 62),
+(63, 63),
+(63, 65),
+(63, 66),
+(63, 67),
+(63, 68),
+(63, 69),
+(63, 70),
+(63, 72),
+(63, 76),
+(63, 78),
+(63, 80),
+(63, 81),
+(63, 84),
+(63, 87),
+(63, 90),
+(63, 91),
+(63, 94),
+(63, 98),
+(63, 99),
+(63, 100),
+(63, 101),
+(63, 104),
+(63, 108),
+(63, 114),
+(63, 115),
+(63, 116),
+(63, 117),
+(63, 118),
+(63, 119),
+(63, 120),
+(63, 121),
+(63, 122),
+(63, 123),
+(63, 124),
+(63, 125),
+(63, 127),
+(63, 129),
+(63, 130),
+(63, 131),
+(63, 133),
+(63, 135),
+(63, 137),
+(63, 138),
+(63, 139),
+(63, 140),
+(63, 141),
+(63, 142),
+(63, 143),
+(63, 144),
+(63, 145),
+(63, 146),
+(63, 147),
+(63, 149),
+(63, 150),
+(63, 151),
+(63, 152),
+(63, 155),
+(63, 156),
+(63, 158),
+(63, 162),
+(63, 163),
+(63, 164),
+(63, 165),
+(63, 166),
+(63, 167),
+(63, 168),
+(63, 169),
+(63, 170),
+(63, 171),
+(63, 172),
+(63, 173),
+(63, 174),
+(63, 175),
+(63, 176),
+(63, 177),
+(63, 178),
+(64, 76),
+(64, 78),
+(64, 80),
+(64, 81),
+(64, 84),
+(64, 87),
+(64, 100),
+(64, 135),
+(64, 146),
+(65, 51),
+(65, 52),
+(65, 53),
+(65, 54),
+(65, 56),
+(65, 57),
+(65, 58),
+(65, 59),
+(65, 60),
+(65, 61),
+(65, 62),
+(65, 63),
+(65, 65),
+(65, 68),
+(65, 69),
+(65, 70),
+(65, 72),
+(65, 76),
+(65, 78),
+(65, 80),
+(65, 81),
+(65, 84),
+(65, 87),
+(65, 90),
+(65, 91),
+(65, 94),
+(65, 98),
+(65, 99),
+(65, 100),
+(65, 101),
+(65, 104),
+(65, 114),
+(65, 115),
+(65, 116),
+(65, 118),
+(65, 119),
+(65, 120),
+(65, 121),
+(65, 122),
+(65, 123),
+(65, 125),
+(65, 127),
+(65, 129),
+(65, 130),
+(65, 131),
+(65, 133),
+(65, 135),
+(65, 137),
+(65, 138),
+(65, 139),
+(65, 140),
+(65, 141),
+(65, 142),
+(65, 143),
+(65, 144),
+(65, 145),
+(65, 146),
+(65, 147),
+(65, 150),
+(65, 151),
+(65, 152),
+(65, 155),
+(65, 156),
+(65, 158),
+(65, 162),
+(65, 163),
+(65, 164),
+(65, 165),
+(65, 166),
+(65, 167),
+(65, 168),
+(65, 169),
+(65, 170),
+(65, 171),
+(65, 172),
+(65, 173),
+(65, 174),
+(65, 175),
+(65, 176),
+(65, 177),
+(65, 178),
+(66, 63),
+(66, 76),
+(66, 78),
+(66, 80),
+(66, 81),
+(66, 84),
+(66, 87),
+(66, 100),
+(66, 135),
+(66, 146),
+(67, 63),
+(67, 76),
+(67, 78),
+(67, 80),
+(67, 81),
+(67, 84),
+(67, 87),
+(67, 100),
+(67, 135),
+(67, 146),
+(68, 51),
+(68, 52),
+(68, 54),
+(68, 59),
+(68, 63),
+(68, 65),
+(68, 69),
+(68, 76),
+(68, 78),
+(68, 80),
+(68, 81),
+(68, 84),
+(68, 87),
+(68, 100),
+(68, 135),
+(68, 146),
+(69, 51),
+(69, 52),
+(69, 53),
+(69, 54),
+(69, 56),
+(69, 57),
+(69, 58),
+(69, 59),
+(69, 60),
+(69, 62),
+(69, 63),
+(69, 65),
+(69, 68),
+(69, 69),
+(69, 70),
+(69, 72),
+(69, 76),
+(69, 78),
+(69, 80),
+(69, 81),
+(69, 84),
+(69, 87),
+(69, 90),
+(69, 91),
+(69, 94),
+(69, 98),
+(69, 99),
+(69, 100),
+(69, 101),
+(69, 104),
+(69, 118),
+(69, 119),
+(69, 120),
+(69, 121),
+(69, 122),
+(69, 123),
+(69, 125),
+(69, 127),
+(69, 129),
+(69, 130),
+(69, 131),
+(69, 133),
+(69, 135),
+(69, 137),
+(69, 138),
+(69, 139),
+(69, 140),
+(69, 141),
+(69, 142),
+(69, 143),
+(69, 144),
+(69, 145),
+(69, 146),
+(69, 147),
+(69, 150),
+(69, 151),
+(69, 152),
+(69, 155),
+(69, 156),
+(69, 158),
+(69, 162),
+(69, 163),
+(69, 164),
+(69, 165),
+(69, 166),
+(69, 167),
+(69, 168),
+(69, 169),
+(69, 170),
+(69, 171),
+(69, 172),
+(69, 173),
+(69, 174),
+(69, 175),
+(69, 176),
+(69, 177),
+(69, 178),
+(70, 51),
+(70, 52),
+(70, 54),
+(70, 58),
+(70, 59),
+(70, 63),
+(70, 65),
+(70, 69),
+(70, 70),
+(70, 72),
+(70, 76),
+(70, 78),
+(70, 80),
+(70, 81),
+(70, 84),
+(70, 87),
+(70, 99),
+(70, 100),
+(70, 101),
+(70, 120),
+(70, 130),
+(70, 131),
+(70, 133),
+(70, 135),
+(70, 137),
+(70, 138),
+(70, 139),
+(70, 141),
+(70, 142),
+(70, 143),
+(70, 144),
+(70, 146),
+(70, 151),
+(70, 152),
+(70, 158),
+(70, 162),
+(70, 165),
+(71, 76),
+(71, 78),
+(71, 80),
+(71, 81),
+(71, 84),
+(71, 87),
+(71, 100),
+(71, 135),
+(71, 146),
+(72, 51),
+(72, 52),
+(72, 54),
+(72, 58),
+(72, 59),
+(72, 63),
+(72, 65),
+(72, 69),
+(72, 70),
+(72, 76),
+(72, 78),
+(72, 80),
+(72, 81),
+(72, 84),
+(72, 87),
+(72, 99),
+(72, 100),
+(72, 101),
+(72, 120),
+(72, 130),
+(72, 131),
+(72, 133),
+(72, 135),
+(72, 137),
+(72, 138),
+(72, 139),
+(72, 141),
+(72, 142),
+(72, 143),
+(72, 144),
+(72, 146),
+(72, 151),
+(72, 152),
+(72, 158),
+(72, 162),
+(72, 165),
+(73, 76),
+(73, 78),
+(73, 80),
+(73, 81),
+(73, 84),
+(73, 87),
+(73, 100),
+(73, 135),
+(73, 146),
+(74, 76),
+(74, 78),
+(74, 80),
+(74, 81),
+(74, 84),
+(74, 87),
+(74, 100),
+(74, 135),
+(74, 146),
+(75, 76),
+(75, 78),
+(75, 80),
+(75, 81),
+(75, 84),
+(75, 87),
+(75, 100),
+(75, 135),
+(75, 146),
+(76, 51),
+(76, 52),
+(76, 53),
+(76, 54),
+(76, 56),
+(76, 57),
+(76, 58),
+(76, 59),
+(76, 60),
+(76, 61),
+(76, 62),
+(76, 63),
+(76, 64),
+(76, 65),
+(76, 66),
+(76, 67),
+(76, 68),
+(76, 69),
+(76, 70),
+(76, 71),
+(76, 72),
+(76, 73),
+(76, 74),
+(76, 75),
+(76, 76),
+(76, 78),
+(76, 80),
+(76, 81),
+(76, 84),
+(76, 87),
+(76, 90),
+(76, 91),
+(76, 94),
+(76, 96),
+(76, 97),
+(76, 98),
+(76, 99),
+(76, 100),
+(76, 101),
+(76, 104),
+(76, 108),
+(76, 114),
+(76, 115),
+(76, 116),
+(76, 117),
+(76, 118),
+(76, 119),
+(76, 120),
+(76, 121),
+(76, 122),
+(76, 123),
+(76, 124),
+(76, 125),
+(76, 127),
+(76, 129),
+(76, 130),
+(76, 131),
+(76, 133),
+(76, 134),
+(76, 135),
+(76, 137),
+(76, 138),
+(76, 139),
+(76, 140),
+(76, 141),
+(76, 142),
+(76, 143),
+(76, 144),
+(76, 145),
+(76, 146),
+(76, 147),
+(76, 149),
+(76, 150),
+(76, 151),
+(76, 152),
+(76, 155),
+(76, 156),
+(76, 158),
+(76, 162),
+(76, 163),
+(76, 164),
+(76, 165),
+(76, 166),
+(76, 167),
+(76, 168),
+(76, 169),
+(76, 170),
+(76, 171),
+(76, 172),
+(76, 173),
+(76, 174),
+(76, 175),
+(76, 176),
+(76, 177),
+(76, 178),
+(77, 78),
+(77, 80),
+(77, 81),
+(77, 84),
+(77, 87),
+(77, 100),
+(77, 135),
+(77, 146),
+(78, 51),
+(78, 52),
+(78, 53),
+(78, 54),
+(78, 56),
+(78, 57),
+(78, 58),
+(78, 59),
+(78, 60),
+(78, 61),
+(78, 62),
+(78, 63),
+(78, 64),
+(78, 65),
+(78, 66),
+(78, 67),
+(78, 68),
+(78, 69),
+(78, 70),
+(78, 71),
+(78, 72),
+(78, 73),
+(78, 74),
+(78, 75),
+(78, 76),
+(78, 77),
+(78, 78),
+(78, 80),
+(78, 81),
+(78, 84),
+(78, 87),
+(78, 90),
+(78, 91),
+(78, 94),
+(78, 96),
+(78, 97),
+(78, 98),
+(78, 99),
+(78, 100),
+(78, 101),
+(78, 104),
+(78, 108),
+(78, 114),
+(78, 115),
+(78, 116),
+(78, 117),
+(78, 118),
+(78, 119),
+(78, 120),
+(78, 121),
+(78, 122),
+(78, 123),
+(78, 124),
+(78, 125),
+(78, 127),
+(78, 129),
+(78, 130),
+(78, 131),
+(78, 133),
+(78, 134),
+(78, 135),
+(78, 137),
+(78, 138),
+(78, 139),
+(78, 140),
+(78, 141),
+(78, 142),
+(78, 143),
+(78, 144),
+(78, 145),
+(78, 146),
+(78, 147),
+(78, 149),
+(78, 150),
+(78, 151),
+(78, 152),
+(78, 155),
+(78, 156),
+(78, 158),
+(78, 162),
+(78, 163),
+(78, 164),
+(78, 165),
+(78, 166),
+(78, 167),
+(78, 168),
+(78, 169),
+(78, 170),
+(78, 171),
+(78, 172),
+(78, 173),
+(78, 174),
+(78, 175),
+(78, 176),
+(78, 177),
+(78, 178),
+(79, 80),
+(79, 81),
+(79, 84),
+(79, 87),
+(79, 100),
+(79, 135),
+(79, 146),
+(80, 51),
+(80, 52),
+(80, 53),
+(80, 54),
+(80, 56),
+(80, 57),
+(80, 58),
+(80, 59),
+(80, 60),
+(80, 61),
+(80, 62),
+(80, 63),
+(80, 64),
+(80, 65),
+(80, 66),
+(80, 67),
+(80, 68),
+(80, 69),
+(80, 70),
+(80, 71),
+(80, 72),
+(80, 73),
+(80, 74),
+(80, 75),
+(80, 76),
+(80, 77),
+(80, 78),
+(80, 79),
+(80, 80),
+(80, 81),
+(80, 84),
+(80, 87),
+(80, 90),
+(80, 91),
+(80, 94),
+(80, 96),
+(80, 97),
+(80, 98),
+(80, 99),
+(80, 100),
+(80, 101),
+(80, 104),
+(80, 108),
+(80, 114),
+(80, 115),
+(80, 116),
+(80, 117),
+(80, 118),
+(80, 119),
+(80, 120),
+(80, 121),
+(80, 122),
+(80, 123),
+(80, 124),
+(80, 125),
+(80, 127),
+(80, 129),
+(80, 130),
+(80, 131),
+(80, 133),
+(80, 134),
+(80, 135),
+(80, 137),
+(80, 138),
+(80, 139),
+(80, 140),
+(80, 141),
+(80, 142),
+(80, 143),
+(80, 144),
+(80, 145),
+(80, 146),
+(80, 147),
+(80, 149),
+(80, 150),
+(80, 151),
+(80, 152),
+(80, 155),
+(80, 156),
+(80, 158),
+(80, 162),
+(80, 163),
+(80, 164),
+(80, 165),
+(80, 166),
+(80, 167),
+(80, 168),
+(80, 169),
+(80, 170),
+(80, 171),
+(80, 172),
+(80, 173),
+(80, 174),
+(80, 175),
+(80, 176),
+(80, 177),
+(80, 178),
+(81, 51),
+(81, 52),
+(81, 53),
+(81, 54),
+(81, 56),
+(81, 57),
+(81, 58),
+(81, 59),
+(81, 60),
+(81, 61),
+(81, 62),
+(81, 63),
+(81, 64),
+(81, 65),
+(81, 66),
+(81, 67),
+(81, 68),
+(81, 69),
+(81, 70),
+(81, 71),
+(81, 72),
+(81, 73),
+(81, 74),
+(81, 75),
+(81, 76),
+(81, 77),
+(81, 78),
+(81, 79),
+(81, 80),
+(81, 81),
+(81, 84),
+(81, 87),
+(81, 90),
+(81, 91),
+(81, 94),
+(81, 96),
+(81, 97),
+(81, 98),
+(81, 99),
+(81, 100),
+(81, 101),
+(81, 104),
+(81, 108),
+(81, 114),
+(81, 115),
+(81, 116),
+(81, 117),
+(81, 118),
+(81, 119),
+(81, 120),
+(81, 121),
+(81, 122),
+(81, 123),
+(81, 124),
+(81, 125),
+(81, 127),
+(81, 128),
+(81, 129),
+(81, 130),
+(81, 131),
+(81, 132),
+(81, 133),
+(81, 134),
+(81, 135),
+(81, 136),
+(81, 137),
+(81, 138),
+(81, 139),
+(81, 140),
+(81, 141),
+(81, 142),
+(81, 143),
+(81, 144),
+(81, 145),
+(81, 146),
+(81, 147),
+(81, 149),
+(81, 150),
+(81, 151),
+(81, 152),
+(81, 155),
+(81, 156),
+(81, 158),
+(81, 162),
+(81, 163),
+(81, 164),
+(81, 165),
+(81, 166),
+(81, 167),
+(81, 168),
+(81, 169),
+(81, 170),
+(81, 171),
+(81, 172),
+(81, 173),
+(81, 174),
+(81, 175),
+(81, 176),
+(81, 177),
+(81, 178),
+(82, 84),
+(82, 87),
+(82, 100),
+(82, 146),
+(83, 84),
+(83, 87),
+(83, 100),
+(83, 146),
+(84, 51),
+(84, 52),
+(84, 53),
+(84, 54),
+(84, 56),
+(84, 57),
+(84, 58),
+(84, 59),
+(84, 60),
+(84, 61),
+(84, 62),
+(84, 63),
+(84, 64),
+(84, 65),
+(84, 66),
+(84, 67),
+(84, 68),
+(84, 69),
+(84, 70),
+(84, 71),
+(84, 72),
+(84, 73),
+(84, 74),
+(84, 75),
+(84, 76),
+(84, 77),
+(84, 78),
+(84, 79),
+(84, 80),
+(84, 81),
+(84, 82),
+(84, 83),
+(84, 84),
+(84, 87),
+(84, 90),
+(84, 91),
+(84, 94),
+(84, 96),
+(84, 97),
+(84, 98),
+(84, 99),
+(84, 100),
+(84, 101),
+(84, 104),
+(84, 108),
+(84, 114),
+(84, 115),
+(84, 116),
+(84, 117),
+(84, 118),
+(84, 119),
+(84, 120),
+(84, 121),
+(84, 122),
+(84, 123),
+(84, 124),
+(84, 125),
+(84, 127),
+(84, 128),
+(84, 129),
+(84, 130),
+(84, 131),
+(84, 132),
+(84, 133),
+(84, 134),
+(84, 135),
+(84, 136),
+(84, 137),
+(84, 138),
+(84, 139),
+(84, 140),
+(84, 141),
+(84, 142),
+(84, 143),
+(84, 144),
+(84, 145),
+(84, 146),
+(84, 147),
+(84, 149),
+(84, 150),
+(84, 151),
+(84, 152),
+(84, 155),
+(84, 156),
+(84, 158),
+(84, 162),
+(84, 163),
+(84, 164),
+(84, 165),
+(84, 166),
+(84, 167),
+(84, 168),
+(84, 169),
+(84, 170),
+(84, 171),
+(84, 172),
+(84, 173),
+(84, 174),
+(84, 175),
+(84, 176),
+(84, 177),
+(84, 178),
+(85, 87),
+(85, 100),
+(85, 146),
+(86, 100),
+(86, 146),
+(87, 51),
+(87, 52),
+(87, 53),
+(87, 54),
+(87, 56),
+(87, 57),
+(87, 58),
+(87, 59),
+(87, 60),
+(87, 61),
+(87, 62),
+(87, 63),
+(87, 64),
+(87, 65),
+(87, 66),
+(87, 67),
+(87, 68),
+(87, 69),
+(87, 70),
+(87, 71),
+(87, 72),
+(87, 73),
+(87, 74),
+(87, 75),
+(87, 76),
+(87, 77),
+(87, 78),
+(87, 79),
+(87, 80),
+(87, 81),
+(87, 82),
+(87, 83),
+(87, 84),
+(87, 85),
+(87, 87),
+(87, 90),
+(87, 91),
+(87, 94),
+(87, 96),
+(87, 97),
+(87, 98),
+(87, 99),
+(87, 100),
+(87, 101),
+(87, 104),
+(87, 108),
+(87, 114),
+(87, 115),
+(87, 116),
+(87, 117),
+(87, 118),
+(87, 119),
+(87, 120),
+(87, 121),
+(87, 122),
+(87, 123),
+(87, 124),
+(87, 125),
+(87, 127),
+(87, 128),
+(87, 129),
+(87, 130),
+(87, 131),
+(87, 132),
+(87, 133),
+(87, 134),
+(87, 135),
+(87, 136),
+(87, 137),
+(87, 138),
+(87, 139),
+(87, 140),
+(87, 141),
+(87, 142),
+(87, 143),
+(87, 144),
+(87, 145),
+(87, 146),
+(87, 147),
+(87, 149),
+(87, 150),
+(87, 151),
+(87, 152),
+(87, 155),
+(87, 156),
+(87, 158),
+(87, 162),
+(87, 163),
+(87, 164),
+(87, 165),
+(87, 166),
+(87, 167),
+(87, 168),
+(87, 169),
+(87, 170),
+(87, 171),
+(87, 172),
+(87, 173),
+(87, 174),
+(87, 175),
+(87, 176),
+(87, 177),
+(87, 178),
+(88, 100),
+(88, 146),
+(89, 100),
+(89, 146),
+(90, 51),
+(90, 52),
+(90, 54),
+(90, 59),
+(90, 63),
+(90, 65),
+(90, 69),
+(90, 76),
+(90, 78),
+(90, 80),
+(90, 81),
+(90, 84),
+(90, 87),
+(90, 100),
+(90, 135),
+(90, 146),
+(91, 51),
+(91, 52),
+(91, 54),
+(91, 59),
+(91, 63),
+(91, 65),
+(91, 69),
+(91, 76),
+(91, 78),
+(91, 80),
+(91, 81),
+(91, 84),
+(91, 87),
+(91, 100),
+(91, 135),
+(91, 146),
+(92, 100),
+(93, 100),
+(94, 51),
+(94, 52),
+(94, 54),
+(94, 59),
+(94, 63),
+(94, 65),
+(94, 69),
+(94, 76),
+(94, 78),
+(94, 80),
+(94, 81),
+(94, 84),
+(94, 87),
+(94, 100),
+(94, 120),
+(94, 135),
+(94, 146),
+(94, 158),
+(94, 162),
+(94, 165),
+(95, 100),
+(96, 76),
+(96, 78),
+(96, 80),
+(96, 81),
+(96, 84),
+(96, 87),
+(96, 100),
+(96, 135),
+(96, 146),
+(97, 76),
+(97, 78),
+(97, 80),
+(97, 81),
+(97, 84),
+(97, 87),
+(97, 100),
+(97, 135),
+(97, 146),
+(98, 59),
+(98, 63),
+(98, 65),
+(98, 69),
+(98, 76),
+(98, 78),
+(98, 80),
+(98, 81),
+(98, 84),
+(98, 87),
+(98, 100),
+(98, 135),
+(98, 146),
+(99, 51),
+(99, 52),
+(99, 54),
+(99, 58),
+(99, 59),
+(99, 63),
+(99, 65),
+(99, 69),
+(99, 70),
+(99, 72),
+(99, 76),
+(99, 78),
+(99, 80),
+(99, 81),
+(99, 84),
+(99, 87),
+(99, 99),
+(99, 100),
+(99, 101),
+(99, 120),
+(99, 130),
+(99, 131),
+(99, 133),
+(99, 135),
+(99, 137),
+(99, 138),
+(99, 139),
+(99, 141),
+(99, 142),
+(99, 143),
+(99, 144),
+(99, 146),
+(99, 151),
+(99, 152),
+(99, 158),
+(99, 162),
+(99, 165),
+(100, 51),
+(100, 52),
+(100, 53),
+(100, 54),
+(100, 56),
+(100, 57),
+(100, 58),
+(100, 59),
+(100, 60),
+(100, 61),
+(100, 62),
+(100, 63),
+(100, 64),
+(100, 65),
+(100, 66),
+(100, 67),
+(100, 68),
+(100, 69),
+(100, 70),
+(100, 71),
+(100, 72),
+(100, 73),
+(100, 74),
+(100, 75),
+(100, 76),
+(100, 77),
+(100, 78),
+(100, 79),
+(100, 80),
+(100, 81),
+(100, 82),
+(100, 83),
+(100, 84),
+(100, 85),
+(100, 86),
+(100, 87),
+(100, 88),
+(100, 89),
+(100, 90),
+(100, 91),
+(100, 92),
+(100, 93),
+(100, 94),
+(100, 95),
+(100, 96),
+(100, 97),
+(100, 98),
+(100, 99),
+(100, 100),
+(100, 101),
+(100, 104),
+(100, 108),
+(100, 109),
+(100, 114),
+(100, 115),
+(100, 116),
+(100, 117),
+(100, 118),
+(100, 119),
+(100, 120),
+(100, 121),
+(100, 122),
+(100, 123),
+(100, 124),
+(100, 125),
+(100, 127),
+(100, 128),
+(100, 129),
+(100, 130),
+(100, 131),
+(100, 132),
+(100, 133),
+(100, 134),
+(100, 135),
+(100, 136),
+(100, 137),
+(100, 138),
+(100, 139),
+(100, 140),
+(100, 141),
+(100, 142),
+(100, 143),
+(100, 144),
+(100, 145),
+(100, 146),
+(100, 147),
+(100, 149),
+(100, 150),
+(100, 151),
+(100, 152),
+(100, 153),
+(100, 154),
+(100, 155),
+(100, 156),
+(100, 158),
+(100, 162),
+(100, 163),
+(100, 164),
+(100, 165),
+(100, 166),
+(100, 167),
+(100, 168),
+(100, 169),
+(100, 170),
+(100, 171),
+(100, 172),
+(100, 173),
+(100, 174),
+(100, 175),
+(100, 176),
+(100, 177),
+(100, 178),
+(101, 51),
+(101, 52),
+(101, 54),
+(101, 58),
+(101, 59),
+(101, 63),
+(101, 65),
+(101, 69),
+(101, 70),
+(101, 72),
+(101, 76),
+(101, 78),
+(101, 80),
+(101, 81),
+(101, 84),
+(101, 87),
+(101, 99),
+(101, 100),
+(101, 101),
+(101, 120),
+(101, 129),
+(101, 130),
+(101, 131),
+(101, 133),
+(101, 135),
+(101, 137),
+(101, 138),
+(101, 139),
+(101, 141),
+(101, 142),
+(101, 143),
+(101, 144),
+(101, 146),
+(101, 151),
+(101, 152),
+(101, 158),
+(101, 162),
+(101, 165),
+(104, 51),
+(104, 52),
+(104, 54),
+(104, 59),
+(104, 63),
+(104, 65),
+(104, 69),
+(104, 76),
+(104, 78),
+(104, 80),
+(104, 81),
+(104, 84),
+(104, 87),
+(104, 100),
+(104, 120),
+(104, 135),
+(104, 146),
+(104, 158),
+(104, 162),
+(104, 165),
+(108, 63),
+(108, 76),
+(108, 78),
+(108, 80),
+(108, 81),
+(108, 84),
+(108, 87),
+(108, 100),
+(108, 135),
+(108, 146),
+(109, 100),
+(109, 146),
+(114, 63),
+(114, 65),
+(114, 76),
+(114, 78),
+(114, 80),
+(114, 81),
+(114, 84),
+(114, 87),
+(114, 100),
+(114, 135),
+(114, 146),
+(115, 63),
+(115, 65),
+(115, 76),
+(115, 78),
+(115, 80),
+(115, 81),
+(115, 84),
+(115, 87),
+(115, 100),
+(115, 135),
+(115, 146),
+(116, 63),
+(116, 65),
+(116, 76),
+(116, 78),
+(116, 80),
+(116, 81),
+(116, 84),
+(116, 87),
+(116, 100),
+(116, 135),
+(116, 146),
+(117, 63),
+(117, 76),
+(117, 78),
+(117, 80),
+(117, 81),
+(117, 84),
+(117, 87),
+(117, 100),
+(117, 135),
+(117, 146),
+(118, 51),
+(118, 52),
+(118, 54),
+(118, 59),
+(118, 63),
+(118, 65),
+(118, 69),
+(118, 76),
+(118, 78),
+(118, 80),
+(118, 81),
+(118, 84),
+(118, 87),
+(118, 100),
+(118, 135),
+(118, 146),
+(119, 51),
+(119, 52),
+(119, 54),
+(119, 59),
+(119, 63),
+(119, 65),
+(119, 69),
+(119, 76),
+(119, 78),
+(119, 80),
+(119, 81),
+(119, 84),
+(119, 87),
+(119, 100),
+(119, 135),
+(119, 146),
+(120, 51),
+(120, 52),
+(120, 54),
+(120, 58),
+(120, 59),
+(120, 63),
+(120, 65),
+(120, 69),
+(120, 70),
+(120, 72),
+(120, 76),
+(120, 78),
+(120, 80),
+(120, 81),
+(120, 84),
+(120, 87),
+(120, 94),
+(120, 99),
+(120, 100),
+(120, 101),
+(120, 104),
+(120, 120),
+(120, 129),
+(120, 130),
+(120, 131),
+(120, 133),
+(120, 135),
+(120, 137),
+(120, 138),
+(120, 139),
+(120, 140),
+(120, 141),
+(120, 142),
+(120, 143),
+(120, 144),
+(120, 146),
+(120, 151),
+(120, 152),
+(120, 155),
+(120, 156),
+(120, 158),
+(120, 162),
+(120, 163),
+(120, 164),
+(120, 165),
+(120, 166),
+(120, 167),
+(120, 168),
+(120, 169),
+(120, 173),
+(120, 177),
+(120, 178),
+(121, 51),
+(121, 52),
+(121, 54),
+(121, 59),
+(121, 63),
+(121, 65),
+(121, 69),
+(121, 76),
+(121, 78),
+(121, 80),
+(121, 81),
+(121, 84),
+(121, 87),
+(121, 100),
+(121, 135),
+(121, 146),
+(122, 51),
+(122, 52),
+(122, 54),
+(122, 59),
+(122, 63),
+(122, 65),
+(122, 69),
+(122, 76),
+(122, 78),
+(122, 80),
+(122, 81),
+(122, 84),
+(122, 87),
+(122, 100),
+(122, 135),
+(122, 146),
+(123, 51),
+(123, 52),
+(123, 54),
+(123, 59),
+(123, 63),
+(123, 65),
+(123, 69),
+(123, 76),
+(123, 78),
+(123, 80),
+(123, 81),
+(123, 84),
+(123, 87),
+(123, 100),
+(123, 135),
+(123, 146),
+(124, 63),
+(124, 76),
+(124, 78),
+(124, 80),
+(124, 81),
+(124, 84),
+(124, 87),
+(124, 100),
+(124, 135),
+(124, 146),
+(125, 51),
+(125, 52),
+(125, 54),
+(125, 59),
+(125, 63),
+(125, 65),
+(125, 69),
+(125, 76),
+(125, 78),
+(125, 80),
+(125, 81),
+(125, 84),
+(125, 87),
+(125, 100),
+(125, 135),
+(125, 146),
+(127, 51),
+(127, 52),
+(127, 54),
+(127, 59),
+(127, 63),
+(127, 65),
+(127, 69),
+(127, 76),
+(127, 78),
+(127, 80),
+(127, 81),
+(127, 84),
+(127, 87),
+(127, 100),
+(127, 135),
+(127, 146),
+(128, 81),
+(128, 84),
+(128, 87),
+(128, 100),
+(128, 146),
+(129, 51),
+(129, 52),
+(129, 54),
+(129, 59),
+(129, 63),
+(129, 65),
+(129, 69),
+(129, 76),
+(129, 78),
+(129, 80),
+(129, 81),
+(129, 84),
+(129, 87),
+(129, 100),
+(129, 101),
+(129, 120),
+(129, 135),
+(129, 137),
+(129, 138),
+(129, 139),
+(129, 141),
+(129, 142),
+(129, 143),
+(129, 144),
+(129, 146),
+(129, 151),
+(129, 152),
+(129, 158),
+(129, 162),
+(129, 165),
+(130, 51),
+(130, 52),
+(130, 54),
+(130, 59),
+(130, 63),
+(130, 65),
+(130, 69),
+(130, 70),
+(130, 72),
+(130, 76),
+(130, 78),
+(130, 80),
+(130, 81),
+(130, 84),
+(130, 87),
+(130, 99),
+(130, 100),
+(130, 101),
+(130, 120),
+(130, 135),
+(130, 137),
+(130, 138),
+(130, 139),
+(130, 141),
+(130, 142),
+(130, 143),
+(130, 144),
+(130, 146),
+(130, 151),
+(130, 152),
+(130, 158),
+(130, 162),
+(130, 165),
+(131, 51),
+(131, 52),
+(131, 54),
+(131, 59),
+(131, 63),
+(131, 65),
+(131, 69),
+(131, 70),
+(131, 72),
+(131, 76),
+(131, 78),
+(131, 80),
+(131, 81),
+(131, 84),
+(131, 87),
+(131, 99),
+(131, 100),
+(131, 101),
+(131, 120),
+(131, 135),
+(131, 137),
+(131, 138),
+(131, 139),
+(131, 141),
+(131, 142),
+(131, 143),
+(131, 144),
+(131, 146),
+(131, 151),
+(131, 152),
+(131, 158),
+(131, 162),
+(131, 165),
+(132, 81),
+(132, 84),
+(132, 87),
+(132, 100),
+(132, 146),
+(133, 51),
+(133, 52),
+(133, 54),
+(133, 59),
+(133, 63),
+(133, 65),
+(133, 69),
+(133, 70),
+(133, 72),
+(133, 76),
+(133, 78),
+(133, 80),
+(133, 81),
+(133, 84),
+(133, 87),
+(133, 99),
+(133, 100),
+(133, 101),
+(133, 120),
+(133, 135),
+(133, 137),
+(133, 138),
+(133, 139),
+(133, 141),
+(133, 142),
+(133, 143),
+(133, 144),
+(133, 146),
+(133, 151),
+(133, 152),
+(133, 158),
+(133, 162),
+(133, 165),
+(134, 76),
+(134, 78),
+(134, 80),
+(134, 81),
+(134, 84),
+(134, 87),
+(134, 100),
+(134, 135),
+(134, 146),
+(135, 51),
+(135, 52),
+(135, 53),
+(135, 54),
+(135, 56),
+(135, 57),
+(135, 58),
+(135, 59),
+(135, 60),
+(135, 61),
+(135, 62),
+(135, 63),
+(135, 64),
+(135, 65),
+(135, 66),
+(135, 67),
+(135, 68),
+(135, 69),
+(135, 70),
+(135, 71),
+(135, 72),
+(135, 73),
+(135, 74),
+(135, 75),
+(135, 76),
+(135, 77),
+(135, 78),
+(135, 79),
+(135, 80),
+(135, 81),
+(135, 84),
+(135, 87),
+(135, 90),
+(135, 91),
+(135, 94),
+(135, 96),
+(135, 97),
+(135, 98),
+(135, 99),
+(135, 100),
+(135, 101),
+(135, 104),
+(135, 108),
+(135, 114),
+(135, 115),
+(135, 116),
+(135, 117),
+(135, 118),
+(135, 119),
+(135, 120),
+(135, 121),
+(135, 122),
+(135, 123),
+(135, 124),
+(135, 125),
+(135, 127),
+(135, 129),
+(135, 130),
+(135, 131),
+(135, 133),
+(135, 134),
+(135, 135),
+(135, 137),
+(135, 138),
+(135, 139),
+(135, 140),
+(135, 141),
+(135, 142),
+(135, 143),
+(135, 144),
+(135, 145),
+(135, 146),
+(135, 147),
+(135, 149),
+(135, 150),
+(135, 151),
+(135, 152),
+(135, 155),
+(135, 156),
+(135, 158),
+(135, 162),
+(135, 163),
+(135, 164),
+(135, 165),
+(135, 166),
+(135, 167),
+(135, 168),
+(135, 169),
+(135, 170),
+(135, 171),
+(135, 172),
+(135, 173),
+(135, 174),
+(135, 175),
+(135, 176),
+(135, 177),
+(135, 178),
+(136, 81),
+(136, 84),
+(136, 87),
+(136, 100),
+(136, 146),
+(137, 51),
+(137, 52),
+(137, 54),
+(137, 58),
+(137, 59),
+(137, 63),
+(137, 65),
+(137, 69),
+(137, 70),
+(137, 72),
+(137, 76),
+(137, 78),
+(137, 80),
+(137, 81),
+(137, 84),
+(137, 87),
+(137, 99),
+(137, 100),
+(137, 101),
+(137, 120),
+(137, 129),
+(137, 130),
+(137, 131),
+(137, 133),
+(137, 135),
+(137, 137),
+(137, 138),
+(137, 139),
+(137, 141),
+(137, 142),
+(137, 143),
+(137, 144),
+(137, 146),
+(137, 151),
+(137, 152),
+(137, 158),
+(137, 162),
+(137, 165),
+(138, 51),
+(138, 52),
+(138, 54),
+(138, 58),
+(138, 59),
+(138, 63),
+(138, 65),
+(138, 69),
+(138, 70),
+(138, 72),
+(138, 76),
+(138, 78),
+(138, 80),
+(138, 81),
+(138, 84),
+(138, 87),
+(138, 99),
+(138, 100),
+(138, 101),
+(138, 120),
+(138, 129),
+(138, 130),
+(138, 131),
+(138, 133),
+(138, 135),
+(138, 137),
+(138, 138),
+(138, 139),
+(138, 141),
+(138, 142),
+(138, 143),
+(138, 144),
+(138, 146),
+(138, 151),
+(138, 152),
+(138, 158),
+(138, 162),
+(138, 165),
+(139, 51),
+(139, 52),
+(139, 54),
+(139, 58),
+(139, 59),
+(139, 63),
+(139, 65),
+(139, 69),
+(139, 70),
+(139, 72),
+(139, 76),
+(139, 78),
+(139, 80),
+(139, 81),
+(139, 84),
+(139, 87),
+(139, 99),
+(139, 100),
+(139, 101),
+(139, 120),
+(139, 129),
+(139, 130),
+(139, 131),
+(139, 133),
+(139, 135),
+(139, 137),
+(139, 138),
+(139, 139),
+(139, 141),
+(139, 142),
+(139, 143),
+(139, 144),
+(139, 146),
+(139, 151),
+(139, 152),
+(139, 158),
+(139, 162),
+(139, 165),
+(140, 51),
+(140, 52),
+(140, 54),
+(140, 59),
+(140, 63),
+(140, 65),
+(140, 69),
+(140, 76),
+(140, 78),
+(140, 80),
+(140, 81),
+(140, 84),
+(140, 87),
+(140, 100),
+(140, 120),
+(140, 135),
+(140, 144),
+(140, 146),
+(140, 158),
+(140, 162),
+(140, 165),
+(141, 51),
+(141, 52),
+(141, 54),
+(141, 58),
+(141, 59),
+(141, 63),
+(141, 65),
+(141, 69),
+(141, 70),
+(141, 72),
+(141, 76),
+(141, 78),
+(141, 80),
+(141, 81),
+(141, 84),
+(141, 87),
+(141, 99),
+(141, 100),
+(141, 101),
+(141, 120),
+(141, 129),
+(141, 130),
+(141, 131),
+(141, 133),
+(141, 135),
+(141, 137),
+(141, 138),
+(141, 139),
+(141, 141),
+(141, 142),
+(141, 143),
+(141, 144),
+(141, 146),
+(141, 151),
+(141, 152),
+(141, 158),
+(141, 162),
+(141, 165),
+(142, 51),
+(142, 52),
+(142, 54),
+(142, 58),
+(142, 59),
+(142, 63),
+(142, 65),
+(142, 69),
+(142, 70),
+(142, 72),
+(142, 76),
+(142, 78),
+(142, 80),
+(142, 81),
+(142, 84),
+(142, 87),
+(142, 99),
+(142, 100),
+(142, 101),
+(142, 120),
+(142, 129),
+(142, 130),
+(142, 131),
+(142, 133),
+(142, 135),
+(142, 137),
+(142, 138),
+(142, 139),
+(142, 141),
+(142, 142),
+(142, 143),
+(142, 144),
+(142, 146),
+(142, 151),
+(142, 152),
+(142, 158),
+(142, 162),
+(142, 165),
+(143, 51),
+(143, 52),
+(143, 54),
+(143, 58),
+(143, 59),
+(143, 63),
+(143, 65),
+(143, 69),
+(143, 70),
+(143, 72),
+(143, 76),
+(143, 78),
+(143, 80),
+(143, 81),
+(143, 84),
+(143, 87),
+(143, 99),
+(143, 100),
+(143, 101),
+(143, 120),
+(143, 129),
+(143, 130),
+(143, 131),
+(143, 133),
+(143, 135),
+(143, 137),
+(143, 138),
+(143, 139),
+(143, 141),
+(143, 142),
+(143, 143),
+(143, 144),
+(143, 146),
+(143, 151),
+(143, 152),
+(143, 158),
+(143, 162),
+(143, 165),
+(144, 51),
+(144, 52),
+(144, 54),
+(144, 58),
+(144, 59),
+(144, 63),
+(144, 65),
+(144, 69),
+(144, 70),
+(144, 72),
+(144, 76),
+(144, 78),
+(144, 80),
+(144, 81),
+(144, 84),
+(144, 87),
+(144, 99),
+(144, 100),
+(144, 101),
+(144, 120),
+(144, 129),
+(144, 130),
+(144, 131),
+(144, 133),
+(144, 135),
+(144, 137),
+(144, 138),
+(144, 139),
+(144, 140),
+(144, 141),
+(144, 142),
+(144, 143),
+(144, 144),
+(144, 146),
+(144, 151),
+(144, 152),
+(144, 158),
+(144, 162),
+(144, 165),
+(145, 51),
+(145, 52),
+(145, 54),
+(145, 59),
+(145, 63),
+(145, 65),
+(145, 69),
+(145, 76),
+(145, 78),
+(145, 80),
+(145, 81),
+(145, 84),
+(145, 87),
+(145, 100),
+(145, 135),
+(145, 146),
+(146, 51),
+(146, 52),
+(146, 53),
+(146, 54),
+(146, 56),
+(146, 57),
+(146, 58),
+(146, 59),
+(146, 60),
+(146, 61),
+(146, 62),
+(146, 63),
+(146, 64),
+(146, 65),
+(146, 66),
+(146, 67),
+(146, 68),
+(146, 69),
+(146, 70),
+(146, 71),
+(146, 72),
+(146, 73),
+(146, 74),
+(146, 75),
+(146, 76),
+(146, 77),
+(146, 78),
+(146, 79),
+(146, 80),
+(146, 81),
+(146, 82),
+(146, 83),
+(146, 84),
+(146, 85),
+(146, 86),
+(146, 87),
+(146, 88),
+(146, 89),
+(146, 90),
+(146, 91),
+(146, 94),
+(146, 96),
+(146, 97),
+(146, 98),
+(146, 99),
+(146, 100),
+(146, 101),
+(146, 104),
+(146, 108),
+(146, 109),
+(146, 114),
+(146, 115),
+(146, 116),
+(146, 117),
+(146, 118),
+(146, 119),
+(146, 120),
+(146, 121),
+(146, 122),
+(146, 123),
+(146, 124),
+(146, 125),
+(146, 127),
+(146, 128),
+(146, 129),
+(146, 130),
+(146, 131),
+(146, 132),
+(146, 133),
+(146, 134),
+(146, 135),
+(146, 136),
+(146, 137),
+(146, 138),
+(146, 139),
+(146, 140),
+(146, 141),
+(146, 142),
+(146, 143),
+(146, 144),
+(146, 145),
+(146, 146),
+(146, 147),
+(146, 149),
+(146, 150),
+(146, 151),
+(146, 152),
+(146, 155),
+(146, 156),
+(146, 158),
+(146, 162),
+(146, 163),
+(146, 164),
+(146, 165),
+(146, 166),
+(146, 167),
+(146, 168),
+(146, 169),
+(146, 170),
+(146, 171),
+(146, 172),
+(146, 173),
+(146, 174),
+(146, 175),
+(146, 176),
+(146, 177),
+(146, 178),
+(147, 59),
+(147, 63),
+(147, 65),
+(147, 69),
+(147, 76),
+(147, 78),
+(147, 80),
+(147, 81),
+(147, 84),
+(147, 87),
+(147, 100),
+(147, 135),
+(147, 146),
+(149, 63),
+(149, 76),
+(149, 78),
+(149, 80),
+(149, 81),
+(149, 84),
+(149, 87),
+(149, 100),
+(149, 135),
+(149, 146),
+(150, 51),
+(150, 52),
+(150, 54),
+(150, 59),
+(150, 63),
+(150, 65),
+(150, 69),
+(150, 76),
+(150, 78),
+(150, 80),
+(150, 81),
+(150, 84),
+(150, 87),
+(150, 100),
+(150, 135),
+(150, 146),
+(151, 51),
+(151, 52),
+(151, 54),
+(151, 58),
+(151, 59),
+(151, 63),
+(151, 65),
+(151, 69),
+(151, 70),
+(151, 72),
+(151, 76),
+(151, 78),
+(151, 80),
+(151, 81),
+(151, 84),
+(151, 87),
+(151, 99),
+(151, 100),
+(151, 101),
+(151, 120),
+(151, 129),
+(151, 130),
+(151, 131),
+(151, 133),
+(151, 135),
+(151, 137),
+(151, 138),
+(151, 139),
+(151, 141),
+(151, 142),
+(151, 143),
+(151, 144),
+(151, 146),
+(151, 151),
+(151, 152),
+(151, 158),
+(151, 162),
+(151, 165),
+(152, 51),
+(152, 52),
+(152, 54),
+(152, 58),
+(152, 59),
+(152, 63),
+(152, 65),
+(152, 69),
+(152, 70),
+(152, 72),
+(152, 76),
+(152, 78),
+(152, 80),
+(152, 81),
+(152, 84),
+(152, 87),
+(152, 99),
+(152, 100),
+(152, 101),
+(152, 120),
+(152, 129),
+(152, 130),
+(152, 131),
+(152, 133),
+(152, 135),
+(152, 137),
+(152, 138),
+(152, 139),
+(152, 141),
+(152, 142),
+(152, 143),
+(152, 144),
+(152, 146),
+(152, 151),
+(152, 152),
+(152, 158),
+(152, 162),
+(152, 165),
+(153, 100),
+(154, 100),
+(155, 51),
+(155, 52),
+(155, 54),
+(155, 59),
+(155, 63),
+(155, 65),
+(155, 69),
+(155, 76),
+(155, 78),
+(155, 80),
+(155, 81),
+(155, 84),
+(155, 87),
+(155, 100),
+(155, 120),
+(155, 135),
+(155, 146),
+(155, 158),
+(155, 162),
+(156, 51),
+(156, 52),
+(156, 54),
+(156, 59),
+(156, 63),
+(156, 65),
+(156, 69),
+(156, 76),
+(156, 78),
+(156, 80),
+(156, 81),
+(156, 84),
+(156, 87),
+(156, 100),
+(156, 120),
+(156, 135),
+(156, 146),
+(158, 51),
+(158, 52),
+(158, 54),
+(158, 58),
+(158, 59),
+(158, 63),
+(158, 65),
+(158, 69),
+(158, 70),
+(158, 72),
+(158, 76),
+(158, 78),
+(158, 80),
+(158, 81),
+(158, 84),
+(158, 87),
+(158, 94),
+(158, 99),
+(158, 100),
+(158, 101),
+(158, 104),
+(158, 120),
+(158, 129),
+(158, 130),
+(158, 131),
+(158, 133),
+(158, 135),
+(158, 137),
+(158, 138),
+(158, 139),
+(158, 140),
+(158, 141),
+(158, 142),
+(158, 143),
+(158, 144),
+(158, 146),
+(158, 151),
+(158, 152),
+(158, 155),
+(158, 158),
+(158, 162),
+(158, 163),
+(158, 164),
+(158, 165),
+(158, 166),
+(158, 167),
+(158, 168),
+(158, 169),
+(162, 51),
+(162, 52),
+(162, 54),
+(162, 58),
+(162, 59),
+(162, 63),
+(162, 65),
+(162, 69),
+(162, 70),
+(162, 72),
+(162, 76),
+(162, 78),
+(162, 80),
+(162, 81),
+(162, 84),
+(162, 87),
+(162, 94),
+(162, 99),
+(162, 100),
+(162, 101),
+(162, 104),
+(162, 120),
+(162, 129),
+(162, 130),
+(162, 131),
+(162, 133),
+(162, 135),
+(162, 137),
+(162, 138),
+(162, 139),
+(162, 140),
+(162, 141),
+(162, 142),
+(162, 143),
+(162, 144),
+(162, 146),
+(162, 151),
+(162, 152),
+(162, 155),
+(162, 158),
+(162, 162),
+(162, 163),
+(162, 164),
+(162, 165),
+(162, 166),
+(162, 167),
+(162, 168),
+(162, 169),
+(163, 51),
+(163, 52),
+(163, 54),
+(163, 59),
+(163, 63),
+(163, 65),
+(163, 69),
+(163, 76),
+(163, 78),
+(163, 80),
+(163, 81),
+(163, 84),
+(163, 87),
+(163, 100),
+(163, 120),
+(163, 135),
+(163, 146),
+(163, 158),
+(163, 162),
+(163, 165),
+(164, 51),
+(164, 52),
+(164, 54),
+(164, 59),
+(164, 63),
+(164, 65),
+(164, 69),
+(164, 76),
+(164, 78),
+(164, 80),
+(164, 81),
+(164, 84),
+(164, 87),
+(164, 100),
+(164, 120),
+(164, 135),
+(164, 146),
+(164, 158),
+(164, 162),
+(164, 165),
+(165, 51),
+(165, 52),
+(165, 54),
+(165, 58),
+(165, 59),
+(165, 63),
+(165, 65),
+(165, 69),
+(165, 70),
+(165, 72),
+(165, 76),
+(165, 78),
+(165, 80),
+(165, 81),
+(165, 84),
+(165, 87),
+(165, 94),
+(165, 99),
+(165, 100),
+(165, 101),
+(165, 104),
+(165, 120),
+(165, 129),
+(165, 130),
+(165, 131),
+(165, 133),
+(165, 135),
+(165, 137),
+(165, 138),
+(165, 139),
+(165, 140),
+(165, 141),
+(165, 142),
+(165, 143),
+(165, 144),
+(165, 146),
+(165, 151),
+(165, 152),
+(165, 158),
+(165, 162),
+(165, 163),
+(165, 164),
+(165, 165),
+(166, 51),
+(166, 52),
+(166, 54),
+(166, 59),
+(166, 63),
+(166, 65),
+(166, 69),
+(166, 76),
+(166, 78),
+(166, 80),
+(166, 81),
+(166, 84),
+(166, 87),
+(166, 100),
+(166, 120),
+(166, 135),
+(166, 146),
+(166, 158),
+(166, 162),
+(167, 51),
+(167, 52),
+(167, 54),
+(167, 59),
+(167, 63),
+(167, 65),
+(167, 69),
+(167, 76),
+(167, 78),
+(167, 80),
+(167, 81),
+(167, 84),
+(167, 87),
+(167, 100),
+(167, 120),
+(167, 135),
+(167, 146),
+(167, 158),
+(167, 162),
+(168, 51),
+(168, 52),
+(168, 54),
+(168, 59),
+(168, 63),
+(168, 65),
+(168, 69),
+(168, 76),
+(168, 78),
+(168, 80),
+(168, 81),
+(168, 84),
+(168, 87),
+(168, 100),
+(168, 120),
+(168, 135),
+(168, 146),
+(168, 158),
+(168, 162),
+(169, 51),
+(169, 52),
+(169, 54),
+(169, 59),
+(169, 63),
+(169, 65),
+(169, 69),
+(169, 76),
+(169, 78),
+(169, 80),
+(169, 81),
+(169, 84),
+(169, 87),
+(169, 100),
+(169, 120),
+(169, 135),
+(169, 146),
+(169, 158),
+(169, 162),
+(170, 59),
+(170, 63),
+(170, 65),
+(170, 69),
+(170, 76),
+(170, 78),
+(170, 80),
+(170, 81),
+(170, 84),
+(170, 87),
+(170, 100),
+(170, 135),
+(170, 146),
+(171, 59),
+(171, 63),
+(171, 65),
+(171, 69),
+(171, 76),
+(171, 78),
+(171, 80),
+(171, 81),
+(171, 84),
+(171, 87),
+(171, 100),
+(171, 135),
+(171, 146),
+(172, 59),
+(172, 63),
+(172, 65),
+(172, 69),
+(172, 76),
+(172, 78),
+(172, 80),
+(172, 81),
+(172, 84),
+(172, 87),
+(172, 100),
+(172, 135),
+(172, 146),
+(173, 51),
+(173, 52),
+(173, 54),
+(173, 59),
+(173, 63),
+(173, 65),
+(173, 69),
+(173, 76),
+(173, 78),
+(173, 80),
+(173, 81),
+(173, 84),
+(173, 87),
+(173, 100),
+(173, 120),
+(173, 135),
+(173, 146),
+(174, 51),
+(174, 52),
+(174, 54),
+(174, 59),
+(174, 63),
+(174, 65),
+(174, 69),
+(174, 76),
+(174, 78),
+(174, 80),
+(174, 81),
+(174, 84),
+(174, 87),
+(174, 100),
+(174, 135),
+(174, 146),
+(175, 51),
+(175, 52),
+(175, 54),
+(175, 59),
+(175, 63),
+(175, 65),
+(175, 69),
+(175, 76),
+(175, 78),
+(175, 80),
+(175, 81),
+(175, 84),
+(175, 87),
+(175, 100),
+(175, 135),
+(175, 146),
+(176, 51),
+(176, 52),
+(176, 54),
+(176, 59),
+(176, 63),
+(176, 65),
+(176, 69),
+(176, 76),
+(176, 78),
+(176, 80),
+(176, 81),
+(176, 84),
+(176, 87),
+(176, 100),
+(176, 135),
+(176, 146),
+(177, 51),
+(177, 52),
+(177, 54),
+(177, 59),
+(177, 63),
+(177, 65),
+(177, 69),
+(177, 76),
+(177, 78),
+(177, 80),
+(177, 81),
+(177, 84),
+(177, 87),
+(177, 100),
+(177, 120),
+(177, 135),
+(177, 146),
+(178, 51),
+(178, 52),
+(178, 54),
+(178, 59),
+(178, 63),
+(178, 65),
+(178, 69),
+(178, 76),
+(178, 78),
+(178, 80),
+(178, 81),
+(178, 84),
+(178, 87),
+(178, 100),
+(178, 120),
+(178, 135),
+(178, 146);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_related_article`
+-- Table structure for table `oc_product_related_article`
 --
 
 CREATE TABLE `oc_product_related_article` (
@@ -3385,7 +7885,7 @@ CREATE TABLE `oc_product_related_article` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_related_mn`
+-- Table structure for table `oc_product_related_mn`
 --
 
 CREATE TABLE `oc_product_related_mn` (
@@ -3396,7 +7896,7 @@ CREATE TABLE `oc_product_related_mn` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_related_wb`
+-- Table structure for table `oc_product_related_wb`
 --
 
 CREATE TABLE `oc_product_related_wb` (
@@ -3407,7 +7907,7 @@ CREATE TABLE `oc_product_related_wb` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_reward`
+-- Table structure for table `oc_product_reward`
 --
 
 CREATE TABLE `oc_product_reward` (
@@ -3418,34 +7918,140 @@ CREATE TABLE `oc_product_reward` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_reward`
+-- Dumping data for table `oc_product_reward`
 --
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(515, 42, 1, 100),
-(519, 47, 1, 300),
-(379, 28, 1, 400),
-(329, 43, 1, 600),
-(339, 29, 1, 0),
-(343, 48, 1, 0),
-(335, 40, 1, 0),
-(539, 30, 1, 200),
-(331, 44, 1, 700),
-(333, 45, 1, 800),
-(337, 31, 1, 0),
-(425, 35, 1, 0),
-(345, 33, 1, 0),
-(347, 46, 1, 0),
-(545, 41, 1, 0),
-(351, 36, 1, 0),
-(353, 34, 1, 0),
-(355, 32, 1, 0),
-(521, 49, 1, 1000);
+(1, 51, 1, 0),
+(2, 52, 1, 0),
+(3, 53, 1, 0),
+(4, 54, 1, 0),
+(5, 56, 1, 0),
+(6, 57, 1, 0),
+(7, 58, 1, 0),
+(8, 59, 1, 0),
+(9, 60, 1, 0),
+(10, 61, 1, 0),
+(11, 62, 1, 0),
+(12, 63, 1, 0),
+(13, 64, 1, 0),
+(14, 65, 1, 0),
+(15, 66, 1, 0),
+(16, 67, 1, 0),
+(17, 68, 1, 0),
+(18, 69, 1, 0),
+(19, 70, 1, 0),
+(20, 71, 1, 0),
+(21, 72, 1, 0),
+(22, 73, 1, 0),
+(23, 74, 1, 0),
+(24, 75, 1, 0),
+(25, 76, 1, 0),
+(26, 77, 1, 0),
+(27, 78, 1, 0),
+(28, 79, 1, 0),
+(29, 80, 1, 0),
+(30, 81, 1, 0),
+(31, 82, 1, 0),
+(32, 83, 1, 0),
+(33, 84, 1, 0),
+(34, 85, 1, 0),
+(35, 86, 1, 0),
+(36, 87, 1, 0),
+(37, 88, 1, 0),
+(38, 89, 1, 0),
+(39, 90, 1, 0),
+(40, 91, 1, 0),
+(41, 92, 1, 0),
+(42, 93, 1, 0),
+(43, 94, 1, 0),
+(44, 95, 1, 0),
+(45, 96, 1, 0),
+(46, 97, 1, 0),
+(47, 98, 1, 0),
+(49, 100, 1, 0),
+(50, 101, 1, 0),
+(51, 102, 1, 0),
+(52, 103, 1, 0),
+(53, 104, 1, 0),
+(54, 105, 1, 0),
+(55, 106, 1, 0),
+(56, 107, 1, 0),
+(57, 108, 1, 0),
+(58, 109, 1, 0),
+(59, 110, 1, 0),
+(60, 111, 1, 0),
+(61, 112, 1, 0),
+(62, 113, 1, 0),
+(63, 114, 1, 0),
+(64, 115, 1, 0),
+(65, 116, 1, 0),
+(66, 117, 1, 0),
+(67, 118, 1, 0),
+(68, 119, 1, 0),
+(69, 120, 1, 0),
+(70, 121, 1, 0),
+(71, 122, 1, 0),
+(72, 123, 1, 0),
+(73, 124, 1, 0),
+(74, 125, 1, 0),
+(75, 127, 1, 0),
+(76, 128, 1, 0),
+(77, 129, 1, 0),
+(78, 130, 1, 0),
+(79, 131, 1, 0),
+(80, 132, 1, 0),
+(81, 133, 1, 0),
+(82, 134, 1, 0),
+(83, 135, 1, 0),
+(84, 136, 1, 0),
+(85, 137, 1, 0),
+(86, 138, 1, 0),
+(87, 139, 1, 0),
+(88, 140, 1, 0),
+(89, 141, 1, 0),
+(90, 142, 1, 0),
+(91, 143, 1, 0),
+(92, 144, 1, 0),
+(93, 145, 1, 0),
+(94, 146, 1, 0),
+(95, 147, 1, 0),
+(96, 148, 1, 0),
+(97, 149, 1, 0),
+(98, 150, 1, 0),
+(99, 151, 1, 0),
+(100, 152, 1, 0),
+(101, 153, 1, 0),
+(102, 154, 1, 0),
+(103, 155, 1, 0),
+(104, 156, 1, 0),
+(105, 157, 1, 0),
+(106, 158, 1, 0),
+(107, 159, 1, 0),
+(108, 160, 1, 0),
+(109, 161, 1, 0),
+(110, 162, 1, 0),
+(111, 163, 1, 0),
+(112, 164, 1, 0),
+(113, 165, 1, 0),
+(114, 166, 1, 0),
+(115, 167, 1, 0),
+(116, 168, 1, 0),
+(117, 169, 1, 0),
+(118, 170, 1, 0),
+(119, 171, 1, 0),
+(120, 172, 1, 0),
+(121, 173, 1, 0),
+(122, 174, 1, 0),
+(123, 175, 1, 0),
+(124, 176, 1, 0),
+(125, 177, 1, 0),
+(126, 178, 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_special`
+-- Table structure for table `oc_product_special`
 --
 
 CREATE TABLE `oc_product_special` (
@@ -3458,19 +8064,10 @@ CREATE TABLE `oc_product_special` (
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Дамп данных таблицы `oc_product_special`
---
-
-INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(419, 42, 1, 1, '90.0000', '0000-00-00', '0000-00-00'),
-(439, 30, 1, 2, '90.0000', '0000-00-00', '0000-00-00'),
-(438, 30, 1, 1, '80.0000', '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_tab`
+-- Table structure for table `oc_product_tab`
 --
 
 CREATE TABLE `oc_product_tab` (
@@ -3483,7 +8080,7 @@ CREATE TABLE `oc_product_tab` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_tab_desc`
+-- Table structure for table `oc_product_tab_desc`
 --
 
 CREATE TABLE `oc_product_tab_desc` (
@@ -3497,7 +8094,7 @@ CREATE TABLE `oc_product_tab_desc` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_benefit`
+-- Table structure for table `oc_product_to_benefit`
 --
 
 CREATE TABLE `oc_product_to_benefit` (
@@ -3505,28 +8102,10 @@ CREATE TABLE `oc_product_to_benefit` (
   `benefit_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Дамп данных таблицы `oc_product_to_benefit`
---
-
-INSERT INTO `oc_product_to_benefit` (`product_id`, `benefit_id`) VALUES
-(43, 39),
-(43, 25),
-(28, 41),
-(47, 39),
-(47, 25),
-(47, 38),
-(42, 25),
-(42, 38),
-(42, 41),
-(28, 38),
-(28, 25),
-(28, 42);
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_category`
+-- Table structure for table `oc_product_to_category`
 --
 
 CREATE TABLE `oc_product_to_category` (
@@ -3536,45 +8115,184 @@ CREATE TABLE `oc_product_to_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_to_category`
+-- Dumping data for table `oc_product_to_category`
 --
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`, `main_category`) VALUES
-(28, 20, 0),
-(28, 24, 1),
-(29, 20, 0),
-(29, 24, 1),
-(30, 20, 0),
-(30, 33, 1),
-(31, 33, 1),
-(32, 34, 1),
-(33, 20, 0),
-(33, 28, 1),
-(34, 34, 1),
-(35, 20, 1),
-(36, 34, 1),
-(40, 20, 0),
-(40, 24, 1),
-(41, 27, 1),
-(42, 20, 0),
-(42, 28, 1),
-(43, 18, 0),
-(43, 20, 1),
-(44, 18, 0),
-(44, 20, 1),
-(45, 18, 1),
-(46, 18, 0),
-(46, 20, 1),
-(47, 18, 0),
-(47, 20, 1),
-(48, 20, 0),
-(48, 34, 1),
-(49, 57, 1);
+(51, 1, 0),
+(52, 1, 0),
+(53, 1, 0),
+(54, 1, 0),
+(56, 1, 0),
+(57, 1, 0),
+(58, 1, 0),
+(59, 1, 0),
+(60, 1, 0),
+(61, 1, 0),
+(62, 1, 0),
+(63, 1, 0),
+(64, 1, 0),
+(65, 1, 0),
+(66, 1, 0),
+(67, 1, 0),
+(68, 1, 0),
+(69, 1, 0),
+(70, 2, 0),
+(71, 2, 0),
+(72, 2, 0),
+(73, 2, 0),
+(74, 2, 0),
+(75, 2, 0),
+(76, 2, 0),
+(77, 2, 0),
+(78, 2, 0),
+(79, 3, 0),
+(80, 3, 0),
+(81, 3, 0),
+(82, 3, 0),
+(83, 3, 0),
+(84, 4, 0),
+(85, 4, 0),
+(86, 4, 0),
+(87, 4, 0),
+(88, 4, 0),
+(89, 4, 0),
+(90, 4, 0),
+(91, 4, 0),
+(92, 4, 0),
+(93, 4, 0),
+(94, 4, 0),
+(94, 8, 0),
+(95, 4, 0),
+(96, 1, 0),
+(97, 1, 0),
+(98, 1, 0),
+(99, 7, 0),
+(99, 5, 1),
+(100, 5, 0),
+(101, 8, 0),
+(101, 5, 0),
+(102, 5, 0),
+(103, 5, 0),
+(104, 7, 0),
+(104, 5, 0),
+(105, 5, 0),
+(106, 5, 0),
+(107, 5, 0),
+(108, 1, 0),
+(109, 4, 0),
+(110, 5, 0),
+(111, 5, 0),
+(112, 5, 0),
+(113, 5, 0),
+(114, 1, 0),
+(115, 1, 0),
+(116, 1, 0),
+(117, 1, 0),
+(118, 1, 0),
+(119, 1, 0),
+(120, 9, 0),
+(120, 1, 0),
+(121, 1, 0),
+(122, 1, 0),
+(123, 1, 0),
+(124, 1, 0),
+(125, 1, 0),
+(127, 1, 0),
+(128, 3, 0),
+(129, 2, 0),
+(130, 1, 0),
+(131, 1, 0),
+(132, 3, 0),
+(133, 1, 0),
+(134, 2, 0),
+(135, 3, 0),
+(136, 3, 0),
+(137, 5, 0),
+(137, 7, 0),
+(138, 7, 0),
+(138, 5, 0),
+(139, 7, 0),
+(139, 5, 0),
+(140, 5, 0),
+(140, 7, 0),
+(141, 7, 0),
+(141, 9, 0),
+(141, 6, 0),
+(141, 8, 0),
+(142, 7, 0),
+(142, 9, 0),
+(142, 8, 0),
+(142, 6, 0),
+(143, 9, 0),
+(143, 7, 0),
+(143, 8, 0),
+(143, 6, 0),
+(144, 5, 0),
+(144, 7, 0),
+(145, 1, 0),
+(146, 4, 0),
+(147, 1, 0),
+(148, 1, 0),
+(149, 1, 0),
+(150, 4, 0),
+(151, 7, 0),
+(151, 5, 0),
+(152, 7, 0),
+(152, 5, 0),
+(153, 4, 0),
+(154, 4, 0),
+(155, 7, 0),
+(155, 5, 0),
+(155, 8, 0),
+(156, 7, 0),
+(156, 5, 0),
+(156, 8, 0),
+(157, 5, 0),
+(158, 5, 0),
+(158, 8, 0),
+(158, 7, 0),
+(159, 5, 0),
+(160, 5, 0),
+(161, 5, 0),
+(162, 8, 0),
+(162, 7, 0),
+(162, 5, 0),
+(163, 8, 0),
+(163, 5, 0),
+(163, 7, 0),
+(164, 8, 0),
+(164, 5, 0),
+(164, 7, 0),
+(165, 8, 0),
+(165, 7, 0),
+(165, 5, 0),
+(166, 8, 0),
+(166, 7, 0),
+(166, 5, 0),
+(167, 7, 0),
+(167, 5, 0),
+(167, 8, 0),
+(168, 5, 0),
+(168, 7, 0),
+(168, 8, 0),
+(169, 5, 0),
+(169, 8, 0),
+(169, 7, 0),
+(170, 1, 0),
+(171, 1, 0),
+(172, 1, 0),
+(173, 3, 0),
+(174, 1, 0),
+(175, 1, 0),
+(176, 1, 0),
+(177, 3, 0),
+(178, 3, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_download`
+-- Table structure for table `oc_product_to_download`
 --
 
 CREATE TABLE `oc_product_to_download` (
@@ -3585,7 +8303,7 @@ CREATE TABLE `oc_product_to_download` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_layout`
+-- Table structure for table `oc_product_to_layout`
 --
 
 CREATE TABLE `oc_product_to_layout` (
@@ -3594,10 +8312,17 @@ CREATE TABLE `oc_product_to_layout` (
   `layout_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `oc_product_to_layout`
+--
+
+INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES
+(99, 0, 0);
+
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_sticker`
+-- Table structure for table `oc_product_to_sticker`
 --
 
 CREATE TABLE `oc_product_to_sticker` (
@@ -3606,27 +8331,10 @@ CREATE TABLE `oc_product_to_sticker` (
   `position` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Дамп данных таблицы `oc_product_to_sticker`
---
-
-INSERT INTO `oc_product_to_sticker` (`product_id`, `sticker_id`, `position`) VALUES
-(42, 16, 0),
-(30, 16, 0),
-(49, 14, 0),
-(49, 17, 3),
-(48, 15, 0),
-(47, 13, 1),
-(46, 14, 1),
-(46, 15, 3),
-(45, 14, 2),
-(44, 13, 1),
-(43, 15, 3);
-
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_product_to_store`
+-- Table structure for table `oc_product_to_store`
 --
 
 CREATE TABLE `oc_product_to_store` (
@@ -3635,34 +8343,141 @@ CREATE TABLE `oc_product_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_product_to_store`
+-- Dumping data for table `oc_product_to_store`
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0);
+(51, 0),
+(52, 0),
+(53, 0),
+(54, 0),
+(56, 0),
+(57, 0),
+(58, 0),
+(59, 0),
+(60, 0),
+(61, 0),
+(62, 0),
+(63, 0),
+(64, 0),
+(65, 0),
+(66, 0),
+(67, 0),
+(68, 0),
+(69, 0),
+(70, 0),
+(71, 0),
+(72, 0),
+(73, 0),
+(74, 0),
+(75, 0),
+(76, 0),
+(77, 0),
+(78, 0),
+(79, 0),
+(80, 0),
+(81, 0),
+(82, 0),
+(83, 0),
+(84, 0),
+(85, 0),
+(86, 0),
+(87, 0),
+(88, 0),
+(89, 0),
+(90, 0),
+(91, 0),
+(92, 0),
+(93, 0),
+(94, 0),
+(95, 0),
+(96, 0),
+(97, 0),
+(98, 0),
+(99, 0),
+(100, 0),
+(101, 0),
+(102, 0),
+(103, 0),
+(104, 0),
+(105, 0),
+(106, 0),
+(107, 0),
+(108, 0),
+(109, 0),
+(110, 0),
+(111, 0),
+(112, 0),
+(113, 0),
+(114, 0),
+(115, 0),
+(116, 0),
+(117, 0),
+(118, 0),
+(119, 0),
+(120, 0),
+(121, 0),
+(122, 0),
+(123, 0),
+(124, 0),
+(125, 0),
+(127, 0),
+(128, 0),
+(129, 0),
+(130, 0),
+(131, 0),
+(132, 0),
+(133, 0),
+(134, 0),
+(135, 0),
+(136, 0),
+(137, 0),
+(138, 0),
+(139, 0),
+(140, 0),
+(141, 0),
+(142, 0),
+(143, 0),
+(144, 0),
+(145, 0),
+(146, 0),
+(147, 0),
+(148, 0),
+(149, 0),
+(150, 0),
+(151, 0),
+(152, 0),
+(153, 0),
+(154, 0),
+(155, 0),
+(156, 0),
+(157, 0),
+(158, 0),
+(159, 0),
+(160, 0),
+(161, 0),
+(162, 0),
+(163, 0),
+(164, 0),
+(165, 0),
+(166, 0),
+(167, 0),
+(168, 0),
+(169, 0),
+(170, 0),
+(171, 0),
+(172, 0),
+(173, 0),
+(174, 0),
+(175, 0),
+(176, 0),
+(177, 0),
+(178, 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_recurring`
+-- Table structure for table `oc_recurring`
 --
 
 CREATE TABLE `oc_recurring` (
@@ -3683,7 +8498,7 @@ CREATE TABLE `oc_recurring` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_recurring_description`
+-- Table structure for table `oc_recurring_description`
 --
 
 CREATE TABLE `oc_recurring_description` (
@@ -3695,7 +8510,7 @@ CREATE TABLE `oc_recurring_description` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_return`
+-- Table structure for table `oc_return`
 --
 
 CREATE TABLE `oc_return` (
@@ -3723,7 +8538,7 @@ CREATE TABLE `oc_return` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_return_action`
+-- Table structure for table `oc_return_action`
 --
 
 CREATE TABLE `oc_return_action` (
@@ -3733,7 +8548,7 @@ CREATE TABLE `oc_return_action` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_return_action`
+-- Dumping data for table `oc_return_action`
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
@@ -3744,7 +8559,7 @@ INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_return_history`
+-- Table structure for table `oc_return_history`
 --
 
 CREATE TABLE `oc_return_history` (
@@ -3759,7 +8574,7 @@ CREATE TABLE `oc_return_history` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_return_reason`
+-- Table structure for table `oc_return_reason`
 --
 
 CREATE TABLE `oc_return_reason` (
@@ -3769,7 +8584,7 @@ CREATE TABLE `oc_return_reason` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_return_reason`
+-- Dumping data for table `oc_return_reason`
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
@@ -3782,7 +8597,7 @@ INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_return_status`
+-- Table structure for table `oc_return_status`
 --
 
 CREATE TABLE `oc_return_status` (
@@ -3792,7 +8607,7 @@ CREATE TABLE `oc_return_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_return_status`
+-- Dumping data for table `oc_return_status`
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
@@ -3803,7 +8618,7 @@ INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_review`
+-- Table structure for table `oc_review`
 --
 
 CREATE TABLE `oc_review` (
@@ -3821,7 +8636,7 @@ CREATE TABLE `oc_review` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_review_article`
+-- Table structure for table `oc_review_article`
 --
 
 CREATE TABLE `oc_review_article` (
@@ -3837,7 +8652,7 @@ CREATE TABLE `oc_review_article` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_review_article`
+-- Dumping data for table `oc_review_article`
 --
 
 INSERT INTO `oc_review_article` (`review_article_id`, `article_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
@@ -3846,7 +8661,7 @@ INSERT INTO `oc_review_article` (`review_article_id`, `article_id`, `customer_id
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_setting`
+-- Table structure for table `oc_setting`
 --
 
 CREATE TABLE `oc_setting` (
@@ -3859,7 +8674,7 @@ CREATE TABLE `oc_setting` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_setting`
+-- Dumping data for table `oc_setting`
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
@@ -4084,7 +8899,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_sticker`
+-- Table structure for table `oc_sticker`
 --
 
 CREATE TABLE `oc_sticker` (
@@ -4095,7 +8910,7 @@ CREATE TABLE `oc_sticker` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_sticker`
+-- Dumping data for table `oc_sticker`
 --
 
 INSERT INTO `oc_sticker` (`sticker_id`, `name`, `status`, `image`) VALUES
@@ -4108,7 +8923,7 @@ INSERT INTO `oc_sticker` (`sticker_id`, `name`, `status`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_stock_status`
+-- Table structure for table `oc_stock_status`
 --
 
 CREATE TABLE `oc_stock_status` (
@@ -4118,7 +8933,7 @@ CREATE TABLE `oc_stock_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_stock_status`
+-- Dumping data for table `oc_stock_status`
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
@@ -4130,7 +8945,7 @@ INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_store`
+-- Table structure for table `oc_store`
 --
 
 CREATE TABLE `oc_store` (
@@ -4143,7 +8958,7 @@ CREATE TABLE `oc_store` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_tax_class`
+-- Table structure for table `oc_tax_class`
 --
 
 CREATE TABLE `oc_tax_class` (
@@ -4155,7 +8970,7 @@ CREATE TABLE `oc_tax_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_tax_class`
+-- Dumping data for table `oc_tax_class`
 --
 
 INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`, `date_modified`) VALUES
@@ -4165,7 +8980,7 @@ INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_tax_rate`
+-- Table structure for table `oc_tax_rate`
 --
 
 CREATE TABLE `oc_tax_rate` (
@@ -4179,7 +8994,7 @@ CREATE TABLE `oc_tax_rate` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_tax_rate`
+-- Dumping data for table `oc_tax_rate`
 --
 
 INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
@@ -4189,7 +9004,7 @@ INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`,
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_tax_rate_to_customer_group`
+-- Table structure for table `oc_tax_rate_to_customer_group`
 --
 
 CREATE TABLE `oc_tax_rate_to_customer_group` (
@@ -4198,7 +9013,7 @@ CREATE TABLE `oc_tax_rate_to_customer_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_tax_rate_to_customer_group`
+-- Dumping data for table `oc_tax_rate_to_customer_group`
 --
 
 INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`) VALUES
@@ -4208,7 +9023,7 @@ INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`)
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_tax_rule`
+-- Table structure for table `oc_tax_rule`
 --
 
 CREATE TABLE `oc_tax_rule` (
@@ -4220,7 +9035,7 @@ CREATE TABLE `oc_tax_rule` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_tax_rule`
+-- Dumping data for table `oc_tax_rule`
 --
 
 INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`, `priority`) VALUES
@@ -4232,7 +9047,7 @@ INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_theme`
+-- Table structure for table `oc_theme`
 --
 
 CREATE TABLE `oc_theme` (
@@ -4246,7 +9061,7 @@ CREATE TABLE `oc_theme` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_translation`
+-- Table structure for table `oc_translation`
 --
 
 CREATE TABLE `oc_translation` (
@@ -4261,7 +9076,7 @@ CREATE TABLE `oc_translation` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_upload`
+-- Table structure for table `oc_upload`
 --
 
 CREATE TABLE `oc_upload` (
@@ -4275,7 +9090,7 @@ CREATE TABLE `oc_upload` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_url_alias`
+-- Table structure for table `oc_url_alias`
 --
 
 CREATE TABLE `oc_url_alias` (
@@ -4286,69 +9101,41 @@ CREATE TABLE `oc_url_alias` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_url_alias`
+-- Dumping data for table `oc_url_alias`
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`, `seomanager`) VALUES
-(824, 'product_id=48', 'ipod-classic', 0),
-(836, 'category_id=20', 'desktops', 0),
-(834, 'category_id=26', 'pc', 0),
-(835, 'category_id=27', 'mac', 0),
+(918, 'product_id=60', 'termopara-arbat-600-m8', 0),
 (900, 'manufacturer_id=8', 'paraterm', 0),
 (861, 'information_id=4', 'about_us', 0),
-(768, 'product_id=42', 'test', 0),
-(789, 'category_id=34', 'mp3-players', 0),
-(781, 'category_id=36', 'test2', 0),
-(774, 'category_id=18', 'laptop-notebook', 0),
-(775, 'category_id=46', 'macs', 0),
-(776, 'category_id=45', 'windows', 0),
-(777, 'category_id=25', 'component', 0),
-(778, 'category_id=29', 'mouse', 0),
-(779, 'category_id=28', 'monitor', 0),
-(780, 'category_id=35', 'test1', 0),
-(782, 'category_id=30', 'printer', 0),
-(783, 'category_id=31', 'scanner', 0),
-(784, 'category_id=32', 'web-camera', 0),
-(785, 'category_id=57', 'tablet', 0),
-(786, 'category_id=17', 'software', 0),
-(787, 'category_id=24', 'smartphone', 0),
-(858, 'category_id=33', 'camera', 0),
-(790, 'category_id=43', 'test11', 0),
-(791, 'category_id=44', 'test12', 0),
-(792, 'category_id=47', 'test15', 0),
-(793, 'category_id=48', 'test16', 0),
-(794, 'category_id=49', 'test17', 0),
-(795, 'category_id=50', 'test18', 0),
-(796, 'category_id=51', 'test19', 0),
-(797, 'category_id=52', 'test20', 0),
-(798, 'category_id=58', 'test25', 0),
-(799, 'category_id=53', 'test21', 0),
-(800, 'category_id=54', 'test22', 0),
-(801, 'category_id=55', 'test23', 0),
-(802, 'category_id=56', 'test24', 0),
-(803, 'category_id=38', 'test4', 0),
-(804, 'category_id=37', 'test5', 0),
-(805, 'category_id=39', 'test6', 0),
-(806, 'category_id=40', 'test7', 0),
-(807, 'category_id=41', 'test8', 0),
-(808, 'category_id=42', 'test9', 0),
-(853, 'product_id=30', 'canon-eos-5d', 0),
-(854, 'product_id=47', 'hp-lp3065', 0),
-(811, 'product_id=28', 'htc-touch-hd', 0),
-(812, 'product_id=43', 'macbook', 0),
-(813, 'product_id=44', 'macbook-air', 0),
-(814, 'product_id=45', 'macbook-pro', 0),
-(816, 'product_id=31', 'nikon-d300', 0),
-(817, 'product_id=29', 'palm-treo-pro', 0),
-(818, 'product_id=35', 'product-8', 0),
-(819, 'product_id=49', 'samsung-galaxy-tab-10-1', 0),
-(820, 'product_id=33', 'samsung-syncmaster-941bw', 0),
-(821, 'product_id=46', 'sony-vaio', 0),
-(837, 'product_id=41', 'imac', 0),
-(823, 'product_id=40', 'iphone', 0),
-(825, 'product_id=36', 'ipod-nano', 0),
-(826, 'product_id=34', 'ipod-shuffle', 0),
-(827, 'product_id=32', 'ipod-touch', 0),
+(921, 'product_id=63', 'termopara-sit-a3-400-m10', 0),
+(929, 'product_id=71', 'termopara-kolonki-demrad', 0),
+(928, 'product_id=70', 'termopara-kolonki-beretta-idrabagno', 0),
+(927, 'product_id=69', 'termopara-honeywell-900-m10', 0),
+(926, 'product_id=68', 'termopara-sit-a1-600-m10', 0),
+(925, 'product_id=67', 'termopara-sit-a1-600-m9', 0),
+(924, 'product_id=66', 'termopara-sit-a1-400-m9', 0),
+(923, 'product_id=65', 'termopara-sit-a1-320-m9', 0),
+(922, 'product_id=64', 'termopara-sit-a3-600-m10', 0),
+(909, 'category_id=9', 'dlja-gazplit', 0),
+(908, 'category_id=8', 'dlja-kolonok', 0),
+(907, 'category_id=7', 'dlja-kotlov', 0),
+(906, 'category_id=6', 'krepezhnie-zapchasti', 0),
+(905, 'category_id=5', 'drugie-zapchasti', 0),
+(904, 'category_id=4', 'gazoprovodnye-trubki', 0),
+(903, 'category_id=3', 'termopary-dlya-gazovyh-plit', 0),
+(902, 'category_id=2', 'termopary-dlya-kolonok', 0),
+(901, 'category_id=1', 'termopary-dlya-kotlov', 0),
+(920, 'product_id=62', 'termopara-sit-a3-400-m9', 0),
+(915, 'product_id=57', 'termopara-aogv-23-dani', 0),
+(914, 'product_id=56', 'termopara-aogv-17-dani', 0),
+(913, 'product_id=54', 'termopara-aogv-11-dani', 0),
+(912, 'product_id=53', 'termopara-aogv-7-5-dani', 0),
+(911, 'product_id=52', 'termopara-aogv-11-17', 0),
+(910, 'product_id=51', 'termopara-aogv-80', 0),
+(919, 'product_id=61', 'termopara-arbat-900-m8', 0),
+(917, 'product_id=59', 'termopara-arbat-345-m8', 0),
+(916, 'product_id=58', 'termopara-aogv-32-u', 0),
 (828, 'manufacturer_id=9', 'canon', 0),
 (829, 'manufacturer_id=5', 'htc', 0),
 (830, 'manufacturer_id=7', 'hewlett-packard', 0),
@@ -4394,12 +9181,118 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`, `seomanager`) VA
 (896, 'account/voucher', 'vouchers', 1),
 (897, 'affiliate/account', 'affiliate', 1),
 (898, 'account/return/add', 'return-add', 1),
-(899, 'affiliate/login', 'affiliate-login', 1);
+(899, 'affiliate/login', 'affiliate-login', 1),
+(930, 'product_id=72', 'termopara-kolonki-junkers-bosch', 0),
+(931, 'product_id=73', 'termopara-kolonki-vaillant-atmomag', 0),
+(932, 'product_id=74', 'termopara-kolonki-vaillant-mag-pro', 0),
+(933, 'product_id=75', 'termopara-kolonki-termet-g17-30', 0),
+(934, 'product_id=76', 'termopara-kolonki-termet-g19-01', 0),
+(935, 'product_id=77', 'termopara-kolonki-termet-termaq-g19-01', 0),
+(936, 'product_id=78', 'termopara-kolonki-termet-aqua', 0),
+(937, 'product_id=79', 'termopara-duhovki-i-grilja-indesit-1200-m8', 0),
+(938, 'product_id=80', 'termopara-duhovki-ariston-indesit-1200-m8', 0),
+(939, 'product_id=81', 'termopara-konforki-ariston-indesit-500-m6', 0),
+(940, 'product_id=82', 'termopara-konforki-indesit-ariston-500-m8', 0),
+(941, 'product_id=83', 'termopara-konforki-electrolux-500', 0),
+(942, 'product_id=84', 'trubka-zapalnika-avtomatiki-eurosit-300-4', 0),
+(943, 'product_id=85', 'trubka-zapalnika-avtomatiki-eurosit-300-6', 0),
+(944, 'product_id=86', 'trubka-zapalnika-avtomatiki-eurosit-400-6', 0),
+(945, 'product_id=87', 'trubka-zapalnika-avtomatiki-eurosit-400-4', 0),
+(946, 'product_id=88', 'trubka-zapalnika-avtomatiki-eurosit-600-4', 0),
+(947, 'product_id=89', 'trubka-zapalnika-avtomatiki-eurosit-600-6', 0),
+(948, 'product_id=90', 'impulsnaja-trubka-avtomatiki-kare-500-4', 0),
+(949, 'product_id=91', 'impulsnaja-trubka-avtomatiki-kare-1000-4', 0),
+(950, 'product_id=92', 'trubka-zapalnika-avtomatik-arbat-komfort-plamja', 0),
+(951, 'product_id=93', 'trubka-zapalnika-avtomatik-evrokaz-fakel', 0),
+(952, 'product_id=94', 'trubka-zapalnika-beretta-idrabagno', 0),
+(953, 'product_id=95', 'impulsnaja-trubka-avtomatiki-apok-1', 0),
+(954, 'product_id=96', 'termopara-termo-350-m8-universalnaja', 0),
+(955, 'product_id=97', 'termopara-termo-350-m9-universalnaja', 0),
+(956, 'product_id=98', 'termopara-honeywell-600-11-32', 0),
+(1037, 'product_id=99', 'bimetallicheskaja-plastina-avtomatiki-apok-1', 0),
+(958, 'product_id=100', 'klapan-otsekatel-avtomatiki-apok-1', 0),
+(959, 'product_id=101', 'membrana-vodjanogo-reguljatora-vpg-belaja', 0),
+(960, 'product_id=102', 'membrana-vodjanogo-reguljatora-vpg-chernaja', 0),
+(961, 'product_id=103', 'mednaja-trubka-dlja-smesitelja-30sm', 0),
+(962, 'product_id=104', 'termoreguljator-avtomatiki-apok-1-1ks', 0),
+(963, 'product_id=105', 'termoreguljator-avtomatiki-apok-1-2ks', 0),
+(964, 'product_id=106', 'termoreguljator-avtomatiki-apok-1-2kz', 0),
+(965, 'product_id=107', 'mednaja-trubka-dlja-smesitelja-40sm', 0),
+(966, 'product_id=108', 'termopara-sit-a1-1200-m9', 0),
+(967, 'product_id=109', 'trubka-zapalnika-avtomatiki-apok-950mm', 0),
+(968, 'product_id=110', 'mednaja-trubka-dlja-smesitelja-50sm', 0),
+(969, 'product_id=111', 'mednaja-trubka-dlja-smesitelja-60sm', 0),
+(970, 'product_id=112', 'mednaja-trubka-dlja-smesitelja-80sm', 0),
+(971, 'product_id=113', 'mednaja-trubka-dlja-smesitelja-100sm', 0),
+(972, 'product_id=114', 'termopara-arbat-345-m9', 0),
+(973, 'product_id=115', 'termopara-arbat-600-m9', 0),
+(974, 'product_id=116', 'termopara-arbat-900-m9', 0),
+(975, 'product_id=117', 'termopara-sit-a1-850-m9', 0),
+(976, 'product_id=118', 'termopara-sit-a2-400-m9', 0),
+(977, 'product_id=119', 'termopara-sit-a2-600-m9', 0),
+(978, 'product_id=120', 'termopara-900-u', 0),
+(979, 'product_id=121', 'termopara-sit-a3-600-m9', 0),
+(980, 'product_id=122', 'termopara-sit-a3-900-m9', 0),
+(981, 'product_id=123', 'termopara-sit-a2-320-m9', 0),
+(982, 'product_id=124', 'termopara-sit-a1-600-m8', 0),
+(983, 'product_id=125', 'termopara-termo-350-m8', 0),
+(984, 'product_id=127', 'termopara-termo-350-m9', 0),
+(985, 'product_id=128', 'termopara-duhovki-orion-orsk', 0),
+(986, 'product_id=129', 'termopara-beretta-idrabagno-staraja', 0),
+(987, 'product_id=130', 'termopara-aogv-29', 0),
+(988, 'product_id=131', 'termopara-aogv-35', 0),
+(989, 'product_id=132', 'termopara-duhovki-hansa', 0),
+(990, 'product_id=133', 'termopara-arbat-1200-m8', 0),
+(991, 'product_id=134', 'termopara-kolonki-beretta-aqua', 0),
+(992, 'product_id=135', 'termopara-duhovki-beko', 0),
+(993, 'product_id=136', 'termopara-grill-beko', 0),
+(994, 'product_id=137', 'zapalnik-dlja-avtomatiki-apok-1', 0),
+(995, 'product_id=138', 'zapalnik-dlja-avtomatiki-plamja', 0),
+(996, 'product_id=139', 'stakan-mednij-100mm-vnutrennjaja-rezba-1-2', 0),
+(997, 'product_id=140', 'stakan-mednij-100mm-naruzhnaja-rezba-1-2', 0),
+(998, 'product_id=141', 'gajka-razreznaja-m8h1', 0),
+(999, 'product_id=142', 'gajka-razreznaja-m9h1', 0),
+(1000, 'product_id=143', 'gajka-razreznaja-m10h1', 0),
+(1001, 'product_id=144', 'stakan-mednij-105-16mm-naruzhnaja-rezba-1-2', 0),
+(1002, 'product_id=145', 'termopara-sit-a1-400-m10', 0),
+(1003, 'product_id=146', 'trubka-zapalnika-avtomatiki-apok-1200mm', 0),
+(1004, 'product_id=147', 'termopara-honeywell-900-11-32', 0),
+(1005, 'product_id=148', 'termopara-sit-a1-1200-m8', 0),
+(1006, 'product_id=149', 'termopara-sit-a1-850-m10', 0),
+(1007, 'product_id=150', 'impulsnaja-trubka-avtomatiki-kare-350-4', 0),
+(1008, 'product_id=151', 'membrana-termoregulatora-avtomatiki-kare', 0),
+(1009, 'product_id=152', 'sharikovij-klapan-avtomatiki-apok-1', 0),
+(1010, 'product_id=153', 'trubka-zapalnika-honeywell-300mm-m10-m10', 0),
+(1011, 'product_id=154', 'trubka-zapalnika-honeywell-400mm-m10-7-16', 0),
+(1012, 'product_id=155', 'datchik-tiagy-60c', 0),
+(1013, 'product_id=156', 'datchik-tiagy-65c', 0),
+(1014, 'product_id=157', 'datchik-tiagy-70c', 0),
+(1015, 'product_id=158', 'datchik-tiagy-75c', 0),
+(1016, 'product_id=159', 'datchik-tiagy-80c', 0),
+(1017, 'product_id=160', 'datchik-tiagy-85c', 0),
+(1018, 'product_id=161', 'datchik-tiagy-90c', 0),
+(1019, 'product_id=162', 'datchik-tiagy-95c', 0),
+(1020, 'product_id=163', 'datchik-tiagy-100c', 0),
+(1021, 'product_id=164', 'datchik-tiagy-105c', 0),
+(1022, 'product_id=165', 'datchik-tiagy-110c', 0),
+(1023, 'product_id=166', 'datchik-tiagy-115c', 0),
+(1024, 'product_id=167', 'datchik-tiagy-120c', 0),
+(1025, 'product_id=168', 'datchik-tiagy-125c', 0),
+(1026, 'product_id=169', 'datchik-tiagy-130c', 0),
+(1027, 'product_id=170', 'termopara-honeywell-600-М10', 0),
+(1028, 'product_id=171', 'termopara-honeywell-750-М10', 0),
+(1029, 'product_id=172', 'termopara-honeywell-750-11-32', 0),
+(1030, 'product_id=173', 'termopara-gazovogo-grilja-sit-a1-900-m9', 0),
+(1031, 'product_id=174', 'termopara-analog-sit-a1-600-m9', 0),
+(1032, 'product_id=175', 'termopara-termo-600-m9-universalnaja', 0),
+(1033, 'product_id=176', 'termopara-analog-honeywell-900-М10', 0),
+(1034, 'product_id=177', 'termopara-analog-duhovki-i-grilja-indesit-1200-m8', 0),
+(1035, 'product_id=178', 'termopara-analog-duhovki-ariston-1200-m8', 0);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_user`
+-- Table structure for table `oc_user`
 --
 
 CREATE TABLE `oc_user` (
@@ -4419,7 +9312,7 @@ CREATE TABLE `oc_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_user`
+-- Dumping data for table `oc_user`
 --
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
@@ -4428,7 +9321,7 @@ INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_user_group`
+-- Table structure for table `oc_user_group`
 --
 
 CREATE TABLE `oc_user_group` (
@@ -4438,17 +9331,17 @@ CREATE TABLE `oc_user_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_user_group`
+-- Dumping data for table `oc_user_group`
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Администратор', '{\"access\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"],\"modify\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}'),
+(1, 'Администратор', '{\"access\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"],\"modify\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}'),
 (10, 'Демонстрация', '');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_voucher`
+-- Table structure for table `oc_voucher`
 --
 
 CREATE TABLE `oc_voucher` (
@@ -4469,7 +9362,7 @@ CREATE TABLE `oc_voucher` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_voucher_history`
+-- Table structure for table `oc_voucher_history`
 --
 
 CREATE TABLE `oc_voucher_history` (
@@ -4483,7 +9376,7 @@ CREATE TABLE `oc_voucher_history` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_voucher_theme`
+-- Table structure for table `oc_voucher_theme`
 --
 
 CREATE TABLE `oc_voucher_theme` (
@@ -4492,7 +9385,7 @@ CREATE TABLE `oc_voucher_theme` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_voucher_theme`
+-- Dumping data for table `oc_voucher_theme`
 --
 
 INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
@@ -4503,7 +9396,7 @@ INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_voucher_theme_description`
+-- Table structure for table `oc_voucher_theme_description`
 --
 
 CREATE TABLE `oc_voucher_theme_description` (
@@ -4513,7 +9406,7 @@ CREATE TABLE `oc_voucher_theme_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_voucher_theme_description`
+-- Dumping data for table `oc_voucher_theme_description`
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
@@ -4524,7 +9417,7 @@ INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_weight_class`
+-- Table structure for table `oc_weight_class`
 --
 
 CREATE TABLE `oc_weight_class` (
@@ -4533,7 +9426,7 @@ CREATE TABLE `oc_weight_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_weight_class`
+-- Dumping data for table `oc_weight_class`
 --
 
 INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
@@ -4545,7 +9438,7 @@ INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_weight_class_description`
+-- Table structure for table `oc_weight_class_description`
 --
 
 CREATE TABLE `oc_weight_class_description` (
@@ -4556,7 +9449,7 @@ CREATE TABLE `oc_weight_class_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_weight_class_description`
+-- Dumping data for table `oc_weight_class_description`
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -4568,7 +9461,7 @@ INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_zone`
+-- Table structure for table `oc_zone`
 --
 
 CREATE TABLE `oc_zone` (
@@ -4580,7 +9473,7 @@ CREATE TABLE `oc_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_zone`
+-- Dumping data for table `oc_zone`
 --
 
 INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
@@ -8693,7 +13586,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `oc_zone_to_geo_zone`
+-- Table structure for table `oc_zone_to_geo_zone`
 --
 
 CREATE TABLE `oc_zone_to_geo_zone` (
@@ -8706,7 +13599,7 @@ CREATE TABLE `oc_zone_to_geo_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `oc_zone_to_geo_zone`
+-- Dumping data for table `oc_zone_to_geo_zone`
 --
 
 INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id`, `geo_zone_id`, `date_added`, `date_modified`) VALUES
@@ -8821,30 +13714,30 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (109, 222, 3972, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `oc_address`
+-- Indexes for table `oc_address`
 --
 ALTER TABLE `oc_address`
   ADD PRIMARY KEY (`address_id`),
   ADD KEY `customer_id` (`customer_id`);
 
 --
--- Индексы таблицы `oc_affiliate`
+-- Indexes for table `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   ADD PRIMARY KEY (`affiliate_id`);
 
 --
--- Индексы таблицы `oc_affiliate_activity`
+-- Indexes for table `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   ADD PRIMARY KEY (`affiliate_activity_id`);
 
 --
--- Индексы таблицы `oc_affiliate_login`
+-- Indexes for table `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   ADD PRIMARY KEY (`affiliate_login_id`),
@@ -8852,295 +13745,295 @@ ALTER TABLE `oc_affiliate_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Индексы таблицы `oc_affiliate_transaction`
+-- Indexes for table `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   ADD PRIMARY KEY (`affiliate_transaction_id`);
 
 --
--- Индексы таблицы `oc_api`
+-- Indexes for table `oc_api`
 --
 ALTER TABLE `oc_api`
   ADD PRIMARY KEY (`api_id`);
 
 --
--- Индексы таблицы `oc_api_ip`
+-- Indexes for table `oc_api_ip`
 --
 ALTER TABLE `oc_api_ip`
   ADD PRIMARY KEY (`api_ip_id`);
 
 --
--- Индексы таблицы `oc_api_session`
+-- Indexes for table `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
   ADD PRIMARY KEY (`api_session_id`);
 
 --
--- Индексы таблицы `oc_article`
+-- Indexes for table `oc_article`
 --
 ALTER TABLE `oc_article`
   ADD PRIMARY KEY (`article_id`);
 
 --
--- Индексы таблицы `oc_article_description`
+-- Indexes for table `oc_article_description`
 --
 ALTER TABLE `oc_article_description`
   ADD PRIMARY KEY (`article_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_article_image`
+-- Indexes for table `oc_article_image`
 --
 ALTER TABLE `oc_article_image`
   ADD PRIMARY KEY (`article_image_id`);
 
 --
--- Индексы таблицы `oc_article_related`
+-- Indexes for table `oc_article_related`
 --
 ALTER TABLE `oc_article_related`
   ADD PRIMARY KEY (`article_id`,`related_id`);
 
 --
--- Индексы таблицы `oc_article_related_mn`
+-- Indexes for table `oc_article_related_mn`
 --
 ALTER TABLE `oc_article_related_mn`
   ADD PRIMARY KEY (`article_id`,`manufacturer_id`);
 
 --
--- Индексы таблицы `oc_article_related_product`
+-- Indexes for table `oc_article_related_product`
 --
 ALTER TABLE `oc_article_related_product`
   ADD PRIMARY KEY (`article_id`,`product_id`);
 
 --
--- Индексы таблицы `oc_article_related_wb`
+-- Indexes for table `oc_article_related_wb`
 --
 ALTER TABLE `oc_article_related_wb`
   ADD PRIMARY KEY (`article_id`,`category_id`);
 
 --
--- Индексы таблицы `oc_article_to_blog_category`
+-- Indexes for table `oc_article_to_blog_category`
 --
 ALTER TABLE `oc_article_to_blog_category`
   ADD PRIMARY KEY (`article_id`,`blog_category_id`);
 
 --
--- Индексы таблицы `oc_article_to_download`
+-- Indexes for table `oc_article_to_download`
 --
 ALTER TABLE `oc_article_to_download`
   ADD PRIMARY KEY (`article_id`,`download_id`);
 
 --
--- Индексы таблицы `oc_article_to_layout`
+-- Indexes for table `oc_article_to_layout`
 --
 ALTER TABLE `oc_article_to_layout`
   ADD PRIMARY KEY (`article_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_article_to_store`
+-- Indexes for table `oc_article_to_store`
 --
 ALTER TABLE `oc_article_to_store`
   ADD PRIMARY KEY (`article_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_attribute`
+-- Indexes for table `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   ADD PRIMARY KEY (`attribute_id`);
 
 --
--- Индексы таблицы `oc_attribute_description`
+-- Indexes for table `oc_attribute_description`
 --
 ALTER TABLE `oc_attribute_description`
   ADD PRIMARY KEY (`attribute_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_attribute_group`
+-- Indexes for table `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   ADD PRIMARY KEY (`attribute_group_id`);
 
 --
--- Индексы таблицы `oc_attribute_group_description`
+-- Indexes for table `oc_attribute_group_description`
 --
 ALTER TABLE `oc_attribute_group_description`
   ADD PRIMARY KEY (`attribute_group_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_banner`
+-- Indexes for table `oc_banner`
 --
 ALTER TABLE `oc_banner`
   ADD PRIMARY KEY (`banner_id`);
 
 --
--- Индексы таблицы `oc_banner_image`
+-- Indexes for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   ADD PRIMARY KEY (`banner_image_id`);
 
 --
--- Индексы таблицы `oc_benefit`
+-- Indexes for table `oc_benefit`
 --
 ALTER TABLE `oc_benefit`
   ADD PRIMARY KEY (`benefit_id`);
 
 --
--- Индексы таблицы `oc_benefit_description`
+-- Indexes for table `oc_benefit_description`
 --
 ALTER TABLE `oc_benefit_description`
   ADD PRIMARY KEY (`benefit_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_blog_category`
+-- Indexes for table `oc_blog_category`
 --
 ALTER TABLE `oc_blog_category`
   ADD PRIMARY KEY (`blog_category_id`);
 
 --
--- Индексы таблицы `oc_blog_category_description`
+-- Indexes for table `oc_blog_category_description`
 --
 ALTER TABLE `oc_blog_category_description`
   ADD PRIMARY KEY (`blog_category_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_blog_category_path`
+-- Indexes for table `oc_blog_category_path`
 --
 ALTER TABLE `oc_blog_category_path`
   ADD PRIMARY KEY (`blog_category_id`,`path_id`);
 
 --
--- Индексы таблицы `oc_blog_category_to_layout`
+-- Indexes for table `oc_blog_category_to_layout`
 --
 ALTER TABLE `oc_blog_category_to_layout`
   ADD PRIMARY KEY (`blog_category_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_blog_category_to_store`
+-- Indexes for table `oc_blog_category_to_store`
 --
 ALTER TABLE `oc_blog_category_to_store`
   ADD PRIMARY KEY (`blog_category_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_cart`
+-- Indexes for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
   ADD PRIMARY KEY (`cart_id`),
   ADD KEY `cart_id` (`api_id`,`customer_id`,`session_id`,`product_id`,`recurring_id`);
 
 --
--- Индексы таблицы `oc_category`
+-- Indexes for table `oc_category`
 --
 ALTER TABLE `oc_category`
   ADD PRIMARY KEY (`category_id`),
   ADD KEY `parent_id` (`parent_id`);
 
 --
--- Индексы таблицы `oc_category_description`
+-- Indexes for table `oc_category_description`
 --
 ALTER TABLE `oc_category_description`
   ADD PRIMARY KEY (`category_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_category_filter`
+-- Indexes for table `oc_category_filter`
 --
 ALTER TABLE `oc_category_filter`
   ADD PRIMARY KEY (`category_id`,`filter_id`);
 
 --
--- Индексы таблицы `oc_category_path`
+-- Indexes for table `oc_category_path`
 --
 ALTER TABLE `oc_category_path`
   ADD PRIMARY KEY (`category_id`,`path_id`);
 
 --
--- Индексы таблицы `oc_category_to_layout`
+-- Indexes for table `oc_category_to_layout`
 --
 ALTER TABLE `oc_category_to_layout`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_category_to_store`
+-- Indexes for table `oc_category_to_store`
 --
 ALTER TABLE `oc_category_to_store`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_country`
+-- Indexes for table `oc_country`
 --
 ALTER TABLE `oc_country`
   ADD PRIMARY KEY (`country_id`);
 
 --
--- Индексы таблицы `oc_coupon`
+-- Indexes for table `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   ADD PRIMARY KEY (`coupon_id`);
 
 --
--- Индексы таблицы `oc_coupon_category`
+-- Indexes for table `oc_coupon_category`
 --
 ALTER TABLE `oc_coupon_category`
   ADD PRIMARY KEY (`coupon_id`,`category_id`);
 
 --
--- Индексы таблицы `oc_coupon_history`
+-- Indexes for table `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   ADD PRIMARY KEY (`coupon_history_id`);
 
 --
--- Индексы таблицы `oc_coupon_product`
+-- Indexes for table `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   ADD PRIMARY KEY (`coupon_product_id`);
 
 --
--- Индексы таблицы `oc_currency`
+-- Indexes for table `oc_currency`
 --
 ALTER TABLE `oc_currency`
   ADD PRIMARY KEY (`currency_id`);
 
 --
--- Индексы таблицы `oc_customer`
+-- Indexes for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
   ADD PRIMARY KEY (`customer_id`);
 
 --
--- Индексы таблицы `oc_customer_activity`
+-- Indexes for table `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   ADD PRIMARY KEY (`customer_activity_id`);
 
 --
--- Индексы таблицы `oc_customer_group`
+-- Indexes for table `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   ADD PRIMARY KEY (`customer_group_id`);
 
 --
--- Индексы таблицы `oc_customer_group_description`
+-- Indexes for table `oc_customer_group_description`
 --
 ALTER TABLE `oc_customer_group_description`
   ADD PRIMARY KEY (`customer_group_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_customer_history`
+-- Indexes for table `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   ADD PRIMARY KEY (`customer_history_id`);
 
 --
--- Индексы таблицы `oc_customer_ip`
+-- Indexes for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   ADD PRIMARY KEY (`customer_ip_id`),
   ADD KEY `ip` (`ip`);
 
 --
--- Индексы таблицы `oc_customer_login`
+-- Indexes for table `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   ADD PRIMARY KEY (`customer_login_id`),
@@ -9148,50 +14041,50 @@ ALTER TABLE `oc_customer_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Индексы таблицы `oc_customer_online`
+-- Indexes for table `oc_customer_online`
 --
 ALTER TABLE `oc_customer_online`
   ADD PRIMARY KEY (`ip`);
 
 --
--- Индексы таблицы `oc_customer_reward`
+-- Indexes for table `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   ADD PRIMARY KEY (`customer_reward_id`);
 
 --
--- Индексы таблицы `oc_customer_search`
+-- Indexes for table `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
   ADD PRIMARY KEY (`customer_search_id`);
 
 --
--- Индексы таблицы `oc_customer_transaction`
+-- Indexes for table `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   ADD PRIMARY KEY (`customer_transaction_id`);
 
 --
--- Индексы таблицы `oc_customer_wishlist`
+-- Indexes for table `oc_customer_wishlist`
 --
 ALTER TABLE `oc_customer_wishlist`
   ADD PRIMARY KEY (`customer_id`,`product_id`);
 
 --
--- Индексы таблицы `oc_custommenu`
+-- Indexes for table `oc_custommenu`
 --
 ALTER TABLE `oc_custommenu`
   ADD PRIMARY KEY (`custommenu_id`);
 
 --
--- Индексы таблицы `oc_custommenu_child`
+-- Indexes for table `oc_custommenu_child`
 --
 ALTER TABLE `oc_custommenu_child`
   ADD PRIMARY KEY (`custommenu_child_id`),
   ADD KEY `custommenu_id` (`custommenu_id`);
 
 --
--- Индексы таблицы `oc_custommenu_child_description`
+-- Indexes for table `oc_custommenu_child_description`
 --
 ALTER TABLE `oc_custommenu_child_description`
   ADD PRIMARY KEY (`custommenu_child_id`,`language_id`),
@@ -9199,575 +14092,575 @@ ALTER TABLE `oc_custommenu_child_description`
   ADD KEY `language_id` (`language_id`);
 
 --
--- Индексы таблицы `oc_custommenu_child_to_store`
+-- Indexes for table `oc_custommenu_child_to_store`
 --
 ALTER TABLE `oc_custommenu_child_to_store`
   ADD PRIMARY KEY (`custommenu_child_id`,`store_id`),
   ADD KEY `store_id` (`store_id`);
 
 --
--- Индексы таблицы `oc_custommenu_description`
+-- Indexes for table `oc_custommenu_description`
 --
 ALTER TABLE `oc_custommenu_description`
   ADD PRIMARY KEY (`custommenu_id`,`language_id`),
   ADD KEY `language_id` (`language_id`);
 
 --
--- Индексы таблицы `oc_custommenu_to_store`
+-- Indexes for table `oc_custommenu_to_store`
 --
 ALTER TABLE `oc_custommenu_to_store`
   ADD PRIMARY KEY (`custommenu_id`,`store_id`),
   ADD KEY `store_id` (`store_id`);
 
 --
--- Индексы таблицы `oc_custom_field`
+-- Indexes for table `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   ADD PRIMARY KEY (`custom_field_id`);
 
 --
--- Индексы таблицы `oc_custom_field_customer_group`
+-- Indexes for table `oc_custom_field_customer_group`
 --
 ALTER TABLE `oc_custom_field_customer_group`
   ADD PRIMARY KEY (`custom_field_id`,`customer_group_id`);
 
 --
--- Индексы таблицы `oc_custom_field_description`
+-- Indexes for table `oc_custom_field_description`
 --
 ALTER TABLE `oc_custom_field_description`
   ADD PRIMARY KEY (`custom_field_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_custom_field_value`
+-- Indexes for table `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   ADD PRIMARY KEY (`custom_field_value_id`);
 
 --
--- Индексы таблицы `oc_custom_field_value_description`
+-- Indexes for table `oc_custom_field_value_description`
 --
 ALTER TABLE `oc_custom_field_value_description`
   ADD PRIMARY KEY (`custom_field_value_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_download`
+-- Indexes for table `oc_download`
 --
 ALTER TABLE `oc_download`
   ADD PRIMARY KEY (`download_id`);
 
 --
--- Индексы таблицы `oc_download_description`
+-- Indexes for table `oc_download_description`
 --
 ALTER TABLE `oc_download_description`
   ADD PRIMARY KEY (`download_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_event`
+-- Indexes for table `oc_event`
 --
 ALTER TABLE `oc_event`
   ADD PRIMARY KEY (`event_id`);
 
 --
--- Индексы таблицы `oc_extension`
+-- Indexes for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
   ADD PRIMARY KEY (`extension_id`);
 
 --
--- Индексы таблицы `oc_filter`
+-- Indexes for table `oc_filter`
 --
 ALTER TABLE `oc_filter`
   ADD PRIMARY KEY (`filter_id`);
 
 --
--- Индексы таблицы `oc_filter_description`
+-- Indexes for table `oc_filter_description`
 --
 ALTER TABLE `oc_filter_description`
   ADD PRIMARY KEY (`filter_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_filter_group`
+-- Indexes for table `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   ADD PRIMARY KEY (`filter_group_id`);
 
 --
--- Индексы таблицы `oc_filter_group_description`
+-- Indexes for table `oc_filter_group_description`
 --
 ALTER TABLE `oc_filter_group_description`
   ADD PRIMARY KEY (`filter_group_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_geo_zone`
+-- Indexes for table `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   ADD PRIMARY KEY (`geo_zone_id`);
 
 --
--- Индексы таблицы `oc_information`
+-- Indexes for table `oc_information`
 --
 ALTER TABLE `oc_information`
   ADD PRIMARY KEY (`information_id`);
 
 --
--- Индексы таблицы `oc_information_description`
+-- Indexes for table `oc_information_description`
 --
 ALTER TABLE `oc_information_description`
   ADD PRIMARY KEY (`information_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_information_to_layout`
+-- Indexes for table `oc_information_to_layout`
 --
 ALTER TABLE `oc_information_to_layout`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_information_to_store`
+-- Indexes for table `oc_information_to_store`
 --
 ALTER TABLE `oc_information_to_store`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_language`
+-- Indexes for table `oc_language`
 --
 ALTER TABLE `oc_language`
   ADD PRIMARY KEY (`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_layout`
+-- Indexes for table `oc_layout`
 --
 ALTER TABLE `oc_layout`
   ADD PRIMARY KEY (`layout_id`);
 
 --
--- Индексы таблицы `oc_layout_module`
+-- Indexes for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
   ADD PRIMARY KEY (`layout_module_id`);
 
 --
--- Индексы таблицы `oc_layout_route`
+-- Indexes for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
   ADD PRIMARY KEY (`layout_route_id`);
 
 --
--- Индексы таблицы `oc_length_class`
+-- Indexes for table `oc_length_class`
 --
 ALTER TABLE `oc_length_class`
   ADD PRIMARY KEY (`length_class_id`);
 
 --
--- Индексы таблицы `oc_length_class_description`
+-- Indexes for table `oc_length_class_description`
 --
 ALTER TABLE `oc_length_class_description`
   ADD PRIMARY KEY (`length_class_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_location`
+-- Indexes for table `oc_location`
 --
 ALTER TABLE `oc_location`
   ADD PRIMARY KEY (`location_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_manufacturer`
+-- Indexes for table `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   ADD PRIMARY KEY (`manufacturer_id`);
 
 --
--- Индексы таблицы `oc_manufacturer_description`
+-- Indexes for table `oc_manufacturer_description`
 --
 ALTER TABLE `oc_manufacturer_description`
   ADD PRIMARY KEY (`manufacturer_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_manufacturer_to_layout`
+-- Indexes for table `oc_manufacturer_to_layout`
 --
 ALTER TABLE `oc_manufacturer_to_layout`
   ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_manufacturer_to_store`
+-- Indexes for table `oc_manufacturer_to_store`
 --
 ALTER TABLE `oc_manufacturer_to_store`
   ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_marketing`
+-- Indexes for table `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   ADD PRIMARY KEY (`marketing_id`);
 
 --
--- Индексы таблицы `oc_menu`
+-- Indexes for table `oc_menu`
 --
 ALTER TABLE `oc_menu`
   ADD PRIMARY KEY (`menu_id`);
 
 --
--- Индексы таблицы `oc_menu_description`
+-- Indexes for table `oc_menu_description`
 --
 ALTER TABLE `oc_menu_description`
   ADD PRIMARY KEY (`menu_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_menu_module`
+-- Indexes for table `oc_menu_module`
 --
 ALTER TABLE `oc_menu_module`
   ADD PRIMARY KEY (`menu_module_id`),
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- Индексы таблицы `oc_modification`
+-- Indexes for table `oc_modification`
 --
 ALTER TABLE `oc_modification`
   ADD PRIMARY KEY (`modification_id`);
 
 --
--- Индексы таблицы `oc_module`
+-- Indexes for table `oc_module`
 --
 ALTER TABLE `oc_module`
   ADD PRIMARY KEY (`module_id`);
 
 --
--- Индексы таблицы `oc_option`
+-- Indexes for table `oc_option`
 --
 ALTER TABLE `oc_option`
   ADD PRIMARY KEY (`option_id`);
 
 --
--- Индексы таблицы `oc_option_description`
+-- Indexes for table `oc_option_description`
 --
 ALTER TABLE `oc_option_description`
   ADD PRIMARY KEY (`option_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_option_value`
+-- Indexes for table `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   ADD PRIMARY KEY (`option_value_id`);
 
 --
--- Индексы таблицы `oc_option_value_description`
+-- Indexes for table `oc_option_value_description`
 --
 ALTER TABLE `oc_option_value_description`
   ADD PRIMARY KEY (`option_value_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_order`
+-- Indexes for table `oc_order`
 --
 ALTER TABLE `oc_order`
   ADD PRIMARY KEY (`order_id`);
 
 --
--- Индексы таблицы `oc_order_custom_field`
+-- Indexes for table `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   ADD PRIMARY KEY (`order_custom_field_id`);
 
 --
--- Индексы таблицы `oc_order_history`
+-- Indexes for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   ADD PRIMARY KEY (`order_history_id`);
 
 --
--- Индексы таблицы `oc_order_option`
+-- Indexes for table `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   ADD PRIMARY KEY (`order_option_id`);
 
 --
--- Индексы таблицы `oc_order_product`
+-- Indexes for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   ADD PRIMARY KEY (`order_product_id`);
 
 --
--- Индексы таблицы `oc_order_recurring`
+-- Indexes for table `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   ADD PRIMARY KEY (`order_recurring_id`);
 
 --
--- Индексы таблицы `oc_order_recurring_transaction`
+-- Indexes for table `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   ADD PRIMARY KEY (`order_recurring_transaction_id`);
 
 --
--- Индексы таблицы `oc_order_status`
+-- Indexes for table `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   ADD PRIMARY KEY (`order_status_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_order_total`
+-- Indexes for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   ADD PRIMARY KEY (`order_total_id`),
   ADD KEY `order_id` (`order_id`);
 
 --
--- Индексы таблицы `oc_order_voucher`
+-- Indexes for table `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   ADD PRIMARY KEY (`order_voucher_id`);
 
 --
--- Индексы таблицы `oc_product`
+-- Indexes for table `oc_product`
 --
 ALTER TABLE `oc_product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Индексы таблицы `oc_product_attribute`
+-- Indexes for table `oc_product_attribute`
 --
 ALTER TABLE `oc_product_attribute`
   ADD PRIMARY KEY (`product_id`,`attribute_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_product_description`
+-- Indexes for table `oc_product_description`
 --
 ALTER TABLE `oc_product_description`
   ADD PRIMARY KEY (`product_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Индексы таблицы `oc_product_discount`
+-- Indexes for table `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
   ADD PRIMARY KEY (`product_discount_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Индексы таблицы `oc_product_filter`
+-- Indexes for table `oc_product_filter`
 --
 ALTER TABLE `oc_product_filter`
   ADD PRIMARY KEY (`product_id`,`filter_id`);
 
 --
--- Индексы таблицы `oc_product_image`
+-- Indexes for table `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
   ADD PRIMARY KEY (`product_image_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Индексы таблицы `oc_product_option`
+-- Indexes for table `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   ADD PRIMARY KEY (`product_option_id`);
 
 --
--- Индексы таблицы `oc_product_option_value`
+-- Indexes for table `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   ADD PRIMARY KEY (`product_option_value_id`);
 
 --
--- Индексы таблицы `oc_product_recurring`
+-- Indexes for table `oc_product_recurring`
 --
 ALTER TABLE `oc_product_recurring`
   ADD PRIMARY KEY (`product_id`,`recurring_id`,`customer_group_id`);
 
 --
--- Индексы таблицы `oc_product_related`
+-- Indexes for table `oc_product_related`
 --
 ALTER TABLE `oc_product_related`
   ADD PRIMARY KEY (`product_id`,`related_id`);
 
 --
--- Индексы таблицы `oc_product_related_article`
+-- Indexes for table `oc_product_related_article`
 --
 ALTER TABLE `oc_product_related_article`
   ADD PRIMARY KEY (`article_id`,`product_id`);
 
 --
--- Индексы таблицы `oc_product_reward`
+-- Indexes for table `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
   ADD PRIMARY KEY (`product_reward_id`);
 
 --
--- Индексы таблицы `oc_product_special`
+-- Indexes for table `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   ADD PRIMARY KEY (`product_special_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Индексы таблицы `oc_product_tab`
+-- Indexes for table `oc_product_tab`
 --
 ALTER TABLE `oc_product_tab`
   ADD PRIMARY KEY (`product_tab_id`);
 
 --
--- Индексы таблицы `oc_product_to_benefit`
+-- Indexes for table `oc_product_to_benefit`
 --
 ALTER TABLE `oc_product_to_benefit`
   ADD KEY `product_id` (`product_id`),
   ADD KEY `benefit_id` (`benefit_id`);
 
 --
--- Индексы таблицы `oc_product_to_category`
+-- Indexes for table `oc_product_to_category`
 --
 ALTER TABLE `oc_product_to_category`
   ADD PRIMARY KEY (`product_id`,`category_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Индексы таблицы `oc_product_to_download`
+-- Indexes for table `oc_product_to_download`
 --
 ALTER TABLE `oc_product_to_download`
   ADD PRIMARY KEY (`product_id`,`download_id`);
 
 --
--- Индексы таблицы `oc_product_to_layout`
+-- Indexes for table `oc_product_to_layout`
 --
 ALTER TABLE `oc_product_to_layout`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_product_to_sticker`
+-- Indexes for table `oc_product_to_sticker`
 --
 ALTER TABLE `oc_product_to_sticker`
   ADD KEY `product_id` (`product_id`),
   ADD KEY `sticker_id` (`sticker_id`);
 
 --
--- Индексы таблицы `oc_product_to_store`
+-- Indexes for table `oc_product_to_store`
 --
 ALTER TABLE `oc_product_to_store`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Индексы таблицы `oc_recurring`
+-- Indexes for table `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   ADD PRIMARY KEY (`recurring_id`);
 
 --
--- Индексы таблицы `oc_recurring_description`
+-- Indexes for table `oc_recurring_description`
 --
 ALTER TABLE `oc_recurring_description`
   ADD PRIMARY KEY (`recurring_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_return`
+-- Indexes for table `oc_return`
 --
 ALTER TABLE `oc_return`
   ADD PRIMARY KEY (`return_id`);
 
 --
--- Индексы таблицы `oc_return_action`
+-- Indexes for table `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   ADD PRIMARY KEY (`return_action_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_return_history`
+-- Indexes for table `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   ADD PRIMARY KEY (`return_history_id`);
 
 --
--- Индексы таблицы `oc_return_reason`
+-- Indexes for table `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   ADD PRIMARY KEY (`return_reason_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_return_status`
+-- Indexes for table `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   ADD PRIMARY KEY (`return_status_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_review`
+-- Indexes for table `oc_review`
 --
 ALTER TABLE `oc_review`
   ADD PRIMARY KEY (`review_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Индексы таблицы `oc_review_article`
+-- Indexes for table `oc_review_article`
 --
 ALTER TABLE `oc_review_article`
   ADD PRIMARY KEY (`review_article_id`),
   ADD KEY `article_id` (`article_id`);
 
 --
--- Индексы таблицы `oc_setting`
+-- Indexes for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
   ADD PRIMARY KEY (`setting_id`);
 
 --
--- Индексы таблицы `oc_sticker`
+-- Indexes for table `oc_sticker`
 --
 ALTER TABLE `oc_sticker`
   ADD PRIMARY KEY (`sticker_id`);
 
 --
--- Индексы таблицы `oc_stock_status`
+-- Indexes for table `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   ADD PRIMARY KEY (`stock_status_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_store`
+-- Indexes for table `oc_store`
 --
 ALTER TABLE `oc_store`
   ADD PRIMARY KEY (`store_id`);
 
 --
--- Индексы таблицы `oc_tax_class`
+-- Indexes for table `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   ADD PRIMARY KEY (`tax_class_id`);
 
 --
--- Индексы таблицы `oc_tax_rate`
+-- Indexes for table `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   ADD PRIMARY KEY (`tax_rate_id`);
 
 --
--- Индексы таблицы `oc_tax_rate_to_customer_group`
+-- Indexes for table `oc_tax_rate_to_customer_group`
 --
 ALTER TABLE `oc_tax_rate_to_customer_group`
   ADD PRIMARY KEY (`tax_rate_id`,`customer_group_id`);
 
 --
--- Индексы таблицы `oc_tax_rule`
+-- Indexes for table `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   ADD PRIMARY KEY (`tax_rule_id`);
 
 --
--- Индексы таблицы `oc_theme`
+-- Indexes for table `oc_theme`
 --
 ALTER TABLE `oc_theme`
   ADD PRIMARY KEY (`theme_id`);
 
 --
--- Индексы таблицы `oc_translation`
+-- Indexes for table `oc_translation`
 --
 ALTER TABLE `oc_translation`
   ADD PRIMARY KEY (`translation_id`);
 
 --
--- Индексы таблицы `oc_upload`
+-- Indexes for table `oc_upload`
 --
 ALTER TABLE `oc_upload`
   ADD PRIMARY KEY (`upload_id`);
 
 --
--- Индексы таблицы `oc_url_alias`
+-- Indexes for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
   ADD PRIMARY KEY (`url_alias_id`),
@@ -9775,659 +14668,659 @@ ALTER TABLE `oc_url_alias`
   ADD KEY `keyword` (`keyword`);
 
 --
--- Индексы таблицы `oc_user`
+-- Indexes for table `oc_user`
 --
 ALTER TABLE `oc_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Индексы таблицы `oc_user_group`
+-- Indexes for table `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   ADD PRIMARY KEY (`user_group_id`);
 
 --
--- Индексы таблицы `oc_voucher`
+-- Indexes for table `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   ADD PRIMARY KEY (`voucher_id`);
 
 --
--- Индексы таблицы `oc_voucher_history`
+-- Indexes for table `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   ADD PRIMARY KEY (`voucher_history_id`);
 
 --
--- Индексы таблицы `oc_voucher_theme`
+-- Indexes for table `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   ADD PRIMARY KEY (`voucher_theme_id`);
 
 --
--- Индексы таблицы `oc_voucher_theme_description`
+-- Indexes for table `oc_voucher_theme_description`
 --
 ALTER TABLE `oc_voucher_theme_description`
   ADD PRIMARY KEY (`voucher_theme_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_weight_class`
+-- Indexes for table `oc_weight_class`
 --
 ALTER TABLE `oc_weight_class`
   ADD PRIMARY KEY (`weight_class_id`);
 
 --
--- Индексы таблицы `oc_weight_class_description`
+-- Indexes for table `oc_weight_class_description`
 --
 ALTER TABLE `oc_weight_class_description`
   ADD PRIMARY KEY (`weight_class_id`,`language_id`);
 
 --
--- Индексы таблицы `oc_zone`
+-- Indexes for table `oc_zone`
 --
 ALTER TABLE `oc_zone`
   ADD PRIMARY KEY (`zone_id`);
 
 --
--- Индексы таблицы `oc_zone_to_geo_zone`
+-- Indexes for table `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   ADD PRIMARY KEY (`zone_to_geo_zone_id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `oc_address`
+-- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
   MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_affiliate`
+-- AUTO_INCREMENT for table `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   MODIFY `affiliate_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_affiliate_activity`
+-- AUTO_INCREMENT for table `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   MODIFY `affiliate_activity_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_affiliate_login`
+-- AUTO_INCREMENT for table `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   MODIFY `affiliate_login_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_affiliate_transaction`
+-- AUTO_INCREMENT for table `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   MODIFY `affiliate_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_api`
+-- AUTO_INCREMENT for table `oc_api`
 --
 ALTER TABLE `oc_api`
   MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT для таблицы `oc_api_ip`
+-- AUTO_INCREMENT for table `oc_api_ip`
 --
 ALTER TABLE `oc_api_ip`
   MODIFY `api_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_api_session`
+-- AUTO_INCREMENT for table `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
   MODIFY `api_session_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_article`
+-- AUTO_INCREMENT for table `oc_article`
 --
 ALTER TABLE `oc_article`
   MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 
 --
--- AUTO_INCREMENT для таблицы `oc_article_image`
+-- AUTO_INCREMENT for table `oc_article_image`
 --
 ALTER TABLE `oc_article_image`
   MODIFY `article_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3981;
 
 --
--- AUTO_INCREMENT для таблицы `oc_attribute`
+-- AUTO_INCREMENT for table `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
-  MODIFY `attribute_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `attribute_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT для таблицы `oc_attribute_group`
+-- AUTO_INCREMENT for table `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
-  MODIFY `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT для таблицы `oc_banner`
+-- AUTO_INCREMENT for table `oc_banner`
 --
 ALTER TABLE `oc_banner`
   MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT для таблицы `oc_banner_image`
+-- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 
 --
--- AUTO_INCREMENT для таблицы `oc_benefit`
+-- AUTO_INCREMENT for table `oc_benefit`
 --
 ALTER TABLE `oc_benefit`
   MODIFY `benefit_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT для таблицы `oc_blog_category`
+-- AUTO_INCREMENT for table `oc_blog_category`
 --
 ALTER TABLE `oc_blog_category`
   MODIFY `blog_category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
--- AUTO_INCREMENT для таблицы `oc_cart`
+-- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
   MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT для таблицы `oc_category`
+-- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT для таблицы `oc_country`
+-- AUTO_INCREMENT for table `oc_country`
 --
 ALTER TABLE `oc_country`
   MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=258;
 
 --
--- AUTO_INCREMENT для таблицы `oc_coupon`
+-- AUTO_INCREMENT for table `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT для таблицы `oc_coupon_history`
+-- AUTO_INCREMENT for table `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   MODIFY `coupon_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_coupon_product`
+-- AUTO_INCREMENT for table `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   MODIFY `coupon_product_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_currency`
+-- AUTO_INCREMENT for table `oc_currency`
 --
 ALTER TABLE `oc_currency`
   MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer`
+-- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
   MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_activity`
+-- AUTO_INCREMENT for table `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   MODIFY `customer_activity_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_group`
+-- AUTO_INCREMENT for table `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   MODIFY `customer_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_history`
+-- AUTO_INCREMENT for table `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_ip`
+-- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_login`
+-- AUTO_INCREMENT for table `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_reward`
+-- AUTO_INCREMENT for table `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   MODIFY `customer_reward_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_search`
+-- AUTO_INCREMENT for table `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
   MODIFY `customer_search_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_customer_transaction`
+-- AUTO_INCREMENT for table `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   MODIFY `customer_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_custommenu`
+-- AUTO_INCREMENT for table `oc_custommenu`
 --
 ALTER TABLE `oc_custommenu`
   MODIFY `custommenu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT для таблицы `oc_custommenu_child`
+-- AUTO_INCREMENT for table `oc_custommenu_child`
 --
 ALTER TABLE `oc_custommenu_child`
   MODIFY `custommenu_child_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
--- AUTO_INCREMENT для таблицы `oc_custom_field`
+-- AUTO_INCREMENT for table `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   MODIFY `custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_custom_field_value`
+-- AUTO_INCREMENT for table `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   MODIFY `custom_field_value_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_download`
+-- AUTO_INCREMENT for table `oc_download`
 --
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_event`
+-- AUTO_INCREMENT for table `oc_event`
 --
 ALTER TABLE `oc_event`
   MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT для таблицы `oc_extension`
+-- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
   MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
--- AUTO_INCREMENT для таблицы `oc_filter`
+-- AUTO_INCREMENT for table `oc_filter`
 --
 ALTER TABLE `oc_filter`
   MODIFY `filter_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_filter_group`
+-- AUTO_INCREMENT for table `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   MODIFY `filter_group_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_geo_zone`
+-- AUTO_INCREMENT for table `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   MODIFY `geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT для таблицы `oc_information`
+-- AUTO_INCREMENT for table `oc_information`
 --
 ALTER TABLE `oc_information`
   MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT для таблицы `oc_language`
+-- AUTO_INCREMENT for table `oc_language`
 --
 ALTER TABLE `oc_language`
   MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT для таблицы `oc_layout`
+-- AUTO_INCREMENT for table `oc_layout`
 --
 ALTER TABLE `oc_layout`
   MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT для таблицы `oc_layout_module`
+-- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
   MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
--- AUTO_INCREMENT для таблицы `oc_layout_route`
+-- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
   MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT для таблицы `oc_location`
+-- AUTO_INCREMENT for table `oc_location`
 --
 ALTER TABLE `oc_location`
   MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_manufacturer`
+-- AUTO_INCREMENT for table `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   MODIFY `manufacturer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT для таблицы `oc_marketing`
+-- AUTO_INCREMENT for table `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   MODIFY `marketing_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_menu`
+-- AUTO_INCREMENT for table `oc_menu`
 --
 ALTER TABLE `oc_menu`
   MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_modification`
+-- AUTO_INCREMENT for table `oc_modification`
 --
 ALTER TABLE `oc_modification`
-  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT для таблицы `oc_module`
+-- AUTO_INCREMENT for table `oc_module`
 --
 ALTER TABLE `oc_module`
   MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT для таблицы `oc_option`
+-- AUTO_INCREMENT for table `oc_option`
 --
 ALTER TABLE `oc_option`
-  MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_option_value`
+-- AUTO_INCREMENT for table `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
-  MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order`
+-- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_custom_field`
+-- AUTO_INCREMENT for table `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   MODIFY `order_custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_history`
+-- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_option`
+-- AUTO_INCREMENT for table `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_product`
+-- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_recurring`
+-- AUTO_INCREMENT for table `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   MODIFY `order_recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_recurring_transaction`
+-- AUTO_INCREMENT for table `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_status`
+-- AUTO_INCREMENT for table `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_total`
+-- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_order_voucher`
+-- AUTO_INCREMENT for table `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product`
+-- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_discount`
+-- AUTO_INCREMENT for table `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
-  MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=441;
+  MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1037;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_image`
+-- AUTO_INCREMENT for table `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
-  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2352;
+  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=385;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_option`
+-- AUTO_INCREMENT for table `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   MODIFY `product_option_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=227;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_option_value`
+-- AUTO_INCREMENT for table `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_reward`
+-- AUTO_INCREMENT for table `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
-  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=546;
+  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_special`
+-- AUTO_INCREMENT for table `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
 
 --
--- AUTO_INCREMENT для таблицы `oc_product_tab`
+-- AUTO_INCREMENT for table `oc_product_tab`
 --
 ALTER TABLE `oc_product_tab`
   MODIFY `product_tab_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_recurring`
+-- AUTO_INCREMENT for table `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   MODIFY `recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_return`
+-- AUTO_INCREMENT for table `oc_return`
 --
 ALTER TABLE `oc_return`
   MODIFY `return_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_return_action`
+-- AUTO_INCREMENT for table `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   MODIFY `return_action_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT для таблицы `oc_return_history`
+-- AUTO_INCREMENT for table `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   MODIFY `return_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_return_reason`
+-- AUTO_INCREMENT for table `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   MODIFY `return_reason_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT для таблицы `oc_return_status`
+-- AUTO_INCREMENT for table `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   MODIFY `return_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT для таблицы `oc_review`
+-- AUTO_INCREMENT for table `oc_review`
 --
 ALTER TABLE `oc_review`
   MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_review_article`
+-- AUTO_INCREMENT for table `oc_review_article`
 --
 ALTER TABLE `oc_review_article`
   MODIFY `review_article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT для таблицы `oc_setting`
+-- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
   MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1570;
 
 --
--- AUTO_INCREMENT для таблицы `oc_sticker`
+-- AUTO_INCREMENT for table `oc_sticker`
 --
 ALTER TABLE `oc_sticker`
   MODIFY `sticker_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT для таблицы `oc_stock_status`
+-- AUTO_INCREMENT for table `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   MODIFY `stock_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT для таблицы `oc_store`
+-- AUTO_INCREMENT for table `oc_store`
 --
 ALTER TABLE `oc_store`
   MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_tax_class`
+-- AUTO_INCREMENT for table `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   MODIFY `tax_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT для таблицы `oc_tax_rate`
+-- AUTO_INCREMENT for table `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   MODIFY `tax_rate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 
 --
--- AUTO_INCREMENT для таблицы `oc_tax_rule`
+-- AUTO_INCREMENT for table `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
 
 --
--- AUTO_INCREMENT для таблицы `oc_theme`
+-- AUTO_INCREMENT for table `oc_theme`
 --
 ALTER TABLE `oc_theme`
   MODIFY `theme_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_translation`
+-- AUTO_INCREMENT for table `oc_translation`
 --
 ALTER TABLE `oc_translation`
   MODIFY `translation_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_upload`
+-- AUTO_INCREMENT for table `oc_upload`
 --
 ALTER TABLE `oc_upload`
   MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_url_alias`
+-- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=901;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1038;
 
 --
--- AUTO_INCREMENT для таблицы `oc_user`
+-- AUTO_INCREMENT for table `oc_user`
 --
 ALTER TABLE `oc_user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT для таблицы `oc_user_group`
+-- AUTO_INCREMENT for table `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT для таблицы `oc_voucher`
+-- AUTO_INCREMENT for table `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_voucher_history`
+-- AUTO_INCREMENT for table `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   MODIFY `voucher_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `oc_voucher_theme`
+-- AUTO_INCREMENT for table `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   MODIFY `voucher_theme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT для таблицы `oc_zone`
+-- AUTO_INCREMENT for table `oc_zone`
 --
 ALTER TABLE `oc_zone`
   MODIFY `zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4232;
 
 --
--- AUTO_INCREMENT для таблицы `oc_zone_to_geo_zone`
+-- AUTO_INCREMENT for table `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
