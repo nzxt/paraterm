@@ -281,10 +281,10 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 
 
 #menu li ul a {
-	padding-left: 20px;
+	padding-left: 10px;
 }
 #menu li li ul a {
-	padding-left: 40px;
+	padding-left: 20px;
 }
 #menu li li li ul a {
 	padding-left: 60px;
@@ -318,15 +318,15 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 @media (max-width: 767px) {
 #column-left.active + #content {
 	position: relative;
-	left: 235px;
+	left: 255px;
 }
 #column-left.active + #content + #footer {
 	position: relative;
-	left: 235px;
+	left: 255px;
 }
 }
 #column-left.active {
-	width: 235px;
+	width: 255px;
 }
 #column-left.active #menu li i {
 	font-size: 14px;
