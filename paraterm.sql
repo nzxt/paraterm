@@ -2,10 +2,10 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jan 12, 2019 at 12:35 AM
--- Server version: 5.7.23
--- PHP Version: 5.6.38
+-- Хост: 127.0.0.1:3306
+-- Время создания: Янв 12 2019 г., 21:54
+-- Версия сервера: 5.7.23
+-- Версия PHP: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `paraterm`
+-- База данных: `paraterm`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_address`
+-- Структура таблицы `oc_address`
 --
 
 CREATE TABLE `oc_address` (
@@ -46,7 +46,7 @@ CREATE TABLE `oc_address` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate`
+-- Структура таблицы `oc_affiliate`
 --
 
 CREATE TABLE `oc_affiliate` (
@@ -86,7 +86,7 @@ CREATE TABLE `oc_affiliate` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_activity`
+-- Структура таблицы `oc_affiliate_activity`
 --
 
 CREATE TABLE `oc_affiliate_activity` (
@@ -101,7 +101,7 @@ CREATE TABLE `oc_affiliate_activity` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_login`
+-- Структура таблицы `oc_affiliate_login`
 --
 
 CREATE TABLE `oc_affiliate_login` (
@@ -116,7 +116,7 @@ CREATE TABLE `oc_affiliate_login` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_transaction`
+-- Структура таблицы `oc_affiliate_transaction`
 --
 
 CREATE TABLE `oc_affiliate_transaction` (
@@ -131,7 +131,7 @@ CREATE TABLE `oc_affiliate_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_api`
+-- Структура таблицы `oc_api`
 --
 
 CREATE TABLE `oc_api` (
@@ -144,7 +144,7 @@ CREATE TABLE `oc_api` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_api`
+-- Дамп данных таблицы `oc_api`
 --
 
 INSERT INTO `oc_api` (`api_id`, `name`, `key`, `status`, `date_added`, `date_modified`) VALUES
@@ -153,7 +153,7 @@ INSERT INTO `oc_api` (`api_id`, `name`, `key`, `status`, `date_added`, `date_mod
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_api_ip`
+-- Структура таблицы `oc_api_ip`
 --
 
 CREATE TABLE `oc_api_ip` (
@@ -165,7 +165,7 @@ CREATE TABLE `oc_api_ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_api_session`
+-- Структура таблицы `oc_api_session`
 --
 
 CREATE TABLE `oc_api_session` (
@@ -182,7 +182,7 @@ CREATE TABLE `oc_api_session` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article`
+-- Структура таблицы `oc_article`
 --
 
 CREATE TABLE `oc_article` (
@@ -200,7 +200,7 @@ CREATE TABLE `oc_article` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article`
+-- Дамп данных таблицы `oc_article`
 --
 
 INSERT INTO `oc_article` (`article_id`, `image`, `date_available`, `sort_order`, `article_review`, `status`, `noindex`, `date_added`, `date_modified`, `viewed`, `gstatus`) VALUES
@@ -212,7 +212,7 @@ INSERT INTO `oc_article` (`article_id`, `image`, `date_available`, `sort_order`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_description`
+-- Структура таблицы `oc_article_description`
 --
 
 CREATE TABLE `oc_article_description` (
@@ -228,7 +228,7 @@ CREATE TABLE `oc_article_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_description`
+-- Дамп данных таблицы `oc_article_description`
 --
 
 INSERT INTO `oc_article_description` (`article_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`, `tag`) VALUES
@@ -240,7 +240,7 @@ INSERT INTO `oc_article_description` (`article_id`, `language_id`, `name`, `desc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_image`
+-- Структура таблицы `oc_article_image`
 --
 
 CREATE TABLE `oc_article_image` (
@@ -253,7 +253,7 @@ CREATE TABLE `oc_article_image` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_related`
+-- Структура таблицы `oc_article_related`
 --
 
 CREATE TABLE `oc_article_related` (
@@ -262,7 +262,7 @@ CREATE TABLE `oc_article_related` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_related`
+-- Дамп данных таблицы `oc_article_related`
 --
 
 INSERT INTO `oc_article_related` (`article_id`, `related_id`) VALUES
@@ -276,7 +276,7 @@ INSERT INTO `oc_article_related` (`article_id`, `related_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_related_mn`
+-- Структура таблицы `oc_article_related_mn`
 --
 
 CREATE TABLE `oc_article_related_mn` (
@@ -287,7 +287,7 @@ CREATE TABLE `oc_article_related_mn` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_related_product`
+-- Структура таблицы `oc_article_related_product`
 --
 
 CREATE TABLE `oc_article_related_product` (
@@ -296,7 +296,7 @@ CREATE TABLE `oc_article_related_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_related_product`
+-- Дамп данных таблицы `oc_article_related_product`
 --
 
 INSERT INTO `oc_article_related_product` (`article_id`, `product_id`) VALUES
@@ -319,7 +319,7 @@ INSERT INTO `oc_article_related_product` (`article_id`, `product_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_related_wb`
+-- Структура таблицы `oc_article_related_wb`
 --
 
 CREATE TABLE `oc_article_related_wb` (
@@ -330,7 +330,7 @@ CREATE TABLE `oc_article_related_wb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_to_blog_category`
+-- Структура таблицы `oc_article_to_blog_category`
 --
 
 CREATE TABLE `oc_article_to_blog_category` (
@@ -340,7 +340,7 @@ CREATE TABLE `oc_article_to_blog_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_to_blog_category`
+-- Дамп данных таблицы `oc_article_to_blog_category`
 --
 
 INSERT INTO `oc_article_to_blog_category` (`article_id`, `blog_category_id`, `main_blog_category`) VALUES
@@ -355,7 +355,7 @@ INSERT INTO `oc_article_to_blog_category` (`article_id`, `blog_category_id`, `ma
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_to_download`
+-- Структура таблицы `oc_article_to_download`
 --
 
 CREATE TABLE `oc_article_to_download` (
@@ -366,7 +366,7 @@ CREATE TABLE `oc_article_to_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_to_layout`
+-- Структура таблицы `oc_article_to_layout`
 --
 
 CREATE TABLE `oc_article_to_layout` (
@@ -376,7 +376,7 @@ CREATE TABLE `oc_article_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_to_layout`
+-- Дамп данных таблицы `oc_article_to_layout`
 --
 
 INSERT INTO `oc_article_to_layout` (`article_id`, `store_id`, `layout_id`) VALUES
@@ -388,7 +388,7 @@ INSERT INTO `oc_article_to_layout` (`article_id`, `store_id`, `layout_id`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_article_to_store`
+-- Структура таблицы `oc_article_to_store`
 --
 
 CREATE TABLE `oc_article_to_store` (
@@ -397,7 +397,7 @@ CREATE TABLE `oc_article_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_article_to_store`
+-- Дамп данных таблицы `oc_article_to_store`
 --
 
 INSERT INTO `oc_article_to_store` (`article_id`, `store_id`) VALUES
@@ -409,7 +409,7 @@ INSERT INTO `oc_article_to_store` (`article_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute`
+-- Структура таблицы `oc_attribute`
 --
 
 CREATE TABLE `oc_attribute` (
@@ -419,7 +419,7 @@ CREATE TABLE `oc_attribute` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute`
+-- Дамп данных таблицы `oc_attribute`
 --
 
 INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) VALUES
@@ -428,7 +428,7 @@ INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_description`
+-- Структура таблицы `oc_attribute_description`
 --
 
 CREATE TABLE `oc_attribute_description` (
@@ -438,7 +438,7 @@ CREATE TABLE `oc_attribute_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_description`
+-- Дамп данных таблицы `oc_attribute_description`
 --
 
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
@@ -447,7 +447,7 @@ INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_group`
+-- Структура таблицы `oc_attribute_group`
 --
 
 CREATE TABLE `oc_attribute_group` (
@@ -456,7 +456,7 @@ CREATE TABLE `oc_attribute_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_group`
+-- Дамп данных таблицы `oc_attribute_group`
 --
 
 INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
@@ -465,7 +465,7 @@ INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_group_description`
+-- Структура таблицы `oc_attribute_group_description`
 --
 
 CREATE TABLE `oc_attribute_group_description` (
@@ -475,7 +475,7 @@ CREATE TABLE `oc_attribute_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_group_description`
+-- Дамп данных таблицы `oc_attribute_group_description`
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
@@ -484,7 +484,7 @@ INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_banner`
+-- Структура таблицы `oc_banner`
 --
 
 CREATE TABLE `oc_banner` (
@@ -494,7 +494,7 @@ CREATE TABLE `oc_banner` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_banner`
+-- Дамп данных таблицы `oc_banner`
 --
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
@@ -505,7 +505,7 @@ INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_banner_image`
+-- Структура таблицы `oc_banner_image`
 --
 
 CREATE TABLE `oc_banner_image` (
@@ -519,7 +519,7 @@ CREATE TABLE `oc_banner_image` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_banner_image`
+-- Дамп данных таблицы `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `title`, `link`, `image`, `sort_order`) VALUES
@@ -541,7 +541,7 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_benefit`
+-- Структура таблицы `oc_benefit`
 --
 
 CREATE TABLE `oc_benefit` (
@@ -554,7 +554,7 @@ CREATE TABLE `oc_benefit` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_benefit`
+-- Дамп данных таблицы `oc_benefit`
 --
 
 INSERT INTO `oc_benefit` (`benefit_id`, `link`, `status`, `type`, `image`, `name`) VALUES
@@ -567,7 +567,7 @@ INSERT INTO `oc_benefit` (`benefit_id`, `link`, `status`, `type`, `image`, `name
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_benefit_description`
+-- Структура таблицы `oc_benefit_description`
 --
 
 CREATE TABLE `oc_benefit_description` (
@@ -577,7 +577,7 @@ CREATE TABLE `oc_benefit_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_benefit_description`
+-- Дамп данных таблицы `oc_benefit_description`
 --
 
 INSERT INTO `oc_benefit_description` (`benefit_id`, `language_id`, `description`) VALUES
@@ -595,7 +595,7 @@ INSERT INTO `oc_benefit_description` (`benefit_id`, `language_id`, `description`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_blog_category`
+-- Структура таблицы `oc_blog_category`
 --
 
 CREATE TABLE `oc_blog_category` (
@@ -612,7 +612,7 @@ CREATE TABLE `oc_blog_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_blog_category`
+-- Дамп данных таблицы `oc_blog_category`
 --
 
 INSERT INTO `oc_blog_category` (`blog_category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `noindex`, `date_added`, `date_modified`) VALUES
@@ -623,7 +623,7 @@ INSERT INTO `oc_blog_category` (`blog_category_id`, `image`, `parent_id`, `top`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_blog_category_description`
+-- Структура таблицы `oc_blog_category_description`
 --
 
 CREATE TABLE `oc_blog_category_description` (
@@ -638,7 +638,7 @@ CREATE TABLE `oc_blog_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_blog_category_description`
+-- Дамп данных таблицы `oc_blog_category_description`
 --
 
 INSERT INTO `oc_blog_category_description` (`blog_category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
@@ -649,7 +649,7 @@ INSERT INTO `oc_blog_category_description` (`blog_category_id`, `language_id`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_blog_category_path`
+-- Структура таблицы `oc_blog_category_path`
 --
 
 CREATE TABLE `oc_blog_category_path` (
@@ -659,7 +659,7 @@ CREATE TABLE `oc_blog_category_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_blog_category_path`
+-- Дамп данных таблицы `oc_blog_category_path`
 --
 
 INSERT INTO `oc_blog_category_path` (`blog_category_id`, `path_id`, `level`) VALUES
@@ -671,7 +671,7 @@ INSERT INTO `oc_blog_category_path` (`blog_category_id`, `path_id`, `level`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_blog_category_to_layout`
+-- Структура таблицы `oc_blog_category_to_layout`
 --
 
 CREATE TABLE `oc_blog_category_to_layout` (
@@ -681,7 +681,7 @@ CREATE TABLE `oc_blog_category_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_blog_category_to_layout`
+-- Дамп данных таблицы `oc_blog_category_to_layout`
 --
 
 INSERT INTO `oc_blog_category_to_layout` (`blog_category_id`, `store_id`, `layout_id`) VALUES
@@ -692,7 +692,7 @@ INSERT INTO `oc_blog_category_to_layout` (`blog_category_id`, `store_id`, `layou
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_blog_category_to_store`
+-- Структура таблицы `oc_blog_category_to_store`
 --
 
 CREATE TABLE `oc_blog_category_to_store` (
@@ -701,7 +701,7 @@ CREATE TABLE `oc_blog_category_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_blog_category_to_store`
+-- Дамп данных таблицы `oc_blog_category_to_store`
 --
 
 INSERT INTO `oc_blog_category_to_store` (`blog_category_id`, `store_id`) VALUES
@@ -712,7 +712,7 @@ INSERT INTO `oc_blog_category_to_store` (`blog_category_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_cart`
+-- Структура таблицы `oc_cart`
 --
 
 CREATE TABLE `oc_cart` (
@@ -730,7 +730,7 @@ CREATE TABLE `oc_cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category`
+-- Структура таблицы `oc_category`
 --
 
 CREATE TABLE `oc_category` (
@@ -747,7 +747,7 @@ CREATE TABLE `oc_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category`
+-- Дамп данных таблицы `oc_category`
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `noindex`, `date_added`, `date_modified`) VALUES
@@ -764,7 +764,7 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_description`
+-- Структура таблицы `oc_category_description`
 --
 
 CREATE TABLE `oc_category_description` (
@@ -780,7 +780,7 @@ CREATE TABLE `oc_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_description`
+-- Дамп данных таблицы `oc_category_description`
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `description_bottom`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
@@ -797,7 +797,7 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_filter`
+-- Структура таблицы `oc_category_filter`
 --
 
 CREATE TABLE `oc_category_filter` (
@@ -808,7 +808,7 @@ CREATE TABLE `oc_category_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_path`
+-- Структура таблицы `oc_category_path`
 --
 
 CREATE TABLE `oc_category_path` (
@@ -818,7 +818,7 @@ CREATE TABLE `oc_category_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_path`
+-- Дамп данных таблицы `oc_category_path`
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
@@ -835,7 +835,7 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_to_layout`
+-- Структура таблицы `oc_category_to_layout`
 --
 
 CREATE TABLE `oc_category_to_layout` (
@@ -847,7 +847,7 @@ CREATE TABLE `oc_category_to_layout` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_to_store`
+-- Структура таблицы `oc_category_to_store`
 --
 
 CREATE TABLE `oc_category_to_store` (
@@ -856,7 +856,7 @@ CREATE TABLE `oc_category_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_to_store`
+-- Дамп данных таблицы `oc_category_to_store`
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
@@ -873,7 +873,7 @@ INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_country`
+-- Структура таблицы `oc_country`
 --
 
 CREATE TABLE `oc_country` (
@@ -887,7 +887,7 @@ CREATE TABLE `oc_country` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_country`
+-- Дамп данных таблицы `oc_country`
 --
 
 INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `address_format`, `postcode_required`, `status`) VALUES
@@ -1148,7 +1148,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon`
+-- Структура таблицы `oc_coupon`
 --
 
 CREATE TABLE `oc_coupon` (
@@ -1169,7 +1169,7 @@ CREATE TABLE `oc_coupon` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_coupon`
+-- Дамп данных таблицы `oc_coupon`
 --
 
 INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logged`, `shipping`, `total`, `date_start`, `date_end`, `uses_total`, `uses_customer`, `status`, `date_added`) VALUES
@@ -1180,7 +1180,7 @@ INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logge
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_category`
+-- Структура таблицы `oc_coupon_category`
 --
 
 CREATE TABLE `oc_coupon_category` (
@@ -1191,7 +1191,7 @@ CREATE TABLE `oc_coupon_category` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_history`
+-- Структура таблицы `oc_coupon_history`
 --
 
 CREATE TABLE `oc_coupon_history` (
@@ -1206,7 +1206,7 @@ CREATE TABLE `oc_coupon_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_product`
+-- Структура таблицы `oc_coupon_product`
 --
 
 CREATE TABLE `oc_coupon_product` (
@@ -1218,7 +1218,7 @@ CREATE TABLE `oc_coupon_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_currency`
+-- Структура таблицы `oc_currency`
 --
 
 CREATE TABLE `oc_currency` (
@@ -1234,7 +1234,7 @@ CREATE TABLE `oc_currency` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_currency`
+-- Дамп данных таблицы `oc_currency`
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
@@ -1243,7 +1243,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer`
+-- Структура таблицы `oc_customer`
 --
 
 CREATE TABLE `oc_customer` (
@@ -1275,7 +1275,7 @@ CREATE TABLE `oc_customer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_activity`
+-- Структура таблицы `oc_customer_activity`
 --
 
 CREATE TABLE `oc_customer_activity` (
@@ -1290,7 +1290,7 @@ CREATE TABLE `oc_customer_activity` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_group`
+-- Структура таблицы `oc_customer_group`
 --
 
 CREATE TABLE `oc_customer_group` (
@@ -1300,7 +1300,7 @@ CREATE TABLE `oc_customer_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_customer_group`
+-- Дамп данных таблицы `oc_customer_group`
 --
 
 INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) VALUES
@@ -1309,7 +1309,7 @@ INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_group_description`
+-- Структура таблицы `oc_customer_group_description`
 --
 
 CREATE TABLE `oc_customer_group_description` (
@@ -1320,7 +1320,7 @@ CREATE TABLE `oc_customer_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_customer_group_description`
+-- Дамп данных таблицы `oc_customer_group_description`
 --
 
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
@@ -1329,7 +1329,7 @@ INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_history`
+-- Структура таблицы `oc_customer_history`
 --
 
 CREATE TABLE `oc_customer_history` (
@@ -1342,7 +1342,7 @@ CREATE TABLE `oc_customer_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_ip`
+-- Структура таблицы `oc_customer_ip`
 --
 
 CREATE TABLE `oc_customer_ip` (
@@ -1355,7 +1355,7 @@ CREATE TABLE `oc_customer_ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_login`
+-- Структура таблицы `oc_customer_login`
 --
 
 CREATE TABLE `oc_customer_login` (
@@ -1367,10 +1367,17 @@ CREATE TABLE `oc_customer_login` (
   `date_modified` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `oc_customer_login`
+--
+
+INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `date_added`, `date_modified`) VALUES
+(1, 'jas0n', '127.0.0.1', 1, '2019-01-12 07:13:32', '2019-01-12 07:13:32');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_online`
+-- Структура таблицы `oc_customer_online`
 --
 
 CREATE TABLE `oc_customer_online` (
@@ -1382,16 +1389,16 @@ CREATE TABLE `oc_customer_online` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_customer_online`
+-- Дамп данных таблицы `oc_customer_online`
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://termopara.net/', 'http://localhost:3000/termopary-dlya-kotlov/', '2019-01-12 00:21:20');
+('127.0.0.1', 0, 'http://termopara.net/signup/', 'http://termopara.net/signin/', '2019-01-12 21:49:55');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_reward`
+-- Структура таблицы `oc_customer_reward`
 --
 
 CREATE TABLE `oc_customer_reward` (
@@ -1406,7 +1413,7 @@ CREATE TABLE `oc_customer_reward` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_search`
+-- Структура таблицы `oc_customer_search`
 --
 
 CREATE TABLE `oc_customer_search` (
@@ -1426,7 +1433,7 @@ CREATE TABLE `oc_customer_search` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_transaction`
+-- Структура таблицы `oc_customer_transaction`
 --
 
 CREATE TABLE `oc_customer_transaction` (
@@ -1441,7 +1448,7 @@ CREATE TABLE `oc_customer_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_wishlist`
+-- Структура таблицы `oc_customer_wishlist`
 --
 
 CREATE TABLE `oc_customer_wishlist` (
@@ -1453,7 +1460,7 @@ CREATE TABLE `oc_customer_wishlist` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu`
+-- Структура таблицы `oc_custommenu`
 --
 
 CREATE TABLE `oc_custommenu` (
@@ -1465,7 +1472,7 @@ CREATE TABLE `oc_custommenu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu`
+-- Дамп данных таблицы `oc_custommenu`
 --
 
 INSERT INTO `oc_custommenu` (`custommenu_id`, `sort_order`, `columns`, `custommenu_type`, `status`) VALUES
@@ -1491,7 +1498,7 @@ INSERT INTO `oc_custommenu` (`custommenu_id`, `sort_order`, `columns`, `customme
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu_child`
+-- Структура таблицы `oc_custommenu_child`
 --
 
 CREATE TABLE `oc_custommenu_child` (
@@ -1503,7 +1510,7 @@ CREATE TABLE `oc_custommenu_child` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu_child`
+-- Дамп данных таблицы `oc_custommenu_child`
 --
 
 INSERT INTO `oc_custommenu_child` (`custommenu_child_id`, `custommenu_id`, `sort_order`, `custommenu_type`, `status`) VALUES
@@ -1602,7 +1609,7 @@ INSERT INTO `oc_custommenu_child` (`custommenu_child_id`, `custommenu_id`, `sort
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu_child_description`
+-- Структура таблицы `oc_custommenu_child_description`
 --
 
 CREATE TABLE `oc_custommenu_child_description` (
@@ -1614,7 +1621,7 @@ CREATE TABLE `oc_custommenu_child_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu_child_description`
+-- Дамп данных таблицы `oc_custommenu_child_description`
 --
 
 INSERT INTO `oc_custommenu_child_description` (`custommenu_child_id`, `custommenu_id`, `name`, `link`, `language_id`) VALUES
@@ -1638,7 +1645,7 @@ INSERT INTO `oc_custommenu_child_description` (`custommenu_child_id`, `custommen
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu_child_to_store`
+-- Структура таблицы `oc_custommenu_child_to_store`
 --
 
 CREATE TABLE `oc_custommenu_child_to_store` (
@@ -1647,7 +1654,7 @@ CREATE TABLE `oc_custommenu_child_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu_child_to_store`
+-- Дамп данных таблицы `oc_custommenu_child_to_store`
 --
 
 INSERT INTO `oc_custommenu_child_to_store` (`custommenu_child_id`, `store_id`) VALUES
@@ -1690,7 +1697,7 @@ INSERT INTO `oc_custommenu_child_to_store` (`custommenu_child_id`, `store_id`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu_description`
+-- Структура таблицы `oc_custommenu_description`
 --
 
 CREATE TABLE `oc_custommenu_description` (
@@ -1701,7 +1708,7 @@ CREATE TABLE `oc_custommenu_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu_description`
+-- Дамп данных таблицы `oc_custommenu_description`
 --
 
 INSERT INTO `oc_custommenu_description` (`custommenu_id`, `name`, `link`, `language_id`) VALUES
@@ -1720,7 +1727,7 @@ INSERT INTO `oc_custommenu_description` (`custommenu_id`, `name`, `link`, `langu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custommenu_to_store`
+-- Структура таблицы `oc_custommenu_to_store`
 --
 
 CREATE TABLE `oc_custommenu_to_store` (
@@ -1729,7 +1736,7 @@ CREATE TABLE `oc_custommenu_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_custommenu_to_store`
+-- Дамп данных таблицы `oc_custommenu_to_store`
 --
 
 INSERT INTO `oc_custommenu_to_store` (`custommenu_id`, `store_id`) VALUES
@@ -1754,7 +1761,7 @@ INSERT INTO `oc_custommenu_to_store` (`custommenu_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field`
+-- Структура таблицы `oc_custom_field`
 --
 
 CREATE TABLE `oc_custom_field` (
@@ -1770,7 +1777,7 @@ CREATE TABLE `oc_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_customer_group`
+-- Структура таблицы `oc_custom_field_customer_group`
 --
 
 CREATE TABLE `oc_custom_field_customer_group` (
@@ -1782,7 +1789,7 @@ CREATE TABLE `oc_custom_field_customer_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_description`
+-- Структура таблицы `oc_custom_field_description`
 --
 
 CREATE TABLE `oc_custom_field_description` (
@@ -1794,7 +1801,7 @@ CREATE TABLE `oc_custom_field_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_value`
+-- Структура таблицы `oc_custom_field_value`
 --
 
 CREATE TABLE `oc_custom_field_value` (
@@ -1806,7 +1813,7 @@ CREATE TABLE `oc_custom_field_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_value_description`
+-- Структура таблицы `oc_custom_field_value_description`
 --
 
 CREATE TABLE `oc_custom_field_value_description` (
@@ -1819,7 +1826,7 @@ CREATE TABLE `oc_custom_field_value_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_download`
+-- Структура таблицы `oc_download`
 --
 
 CREATE TABLE `oc_download` (
@@ -1832,7 +1839,7 @@ CREATE TABLE `oc_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_download_description`
+-- Структура таблицы `oc_download_description`
 --
 
 CREATE TABLE `oc_download_description` (
@@ -1844,7 +1851,7 @@ CREATE TABLE `oc_download_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_event`
+-- Структура таблицы `oc_event`
 --
 
 CREATE TABLE `oc_event` (
@@ -1857,7 +1864,7 @@ CREATE TABLE `oc_event` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_event`
+-- Дамп данных таблицы `oc_event`
 --
 
 INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `date_added`) VALUES
@@ -1866,7 +1873,7 @@ INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `date
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_extension`
+-- Структура таблицы `oc_extension`
 --
 
 CREATE TABLE `oc_extension` (
@@ -1876,7 +1883,7 @@ CREATE TABLE `oc_extension` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_extension`
+-- Дамп данных таблицы `oc_extension`
 --
 
 INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
@@ -1921,7 +1928,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter`
+-- Структура таблицы `oc_filter`
 --
 
 CREATE TABLE `oc_filter` (
@@ -1933,7 +1940,7 @@ CREATE TABLE `oc_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_description`
+-- Структура таблицы `oc_filter_description`
 --
 
 CREATE TABLE `oc_filter_description` (
@@ -1946,7 +1953,7 @@ CREATE TABLE `oc_filter_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_group`
+-- Структура таблицы `oc_filter_group`
 --
 
 CREATE TABLE `oc_filter_group` (
@@ -1957,7 +1964,7 @@ CREATE TABLE `oc_filter_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_group_description`
+-- Структура таблицы `oc_filter_group_description`
 --
 
 CREATE TABLE `oc_filter_group_description` (
@@ -1969,7 +1976,7 @@ CREATE TABLE `oc_filter_group_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_geo_zone`
+-- Структура таблицы `oc_geo_zone`
 --
 
 CREATE TABLE `oc_geo_zone` (
@@ -1981,7 +1988,7 @@ CREATE TABLE `oc_geo_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_geo_zone`
+-- Дамп данных таблицы `oc_geo_zone`
 --
 
 INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`, `date_added`) VALUES
@@ -1991,7 +1998,7 @@ INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information`
+-- Структура таблицы `oc_information`
 --
 
 CREATE TABLE `oc_information` (
@@ -2003,7 +2010,7 @@ CREATE TABLE `oc_information` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information`
+-- Дамп данных таблицы `oc_information`
 --
 
 INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`, `noindex`) VALUES
@@ -2015,7 +2022,7 @@ INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_description`
+-- Структура таблицы `oc_information_description`
 --
 
 CREATE TABLE `oc_information_description` (
@@ -2030,7 +2037,7 @@ CREATE TABLE `oc_information_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information_description`
+-- Дамп данных таблицы `oc_information_description`
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
@@ -2042,7 +2049,7 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_to_layout`
+-- Структура таблицы `oc_information_to_layout`
 --
 
 CREATE TABLE `oc_information_to_layout` (
@@ -2054,7 +2061,7 @@ CREATE TABLE `oc_information_to_layout` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_to_store`
+-- Структура таблицы `oc_information_to_store`
 --
 
 CREATE TABLE `oc_information_to_store` (
@@ -2063,7 +2070,7 @@ CREATE TABLE `oc_information_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information_to_store`
+-- Дамп данных таблицы `oc_information_to_store`
 --
 
 INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
@@ -2075,7 +2082,7 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_language`
+-- Структура таблицы `oc_language`
 --
 
 CREATE TABLE `oc_language` (
@@ -2090,7 +2097,7 @@ CREATE TABLE `oc_language` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_language`
+-- Дамп данных таблицы `oc_language`
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
@@ -2099,7 +2106,7 @@ INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `di
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout`
+-- Структура таблицы `oc_layout`
 --
 
 CREATE TABLE `oc_layout` (
@@ -2108,7 +2115,7 @@ CREATE TABLE `oc_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout`
+-- Дамп данных таблицы `oc_layout`
 --
 
 INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
@@ -2133,7 +2140,7 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout_module`
+-- Структура таблицы `oc_layout_module`
 --
 
 CREATE TABLE `oc_layout_module` (
@@ -2145,7 +2152,7 @@ CREATE TABLE `oc_layout_module` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout_module`
+-- Дамп данных таблицы `oc_layout_module`
 --
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
@@ -2154,27 +2161,27 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (103, 17, 'manufacturer', 'column_left', 0),
 (69, 10, 'affiliate', 'column_right', 1),
 (68, 6, 'account', 'column_right', 1),
-(72, 3, 'category', 'column_left', 1),
-(73, 3, 'banner.30', 'column_left', 2),
+(186, 15, 'blog_popular.35', 'content_bottom', 0),
 (119, 1, 'product_tab.32', 'content_top', 2),
 (78, 14, 'blog_category', 'column_left', 0),
-(79, 15, 'blog_category', 'column_left', 0),
 (84, 16, 'blog_popular.35', 'content_bottom', 0),
-(91, 15, 'blog_latest.33', 'column_left', 1),
+(185, 15, 'account', 'column_left', 2),
 (89, 14, 'blog_popular.35', 'content_bottom', 0),
-(92, 15, 'blog_popular.35', 'content_bottom', 0),
+(184, 15, 'blog_latest.33', 'column_left', 1),
 (94, 14, 'blog_featured.34', 'column_left', 1),
 (104, 17, 'category', 'column_left', 1),
 (105, 17, 'banner.30', 'column_left', 2),
-(108, 3, 'popular.37', 'content_bottom', 0),
+(188, 3, 'popular.37', 'content_bottom', 0),
 (118, 1, 'imgcategory.38', 'content_top', 1),
 (117, 1, 'slideshow.27', 'content_top', 0),
-(120, 1, 'carousel.29', 'content_top', 3);
+(120, 1, 'carousel.29', 'content_top', 3),
+(187, 3, 'category', 'column_left', 0),
+(183, 15, 'category', 'column_left', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout_route`
+-- Структура таблицы `oc_layout_route`
 --
 
 CREATE TABLE `oc_layout_route` (
@@ -2185,13 +2192,13 @@ CREATE TABLE `oc_layout_route` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout_route`
+-- Дамп данных таблицы `oc_layout_route`
 --
 
 INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `route`) VALUES
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
-(44, 3, 0, 'product/category'),
+(83, 3, 0, 'product/category'),
 (64, 1, 0, 'common/home'),
 (20, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
@@ -2203,14 +2210,14 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (52, 12, 0, 'product/compare'),
 (53, 13, 0, 'product/search'),
 (57, 14, 0, 'blog/latest'),
-(58, 15, 0, 'blog/category'),
+(82, 15, 0, 'blog/category'),
 (56, 16, 0, 'blog/article'),
 (63, 17, 0, 'product/manufacturer/info');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_length_class`
+-- Структура таблицы `oc_length_class`
 --
 
 CREATE TABLE `oc_length_class` (
@@ -2219,7 +2226,7 @@ CREATE TABLE `oc_length_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_length_class`
+-- Дамп данных таблицы `oc_length_class`
 --
 
 INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
@@ -2230,7 +2237,7 @@ INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_length_class_description`
+-- Структура таблицы `oc_length_class_description`
 --
 
 CREATE TABLE `oc_length_class_description` (
@@ -2241,7 +2248,7 @@ CREATE TABLE `oc_length_class_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_length_class_description`
+-- Дамп данных таблицы `oc_length_class_description`
 --
 
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -2252,7 +2259,7 @@ INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_location`
+-- Структура таблицы `oc_location`
 --
 
 CREATE TABLE `oc_location` (
@@ -2270,7 +2277,7 @@ CREATE TABLE `oc_location` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer`
+-- Структура таблицы `oc_manufacturer`
 --
 
 CREATE TABLE `oc_manufacturer` (
@@ -2282,7 +2289,7 @@ CREATE TABLE `oc_manufacturer` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer`
+-- Дамп данных таблицы `oc_manufacturer`
 --
 
 INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `noindex`, `sort_order`) VALUES
@@ -2296,7 +2303,7 @@ INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `noindex`, `s
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer_description`
+-- Структура таблицы `oc_manufacturer_description`
 --
 
 CREATE TABLE `oc_manufacturer_description` (
@@ -2311,7 +2318,7 @@ CREATE TABLE `oc_manufacturer_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer_description`
+-- Дамп данных таблицы `oc_manufacturer_description`
 --
 
 INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `description_bottom`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
@@ -2330,7 +2337,7 @@ INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer_to_layout`
+-- Структура таблицы `oc_manufacturer_to_layout`
 --
 
 CREATE TABLE `oc_manufacturer_to_layout` (
@@ -2340,7 +2347,7 @@ CREATE TABLE `oc_manufacturer_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer_to_layout`
+-- Дамп данных таблицы `oc_manufacturer_to_layout`
 --
 
 INSERT INTO `oc_manufacturer_to_layout` (`manufacturer_id`, `store_id`, `layout_id`) VALUES
@@ -2349,7 +2356,7 @@ INSERT INTO `oc_manufacturer_to_layout` (`manufacturer_id`, `store_id`, `layout_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer_to_store`
+-- Структура таблицы `oc_manufacturer_to_store`
 --
 
 CREATE TABLE `oc_manufacturer_to_store` (
@@ -2358,7 +2365,7 @@ CREATE TABLE `oc_manufacturer_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer_to_store`
+-- Дамп данных таблицы `oc_manufacturer_to_store`
 --
 
 INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
@@ -2372,7 +2379,7 @@ INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_marketing`
+-- Структура таблицы `oc_marketing`
 --
 
 CREATE TABLE `oc_marketing` (
@@ -2387,7 +2394,7 @@ CREATE TABLE `oc_marketing` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_menu`
+-- Структура таблицы `oc_menu`
 --
 
 CREATE TABLE `oc_menu` (
@@ -2402,7 +2409,7 @@ CREATE TABLE `oc_menu` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_menu_description`
+-- Структура таблицы `oc_menu_description`
 --
 
 CREATE TABLE `oc_menu_description` (
@@ -2414,7 +2421,7 @@ CREATE TABLE `oc_menu_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_menu_module`
+-- Структура таблицы `oc_menu_module`
 --
 
 CREATE TABLE `oc_menu_module` (
@@ -2427,7 +2434,7 @@ CREATE TABLE `oc_menu_module` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_modification`
+-- Структура таблицы `oc_modification`
 --
 
 CREATE TABLE `oc_modification` (
@@ -2444,7 +2451,7 @@ CREATE TABLE `oc_modification` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_modification`
+-- Дамп данных таблицы `oc_modification`
 --
 
 INSERT INTO `oc_modification` (`modification_id`, `name`, `code`, `author`, `version`, `link`, `xml`, `status`, `date_added`, `date_modified`) VALUES
@@ -2452,12 +2459,12 @@ INSERT INTO `oc_modification` (`modification_id`, `name`, `code`, `author`, `ver
 (3, 'Modification Manager', 'modification_manager', 'OpenCart-Templates', '2.8.1', 'http://www.opencart-templates.co.uk/modification-manager', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<modification>\n  <name>Modification Manager</name>\n  <code>modification_manager</code>\n  <version>2.8.1</version>\n  <author>OpenCart-Templates</author>\n  <link>http://www.opencart-templates.co.uk/modification-manager</link>\n\n  <file path=\"admin/language/en-gb/extension/modification.php\">\n	<operation>\n      <search><![CDATA[<?php]]></search> \n      <add position=\"after\"><![CDATA[\n$_[\'tab_error\'] = \'Error\';\n$_[\'tab_files\'] = \'Files\';\n\n$_[\'text_add\'] = \'Add Modification\';\n$_[\'text_edit\'] = \'Edit Modification: %s\';\n\n$_[\'text_enabled\'] = \'Enabled\';\n$_[\'text_disabled\'] = \'Disabled\';\n\n$_[\'entry_author\'] = \'Author\';\n$_[\'entry_name\'] = \'Name\';\n$_[\'entry_xml\'] = \'XML\';\n\n$_[\'button_filter\'] = \'Filter\';\n$_[\'button_reset\'] = \'Reset\';\n\n$_[\'column_date_modified\'] = \'Last Modified\';\n\n$_[\'error_warning\'] = \'There has been an error. Please check your data and try again\';\n$_[\'error_required\'] = \'This field is required\';\n$_[\'error_name\'] = \'Missing name tag\';\n$_[\'error_code\'] = \'Missing code tag\';\n$_[\'error_exists\'] = \'Modification \\\'%s\\\' is already using the same code: %s!\';]]></add>\n    </operation>\n  </file>\n\n  <file path=\"admin/controller/extension/installer.php\">\n	<operation>\n      <search index=\"0\"><![CDATA[$json[\'error\'] = sprintf($this->language->get(\'error_exists\'), $modification_info[\'name\']);]]></search>\n      <add position=\"replace\"><![CDATA[$this->model_extension_modification->deleteModification($modification_info[\'modification_id\']);]]></add>\n    </operation>\n  </file>\n</modification>', 1, '2019-01-09 19:19:11', '2019-01-09 19:19:11'),
 (4, 'Export/Import Tool (V3.20) for OpenCart 2.x', 'Export/Import Tool (V3.20) for OpenCart 2.x', 'mhccorp.com', '2.x-3.20', 'https://www.mhccorp.com', '<modification>\n	<name>Export/Import Tool (V3.20) for OpenCart 2.x</name>\n	<code>Export/Import Tool (V3.20) for OpenCart 2.x</code>\n	<version>2.x-3.20</version>\n	<author>mhccorp.com</author>\n	<link>https://www.mhccorp.com</link>\n	<file path=\"admin/controller/common/menu.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$data[\'text_backup\'] = $this->language->get(\'text_backup\');]]></search>\n			<add position=\"after\"><![CDATA[\n		$data[\'text_export_import\'] = $this->language->get(\'text_export_import\');\n			]]></add>\n		</operation>\n		<operation error=\"skip\">\n			<search><![CDATA[$data[\'backup\'] = $this->url->link(\'tool/backup\', \'token=\' . $this->session->data[\'token\'],]]></search>\n			<add position=\"after\"><![CDATA[\n		$data[\'export_import\'] = $this->url->link(\'tool/export_import\', \'token=\' . $this->session->data[\'token\'], (version_compare(PHP_VERSION, \'2.2.0.0\') >= 0) ? true : \'SSL\');\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/language/*/common/menu.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$_[\'text_backup\']]]></search>\n			<add position=\"after\"><![CDATA[\n$_[\'text_export_import\']               = \'Export / Import\';\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/view/template/common/menu.tpl\">\n		<operation error=\"skip\">\n			<search><![CDATA[<li><a href=\"<?php echo $backup; ?>\"><?php echo $text_backup; ?></a></li>]]></search>\n			<add position=\"replace\"><![CDATA[<li><a href=\"<?php echo $backup; ?>\"><?php echo $text_backup; ?></a></li><li><a href=\"<?php echo $export_import; ?>\"><?php echo $text_export_import; ?></a></li>]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/controller/common/column_left.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[if ($this->user->hasPermission(\'access\', \'tool/log\')) {]]></search>\n			<add position=\"before\"><![CDATA[\n			if ($this->user->hasPermission(\'access\', \'tool/export_import\')) {\n				$tool[] = array(\n					\'name\'	   => $this->language->get(\'text_export_import\'),\n					\'href\'     => $this->url->link(\'tool/export_import\', \'token=\' . $this->session->data[\'token\'], true),\n					\'children\' => array()		\n				);\n			}\n			]]></add>\n		</operation>\n	</file>\n	<file path=\"admin/language/*/common/column_left.php\">\n		<operation error=\"skip\">\n			<search><![CDATA[$_[\'text_backup\']]]></search>\n			<add position=\"after\"><![CDATA[\n$_[\'text_export_import\']             = \'Export / Import\';\n			]]></add>\n		</operation>\n	</file>\n</modification>\n', 1, '2019-01-10 20:04:14', '2019-01-11 23:15:33'),
 (5, 'Apply Button', 'apply_button', 'The Krotek', '3.0.1', 'https://thekrotek.com', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<modification>\r\n	<name><![CDATA[Apply Button]]></name>\r\n	<code>apply_button</code>\r\n	<version><![CDATA[3.0.1]]></version>\r\n	<author><![CDATA[The Krotek]]></author>\r\n	<link>https://thekrotek.com</link>\r\n	\r\n	<!-- Admin: Setting -->\r\n\r\n	<file path=\"admin/model/setting/setting.php\">\r\n		<operation>\r\n			<search><![CDATA[extends Model {]]></search>\r\n			<add position=\"after\"><![CDATA[\r\n\r\n			public function getLastInsertID($code)\r\n			{\r\n				$query = $this->db->query(\"SHOW TABLES LIKE \'\".DB_PREFIX.$code.\"\'\");\r\n			\r\n				if ($query->num_rows) {\r\n					$query = $this->db->query(\"SELECT \".$code.\"_id AS id FROM `\".DB_PREFIX.$code.\"` ORDER BY \".$code.\"_id DESC LIMIT 1\");\r\n					$id = $query->row[\'id\'];\r\n				} else {\r\n					$id = 0;\r\n				}\r\n				\r\n				return $id;\r\n			}\r\n			\r\n			]]></add>\r\n		</operation>\r\n	</file>\r\n			\r\n	<!-- Admin: Controllers -->\r\n	<!-- \r\n		<file path=\"admin/controller/catalog/*.php|admin/controller/customer/*.php|admin/controller/design/*.php|admin/controller/localisation/*.php|admin/controller/marketing/*.php|admin/controller/sale/*.php|admin/controller/user/*.php|admin/controller/setting/*.php\">\r\n	-->\r\n	<file path=\"admin/controller/catalog/*.php|admin/controller/customer/*.php|admin/controller/design/*.php|admin/controller/localisation/*.php|admin/controller/sale/*.php|admin/controller/user/*.php|admin/controller/setting/*.php\">\r\n		<operation error=\"skip\">\r\n			<search><![CDATA[$this->response->redirect($this->url->link(]]></search>\r\n			<add position=\"before\"><![CDATA[\r\n\r\n			if (!isset($this->request->post[\'selected\']) && isset($this->request->get[\'route\']) && isset($this->request->post[\'apply\'])) {\r\n				$get = explode(\"/\", $this->request->get[\'route\']);\r\n				$folder = $get[0];\r\n				$file = $get[1];\r\n				\r\n				if ($file == \'user_permission\') $table = \'user_group\';\r\n				else $table = $file;\r\n\r\n				$this->load->model(\'setting/setting\');\r\n				$last_id = $this->model_setting_setting->getLastInsertID($table);\r\n\r\n				if ($file == \'setting\') {\r\n					$route = \'setting/store\';\r\n					$editroute = \'setting/setting\';\r\n				} else {\r\n					$route = $folder.\'/\'.$file;\r\n					$editroute = $folder.\'/\'.$file.\'/edit\';\r\n				}\r\n				\r\n				if (!isset($url)) $url = \"\";\r\n\r\n				if (($file != \'setting\') && (isset($this->request->get[$table.\'_id\']) || $last_id)) {\r\n					$url .= \'&\'.$table.\'_id=\'.(isset($this->request->get[$table.\'_id\']) ? $this->request->get[$table.\'_id\'] : $last_id);\r\n				}\r\n\r\n				if ($this->request->post[\'apply\']) {\r\n					if (version_compare(VERSION, \'3\', \'>=\')) {\r\n						$url = \'user_token=\'.$this->session->data[\'user_token\'].$url;\r\n					} else {\r\n						$url = \'token=\'.$this->session->data[\'token\'].$url;\r\n					}\r\n					\r\n					$this->response->redirect($this->url->link($editroute, $url, true));\r\n				}\r\n			}\r\n			\r\n			]]></add>\r\n		</operation>\r\n		<operation error=\"skip\">\r\n			<search><![CDATA[$this->document->setTitle]]></search>\r\n			<add position=\"before\"><![CDATA[\r\n\r\n			$data[\'button_apply\'] = $this->language->get(\'button_apply\');\r\n			\r\n			]]></add>\r\n		</operation>\r\n	</file>\r\n	\r\n	<!-- Admin: Templates -->\r\n\r\n	<file path=\"admin/view/template/*/*_form.tpl|admin/view/template/setting/setting.tpl\">\r\n		<operation error=\"skip\">\r\n			<search><![CDATA[<i class=\"fa fa-save\"></i></button>]]></search>\r\n			<add position=\"after\"><![CDATA[\r\n			\r\n			<button onclick=\"$(\'#content form #apply\').attr(\'value\', \'1\'); $(\'#\' + $(\'#content form\').attr(\'id\')).submit();\" data-toggle=\"tooltip\" title=\"<?php echo (!empty($button_apply) ? $button_apply : \'Apply\'); ?>\" class=\"btn btn-success\"><i class=\"fa fa-check\"></i></button>\r\n			\r\n			]]></add>\r\n		</operation>\r\n		<operation error=\"skip\">\r\n			<search index=\"0\"><![CDATA[</form>]]></search>\r\n			<add position=\"replace\"><![CDATA[\r\n					\r\n			<input type=\"hidden\" name=\"apply\" id=\"apply\" value=\"0\"></form>\r\n			\r\n			]]></add>\r\n		</operation>\r\n	</file>\r\n\r\n	<file path=\"admin/view/template/*/*_form.twig|admin/view/template/setting/setting.twig\">\r\n		<operation error=\"skip\">\r\n			<search><![CDATA[<i class=\"fa fa-save\"></i></button>]]></search>\r\n			<add position=\"after\"><![CDATA[\r\n			\r\n			<button onclick=\"$(\'#content form #apply\').attr(\'value\', \'1\'); $(\'#\' + $(\'#content form\').attr(\'id\')).submit();\" data-toggle=\"tooltip\" title=\"{{ button_apply }}\" class=\"btn btn-success\"><i class=\"fa fa-check\"></i></button>\r\n			\r\n			]]></add>\r\n		</operation>\r\n		<operation error=\"skip\">\r\n			<search index=\"0\"><![CDATA[</form>]]></search>\r\n			<add position=\"replace\"><![CDATA[\r\n					\r\n			<input type=\"hidden\" name=\"apply\" id=\"apply\" value=\"0\"></form>\r\n			\r\n			]]></add>\r\n		</operation>\r\n	</file>\r\n	\r\n	<!-- Admin: Language -->\r\n	\r\n	<file path=\"admin/language/*/*.php\">\r\n		<operation>\r\n			<search><![CDATA[<?php]]></search>\r\n			<add position=\"after\"><![CDATA[\r\n			\r\n			$_[\'button_apply\'] = \"Apply\";\r\n			\r\n			]]></add>\r\n		</operation>		\r\n	</file>\r\n			\r\n</modification>', 1, '2019-01-11 19:55:51', '2019-01-11 23:20:30'),
-(6, 'Localization Changes', 'localization_changes', 'NZXTUA', '1.0.0', 'https://zhv.in.ua/admin/model/setting/setting.php', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<modification>\r\n  <name><![CDATA[Localization Changes]]></name>\r\n  <code>localization_changes</code>\r\n  <version><![CDATA[1.0.0]]></version>\r\n  <author><![CDATA[NZXTUA]]></author>\r\n  <link>https://zhv.in.ua/admin/model/setting/setting.php</link>\r\n  <!-- Header  -->\r\n  <file path=\"catalog/language/ru-ru/common/header.php\">\r\n	<operation>\r\n      <search index=\"0\">$_[\'text_account\']       = \'Личный кабинет\';</search>\r\n      <add position=\"replace\">$_[\'text_account\']       = \'Мой аккаунт\';</add>\r\n    </operation>\r\n	<operation>\r\n      <search index=\"0\">$_[\'text_wishlist\']      = \'Закладки (%s)\';</search>\r\n      <add position=\"replace\">$_[\'text_wishlist\']      = \'Избранное (%s)\';</add>\r\n    </operation>\r\n  </file>\r\n\r\n</modification>', 1, '2019-01-11 22:29:50', '2019-01-11 23:14:17');
+(6, 'Localization Changes', 'localization_changes', 'NZXTUA', '1.0.0', 'https://zhv.in.ua/admin/model/setting/setting.php', '<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<modification>\r\n  <name><![CDATA[Localization Changes]]></name>\r\n  <code>localization_changes</code>\r\n  <version><![CDATA[1.0.0]]></version>\r\n  <author><![CDATA[NZXTUA]]></author>\r\n  <link>https://zhv.in.ua/admin/model/setting/setting.php</link>\r\n  <!-- Header  -->\r\n  <file path=\"catalog/language/ru-ru/common/header.php\">\r\n	<operation>\r\n      <search index=\"0\">$_[\'text_account\']       = \'Личный кабинет\';</search>\r\n      <add position=\"replace\">$_[\'text_account\']       = \'Мой аккаунт\';</add>\r\n    </operation>\r\n	<operation>\r\n      <search index=\"0\">$_[\'text_wishlist\']      = \'Закладки (%s)\';</search>\r\n      <add position=\"replace\">$_[\'text_wishlist\']      = \'Избранное (%s)\';</add>\r\n    </operation>\r\n	<operation>\r\n      <search index=\"0\">$_[\'text_search\']        = \'Поиск\';</search>\r\n      <add position=\"replace\">$_[\'text_search\']        = \'Что ищем?\';</add>\r\n    </operation>\r\n  </file>\r\n</modification>', 1, '2019-01-11 22:29:50', '2019-01-12 05:17:46');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_module`
+-- Структура таблицы `oc_module`
 --
 
 CREATE TABLE `oc_module` (
@@ -2468,12 +2475,12 @@ CREATE TABLE `oc_module` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_module`
+-- Дамп данных таблицы `oc_module`
 --
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (30, 'Category', 'banner', '{\"name\":\"Category\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"1\"}'),
-(29, 'Home Page', 'carousel', '{\"name\":\"Home Page\",\"banner_id\":\"8\",\"width\":\"130\",\"height\":\"100\",\"status\":\"0\"}'),
+(29, 'Home Page', 'carousel', '{\"name\":\"Home Page\",\"banner_id\":\"8\",\"width\":\"130\",\"height\":\"100\",\"status\":\"1\"}'),
 (28, 'Home Page', 'featured', '{\"name\":\"Home Page\",\"product\":[\"43\",\"40\",\"42\",\"30\"],\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (27, 'Home Page', 'slideshow', '{\"name\":\"Home Page\",\"banner_id\":\"7\",\"width\":\"1600\",\"height\":\"380\",\"status\":\"0\"}'),
 (31, 'Banner 1', 'banner', '{\"name\":\"Banner 1\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"1\"}'),
@@ -2487,7 +2494,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option`
+-- Структура таблицы `oc_option`
 --
 
 CREATE TABLE `oc_option` (
@@ -2499,7 +2506,7 @@ CREATE TABLE `oc_option` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_description`
+-- Структура таблицы `oc_option_description`
 --
 
 CREATE TABLE `oc_option_description` (
@@ -2511,7 +2518,7 @@ CREATE TABLE `oc_option_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_value`
+-- Структура таблицы `oc_option_value`
 --
 
 CREATE TABLE `oc_option_value` (
@@ -2524,7 +2531,7 @@ CREATE TABLE `oc_option_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_value_description`
+-- Структура таблицы `oc_option_value_description`
 --
 
 CREATE TABLE `oc_option_value_description` (
@@ -2537,7 +2544,7 @@ CREATE TABLE `oc_option_value_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order`
+-- Структура таблицы `oc_order`
 --
 
 CREATE TABLE `oc_order` (
@@ -2607,7 +2614,7 @@ CREATE TABLE `oc_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_custom_field`
+-- Структура таблицы `oc_order_custom_field`
 --
 
 CREATE TABLE `oc_order_custom_field` (
@@ -2624,7 +2631,7 @@ CREATE TABLE `oc_order_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_history`
+-- Структура таблицы `oc_order_history`
 --
 
 CREATE TABLE `oc_order_history` (
@@ -2639,7 +2646,7 @@ CREATE TABLE `oc_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_option`
+-- Структура таблицы `oc_order_option`
 --
 
 CREATE TABLE `oc_order_option` (
@@ -2656,7 +2663,7 @@ CREATE TABLE `oc_order_option` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_product`
+-- Структура таблицы `oc_order_product`
 --
 
 CREATE TABLE `oc_order_product` (
@@ -2675,7 +2682,7 @@ CREATE TABLE `oc_order_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_recurring`
+-- Структура таблицы `oc_order_recurring`
 --
 
 CREATE TABLE `oc_order_recurring` (
@@ -2704,7 +2711,7 @@ CREATE TABLE `oc_order_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_recurring_transaction`
+-- Структура таблицы `oc_order_recurring_transaction`
 --
 
 CREATE TABLE `oc_order_recurring_transaction` (
@@ -2719,7 +2726,7 @@ CREATE TABLE `oc_order_recurring_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_status`
+-- Структура таблицы `oc_order_status`
 --
 
 CREATE TABLE `oc_order_status` (
@@ -2729,7 +2736,7 @@ CREATE TABLE `oc_order_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_order_status`
+-- Дамп данных таблицы `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
@@ -2751,7 +2758,7 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_total`
+-- Структура таблицы `oc_order_total`
 --
 
 CREATE TABLE `oc_order_total` (
@@ -2766,7 +2773,7 @@ CREATE TABLE `oc_order_total` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_voucher`
+-- Структура таблицы `oc_order_voucher`
 --
 
 CREATE TABLE `oc_order_voucher` (
@@ -2787,7 +2794,7 @@ CREATE TABLE `oc_order_voucher` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product`
+-- Структура таблицы `oc_product`
 --
 
 CREATE TABLE `oc_product` (
@@ -2826,12 +2833,12 @@ CREATE TABLE `oc_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product`
+-- Дамп данных таблицы `oc_product`
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `noindex`, `date_added`, `date_modified`) VALUES
-(51, '1152', '', '', '', '120', '', '', '', 99999, 6, 'catalog/product/termopara.net-01152-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 10, 1, 2, 1, '2013-09-28 08:33:01', '2016-02-12 10:57:00'),
-(52, '1162', '', '', '', '120', '', '', '', 99999, 6, 'catalog/product/termopara.net-01162-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 20, 1, 0, 1, '2013-09-28 08:41:31', '2016-02-12 10:59:27'),
+(51, '1152', '', '', '', '120', '', '', '', 99999, 6, 'catalog/product/termopara.net-01152-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 10, 1, 3, 1, '2013-09-28 08:33:01', '2016-02-12 10:57:00'),
+(52, '1162', '', '', '', '120', '', '', '', 99999, 6, 'catalog/product/termopara.net-01162-01.jpg', 8, 1, '84.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 20, 1, 1, 1, '2013-09-28 08:41:31', '2016-02-12 10:59:27'),
 (53, '1222', '', '', '', '120', '', '', '', 99999, 6, 'catalog/product/termopara.net-01222-01.jpg', 8, 1, '56.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 60, 1, 0, 1, '2013-09-28 08:52:27', '2016-02-12 11:06:01'),
 (54, '1242', '', '', '', '150', '', '', '', 99999, 6, 'catalog/product/termopara.net-01242-01.jpg', 8, 1, '61.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 70, 1, 0, 1, '2013-09-28 08:53:07', '2016-02-12 11:07:17'),
 (56, '1252', '', '', '', '156', '', '', '', 99999, 6, 'catalog/product/termopara.net-01252-01.jpg', 8, 1, '65.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 80, 1, 0, 1, '2013-09-28 09:49:55', '2016-02-12 11:08:23'),
@@ -2919,7 +2926,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (139, '5402', '', '', '', '39', '', '', '', 99999, 6, 'catalog/product/termopara.net-05402-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 960, 1, 0, 1, '2014-07-14 09:15:36', '2015-11-13 17:52:51'),
 (140, '5412', '', '', '', '39', '', '', '', 99999, 6, 'catalog/product/termopara.net-05412-01.jpg', 8, 1, '53.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 970, 1, 0, 1, '2014-07-14 09:29:37', '2015-11-13 17:54:11'),
 (141, '6148', '', '', '', '10', '', '', '', 99999, 6, 'catalog/product/termopara.net-05748-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1180, 1, 0, 1, '2014-07-14 10:34:27', '2015-11-13 17:40:29'),
-(142, '6149', '', '', '', '10', '', '', '', 99999, 6, 'catalog/product/termopara.net-05749-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1190, 1, 0, 1, '2014-07-14 10:41:00', '2015-11-13 17:41:56'),
+(142, '6149', '', '', '', '10', '', '', '', 99999, 6, 'catalog/product/termopara.net-05749-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1190, 1, 1, 1, '2014-07-14 10:41:00', '2015-11-13 17:41:56'),
 (143, '6140', '', '', '', '10', '', '', '', 99999, 6, 'catalog/product/termopara.net-05740-01.jpg', 8, 1, '11.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 1200, 1, 0, 1, '2014-07-14 10:41:07', '2015-11-13 17:44:23'),
 (144, '5422', '', '', '', '43', '', '', '', 99999, 6, 'catalog/product/termopara.net-05422-01.jpg', 8, 1, '58.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 980, 1, 0, 1, '2014-10-29 18:03:44', '2015-11-13 17:55:47'),
 (145, '1540', '', '', '', '51', '', '', '', 99999, 6, 'catalog/product/termopara.net-01549-01.jpg', 8, 1, '50.0000', 0, 0, '2013-09-27', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 2, 0, 1, 260, 1, 0, 1, '2014-10-29 18:36:41', '2016-02-12 12:33:16'),
@@ -2960,7 +2967,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_attribute`
+-- Структура таблицы `oc_product_attribute`
 --
 
 CREATE TABLE `oc_product_attribute` (
@@ -2971,7 +2978,7 @@ CREATE TABLE `oc_product_attribute` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_attribute`
+-- Дамп данных таблицы `oc_product_attribute`
 --
 
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
@@ -3081,7 +3088,7 @@ INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_description`
+-- Структура таблицы `oc_product_description`
 --
 
 CREATE TABLE `oc_product_description` (
@@ -3098,7 +3105,7 @@ CREATE TABLE `oc_product_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_description`
+-- Дамп данных таблицы `oc_product_description`
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `description_mini`, `tag`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
@@ -3237,7 +3244,7 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_discount`
+-- Структура таблицы `oc_product_discount`
 --
 
 CREATE TABLE `oc_product_discount` (
@@ -3252,7 +3259,7 @@ CREATE TABLE `oc_product_discount` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_discount`
+-- Дамп данных таблицы `oc_product_discount`
 --
 
 INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
@@ -4275,7 +4282,7 @@ INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `custome
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_filter`
+-- Структура таблицы `oc_product_filter`
 --
 
 CREATE TABLE `oc_product_filter` (
@@ -4286,7 +4293,7 @@ CREATE TABLE `oc_product_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_image`
+-- Структура таблицы `oc_product_image`
 --
 
 CREATE TABLE `oc_product_image` (
@@ -4297,7 +4304,7 @@ CREATE TABLE `oc_product_image` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_image`
+-- Дамп данных таблицы `oc_product_image`
 --
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
@@ -4683,7 +4690,7 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_option`
+-- Структура таблицы `oc_product_option`
 --
 
 CREATE TABLE `oc_product_option` (
@@ -4697,7 +4704,7 @@ CREATE TABLE `oc_product_option` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_option_value`
+-- Структура таблицы `oc_product_option_value`
 --
 
 CREATE TABLE `oc_product_option_value` (
@@ -4719,7 +4726,7 @@ CREATE TABLE `oc_product_option_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_recurring`
+-- Структура таблицы `oc_product_recurring`
 --
 
 CREATE TABLE `oc_product_recurring` (
@@ -4731,7 +4738,7 @@ CREATE TABLE `oc_product_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_related`
+-- Структура таблицы `oc_product_related`
 --
 
 CREATE TABLE `oc_product_related` (
@@ -4740,7 +4747,7 @@ CREATE TABLE `oc_product_related` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_related`
+-- Дамп данных таблицы `oc_product_related`
 --
 
 INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
@@ -7903,7 +7910,7 @@ INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_related_article`
+-- Структура таблицы `oc_product_related_article`
 --
 
 CREATE TABLE `oc_product_related_article` (
@@ -7914,7 +7921,7 @@ CREATE TABLE `oc_product_related_article` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_related_mn`
+-- Структура таблицы `oc_product_related_mn`
 --
 
 CREATE TABLE `oc_product_related_mn` (
@@ -7925,7 +7932,7 @@ CREATE TABLE `oc_product_related_mn` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_related_wb`
+-- Структура таблицы `oc_product_related_wb`
 --
 
 CREATE TABLE `oc_product_related_wb` (
@@ -7936,7 +7943,7 @@ CREATE TABLE `oc_product_related_wb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_reward`
+-- Структура таблицы `oc_product_reward`
 --
 
 CREATE TABLE `oc_product_reward` (
@@ -7947,7 +7954,7 @@ CREATE TABLE `oc_product_reward` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_reward`
+-- Дамп данных таблицы `oc_product_reward`
 --
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
@@ -8081,7 +8088,7 @@ INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_gr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_special`
+-- Структура таблицы `oc_product_special`
 --
 
 CREATE TABLE `oc_product_special` (
@@ -8097,7 +8104,7 @@ CREATE TABLE `oc_product_special` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_tab`
+-- Структура таблицы `oc_product_tab`
 --
 
 CREATE TABLE `oc_product_tab` (
@@ -8110,7 +8117,7 @@ CREATE TABLE `oc_product_tab` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_tab_desc`
+-- Структура таблицы `oc_product_tab_desc`
 --
 
 CREATE TABLE `oc_product_tab_desc` (
@@ -8124,7 +8131,7 @@ CREATE TABLE `oc_product_tab_desc` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_benefit`
+-- Структура таблицы `oc_product_to_benefit`
 --
 
 CREATE TABLE `oc_product_to_benefit` (
@@ -8135,7 +8142,7 @@ CREATE TABLE `oc_product_to_benefit` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_category`
+-- Структура таблицы `oc_product_to_category`
 --
 
 CREATE TABLE `oc_product_to_category` (
@@ -8145,7 +8152,7 @@ CREATE TABLE `oc_product_to_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_to_category`
+-- Дамп данных таблицы `oc_product_to_category`
 --
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`, `main_category`) VALUES
@@ -8322,7 +8329,7 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`, `main_categor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_download`
+-- Структура таблицы `oc_product_to_download`
 --
 
 CREATE TABLE `oc_product_to_download` (
@@ -8333,7 +8340,7 @@ CREATE TABLE `oc_product_to_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_layout`
+-- Структура таблицы `oc_product_to_layout`
 --
 
 CREATE TABLE `oc_product_to_layout` (
@@ -8345,7 +8352,7 @@ CREATE TABLE `oc_product_to_layout` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_sticker`
+-- Структура таблицы `oc_product_to_sticker`
 --
 
 CREATE TABLE `oc_product_to_sticker` (
@@ -8357,7 +8364,7 @@ CREATE TABLE `oc_product_to_sticker` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_store`
+-- Структура таблицы `oc_product_to_store`
 --
 
 CREATE TABLE `oc_product_to_store` (
@@ -8366,7 +8373,7 @@ CREATE TABLE `oc_product_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_to_store`
+-- Дамп данных таблицы `oc_product_to_store`
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
@@ -8500,7 +8507,7 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_recurring`
+-- Структура таблицы `oc_recurring`
 --
 
 CREATE TABLE `oc_recurring` (
@@ -8521,7 +8528,7 @@ CREATE TABLE `oc_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_recurring_description`
+-- Структура таблицы `oc_recurring_description`
 --
 
 CREATE TABLE `oc_recurring_description` (
@@ -8533,7 +8540,7 @@ CREATE TABLE `oc_recurring_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return`
+-- Структура таблицы `oc_return`
 --
 
 CREATE TABLE `oc_return` (
@@ -8561,7 +8568,7 @@ CREATE TABLE `oc_return` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_action`
+-- Структура таблицы `oc_return_action`
 --
 
 CREATE TABLE `oc_return_action` (
@@ -8571,7 +8578,7 @@ CREATE TABLE `oc_return_action` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_action`
+-- Дамп данных таблицы `oc_return_action`
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
@@ -8582,7 +8589,7 @@ INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_history`
+-- Структура таблицы `oc_return_history`
 --
 
 CREATE TABLE `oc_return_history` (
@@ -8597,7 +8604,7 @@ CREATE TABLE `oc_return_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_reason`
+-- Структура таблицы `oc_return_reason`
 --
 
 CREATE TABLE `oc_return_reason` (
@@ -8607,7 +8614,7 @@ CREATE TABLE `oc_return_reason` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_reason`
+-- Дамп данных таблицы `oc_return_reason`
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
@@ -8620,7 +8627,7 @@ INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_status`
+-- Структура таблицы `oc_return_status`
 --
 
 CREATE TABLE `oc_return_status` (
@@ -8630,7 +8637,7 @@ CREATE TABLE `oc_return_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_status`
+-- Дамп данных таблицы `oc_return_status`
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
@@ -8641,7 +8648,7 @@ INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_review`
+-- Структура таблицы `oc_review`
 --
 
 CREATE TABLE `oc_review` (
@@ -8659,7 +8666,7 @@ CREATE TABLE `oc_review` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_review_article`
+-- Структура таблицы `oc_review_article`
 --
 
 CREATE TABLE `oc_review_article` (
@@ -8675,7 +8682,7 @@ CREATE TABLE `oc_review_article` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_review_article`
+-- Дамп данных таблицы `oc_review_article`
 --
 
 INSERT INTO `oc_review_article` (`review_article_id`, `article_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
@@ -8684,7 +8691,7 @@ INSERT INTO `oc_review_article` (`review_article_id`, `article_id`, `customer_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_setting`
+-- Структура таблицы `oc_setting`
 --
 
 CREATE TABLE `oc_setting` (
@@ -8697,7 +8704,7 @@ CREATE TABLE `oc_setting` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_setting`
+-- Дамп данных таблицы `oc_setting`
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
@@ -8922,7 +8929,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_sticker`
+-- Структура таблицы `oc_sticker`
 --
 
 CREATE TABLE `oc_sticker` (
@@ -8933,7 +8940,7 @@ CREATE TABLE `oc_sticker` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_sticker`
+-- Дамп данных таблицы `oc_sticker`
 --
 
 INSERT INTO `oc_sticker` (`sticker_id`, `name`, `status`, `image`) VALUES
@@ -8946,7 +8953,7 @@ INSERT INTO `oc_sticker` (`sticker_id`, `name`, `status`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_stock_status`
+-- Структура таблицы `oc_stock_status`
 --
 
 CREATE TABLE `oc_stock_status` (
@@ -8956,7 +8963,7 @@ CREATE TABLE `oc_stock_status` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_stock_status`
+-- Дамп данных таблицы `oc_stock_status`
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
@@ -8968,7 +8975,7 @@ INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_store`
+-- Структура таблицы `oc_store`
 --
 
 CREATE TABLE `oc_store` (
@@ -8981,7 +8988,7 @@ CREATE TABLE `oc_store` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_class`
+-- Структура таблицы `oc_tax_class`
 --
 
 CREATE TABLE `oc_tax_class` (
@@ -8993,7 +9000,7 @@ CREATE TABLE `oc_tax_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_class`
+-- Дамп данных таблицы `oc_tax_class`
 --
 
 INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`, `date_modified`) VALUES
@@ -9003,7 +9010,7 @@ INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rate`
+-- Структура таблицы `oc_tax_rate`
 --
 
 CREATE TABLE `oc_tax_rate` (
@@ -9017,7 +9024,7 @@ CREATE TABLE `oc_tax_rate` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rate`
+-- Дамп данных таблицы `oc_tax_rate`
 --
 
 INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
@@ -9027,7 +9034,7 @@ INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rate_to_customer_group`
+-- Структура таблицы `oc_tax_rate_to_customer_group`
 --
 
 CREATE TABLE `oc_tax_rate_to_customer_group` (
@@ -9036,7 +9043,7 @@ CREATE TABLE `oc_tax_rate_to_customer_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rate_to_customer_group`
+-- Дамп данных таблицы `oc_tax_rate_to_customer_group`
 --
 
 INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`) VALUES
@@ -9046,7 +9053,7 @@ INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rule`
+-- Структура таблицы `oc_tax_rule`
 --
 
 CREATE TABLE `oc_tax_rule` (
@@ -9058,7 +9065,7 @@ CREATE TABLE `oc_tax_rule` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rule`
+-- Дамп данных таблицы `oc_tax_rule`
 --
 
 INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`, `priority`) VALUES
@@ -9070,7 +9077,7 @@ INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_theme`
+-- Структура таблицы `oc_theme`
 --
 
 CREATE TABLE `oc_theme` (
@@ -9084,7 +9091,7 @@ CREATE TABLE `oc_theme` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_translation`
+-- Структура таблицы `oc_translation`
 --
 
 CREATE TABLE `oc_translation` (
@@ -9099,7 +9106,7 @@ CREATE TABLE `oc_translation` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_upload`
+-- Структура таблицы `oc_upload`
 --
 
 CREATE TABLE `oc_upload` (
@@ -9113,7 +9120,7 @@ CREATE TABLE `oc_upload` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_url_alias`
+-- Структура таблицы `oc_url_alias`
 --
 
 CREATE TABLE `oc_url_alias` (
@@ -9124,7 +9131,7 @@ CREATE TABLE `oc_url_alias` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_url_alias`
+-- Дамп данных таблицы `oc_url_alias`
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`, `seomanager`) VALUES
@@ -9315,7 +9322,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`, `seomanager`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_user`
+-- Структура таблицы `oc_user`
 --
 
 CREATE TABLE `oc_user` (
@@ -9335,7 +9342,7 @@ CREATE TABLE `oc_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_user`
+-- Дамп данных таблицы `oc_user`
 --
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
@@ -9344,7 +9351,7 @@ INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_user_group`
+-- Структура таблицы `oc_user_group`
 --
 
 CREATE TABLE `oc_user_group` (
@@ -9354,17 +9361,17 @@ CREATE TABLE `oc_user_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_user_group`
+-- Дамп данных таблицы `oc_user_group`
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Администратор', '{\"access\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"],\"modify\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}'),
+(1, 'Администратор', '{\"access\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/module\\/viewed\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"],\"modify\":[\"blog\\/article\",\"blog\\/category\",\"blog\\/review\",\"blog\\/setting\",\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/filemanager\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/benefit\",\"design\\/custommenu\",\"design\\/language\",\"design\\/layout\",\"design\\/menu\",\"design\\/sticker\",\"design\\/theme\",\"design\\/translation\",\"event\\/compatibility\",\"event\\/theme\",\"extension\\/analytics\\/google_analytics\",\"extension\\/captcha\\/basic_captcha\",\"extension\\/captcha\\/google_captcha\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/event\",\"extension\\/extension\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/blog_sitemap\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/feed\\/sitemap_pro\",\"extension\\/feed\\/yandex_market\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/installer\",\"extension\\/modification\",\"extension\\/module\\/account\",\"extension\\/module\\/affiliate\",\"extension\\/module\\/ajax_viewed\",\"extension\\/module\\/alphabetm\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/bestsellerpercategory\",\"extension\\/module\\/blog_category\",\"extension\\/module\\/blog_featured\",\"extension\\/module\\/blog_latest\",\"extension\\/module\\/blog_popular\",\"extension\\/module\\/cachemanager\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/category4level\",\"extension\\/module\\/categorywall\",\"extension\\/module\\/coolbanner\",\"extension\\/module\\/custom_banner\",\"extension\\/module\\/custom_footer\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/featured_article\",\"extension\\/module\\/featured_product\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/imgcategory\",\"extension\\/module\\/information\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/latestpercategory\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/manufacturer\",\"extension\\/module\\/manufacturerpercategory\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/popular\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/product_tab\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/specialpercategory\",\"extension\\/module\\/store\",\"extension\\/module\\/turbo\",\"extension\\/module\\/viewed\",\"extension\\/openbay\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/worldpay\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/shipping\\/xshipping\",\"extension\\/store\",\"extension\\/theme\\/theme_default\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"howto\\/blogun\",\"howto\\/gogettop\",\"howto\\/howtosms\",\"howto\\/seopult\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"marketing\\/affiliate\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"pro\\/license\",\"report\\/affiliate\",\"report\\/affiliate_activity\",\"report\\/affiliate_login\",\"report\\/customer_activity\",\"report\\/customer_credit\",\"report\\/customer_login\",\"report\\/customer_online\",\"report\\/customer_order\",\"report\\/customer_reward\",\"report\\/customer_search\",\"report\\/marketing\",\"report\\/product_purchased\",\"report\\/product_viewed\",\"report\\/sale_coupon\",\"report\\/sale_order\",\"report\\/sale_return\",\"report\\/sale_shipping\",\"report\\/sale_tax\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"search\\/search\",\"setting\\/setting\",\"setting\\/store\",\"startup\\/compatibility\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/seomanager\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\"]}'),
 (10, 'Демонстрация', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher`
+-- Структура таблицы `oc_voucher`
 --
 
 CREATE TABLE `oc_voucher` (
@@ -9385,7 +9392,7 @@ CREATE TABLE `oc_voucher` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_history`
+-- Структура таблицы `oc_voucher_history`
 --
 
 CREATE TABLE `oc_voucher_history` (
@@ -9399,7 +9406,7 @@ CREATE TABLE `oc_voucher_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_theme`
+-- Структура таблицы `oc_voucher_theme`
 --
 
 CREATE TABLE `oc_voucher_theme` (
@@ -9408,7 +9415,7 @@ CREATE TABLE `oc_voucher_theme` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_voucher_theme`
+-- Дамп данных таблицы `oc_voucher_theme`
 --
 
 INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
@@ -9419,7 +9426,7 @@ INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_theme_description`
+-- Структура таблицы `oc_voucher_theme_description`
 --
 
 CREATE TABLE `oc_voucher_theme_description` (
@@ -9429,7 +9436,7 @@ CREATE TABLE `oc_voucher_theme_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_voucher_theme_description`
+-- Дамп данных таблицы `oc_voucher_theme_description`
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
@@ -9440,7 +9447,7 @@ INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_weight_class`
+-- Структура таблицы `oc_weight_class`
 --
 
 CREATE TABLE `oc_weight_class` (
@@ -9449,7 +9456,7 @@ CREATE TABLE `oc_weight_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_weight_class`
+-- Дамп данных таблицы `oc_weight_class`
 --
 
 INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
@@ -9461,7 +9468,7 @@ INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_weight_class_description`
+-- Структура таблицы `oc_weight_class_description`
 --
 
 CREATE TABLE `oc_weight_class_description` (
@@ -9472,7 +9479,7 @@ CREATE TABLE `oc_weight_class_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_weight_class_description`
+-- Дамп данных таблицы `oc_weight_class_description`
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -9484,7 +9491,7 @@ INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_zone`
+-- Структура таблицы `oc_zone`
 --
 
 CREATE TABLE `oc_zone` (
@@ -9496,7 +9503,7 @@ CREATE TABLE `oc_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_zone`
+-- Дамп данных таблицы `oc_zone`
 --
 
 INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
@@ -13609,7 +13616,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_zone_to_geo_zone`
+-- Структура таблицы `oc_zone_to_geo_zone`
 --
 
 CREATE TABLE `oc_zone_to_geo_zone` (
@@ -13622,7 +13629,7 @@ CREATE TABLE `oc_zone_to_geo_zone` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_zone_to_geo_zone`
+-- Дамп данных таблицы `oc_zone_to_geo_zone`
 --
 
 INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id`, `geo_zone_id`, `date_added`, `date_modified`) VALUES
@@ -13737,30 +13744,30 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (109, 222, 3972, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `oc_address`
+-- Индексы таблицы `oc_address`
 --
 ALTER TABLE `oc_address`
   ADD PRIMARY KEY (`address_id`),
   ADD KEY `customer_id` (`customer_id`);
 
 --
--- Indexes for table `oc_affiliate`
+-- Индексы таблицы `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   ADD PRIMARY KEY (`affiliate_id`);
 
 --
--- Indexes for table `oc_affiliate_activity`
+-- Индексы таблицы `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   ADD PRIMARY KEY (`affiliate_activity_id`);
 
 --
--- Indexes for table `oc_affiliate_login`
+-- Индексы таблицы `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   ADD PRIMARY KEY (`affiliate_login_id`),
@@ -13768,295 +13775,295 @@ ALTER TABLE `oc_affiliate_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_affiliate_transaction`
+-- Индексы таблицы `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   ADD PRIMARY KEY (`affiliate_transaction_id`);
 
 --
--- Indexes for table `oc_api`
+-- Индексы таблицы `oc_api`
 --
 ALTER TABLE `oc_api`
   ADD PRIMARY KEY (`api_id`);
 
 --
--- Indexes for table `oc_api_ip`
+-- Индексы таблицы `oc_api_ip`
 --
 ALTER TABLE `oc_api_ip`
   ADD PRIMARY KEY (`api_ip_id`);
 
 --
--- Indexes for table `oc_api_session`
+-- Индексы таблицы `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
   ADD PRIMARY KEY (`api_session_id`);
 
 --
--- Indexes for table `oc_article`
+-- Индексы таблицы `oc_article`
 --
 ALTER TABLE `oc_article`
   ADD PRIMARY KEY (`article_id`);
 
 --
--- Indexes for table `oc_article_description`
+-- Индексы таблицы `oc_article_description`
 --
 ALTER TABLE `oc_article_description`
   ADD PRIMARY KEY (`article_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_article_image`
+-- Индексы таблицы `oc_article_image`
 --
 ALTER TABLE `oc_article_image`
   ADD PRIMARY KEY (`article_image_id`);
 
 --
--- Indexes for table `oc_article_related`
+-- Индексы таблицы `oc_article_related`
 --
 ALTER TABLE `oc_article_related`
   ADD PRIMARY KEY (`article_id`,`related_id`);
 
 --
--- Indexes for table `oc_article_related_mn`
+-- Индексы таблицы `oc_article_related_mn`
 --
 ALTER TABLE `oc_article_related_mn`
   ADD PRIMARY KEY (`article_id`,`manufacturer_id`);
 
 --
--- Indexes for table `oc_article_related_product`
+-- Индексы таблицы `oc_article_related_product`
 --
 ALTER TABLE `oc_article_related_product`
   ADD PRIMARY KEY (`article_id`,`product_id`);
 
 --
--- Indexes for table `oc_article_related_wb`
+-- Индексы таблицы `oc_article_related_wb`
 --
 ALTER TABLE `oc_article_related_wb`
   ADD PRIMARY KEY (`article_id`,`category_id`);
 
 --
--- Indexes for table `oc_article_to_blog_category`
+-- Индексы таблицы `oc_article_to_blog_category`
 --
 ALTER TABLE `oc_article_to_blog_category`
   ADD PRIMARY KEY (`article_id`,`blog_category_id`);
 
 --
--- Indexes for table `oc_article_to_download`
+-- Индексы таблицы `oc_article_to_download`
 --
 ALTER TABLE `oc_article_to_download`
   ADD PRIMARY KEY (`article_id`,`download_id`);
 
 --
--- Indexes for table `oc_article_to_layout`
+-- Индексы таблицы `oc_article_to_layout`
 --
 ALTER TABLE `oc_article_to_layout`
   ADD PRIMARY KEY (`article_id`,`store_id`);
 
 --
--- Indexes for table `oc_article_to_store`
+-- Индексы таблицы `oc_article_to_store`
 --
 ALTER TABLE `oc_article_to_store`
   ADD PRIMARY KEY (`article_id`,`store_id`);
 
 --
--- Indexes for table `oc_attribute`
+-- Индексы таблицы `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   ADD PRIMARY KEY (`attribute_id`);
 
 --
--- Indexes for table `oc_attribute_description`
+-- Индексы таблицы `oc_attribute_description`
 --
 ALTER TABLE `oc_attribute_description`
   ADD PRIMARY KEY (`attribute_id`,`language_id`);
 
 --
--- Indexes for table `oc_attribute_group`
+-- Индексы таблицы `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   ADD PRIMARY KEY (`attribute_group_id`);
 
 --
--- Indexes for table `oc_attribute_group_description`
+-- Индексы таблицы `oc_attribute_group_description`
 --
 ALTER TABLE `oc_attribute_group_description`
   ADD PRIMARY KEY (`attribute_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_banner`
+-- Индексы таблицы `oc_banner`
 --
 ALTER TABLE `oc_banner`
   ADD PRIMARY KEY (`banner_id`);
 
 --
--- Indexes for table `oc_banner_image`
+-- Индексы таблицы `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   ADD PRIMARY KEY (`banner_image_id`);
 
 --
--- Indexes for table `oc_benefit`
+-- Индексы таблицы `oc_benefit`
 --
 ALTER TABLE `oc_benefit`
   ADD PRIMARY KEY (`benefit_id`);
 
 --
--- Indexes for table `oc_benefit_description`
+-- Индексы таблицы `oc_benefit_description`
 --
 ALTER TABLE `oc_benefit_description`
   ADD PRIMARY KEY (`benefit_id`,`language_id`);
 
 --
--- Indexes for table `oc_blog_category`
+-- Индексы таблицы `oc_blog_category`
 --
 ALTER TABLE `oc_blog_category`
   ADD PRIMARY KEY (`blog_category_id`);
 
 --
--- Indexes for table `oc_blog_category_description`
+-- Индексы таблицы `oc_blog_category_description`
 --
 ALTER TABLE `oc_blog_category_description`
   ADD PRIMARY KEY (`blog_category_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_blog_category_path`
+-- Индексы таблицы `oc_blog_category_path`
 --
 ALTER TABLE `oc_blog_category_path`
   ADD PRIMARY KEY (`blog_category_id`,`path_id`);
 
 --
--- Indexes for table `oc_blog_category_to_layout`
+-- Индексы таблицы `oc_blog_category_to_layout`
 --
 ALTER TABLE `oc_blog_category_to_layout`
   ADD PRIMARY KEY (`blog_category_id`,`store_id`);
 
 --
--- Indexes for table `oc_blog_category_to_store`
+-- Индексы таблицы `oc_blog_category_to_store`
 --
 ALTER TABLE `oc_blog_category_to_store`
   ADD PRIMARY KEY (`blog_category_id`,`store_id`);
 
 --
--- Indexes for table `oc_cart`
+-- Индексы таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
   ADD PRIMARY KEY (`cart_id`),
   ADD KEY `cart_id` (`api_id`,`customer_id`,`session_id`,`product_id`,`recurring_id`);
 
 --
--- Indexes for table `oc_category`
+-- Индексы таблицы `oc_category`
 --
 ALTER TABLE `oc_category`
   ADD PRIMARY KEY (`category_id`),
   ADD KEY `parent_id` (`parent_id`);
 
 --
--- Indexes for table `oc_category_description`
+-- Индексы таблицы `oc_category_description`
 --
 ALTER TABLE `oc_category_description`
   ADD PRIMARY KEY (`category_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_category_filter`
+-- Индексы таблицы `oc_category_filter`
 --
 ALTER TABLE `oc_category_filter`
   ADD PRIMARY KEY (`category_id`,`filter_id`);
 
 --
--- Indexes for table `oc_category_path`
+-- Индексы таблицы `oc_category_path`
 --
 ALTER TABLE `oc_category_path`
   ADD PRIMARY KEY (`category_id`,`path_id`);
 
 --
--- Indexes for table `oc_category_to_layout`
+-- Индексы таблицы `oc_category_to_layout`
 --
 ALTER TABLE `oc_category_to_layout`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Indexes for table `oc_category_to_store`
+-- Индексы таблицы `oc_category_to_store`
 --
 ALTER TABLE `oc_category_to_store`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Indexes for table `oc_country`
+-- Индексы таблицы `oc_country`
 --
 ALTER TABLE `oc_country`
   ADD PRIMARY KEY (`country_id`);
 
 --
--- Indexes for table `oc_coupon`
+-- Индексы таблицы `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   ADD PRIMARY KEY (`coupon_id`);
 
 --
--- Indexes for table `oc_coupon_category`
+-- Индексы таблицы `oc_coupon_category`
 --
 ALTER TABLE `oc_coupon_category`
   ADD PRIMARY KEY (`coupon_id`,`category_id`);
 
 --
--- Indexes for table `oc_coupon_history`
+-- Индексы таблицы `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   ADD PRIMARY KEY (`coupon_history_id`);
 
 --
--- Indexes for table `oc_coupon_product`
+-- Индексы таблицы `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   ADD PRIMARY KEY (`coupon_product_id`);
 
 --
--- Indexes for table `oc_currency`
+-- Индексы таблицы `oc_currency`
 --
 ALTER TABLE `oc_currency`
   ADD PRIMARY KEY (`currency_id`);
 
 --
--- Indexes for table `oc_customer`
+-- Индексы таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
   ADD PRIMARY KEY (`customer_id`);
 
 --
--- Indexes for table `oc_customer_activity`
+-- Индексы таблицы `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   ADD PRIMARY KEY (`customer_activity_id`);
 
 --
--- Indexes for table `oc_customer_group`
+-- Индексы таблицы `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   ADD PRIMARY KEY (`customer_group_id`);
 
 --
--- Indexes for table `oc_customer_group_description`
+-- Индексы таблицы `oc_customer_group_description`
 --
 ALTER TABLE `oc_customer_group_description`
   ADD PRIMARY KEY (`customer_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_customer_history`
+-- Индексы таблицы `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   ADD PRIMARY KEY (`customer_history_id`);
 
 --
--- Indexes for table `oc_customer_ip`
+-- Индексы таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   ADD PRIMARY KEY (`customer_ip_id`),
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_customer_login`
+-- Индексы таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   ADD PRIMARY KEY (`customer_login_id`),
@@ -14064,50 +14071,50 @@ ALTER TABLE `oc_customer_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_customer_online`
+-- Индексы таблицы `oc_customer_online`
 --
 ALTER TABLE `oc_customer_online`
   ADD PRIMARY KEY (`ip`);
 
 --
--- Indexes for table `oc_customer_reward`
+-- Индексы таблицы `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   ADD PRIMARY KEY (`customer_reward_id`);
 
 --
--- Indexes for table `oc_customer_search`
+-- Индексы таблицы `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
   ADD PRIMARY KEY (`customer_search_id`);
 
 --
--- Indexes for table `oc_customer_transaction`
+-- Индексы таблицы `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   ADD PRIMARY KEY (`customer_transaction_id`);
 
 --
--- Indexes for table `oc_customer_wishlist`
+-- Индексы таблицы `oc_customer_wishlist`
 --
 ALTER TABLE `oc_customer_wishlist`
   ADD PRIMARY KEY (`customer_id`,`product_id`);
 
 --
--- Indexes for table `oc_custommenu`
+-- Индексы таблицы `oc_custommenu`
 --
 ALTER TABLE `oc_custommenu`
   ADD PRIMARY KEY (`custommenu_id`);
 
 --
--- Indexes for table `oc_custommenu_child`
+-- Индексы таблицы `oc_custommenu_child`
 --
 ALTER TABLE `oc_custommenu_child`
   ADD PRIMARY KEY (`custommenu_child_id`),
   ADD KEY `custommenu_id` (`custommenu_id`);
 
 --
--- Indexes for table `oc_custommenu_child_description`
+-- Индексы таблицы `oc_custommenu_child_description`
 --
 ALTER TABLE `oc_custommenu_child_description`
   ADD PRIMARY KEY (`custommenu_child_id`,`language_id`),
@@ -14115,575 +14122,575 @@ ALTER TABLE `oc_custommenu_child_description`
   ADD KEY `language_id` (`language_id`);
 
 --
--- Indexes for table `oc_custommenu_child_to_store`
+-- Индексы таблицы `oc_custommenu_child_to_store`
 --
 ALTER TABLE `oc_custommenu_child_to_store`
   ADD PRIMARY KEY (`custommenu_child_id`,`store_id`),
   ADD KEY `store_id` (`store_id`);
 
 --
--- Indexes for table `oc_custommenu_description`
+-- Индексы таблицы `oc_custommenu_description`
 --
 ALTER TABLE `oc_custommenu_description`
   ADD PRIMARY KEY (`custommenu_id`,`language_id`),
   ADD KEY `language_id` (`language_id`);
 
 --
--- Indexes for table `oc_custommenu_to_store`
+-- Индексы таблицы `oc_custommenu_to_store`
 --
 ALTER TABLE `oc_custommenu_to_store`
   ADD PRIMARY KEY (`custommenu_id`,`store_id`),
   ADD KEY `store_id` (`store_id`);
 
 --
--- Indexes for table `oc_custom_field`
+-- Индексы таблицы `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   ADD PRIMARY KEY (`custom_field_id`);
 
 --
--- Indexes for table `oc_custom_field_customer_group`
+-- Индексы таблицы `oc_custom_field_customer_group`
 --
 ALTER TABLE `oc_custom_field_customer_group`
   ADD PRIMARY KEY (`custom_field_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_custom_field_description`
+-- Индексы таблицы `oc_custom_field_description`
 --
 ALTER TABLE `oc_custom_field_description`
   ADD PRIMARY KEY (`custom_field_id`,`language_id`);
 
 --
--- Indexes for table `oc_custom_field_value`
+-- Индексы таблицы `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   ADD PRIMARY KEY (`custom_field_value_id`);
 
 --
--- Indexes for table `oc_custom_field_value_description`
+-- Индексы таблицы `oc_custom_field_value_description`
 --
 ALTER TABLE `oc_custom_field_value_description`
   ADD PRIMARY KEY (`custom_field_value_id`,`language_id`);
 
 --
--- Indexes for table `oc_download`
+-- Индексы таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
   ADD PRIMARY KEY (`download_id`);
 
 --
--- Indexes for table `oc_download_description`
+-- Индексы таблицы `oc_download_description`
 --
 ALTER TABLE `oc_download_description`
   ADD PRIMARY KEY (`download_id`,`language_id`);
 
 --
--- Indexes for table `oc_event`
+-- Индексы таблицы `oc_event`
 --
 ALTER TABLE `oc_event`
   ADD PRIMARY KEY (`event_id`);
 
 --
--- Indexes for table `oc_extension`
+-- Индексы таблицы `oc_extension`
 --
 ALTER TABLE `oc_extension`
   ADD PRIMARY KEY (`extension_id`);
 
 --
--- Indexes for table `oc_filter`
+-- Индексы таблицы `oc_filter`
 --
 ALTER TABLE `oc_filter`
   ADD PRIMARY KEY (`filter_id`);
 
 --
--- Indexes for table `oc_filter_description`
+-- Индексы таблицы `oc_filter_description`
 --
 ALTER TABLE `oc_filter_description`
   ADD PRIMARY KEY (`filter_id`,`language_id`);
 
 --
--- Indexes for table `oc_filter_group`
+-- Индексы таблицы `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   ADD PRIMARY KEY (`filter_group_id`);
 
 --
--- Indexes for table `oc_filter_group_description`
+-- Индексы таблицы `oc_filter_group_description`
 --
 ALTER TABLE `oc_filter_group_description`
   ADD PRIMARY KEY (`filter_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_geo_zone`
+-- Индексы таблицы `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   ADD PRIMARY KEY (`geo_zone_id`);
 
 --
--- Indexes for table `oc_information`
+-- Индексы таблицы `oc_information`
 --
 ALTER TABLE `oc_information`
   ADD PRIMARY KEY (`information_id`);
 
 --
--- Indexes for table `oc_information_description`
+-- Индексы таблицы `oc_information_description`
 --
 ALTER TABLE `oc_information_description`
   ADD PRIMARY KEY (`information_id`,`language_id`);
 
 --
--- Indexes for table `oc_information_to_layout`
+-- Индексы таблицы `oc_information_to_layout`
 --
 ALTER TABLE `oc_information_to_layout`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Indexes for table `oc_information_to_store`
+-- Индексы таблицы `oc_information_to_store`
 --
 ALTER TABLE `oc_information_to_store`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Indexes for table `oc_language`
+-- Индексы таблицы `oc_language`
 --
 ALTER TABLE `oc_language`
   ADD PRIMARY KEY (`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_layout`
+-- Индексы таблицы `oc_layout`
 --
 ALTER TABLE `oc_layout`
   ADD PRIMARY KEY (`layout_id`);
 
 --
--- Indexes for table `oc_layout_module`
+-- Индексы таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
   ADD PRIMARY KEY (`layout_module_id`);
 
 --
--- Indexes for table `oc_layout_route`
+-- Индексы таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
   ADD PRIMARY KEY (`layout_route_id`);
 
 --
--- Indexes for table `oc_length_class`
+-- Индексы таблицы `oc_length_class`
 --
 ALTER TABLE `oc_length_class`
   ADD PRIMARY KEY (`length_class_id`);
 
 --
--- Indexes for table `oc_length_class_description`
+-- Индексы таблицы `oc_length_class_description`
 --
 ALTER TABLE `oc_length_class_description`
   ADD PRIMARY KEY (`length_class_id`,`language_id`);
 
 --
--- Indexes for table `oc_location`
+-- Индексы таблицы `oc_location`
 --
 ALTER TABLE `oc_location`
   ADD PRIMARY KEY (`location_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_manufacturer`
+-- Индексы таблицы `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   ADD PRIMARY KEY (`manufacturer_id`);
 
 --
--- Indexes for table `oc_manufacturer_description`
+-- Индексы таблицы `oc_manufacturer_description`
 --
 ALTER TABLE `oc_manufacturer_description`
   ADD PRIMARY KEY (`manufacturer_id`,`language_id`);
 
 --
--- Indexes for table `oc_manufacturer_to_layout`
+-- Индексы таблицы `oc_manufacturer_to_layout`
 --
 ALTER TABLE `oc_manufacturer_to_layout`
   ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
--- Indexes for table `oc_manufacturer_to_store`
+-- Индексы таблицы `oc_manufacturer_to_store`
 --
 ALTER TABLE `oc_manufacturer_to_store`
   ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
--- Indexes for table `oc_marketing`
+-- Индексы таблицы `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   ADD PRIMARY KEY (`marketing_id`);
 
 --
--- Indexes for table `oc_menu`
+-- Индексы таблицы `oc_menu`
 --
 ALTER TABLE `oc_menu`
   ADD PRIMARY KEY (`menu_id`);
 
 --
--- Indexes for table `oc_menu_description`
+-- Индексы таблицы `oc_menu_description`
 --
 ALTER TABLE `oc_menu_description`
   ADD PRIMARY KEY (`menu_id`,`language_id`);
 
 --
--- Indexes for table `oc_menu_module`
+-- Индексы таблицы `oc_menu_module`
 --
 ALTER TABLE `oc_menu_module`
   ADD PRIMARY KEY (`menu_module_id`),
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- Indexes for table `oc_modification`
+-- Индексы таблицы `oc_modification`
 --
 ALTER TABLE `oc_modification`
   ADD PRIMARY KEY (`modification_id`);
 
 --
--- Indexes for table `oc_module`
+-- Индексы таблицы `oc_module`
 --
 ALTER TABLE `oc_module`
   ADD PRIMARY KEY (`module_id`);
 
 --
--- Indexes for table `oc_option`
+-- Индексы таблицы `oc_option`
 --
 ALTER TABLE `oc_option`
   ADD PRIMARY KEY (`option_id`);
 
 --
--- Indexes for table `oc_option_description`
+-- Индексы таблицы `oc_option_description`
 --
 ALTER TABLE `oc_option_description`
   ADD PRIMARY KEY (`option_id`,`language_id`);
 
 --
--- Indexes for table `oc_option_value`
+-- Индексы таблицы `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   ADD PRIMARY KEY (`option_value_id`);
 
 --
--- Indexes for table `oc_option_value_description`
+-- Индексы таблицы `oc_option_value_description`
 --
 ALTER TABLE `oc_option_value_description`
   ADD PRIMARY KEY (`option_value_id`,`language_id`);
 
 --
--- Indexes for table `oc_order`
+-- Индексы таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
   ADD PRIMARY KEY (`order_id`);
 
 --
--- Indexes for table `oc_order_custom_field`
+-- Индексы таблицы `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   ADD PRIMARY KEY (`order_custom_field_id`);
 
 --
--- Indexes for table `oc_order_history`
+-- Индексы таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   ADD PRIMARY KEY (`order_history_id`);
 
 --
--- Indexes for table `oc_order_option`
+-- Индексы таблицы `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   ADD PRIMARY KEY (`order_option_id`);
 
 --
--- Indexes for table `oc_order_product`
+-- Индексы таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   ADD PRIMARY KEY (`order_product_id`);
 
 --
--- Indexes for table `oc_order_recurring`
+-- Индексы таблицы `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   ADD PRIMARY KEY (`order_recurring_id`);
 
 --
--- Indexes for table `oc_order_recurring_transaction`
+-- Индексы таблицы `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   ADD PRIMARY KEY (`order_recurring_transaction_id`);
 
 --
--- Indexes for table `oc_order_status`
+-- Индексы таблицы `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   ADD PRIMARY KEY (`order_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_order_total`
+-- Индексы таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   ADD PRIMARY KEY (`order_total_id`),
   ADD KEY `order_id` (`order_id`);
 
 --
--- Indexes for table `oc_order_voucher`
+-- Индексы таблицы `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   ADD PRIMARY KEY (`order_voucher_id`);
 
 --
--- Indexes for table `oc_product`
+-- Индексы таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Indexes for table `oc_product_attribute`
+-- Индексы таблицы `oc_product_attribute`
 --
 ALTER TABLE `oc_product_attribute`
   ADD PRIMARY KEY (`product_id`,`attribute_id`,`language_id`);
 
 --
--- Indexes for table `oc_product_description`
+-- Индексы таблицы `oc_product_description`
 --
 ALTER TABLE `oc_product_description`
   ADD PRIMARY KEY (`product_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_product_discount`
+-- Индексы таблицы `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
   ADD PRIMARY KEY (`product_discount_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_filter`
+-- Индексы таблицы `oc_product_filter`
 --
 ALTER TABLE `oc_product_filter`
   ADD PRIMARY KEY (`product_id`,`filter_id`);
 
 --
--- Indexes for table `oc_product_image`
+-- Индексы таблицы `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
   ADD PRIMARY KEY (`product_image_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_option`
+-- Индексы таблицы `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   ADD PRIMARY KEY (`product_option_id`);
 
 --
--- Indexes for table `oc_product_option_value`
+-- Индексы таблицы `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   ADD PRIMARY KEY (`product_option_value_id`);
 
 --
--- Indexes for table `oc_product_recurring`
+-- Индексы таблицы `oc_product_recurring`
 --
 ALTER TABLE `oc_product_recurring`
   ADD PRIMARY KEY (`product_id`,`recurring_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_product_related`
+-- Индексы таблицы `oc_product_related`
 --
 ALTER TABLE `oc_product_related`
   ADD PRIMARY KEY (`product_id`,`related_id`);
 
 --
--- Indexes for table `oc_product_related_article`
+-- Индексы таблицы `oc_product_related_article`
 --
 ALTER TABLE `oc_product_related_article`
   ADD PRIMARY KEY (`article_id`,`product_id`);
 
 --
--- Indexes for table `oc_product_reward`
+-- Индексы таблицы `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
   ADD PRIMARY KEY (`product_reward_id`);
 
 --
--- Indexes for table `oc_product_special`
+-- Индексы таблицы `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   ADD PRIMARY KEY (`product_special_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_tab`
+-- Индексы таблицы `oc_product_tab`
 --
 ALTER TABLE `oc_product_tab`
   ADD PRIMARY KEY (`product_tab_id`);
 
 --
--- Indexes for table `oc_product_to_benefit`
+-- Индексы таблицы `oc_product_to_benefit`
 --
 ALTER TABLE `oc_product_to_benefit`
   ADD KEY `product_id` (`product_id`),
   ADD KEY `benefit_id` (`benefit_id`);
 
 --
--- Indexes for table `oc_product_to_category`
+-- Индексы таблицы `oc_product_to_category`
 --
 ALTER TABLE `oc_product_to_category`
   ADD PRIMARY KEY (`product_id`,`category_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Indexes for table `oc_product_to_download`
+-- Индексы таблицы `oc_product_to_download`
 --
 ALTER TABLE `oc_product_to_download`
   ADD PRIMARY KEY (`product_id`,`download_id`);
 
 --
--- Indexes for table `oc_product_to_layout`
+-- Индексы таблицы `oc_product_to_layout`
 --
 ALTER TABLE `oc_product_to_layout`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Indexes for table `oc_product_to_sticker`
+-- Индексы таблицы `oc_product_to_sticker`
 --
 ALTER TABLE `oc_product_to_sticker`
   ADD KEY `product_id` (`product_id`),
   ADD KEY `sticker_id` (`sticker_id`);
 
 --
--- Indexes for table `oc_product_to_store`
+-- Индексы таблицы `oc_product_to_store`
 --
 ALTER TABLE `oc_product_to_store`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Indexes for table `oc_recurring`
+-- Индексы таблицы `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   ADD PRIMARY KEY (`recurring_id`);
 
 --
--- Indexes for table `oc_recurring_description`
+-- Индексы таблицы `oc_recurring_description`
 --
 ALTER TABLE `oc_recurring_description`
   ADD PRIMARY KEY (`recurring_id`,`language_id`);
 
 --
--- Indexes for table `oc_return`
+-- Индексы таблицы `oc_return`
 --
 ALTER TABLE `oc_return`
   ADD PRIMARY KEY (`return_id`);
 
 --
--- Indexes for table `oc_return_action`
+-- Индексы таблицы `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   ADD PRIMARY KEY (`return_action_id`,`language_id`);
 
 --
--- Indexes for table `oc_return_history`
+-- Индексы таблицы `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   ADD PRIMARY KEY (`return_history_id`);
 
 --
--- Indexes for table `oc_return_reason`
+-- Индексы таблицы `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   ADD PRIMARY KEY (`return_reason_id`,`language_id`);
 
 --
--- Indexes for table `oc_return_status`
+-- Индексы таблицы `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   ADD PRIMARY KEY (`return_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_review`
+-- Индексы таблицы `oc_review`
 --
 ALTER TABLE `oc_review`
   ADD PRIMARY KEY (`review_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_review_article`
+-- Индексы таблицы `oc_review_article`
 --
 ALTER TABLE `oc_review_article`
   ADD PRIMARY KEY (`review_article_id`),
   ADD KEY `article_id` (`article_id`);
 
 --
--- Indexes for table `oc_setting`
+-- Индексы таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
   ADD PRIMARY KEY (`setting_id`);
 
 --
--- Indexes for table `oc_sticker`
+-- Индексы таблицы `oc_sticker`
 --
 ALTER TABLE `oc_sticker`
   ADD PRIMARY KEY (`sticker_id`);
 
 --
--- Indexes for table `oc_stock_status`
+-- Индексы таблицы `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   ADD PRIMARY KEY (`stock_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_store`
+-- Индексы таблицы `oc_store`
 --
 ALTER TABLE `oc_store`
   ADD PRIMARY KEY (`store_id`);
 
 --
--- Indexes for table `oc_tax_class`
+-- Индексы таблицы `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   ADD PRIMARY KEY (`tax_class_id`);
 
 --
--- Indexes for table `oc_tax_rate`
+-- Индексы таблицы `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   ADD PRIMARY KEY (`tax_rate_id`);
 
 --
--- Indexes for table `oc_tax_rate_to_customer_group`
+-- Индексы таблицы `oc_tax_rate_to_customer_group`
 --
 ALTER TABLE `oc_tax_rate_to_customer_group`
   ADD PRIMARY KEY (`tax_rate_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_tax_rule`
+-- Индексы таблицы `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   ADD PRIMARY KEY (`tax_rule_id`);
 
 --
--- Indexes for table `oc_theme`
+-- Индексы таблицы `oc_theme`
 --
 ALTER TABLE `oc_theme`
   ADD PRIMARY KEY (`theme_id`);
 
 --
--- Indexes for table `oc_translation`
+-- Индексы таблицы `oc_translation`
 --
 ALTER TABLE `oc_translation`
   ADD PRIMARY KEY (`translation_id`);
 
 --
--- Indexes for table `oc_upload`
+-- Индексы таблицы `oc_upload`
 --
 ALTER TABLE `oc_upload`
   ADD PRIMARY KEY (`upload_id`);
 
 --
--- Indexes for table `oc_url_alias`
+-- Индексы таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
   ADD PRIMARY KEY (`url_alias_id`),
@@ -14691,659 +14698,659 @@ ALTER TABLE `oc_url_alias`
   ADD KEY `keyword` (`keyword`);
 
 --
--- Indexes for table `oc_user`
+-- Индексы таблицы `oc_user`
 --
 ALTER TABLE `oc_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `oc_user_group`
+-- Индексы таблицы `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   ADD PRIMARY KEY (`user_group_id`);
 
 --
--- Indexes for table `oc_voucher`
+-- Индексы таблицы `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   ADD PRIMARY KEY (`voucher_id`);
 
 --
--- Indexes for table `oc_voucher_history`
+-- Индексы таблицы `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   ADD PRIMARY KEY (`voucher_history_id`);
 
 --
--- Indexes for table `oc_voucher_theme`
+-- Индексы таблицы `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   ADD PRIMARY KEY (`voucher_theme_id`);
 
 --
--- Indexes for table `oc_voucher_theme_description`
+-- Индексы таблицы `oc_voucher_theme_description`
 --
 ALTER TABLE `oc_voucher_theme_description`
   ADD PRIMARY KEY (`voucher_theme_id`,`language_id`);
 
 --
--- Indexes for table `oc_weight_class`
+-- Индексы таблицы `oc_weight_class`
 --
 ALTER TABLE `oc_weight_class`
   ADD PRIMARY KEY (`weight_class_id`);
 
 --
--- Indexes for table `oc_weight_class_description`
+-- Индексы таблицы `oc_weight_class_description`
 --
 ALTER TABLE `oc_weight_class_description`
   ADD PRIMARY KEY (`weight_class_id`,`language_id`);
 
 --
--- Indexes for table `oc_zone`
+-- Индексы таблицы `oc_zone`
 --
 ALTER TABLE `oc_zone`
   ADD PRIMARY KEY (`zone_id`);
 
 --
--- Indexes for table `oc_zone_to_geo_zone`
+-- Индексы таблицы `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   ADD PRIMARY KEY (`zone_to_geo_zone_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `oc_address`
+-- AUTO_INCREMENT для таблицы `oc_address`
 --
 ALTER TABLE `oc_address`
   MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_affiliate`
+-- AUTO_INCREMENT для таблицы `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   MODIFY `affiliate_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_affiliate_activity`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   MODIFY `affiliate_activity_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_affiliate_login`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   MODIFY `affiliate_login_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_affiliate_transaction`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   MODIFY `affiliate_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_api`
+-- AUTO_INCREMENT для таблицы `oc_api`
 --
 ALTER TABLE `oc_api`
   MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `oc_api_ip`
+-- AUTO_INCREMENT для таблицы `oc_api_ip`
 --
 ALTER TABLE `oc_api_ip`
   MODIFY `api_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_api_session`
+-- AUTO_INCREMENT для таблицы `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
   MODIFY `api_session_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_article`
+-- AUTO_INCREMENT для таблицы `oc_article`
 --
 ALTER TABLE `oc_article`
   MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 
 --
--- AUTO_INCREMENT for table `oc_article_image`
+-- AUTO_INCREMENT для таблицы `oc_article_image`
 --
 ALTER TABLE `oc_article_image`
   MODIFY `article_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3981;
 
 --
--- AUTO_INCREMENT for table `oc_attribute`
+-- AUTO_INCREMENT для таблицы `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   MODIFY `attribute_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `oc_attribute_group`
+-- AUTO_INCREMENT для таблицы `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   MODIFY `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `oc_banner`
+-- AUTO_INCREMENT для таблицы `oc_banner`
 --
 ALTER TABLE `oc_banner`
   MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `oc_banner_image`
+-- AUTO_INCREMENT для таблицы `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 
 --
--- AUTO_INCREMENT for table `oc_benefit`
+-- AUTO_INCREMENT для таблицы `oc_benefit`
 --
 ALTER TABLE `oc_benefit`
   MODIFY `benefit_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT for table `oc_blog_category`
+-- AUTO_INCREMENT для таблицы `oc_blog_category`
 --
 ALTER TABLE `oc_blog_category`
   MODIFY `blog_category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
--- AUTO_INCREMENT for table `oc_cart`
+-- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `oc_category`
+-- AUTO_INCREMENT для таблицы `oc_category`
 --
 ALTER TABLE `oc_category`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `oc_country`
+-- AUTO_INCREMENT для таблицы `oc_country`
 --
 ALTER TABLE `oc_country`
   MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=258;
 
 --
--- AUTO_INCREMENT for table `oc_coupon`
+-- AUTO_INCREMENT для таблицы `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `oc_coupon_history`
+-- AUTO_INCREMENT для таблицы `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   MODIFY `coupon_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_coupon_product`
+-- AUTO_INCREMENT для таблицы `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   MODIFY `coupon_product_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_currency`
+-- AUTO_INCREMENT для таблицы `oc_currency`
 --
 ALTER TABLE `oc_currency`
   MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `oc_customer`
+-- AUTO_INCREMENT для таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
   MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_activity`
+-- AUTO_INCREMENT для таблицы `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   MODIFY `customer_activity_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_group`
+-- AUTO_INCREMENT для таблицы `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   MODIFY `customer_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `oc_customer_history`
+-- AUTO_INCREMENT для таблицы `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_ip`
+-- AUTO_INCREMENT для таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_login`
+-- AUTO_INCREMENT для таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
-  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `oc_customer_reward`
+-- AUTO_INCREMENT для таблицы `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   MODIFY `customer_reward_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_search`
+-- AUTO_INCREMENT для таблицы `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
   MODIFY `customer_search_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_customer_transaction`
+-- AUTO_INCREMENT для таблицы `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   MODIFY `customer_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_custommenu`
+-- AUTO_INCREMENT для таблицы `oc_custommenu`
 --
 ALTER TABLE `oc_custommenu`
   MODIFY `custommenu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
--- AUTO_INCREMENT for table `oc_custommenu_child`
+-- AUTO_INCREMENT для таблицы `oc_custommenu_child`
 --
 ALTER TABLE `oc_custommenu_child`
   MODIFY `custommenu_child_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
 
 --
--- AUTO_INCREMENT for table `oc_custom_field`
+-- AUTO_INCREMENT для таблицы `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   MODIFY `custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_custom_field_value`
+-- AUTO_INCREMENT для таблицы `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   MODIFY `custom_field_value_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_download`
+-- AUTO_INCREMENT для таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_event`
+-- AUTO_INCREMENT для таблицы `oc_event`
 --
 ALTER TABLE `oc_event`
   MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `oc_extension`
+-- AUTO_INCREMENT для таблицы `oc_extension`
 --
 ALTER TABLE `oc_extension`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT for table `oc_filter`
+-- AUTO_INCREMENT для таблицы `oc_filter`
 --
 ALTER TABLE `oc_filter`
   MODIFY `filter_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_filter_group`
+-- AUTO_INCREMENT для таблицы `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   MODIFY `filter_group_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_geo_zone`
+-- AUTO_INCREMENT для таблицы `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   MODIFY `geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `oc_information`
+-- AUTO_INCREMENT для таблицы `oc_information`
 --
 ALTER TABLE `oc_information`
   MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `oc_language`
+-- AUTO_INCREMENT для таблицы `oc_language`
 --
 ALTER TABLE `oc_language`
   MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `oc_layout`
+-- AUTO_INCREMENT для таблицы `oc_layout`
 --
 ALTER TABLE `oc_layout`
   MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `oc_layout_module`
+-- AUTO_INCREMENT для таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 
 --
--- AUTO_INCREMENT for table `oc_layout_route`
+-- AUTO_INCREMENT для таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
--- AUTO_INCREMENT for table `oc_location`
+-- AUTO_INCREMENT для таблицы `oc_location`
 --
 ALTER TABLE `oc_location`
   MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_manufacturer`
+-- AUTO_INCREMENT для таблицы `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   MODIFY `manufacturer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `oc_marketing`
+-- AUTO_INCREMENT для таблицы `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   MODIFY `marketing_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_menu`
+-- AUTO_INCREMENT для таблицы `oc_menu`
 --
 ALTER TABLE `oc_menu`
   MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_modification`
+-- AUTO_INCREMENT для таблицы `oc_modification`
 --
 ALTER TABLE `oc_modification`
   MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `oc_module`
+-- AUTO_INCREMENT для таблицы `oc_module`
 --
 ALTER TABLE `oc_module`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT for table `oc_option`
+-- AUTO_INCREMENT для таблицы `oc_option`
 --
 ALTER TABLE `oc_option`
   MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_option_value`
+-- AUTO_INCREMENT для таблицы `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order`
+-- AUTO_INCREMENT для таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_custom_field`
+-- AUTO_INCREMENT для таблицы `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   MODIFY `order_custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_history`
+-- AUTO_INCREMENT для таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_option`
+-- AUTO_INCREMENT для таблицы `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_product`
+-- AUTO_INCREMENT для таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_recurring`
+-- AUTO_INCREMENT для таблицы `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   MODIFY `order_recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_recurring_transaction`
+-- AUTO_INCREMENT для таблицы `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_status`
+-- AUTO_INCREMENT для таблицы `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `oc_order_total`
+-- AUTO_INCREMENT для таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_order_voucher`
+-- AUTO_INCREMENT для таблицы `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_product`
+-- AUTO_INCREMENT для таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
 
 --
--- AUTO_INCREMENT for table `oc_product_discount`
+-- AUTO_INCREMENT для таблицы `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
   MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1015;
 
 --
--- AUTO_INCREMENT for table `oc_product_image`
+-- AUTO_INCREMENT для таблицы `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
   MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=379;
 
 --
--- AUTO_INCREMENT for table `oc_product_option`
+-- AUTO_INCREMENT для таблицы `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   MODIFY `product_option_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=227;
 
 --
--- AUTO_INCREMENT for table `oc_product_option_value`
+-- AUTO_INCREMENT для таблицы `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `oc_product_reward`
+-- AUTO_INCREMENT для таблицы `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
   MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 
 --
--- AUTO_INCREMENT for table `oc_product_special`
+-- AUTO_INCREMENT для таблицы `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
 
 --
--- AUTO_INCREMENT for table `oc_product_tab`
+-- AUTO_INCREMENT для таблицы `oc_product_tab`
 --
 ALTER TABLE `oc_product_tab`
   MODIFY `product_tab_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_recurring`
+-- AUTO_INCREMENT для таблицы `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   MODIFY `recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_return`
+-- AUTO_INCREMENT для таблицы `oc_return`
 --
 ALTER TABLE `oc_return`
   MODIFY `return_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_return_action`
+-- AUTO_INCREMENT для таблицы `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   MODIFY `return_action_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `oc_return_history`
+-- AUTO_INCREMENT для таблицы `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   MODIFY `return_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_return_reason`
+-- AUTO_INCREMENT для таблицы `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   MODIFY `return_reason_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `oc_return_status`
+-- AUTO_INCREMENT для таблицы `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   MODIFY `return_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `oc_review`
+-- AUTO_INCREMENT для таблицы `oc_review`
 --
 ALTER TABLE `oc_review`
   MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_review_article`
+-- AUTO_INCREMENT для таблицы `oc_review_article`
 --
 ALTER TABLE `oc_review_article`
   MODIFY `review_article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `oc_setting`
+-- AUTO_INCREMENT для таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
   MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1790;
 
 --
--- AUTO_INCREMENT for table `oc_sticker`
+-- AUTO_INCREMENT для таблицы `oc_sticker`
 --
 ALTER TABLE `oc_sticker`
   MODIFY `sticker_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `oc_stock_status`
+-- AUTO_INCREMENT для таблицы `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   MODIFY `stock_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `oc_store`
+-- AUTO_INCREMENT для таблицы `oc_store`
 --
 ALTER TABLE `oc_store`
   MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_tax_class`
+-- AUTO_INCREMENT для таблицы `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   MODIFY `tax_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `oc_tax_rate`
+-- AUTO_INCREMENT для таблицы `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   MODIFY `tax_rate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 
 --
--- AUTO_INCREMENT for table `oc_tax_rule`
+-- AUTO_INCREMENT для таблицы `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
 
 --
--- AUTO_INCREMENT for table `oc_theme`
+-- AUTO_INCREMENT для таблицы `oc_theme`
 --
 ALTER TABLE `oc_theme`
   MODIFY `theme_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_translation`
+-- AUTO_INCREMENT для таблицы `oc_translation`
 --
 ALTER TABLE `oc_translation`
   MODIFY `translation_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_upload`
+-- AUTO_INCREMENT для таблицы `oc_upload`
 --
 ALTER TABLE `oc_upload`
   MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_url_alias`
+-- AUTO_INCREMENT для таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
   MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1045;
 
 --
--- AUTO_INCREMENT for table `oc_user`
+-- AUTO_INCREMENT для таблицы `oc_user`
 --
 ALTER TABLE `oc_user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `oc_user_group`
+-- AUTO_INCREMENT для таблицы `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `oc_voucher`
+-- AUTO_INCREMENT для таблицы `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_voucher_history`
+-- AUTO_INCREMENT для таблицы `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   MODIFY `voucher_history_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `oc_voucher_theme`
+-- AUTO_INCREMENT для таблицы `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   MODIFY `voucher_theme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `oc_zone`
+-- AUTO_INCREMENT для таблицы `oc_zone`
 --
 ALTER TABLE `oc_zone`
   MODIFY `zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4232;
 
 --
--- AUTO_INCREMENT for table `oc_zone_to_geo_zone`
+-- AUTO_INCREMENT для таблицы `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
