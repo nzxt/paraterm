@@ -18,7 +18,7 @@ gulp.task('browser-sync', function() {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-  return gulp.src("catalog/view/theme/paraterm/sass/stylesheet.sass")
+  return gulp.src("catalog/view/theme/paraterm/sass/customize.sass")
     .pipe(sass.sync({
       includePaths: bourbon.includePaths,
       outputStyle: 'compressed'

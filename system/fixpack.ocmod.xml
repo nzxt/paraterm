@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Автор: "БусликДрев" (http://buslikdrev.by/)
+© 2010-2017; VirtualAvto.by - Все права сохранены.
+Специально для сайта: "OpenCart.pro" (http://opencart.pro/) -->
+
+<modification>
+	<code>01000035</code>
+    <name>Пак исправлений / Fix pack для OpenCart.pro</name>
+    <version>2.3.0.2.5.1</version>
+    <author>BuslikDrev.by</author>
+    <link>https://liveopencart.ru/buslikdrev</link>
+	
+	<!-- ↓ ПРОВЕРКА ВАЛИДАЦИИ ПРИ ВКЛЮЧЕНИИ И ОТКЛЮЧЕНИИ КАТЕГОРИЙ, СТАТЕЙ И ТОВАРОВ ↓ -->
+	<file path="admin/controller/catalog/{category,information,product,review}.php|admin/controller/blog/{article,category,review}.php">
+        <operation error="skip">
+            <search trim="false">
+			<![CDATA[if (isset($this->request->post['selected'])) {]]>
+            </search>
+            <add position="replace">
+			<![CDATA[if (isset($this->request->post['selected']) && $this->validateStatusPro()) {]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/catalog/category.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'catalog/category')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/catalog/information.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'catalog/information')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/catalog/product.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'catalog/product')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/catalog/review.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'catalog/review')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/blog/article.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'blog/article')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/blog/category.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'blog/category')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<file path="admin/controller/blog/review.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[protected function validateDelete() {]]>
+            </search>
+            <add position="before">
+			<![CDATA[	public function validateStatusPro() {
+		if (!$this->user->hasPermission('modify', 'blog/review')) {
+			$this->error['warning'] = $this->language->get('error_permission');
+		}
+
+		return !$this->error;
+    }
+]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ПРОВЕРКА ВАЛИДАЦИИ ПРИ ВКЛЮЧЕНИИ И ОТКЛЮЧЕНИИ КАТЕГОРИЙ, СТАТЕЙ И ТОВАРОВ ↑ -->
+	
+	<!-- ↓ ОШИБКА ПРИ СОХРАНЕНИИ ТОВАРА ИЗ-ЗА ДОБАВЛЕННОЙ ПЕРИОДИЧНОСТИ, КОГДА НИ ОДНОГО ПРОФИЛЯ ПЕРИОДИЧНОСТИ НЕ СОЗДАНО ↓ -->
+	<file path="admin/view/template/catalog/product_form.tpl">
+        <operation error="skip">
+            <search trim="false" index="0">
+			<![CDATA[<?php foreach ($recurrings as $recurring) { ?>]]>
+            </search>
+            <add position="before">
+			<![CDATA[                          <option value="0" selected="selected"><?php echo $text_select; ?></option>]]>
+            </add>
+        </operation>
+		<operation error="skip">
+            <search trim="false" index="1">
+			<![CDATA[<?php foreach ($recurrings as $recurring) { ?>]]>
+            </search>
+            <add position="before">
+			<![CDATA[	html += '      <option value="0"><?php echo $text_select; ?></option>';]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ОШИБКА ПРИ СОХРАНЕНИИ ТОВАРА ИЗ-ЗА ДОБАВЛЕННОЙ ПЕРИОДИЧНОСТИ, КОГДА НИ ОДНОГО ПРОФИЛЯ ПЕРИОДИЧНОСТИ НЕ СОЗДАНО ↑ -->
+
+	<!-- ↓ ПРИ ОТПРАВКЕ СООБЩЕНИЯ НА СТРАНИЦЕ КОНТАКТОВ ↓ -->
+	<file path="catalog/controller/information/contact.php">
+        <operation error="skip">
+            <search trim="false" index="0">
+			<![CDATA[config_mail_alert]]>
+            </search>
+            <add position="replace">
+			<![CDATA[config_alert_email]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ПРИ ОТПРАВКЕ СООБЩЕНИЯ НА СТРАНИЦЕ КОНТАКТОВ ↑ -->
+
+	<!-- ↓ УДАЛЕНИЕ ТОВАРА ИЗ КОРЗИНЫ ПРИ СЕО-УРЛ ↓ -->
+	<file path="catalog/view/theme/default/template/checkout/cart.tpl">
+        <operation error="skip">
+            <search trim="false" index="0">
+			<![CDATA[type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>"]]>
+            </search>
+            <add position="replace">
+			<![CDATA[type="submit" data-toggle="tooltip" title="<?php echo $button_remove; ?>"]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ УДАЛЕНИЕ ТОВАРА ИЗ КОРЗИНЫ ПРИ СЕО-УРЛ ↑ -->
+
+	<!-- ↓ ПАГИНАЦИЯ КОММЕНТАРИЙ БЛОГА ↓ -->
+	<file path="catalog/controller/startup/seo_pro.php">
+        <operation error="skip">
+            <search trim="false" index="0">
+			<![CDATA[case 'product/product/review':]]>
+            </search>
+            <add position="after">
+			<![CDATA[			case 'blog/article/review':]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ПАГИНАЦИЯ КОММЕНТАРИЙ БЛОГА ↑ -->
+
+	<!-- ↓ ПРИ ПРОСМОТРЕ АВТОРИЗОВАННЫМ ПОЛЬЗОВАТЕЛЕМ МОДУЛЬ ПОПУЛЯРНЫЕ ТОВАРЫ ↓ -->
+	<file path="catalog/model/catalog/cms.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[$this->customer->getCustomerGroupId()]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$this->customer->getGroupId()]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ПРИ ПРОСМОТРЕ АВТОРИЗОВАННЫМ ПОЛЬЗОВАТЕЛЕМ МОДУЛЬ ПОПУЛЯРНЫЕ ТОВАРЫ ↑ -->
+
+	<!-- ↓ ВРЕМЯ ЖИЗНИ КУКОВ, ЕСЛИ ПАРАМЕТР session.cookie_lifetime > 0 ↓ -->
+	<file path="system/library/session.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[ini_get('session.cookie_lifetime'),]]>
+            </search>
+            <add position="replace">
+			<![CDATA[(ini_get('session.cookie_lifetime') ? (time() + ini_get('session.cookie_lifetime')) : 0),]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ВРЕМЯ ЖИЗНИ КУКОВ, ЕСЛИ ПАРАМЕТР session.cookie_lifetime > 0 ↑ -->
+
+	<!-- ↓ ОГРАНИЧЕНИЕ НА ЗАГРУЗКУ ТОВАРА БОЛЬШЕ 100 НА СТРАНИЦУ ↓ -->
+	<!-- <file path="catalog/model/catalog/product.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[if ($data['limit'] < 1) {]]>
+            </search>
+            <add position="before">
+			<![CDATA[			if ($data['limit'] > 100 && $data['limit'] > $this->config->get('config_product_limit')) { // fix Buslikdrev
+				$data['limit'] = 100;
+			}
+]]>
+            </add>
+        </operation>
+    </file> -->
+	<file path="catalog/controller/product/search.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[$search = $this->request->get['search'];]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$search = ($this->request->get['search'] > '' ? $this->request->get['search'] : '');]]>
+            </add>
+        </operation>
+		<operation error="skip">
+            <search>
+			<![CDATA[$tag = $this->request->get['tag'];]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$tag = ($this->request->get['tag'] > '' ? $this->request->get['tag'] : '');]]>
+            </add>
+        </operation>
+		<operation error="skip">
+            <search>
+			<![CDATA[$tag = $this->request->get['search'];]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$tag = ($this->request->get['search'] > '' ? $this->request->get['search'] : '');]]>
+            </add>
+        </operation>
+		<operation error="skip">
+            <search>
+			<![CDATA[$limit = (int)$this->request->get['limit'];]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$limit = ((int)$this->request->get['limit'] > 100 ? 100 : (int)$this->request->get['limit']);]]>
+            </add>
+        </operation>
+		<operation error="skip">
+            <search>
+			<![CDATA[if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {]]>
+            </search>
+            <add position="replace">
+			<![CDATA[if ($search || $tag) {]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ОГРАНИЧЕНИЕ НА ЗАГРУЗКУ ТОВАРА БОЛЬШЕ 100 НА СТРАНИЦУ ↑ -->
+	
+	<!-- ↓ ОШИБКА В МОДУЛЕ ТАБОВ, ЕСЛИ ID ТОВАРА ИМЕЕТ ДРУГИЕ СИМВОЛЫ ↓ -->
+	<file path="catalog/model/catalog/product.php">
+        <operation error="skip">
+            <search>
+			<![CDATA[$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_tab pt LEFT JOIN ".DB_PREFIX. "product_tab_desc ptd ON(pt.product_tab_id = ptd.product_tab_id) WHERE pt.product_id = " . $this->db->escape($product_id) . " AND ptd.language_id = '".$this->config->get('config_language_id')."' AND pt.status = 1 ORDER BY sort_order ASC");]]>
+            </search>
+            <add position="replace">
+			<![CDATA[$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_tab pt LEFT JOIN " . DB_PREFIX . "product_tab_desc ptd ON(pt.product_tab_id = ptd.product_tab_id) WHERE pt.product_id = '" . (int)$product_id . "' AND ptd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND pt.status = '1' ORDER BY sort_order ASC");]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ОШИБКА В МОДУЛЕ ТАБОВ, ЕСЛИ ID ТОВАРА ИМЕЕТ ДРУГИЕ СИМВОЛЫ ↑ -->
+	
+	<!-- ↓ ВОЗМОЖНОСТЬ ВЫВОДИТЬ СКРИПТЫ В ПОДВАЛЕ ↓ -->
+	<file path="catalog/view/theme/default/template/common/footer.tpl">
+        <operation error="skip">
+            <search>
+			<![CDATA[</body>]]>
+            </search>
+            <add position="before">
+			<![CDATA[<?php foreach ($scripts as $script) { ?>
+<script src="<?php echo $script; ?>" type="text/javascript"></script>
+<?php } ?>]]>
+            </add>
+        </operation>
+    </file>
+	<!-- ↑ ВОЗМОЖНОСТЬ ВЫВОДИТЬ СКРИПТЫ В ПОДВАЛЕ ↑ -->
+</modification>
+
+<!-- Автор: "БусликДрев" (http://buslikdrev.by/)
+© 2010-2017; VirtualAvto.by - Все права сохранены.
+Специально для сайта: "OpenCart.pro" (http://opencart.pro/) -->
