@@ -7,7 +7,7 @@
     -webkit-box-sizing: border-box;
     font-family: arial;
   }
-  
+
   html {
     position: relative;
     min-height: 100%;
@@ -25,21 +25,17 @@
 }
 
   .login-form {
-    width: 350px;
+    width: 400px;
     padding: 40px 30px;
     background: #eee;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    
-
-position: absolute;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-
-
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 50%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -127,7 +123,7 @@ right: 0;
 <form action="<?php echo $action; ?>" method="post" class="login-form" enctype="multipart/form-data">
 
      <h3> <i class="fa fa-lock"></i> <?php echo $text_login; ?></h3>
-     
+
      <?php if ($success) { ?>
      <div class="alert alert-success"><i class="fa fa-check-circle"></i> <?php echo $success; ?>
        <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -158,13 +154,13 @@ right: 0;
               <?php if ($redirect) { ?>
               <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
               <?php } ?>
-    
-   
+
+
    </form>
   <!-- </div> -->
   </div>
   </div>
   </div>
 </div>
-<?php echo $footer; ?> 
+<?php echo $footer; ?>
 

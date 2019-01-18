@@ -8,6 +8,9 @@
   },
   "author": "NZXTUA",
   "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "4.0.0",
@@ -17,8 +20,5 @@
     "gulp-util": "^3.0.8",
     "node-bourbon": "^4.2.8",
     "vinyl-ftp": "^0.6.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.2.1"
   }
 }
