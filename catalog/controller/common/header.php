@@ -74,6 +74,7 @@ class ControllerCommonHeader extends Controller {
 		$data['text_logout'] = $this->language->get('text_logout');
 		$data['text_checkout'] = $this->language->get('text_checkout');
 		$data['text_category'] = $this->language->get('text_category');
+		$data['text_menu'] = $this->language->get('text_menu'); // TODO: Move to OCMod
 		$data['text_all'] = $this->language->get('text_all');
 
 		$data['home'] = $this->url->link('common/home');

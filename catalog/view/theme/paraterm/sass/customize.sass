@@ -3,20 +3,32 @@
 @import "fonts"
 
 body
-  font-family: MyriadSetProText, sans-serif
+  font-family: $default-font, sans-serif
   font-size: 14px
+  #content
+    max-width: 1280px
+    margin: 0 auto
+
+h1, h2, h3, h4, h5, h6
+  font-family: $secondary-font, sans-serif
 
 nav#top
   margin-bottom: 10px
+  #search
+    margin-bottom: 0
 
-footer hr
-  margin-bottom: 5px
+footer
+  h5
+    font-family: $secondary-font, sans-serif
+  hr
+    margin-bottom: 5px
 
 header, footer
   .row
     display: flex
     justify-content: center
     align-items: center
+
 
 .module-title
   text-align: center
@@ -30,7 +42,7 @@ header, footer
     border: 1px solid #ededed
     border-radius: 2%
     img
-      border-radius: 50%
+      border-radius: 2%
 
 #cart, #content
   td

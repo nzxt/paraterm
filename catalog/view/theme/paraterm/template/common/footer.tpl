@@ -1,3 +1,5 @@
+</div>
+</div>
 <footer>
   <div class="container-fluid">
     <div class="row">
@@ -49,5 +51,4 @@ Please donate via PayPal to donate@opencart.com
 //-->
 
 <!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
-
 </body></html>
