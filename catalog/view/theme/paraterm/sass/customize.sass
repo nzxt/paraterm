@@ -13,9 +13,18 @@ h1, h2, h3, h4, h5, h6
   font-family: $secondary-font, sans-serif
 
 nav#top
+  top: 0
+  position: sticky
+  z-index: 99999
   margin-bottom: 10px
+  padding-right: 15px
+  padding-left: 15px
+  #top-links
+    .list-inline
+      margin-bottom: 6px
   #search
     margin-bottom: 0
+
 
 footer
   h5
@@ -26,7 +35,7 @@ footer
 header, footer
   .row
     display: flex
-    justify-content: center
+    justify-content: space-between
     align-items: center
 
 
@@ -70,11 +79,19 @@ header, footer
   .infobox h4,
   .check li::before,
   .general-title h2
-    font-family: MyriadSetProSemiBold
+    font-family: $secondary-font
     color: #555
 
 .product-list
   .btn-modal
-    left: 11% !important
+    top: 38% !important
+    left: 18% !important
+
+.product-grid
+  .caption
+    text-align: center
+    .price
+      font-size: 1.2em
+      font-weight: bold
 
 @import "media"

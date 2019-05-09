@@ -50,9 +50,9 @@
     <div class="row">
       <div id="top-links" class="nav pull-right">
         <ul class="list-inline">
-          <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-          <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-          <li><a href="<?php echo $contact; ?>"><i class="fa fa-envelope"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+          <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span><?php echo $telephone; ?></span></li>
+          <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span><?php echo $fax; ?></span></li>
+          <li><a href="<?php echo $contact; ?>"><i class="fa fa-envelope"></i></a> <span><?php echo $email; ?></span></li>
         </ul>
       </div>
     </div>
@@ -62,7 +62,7 @@
 <header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3 hidden-xs">
         <div id="logo">
           <?php if ($logo) { ?>
           <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -71,7 +71,7 @@
           <?php } ?>
         </div>
       </div>
-      <div class="col-sm-5"><?php echo $search; ?></div>
+      <div class="col-sm-6"><?php echo $search; ?></div>
       <div class="col-sm-3"><?php echo $cart; ?></div>
     </div>
   </div>
