@@ -4,7 +4,8 @@ var gulp         = require('gulp'),
     cleanCSS     = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
     bourbon      = require('node-bourbon'),
-    ftp          = require('vinyl-ftp');
+    ftp          = require('vinyl-ftp'),
+    log          = require('fancy-log');
 
 var reload = browserSync.reload;
 
@@ -44,7 +45,7 @@ gulp.task('watch', function() {
 //     user:      'username',
 //     password:  'userpassword',
 //     parallel:  10,
-//     log: gutil.log
+//     log: log
 //   });
 //   var globs = [
 //     'catalog/view/theme/paraterm/**'

@@ -1,6 +1,6 @@
 {
   "name": "paraterm",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "ParaTerm OpenCart 2.x Project",
   "main": "gulpfile.js",
   "scripts": {
@@ -13,11 +13,11 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.5",
+    "fancy-log": "^1.3.3",
     "gulp": "4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
-    "gulp-util": "^3.0.8",
     "node-bourbon": "^4.2.8",
     "vinyl-ftp": "^0.6.1"
   }
